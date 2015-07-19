@@ -1,0 +1,104 @@
+LESSON EIGHT JAVA NOTES
+SURROUNDED BY DOGS EDITION
+
+-Class Methods
+== Methods that belong to the class as a whole rather than a particular object
+--- Methods that ARE constrained to one object, by the way, are INSTANCE METHODS. They're what we've been using so far.
+== Java's 'static' keyword defines a class method
+== Java's main() method is static, by the way
+
+-'is' methods
+== I made that name up. Woo.
+== These are methods like 'isTemperatureValid()' or 'isTypeGood' or something.
+== Methods starting with is ALMOST ALWAYS return a boolean value
+
+-Encapsulation
+== Means 'self-contained'
+== It involves replacing more of your program with functions, so that the program as a whole is more easily read and modified
+
+-Exceptions
+== EXCEPTIONS are events that interrupt the normal flow of a program's logic
+== UNEXPECTED INPUT are one of the most common causes of exceptions
+--- This occurs when, say, you're asking for a number and the user gives 'Twentyfive'
+== Java's API (application user interface) defines several exceptions, and every method's documentation should include a list of the exceptions it might generate
+--- The term for generating an exception is THROWING it
+== All Java exceptions are subclasses of the Exception classes
+== They come in two basic varieties: RUNTIME EXCEPTIONS and CHECKED EXCEPTIONS
+--- CHECKED EXCEPTIONS are ones the compiler can check and catch
+--- RUNTIME EXCEPTIONS come from prorgamming problems the compiler can't really anticipate
+==== Include dividing by zero, using a null reference, or making invalid input that leads to an InputMismatchException
+== If you're trying to intentionally throw exceptions to test your code, Checked Exceptions are the best
+--- They let the compiler make sure that programmers consider what should happen when the program encounters exceptions
+--- The exceptions are their own documentation of what might happen
+== Catching Exceptions
+--- Can be done using a try/catch block
+==== Format:
+
+try {
+   <code that might cause an exception>
+}
+catch (<ExceptionType1> name) {
+   <code for the first exception>
+}
+catch (<ExceptionType2> name) {
+   <code for the second exception
+}
+...
+finally {
+   <code to execute whether or not there's an exception>
+}
+
+==== Example
+
+try {
+   // code to process files
+}
+catch (FileNotFoundException e) {
+   // code to handle a missing file condition
+}
+catch (InputMismatchException e) {
+   // code to handle invalid data conditions
+}
+catch (IOException e) {
+   // code to handle I/O exceptions
+}
+finally {
+   // code to close the files
+}
+
+== Swell
+
+-Specifying and Throwing Exceptions
+== Methods in Java can tell the compiler that they may throw an exception
+--- They do this by using the THROWS CLAUSE in the method delcaration
+== Example (This is a version of the above code, but with the try/catch logic)
+
+public void processFile() throws FileNotFoundException,
+				 InputMismatchException,
+				 IOException {
+   //code to process files
+}
+
+== The 'throws' clause tells the compiler that I know my code may throw these exceptions, but I want the program to handle them at another level
+--- This means it won't check my method for try/catch logic to process them
+--- Any programmer who wants to use the method can see that he or she will need to either:
+==== Handle the exception, or
+==== Pass it along to the next level in the CALL STACK
+== Call Stack
+--- The system's list of active methods
+--- If method A calls on method B, and B calls on C, there are three methods in the call stack
+--- If an exception occurs in C, and C doesn't handle it, Java moves on to be to see if there's a handler there
+--- If there's no handler in B, it moves on to A
+--- If there's no handler in A, the program crashes
+--- So it goes like C -> B -> A
+
+-Subclasses
+== The 'extends' keyword (tacked on to the end of a class declaration) tells Java you want to make that class a SUBCLASS
+--- Example
+
+public class InvalidTemperatureTypeException extends Exception
+
+--- In this example, InvalidTemperatureTypeException is the subclass, or 'child' of the class Exception
+--- You could also say that Exception is the 'superclass' or 'parent' of InvalidTemperatureTypeException
+== Subclasses INHERIT (have) all the attributes and methods that their parent classes have
+== The 'super' keyword tells Java we want to refer to the superclass and call its constructor from this class's constructor

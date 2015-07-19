@@ -1,0 +1,104 @@
+LESSON FOUR NOTES HERE WE GO
+
+-OOP
+== Stands for 'Object-Oriented Programming'
+== Java is an OOP language
+== Modular and reusable
+== Reusable modules called classes
+
+-Classes
+== A CLASS is (almost) any type in Java other than one of the primitive type. 'String' is a class, as are the wrapper classes.
+== Can also describe classes as resusable modules to save time and hassle.
+== Can ALSO be described as a structure that contains information, as well as actions that use that information.
+--- The information is the ATTRIBUTES of the class, or its data.
+--- The actions are its METHODS (known as functions or subroutines in different languages).
+== Hot damn, a fourth definition. A class is also also like a blueprint, containing information necessary to build objects and all the actions those objects can perform.
+== Every time you use a class to create an object, you create an instance of that class.
+--- INSTANCE is apparently indistinguishable from OBJECT. Swell.
+== Attributes
+--- Also known as data
+--- Information contained in a class
+--- Usually hidden by the creator of a program
+--- Methods to control these hidden attributes can be found in Java's API (application programmer interface)
+==== Java's API is easy to find. Google it.
+
+-Delcaring Instance Data
+== Attributes must be declared befre data can be stored in them
+== Often use two types of data elements
+--- Local variables
+==== Same ones used before, see L3Notes
+--- Instance variables
+==== Variable that will exist in each and every instance (or object) of the class.
+==== Declared differently than local vars; Declared INSIDE the class but OUTSIDE the methods.
+==== Instance Declarations
+----- Format (< and > should not be in real code):
+
+<access modifier> <data type> <variable name>;
+
+----- ACCESS MODIFIER tells Java who can see and use a variable (e.g. 'public' and 'private'). Access modifiers do not appear in local declarations.
+====== 'public' tells Java that any program or class can see and use the name
+====== 'private' allows users to see and use the variable inside this class only
+----- DATA TYPE  is more stuff that was talked about in L3Notes. Primitive and Reference Types, etc. (e.g. 'byte', 'int', 'char', 'String')
+----- VARIABLE NAME is whatever you decide to call the variable. Duh. (e.g. myVariable)
+----- Example:
+
+private String textToDisplay
+
+----- Woo
+
+-Designing Methods
+== Remember, methods define the actions our objects will be able to perform
+== When someone runs one of those actions, we say that person will 'call the method'.
+== OOP devides methods into two categories:
+--- MUTATORS, which change the value in a variable
+--- ACCESSORS, which just look at values without changing them
+== Methods that set values are, unsurprisingly, called 'set methods' or 'setters'. This is where method names like 'setTextToDisplay()' come from.
+== Example of a method:
+
+public void setTextToDisplay(String inputText)
+{
+    textToDisplay = inputText;
+}
+
+--- 'public' means anyone can call the method
+--- The next word tells Java what type of value this method should return. 'void' means that no value should be returned.
+--- 'setTextToDisplay' is just a name.
+--- The stuff inside the parentheses is called a PARAMETER LIST. It tells Java what information to expect from whoever calls the method.
+==== Each parameter has a type and a name, and are separated by commas.
+==== In this example, the type is 'String' and the parameter's name is 'inputText'
+--- That whole first line (public void setTextToDisplay(String inputText)) is called the method's SIGNATURE. It contains all info a user needs to call the method.
+== Second example:
+
+public String getTextToDisplay()
+{
+    return textToDisplay;
+}
+
+--- This is a 'get method' or 'getter'. Three guesses.
+--- 'String' tells Java that whoever calls this method will get a string back from it.
+--- No parameter list, because this method requires no info from its callers.
+--- 'return' tells Java to *gasp* return the variable 'textToDisplay' to the caller.
+
+-Constructors
+== CONSTRUCTORS are (basically) methods, and they have the special purpose of initializing new objects.
+== They look different than normal methods, they always have the same name as the class, and they don't have a return type (not even 'void')
+== Most programmers put them after instance variables and before other methods (all inside the class).
+== Examples:
+
+public TextWriter()
+{
+    textToDisplay = "";
+}
+
+public TextWriter(String inputText)
+{
+    textToDisplay = inputText;
+}
+
+--- OVERLOADING is having two or more methods with the same name. Java tells them apart by their parameter lists (which have to be unique)
+--- The DEFAULT CONSTRUCTOR is the one with no parameters. That'd be the first one.
+--- The first constructor will initialize the object with an empty string
+--- The second constructor will initialize the object with whatever string is in its parameter
+
+-Driver Programs
+== Program to test out (test drive?) another program

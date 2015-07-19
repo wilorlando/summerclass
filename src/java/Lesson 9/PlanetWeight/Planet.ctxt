@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=relativeWeight
+comment0.target=Planet(double)
+comment1.params=
+comment1.target=double\ getRelativeWeight()
+comment2.params=weight
+comment2.target=double\ getWeight(double)
+numComments=3

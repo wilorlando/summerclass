@@ -1,0 +1,43 @@
+LESSON FIVE NOTES
+S-MAC-K EDITION
+
+-Note: This lesson seems to revolve around writing a specific program, temperatureConverter. See that for more.
+-Notes may be sparse
+
+-Accessor Methods
+== Simple methods that access data in our objects and give it to our clients
+-Client
+== The name for a class or method that's using our class
+-Get Methods
+== Methods to get data from a class for their clients
+== Typically preceded by 'get', i.e. 'getDegreesCelsius()' or 'getDegreesFahrenheit'
+-Set Methods
+== Method to let client change data in an object
+== Also known as 'mutator methods'
+-Expressions
+== Combination of symbols that has just one value
+== Performs calculations in Java and gives a single value as a result
+== Often use operators to indicate what calculations to do and operands to provide information for those calculations
+== Example: value1 + value2
+== Example: a * (b + c)
+-Operators
+== + (Addition), - (Subtraction), * (Multiplication), / (Division), % (Modulus)
+-Operands
+== Tells Java which value to use in that part of the calculation
+== Examples: 4, 9.0, value1, a
+-Statements
+== Like sentence; Form a compete unit of execution
+== Three basic types
+--- Expression statements (like expressions)
+--- Declaration statements (declare new names)
+--- Control flow statements (branches and loops)
+
+-Java's Expression Evaluation Rules (Like a dumbed-down Order of Operations)
+== Java evaluates operations inside parentheses before operations outside of them
+== If there are no parentheses, Java evaluates multiplication (*) and division (/) before addition (+) and subtraction (-).
+== When there are multiple operations of the same priority, Java evaluates them from left to right
+== Also: If either of the operands is a floating-point number, the result will be a floating-point number. If both are integers, the result will be an integer.
+
+-Keyword: 'this'
+== 'this' lets Java refer to the object that contains the keyword. When it appears with parentheses, it tells Java to call a constructor.
+== Example: this(0.0)

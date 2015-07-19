@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TextWriter()
+comment1.params=inputText
+comment1.target=TextWriter(java.lang.String)
+comment2.params=inputText
+comment2.target=void\ setTextToDisplay(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getTextToDisplay()
+comment4.params=
+comment4.target=void\ displayText()
+comment5.params=
+comment5.target=void\ clearTextToDisplay()
+numComments=6

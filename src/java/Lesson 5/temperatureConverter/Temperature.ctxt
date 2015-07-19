@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=degrees
+comment0.target=Temperature(double)
+comment0.text=\n\ This\ constructor\ for\ Temperature\ sets\ the\ Fahrenheit\n\ value\ to\ the\ value\ from\ degrees,\ then\ calculates\n\ equivalent\ Celsius\ and\ Kelvin\ valus\ using\ setDegreesFahrenheit()\n\ \n\ @param\ degrees\ degrees\ Fahrenheit\n
+comment1.params=
+comment1.target=Temperature()
+comment1.text=\n\ Default\ constructor\ for\ Temperature\ sets\ the\ default\n\ value\ of\ the\ Temperature\ object\ to\ 0.0\ degrees\n\ Fahrenheit\ with\ Celsius\ and\ Kelvin\ equivalents\n
+comment2.params=
+comment2.target=double\ getDegreesCelsius()
+comment2.text=\n\ getDegreesCelsius\ retrieves\ the\ Celsius\ temperature\ value\n\ \n\ @return\ a\ double\ value\ containing\ the\ Celsius\ temperature\n
+comment3.params=
+comment3.target=double\ getDegreesKelvin()
+comment3.text=\n\ getDegreesKelvin\ retrieves\ the\ Kelvin\ temperature\ value\n\ \n\ @return\ a\ double\ value\ containing\ the\ Kelvin\ temperature\n
+comment4.params=degrees
+comment4.target=void\ setDegreesFahrenheit(double)
+comment4.text=\n\ The\ setDegreesFahrenheit\ method\ sets\ the\ Fahrenheit\ temperature\n\ \n\ @param\ degrees\ the\ fahrenheit\ value\ to\ store\n
+numComments=5

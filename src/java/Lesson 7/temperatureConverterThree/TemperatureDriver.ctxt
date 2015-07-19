@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\r\n\ main()\ reads\ a\ temperature\ type\ and\ value,\ then\ \r\n\ converts\ it\ to\ the\ other\ two\ temperature\ scales.\r\n
+numComments=1

@@ -1,0 +1,95 @@
+LESSON SIX JAVA NOTES
+STILL ON A MAC AND COMPLETELY OUT OF PUNS EDITION
+
+-Java's Branches
+== Statements that make decisions (if statements, etc.)
+== If Statements
+--- You know what they are and what they do
+--- Example
+
+if (x < 0)
+{
+   x = -x;
+   x = x - 1;
+}
+
+--- Java also has else statements. Duh.
+--- Example
+
+if (x < 0)
+{
+   x = -x;
+   x = x - 1;
+}
+else
+{
+   x = x + 1;
+}
+
+--- Interesting thing: If there's only one statement, the if/else/else if statement doesn't need curly brackets
+
+if (x < 0)
+   x = -x;
+else
+   x = x+1;
+
+--- Swell.
+== Control Structures
+--- Any statement that changes the normal sequential order of execution in a program
+--- Three types
+==== Branches (if statements, etc.)
+==== Loops (which repeat actions)
+==== Method Calls (see some previous lesson or google it)
+
+-Boolean Expressions
+== Any expression that returns a boolean (true or false) value
+== Always fill the parentheses after an if statement (if (<boolean expression>))
+== Comparison Operators
+--- Math stuff used to compare values and return boolean results
+==== < (Less than)
+==== <= (Less than or equal to)
+==== > (Greater than)
+==== >= (Greater than or equal to)
+==== == (Equal to)
+==== != (Not equal to)
+--- Example: 'a > b' (Is a greater than b?)
+--- Any of Java's primitive types will work in comparisons, as long as both sides of the comparison are compatible (Can't compare char to int, for example)
+== More Comparison Operators
+--- These ones are for comparing boolean values to each other
+--- && (and)
+--- || (or)
+--- ! (not)
+--- Examples
+
+a && b (true if both a and b are true, and false if either is false)
+a || b (true if either a or b is true, and false if both are false)
+!a (true if a is false, and false if a is true)
+
+--- Swell
+
+-Modulus
+== Arithmetic operator represented by the percentage sign (%)
+== Divides numbers and then returns the remainder of the division
+== Example: '5 % 3' returns '2', because three goes into five once with a remainder of TWO
+
+-next() and nextLine()
+== These are the two Scanner methods programmers use most frequently to return String objects
+== next() returns the next word from the input (after skipping white spaces)
+== nextLine() returns the entire input line, including white space
+
+-Javaisbestlanguage
+== Character strings can't be compared using '==' and '!='. Strings aren't primitive types in Java.
+== Instead, use the 'equals()' method
+== This makes complete sense
+== Complete
+== Sense
+== Example
+
+if (temperatureType.equals("F"))
+{
+  System.out.print("Why, Java, oh why?");
+}
+
+== Not swell.
+
+-Note: Much of this lesson was tweaking temperatureConverter to use if/else/else if statements. I named the new one 'temperatureConverterTwo'. It should be in the Java Lesson 6 folder with these notes.

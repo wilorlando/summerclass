@@ -1,0 +1,88 @@
+Lesson 2 Notes (Java)
+
+-Naming conventions
+-- Capitalize the first letter of every word in file names
+-- E.g. CrazyAwesomeProgram, DirectoryManager, LargeStubbornPlum
+
+-Java "Hello World!"
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    } // End main
+} // End HelloWorld
+
+-- It's just 'print "Hello World!"' in Python. But I digress.
+-- BlueJ color coding
+--- In the above program, there are four different colors of words.
+--- KEYWORDS are dark red, and include such gems as 'public' and 'static'. They have a special meaning in Java and can be used for no other purpose.
+--- DATA TYPES are information formats. Don't ask what the hell they mean. Includes 'class' and 'void'.
+--- TEXT STRINGS make sense! They're strings. Actual strings. Thank god. They're bright green and surrounded by double quotes (""). Includes '"Hello world!"'.
+--- EVERYTHING ELSE in this program is normal black text. Swell.
+-- Dissecting HelloWorld
+--- Each line of the above program explained
+
+public class HelloWorld {
+
+--- Declares a new class to Java ("Java, I want to create a new class named HelloWorld"). It's a class (like a blueprint used to create different objects), it's public (anyone can use it) and it's named HelloWorld.
+
+    public static void main(String[] args) {
+
+--- Tells Java to declare a method named "main" inside the HelloWorld class.
+---- METHODS are step-by-step instructions or procedures. They're like functions!
+---- A class with a main method is a stand-alone program that Java can execute. A class without a main method cannot be executed on its own.
+
+            System.out.println("Hello, world!");
+
+--- Tells Java to:
+---- Go to the "System" class
+---- Find a variable named "out" that connects to the default output device
+---- Call a method named "println" that belongs to that variable.
+--- This is an example of Java's dot notation.
+
+  } // End main
+
+--- Closing bracket and a comment. Duh.
+
+} // End HelloWorld
+
+--- Really straining the brain here, prof.
+
+
+-Java's Programming Conventions
+-- Comments
+--- Similar to RobotC here. Easy peasy.
+--- // denotes a single-line comment
+--- /* and */ denote a multi-line (or block) comment. When spanning downwards, through multiple lines, each line in the block should start with an asterisk. Don't ask me why.
+--- /** and */ denote a special kind of multi-line comment that's a "documentation" type of comment thing.
+-- Indenting
+--- Four spaces. You know what I mean. Why not tab? Why?! Who knows? BlueJ auto-indents, though, so I've got that going for me. Which is nice.
+
+public class HelloWorld {
+1234public static void main(String[] args) {
+12341234System.out.println("Hello, world!");
+1234} //End main
+} // End HelloWorld
+
+-- Curly Brackets
+--- You know this already. You can either do the opening brackets at the end of the line (like above) or the snazzy way that takes up more space.
+
+public class HelloWorld
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello, world!");
+    } // End main
+} // End HelloWorld
+
+--- Oh, it's beautiful. So easy to read. *single tear*
+-- Formatting Names in Java
+--- IMPORTANT BECAUSE STYLE POINTS
+--- Rules:
+---- Don't start names with dollar signs or underscores.
+---- Use descriptive names (accountNumber, firstName, aLongJavaVariableName are better than x, y, and z)
+---- VARIABLE NAMES are nouns that describe the data they will hold. They start with a lowercase letter, and each word after the first starts with an uppercase letter. See line above.
+---- METHOD NAMES are verbs that describe the actions they provide. They always have parentheses after them. (e.g. setColor() and getText())
+---- CONSTANT NAMES are for valuies that can't change. They're all-uppercase nouns, with words separated by underscores. (e.g. PI, MAX_VALUE, MIN_VALUE)
+---- CLASS NAMES are nouns that describe the entity they represent. They start with an uppercase and all words after the first also start with an uppercase. (e.g. String, Math, Graphics)
+--- There's a small quiz on this in Lesson 2, Chapter 4 if you need it. But the concept's pretty easy.

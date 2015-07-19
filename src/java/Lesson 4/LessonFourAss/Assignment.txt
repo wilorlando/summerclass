@@ -1,0 +1,11 @@
+LESSON FOUR ASSIGNMENT
+
+I-HAVE-NO-IDEA-AND-AT-THIS-POINT-I'M-TOO-AFRAID-TO-ASK EDITION
+
+
+
+"Using the example from the lesson as a starting point, change both classes as follows:
+
+1. Add a method to TextWriter that clears out the variable textToDisplay, leaving it as an empty string.
+2. Add code to TextWriterDriver that creates a third TextWriter object with some text in it and displays that text.
+3. To test your new method, add more code to TextWriterDriver that clears the text in the third TextWriter object and displays it again to show that there's no text left."

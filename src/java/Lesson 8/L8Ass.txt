@@ -1,0 +1,12 @@
+This assignment concerns adding on to the temperatureConverter, so I just added it to temperatureCovnerterFour.
+Starting to think I screwed up naming that, by the way.
+
+ASSIGNMENT:
+-Add one more new exception class to the temperature converter: InvalidTemperatureException
+-This exception will thorw when the user tries to store a temperature below absolute zeor
+
+-Suggested way to do it:
+== Create a new class, InvalidTemperatureException
+== Add a check for valid temps to each of the set methods, using a call to isTemperatureValid(). If the temp isn't valid, throw an InvalidTemperatureException. Also add a throws clause to the method declaration.
+== Add InvalidTemperatureException to the constructor's throws clause
+== Add a second catch block to the try-catch code in main() so that the program handles both exceptions there

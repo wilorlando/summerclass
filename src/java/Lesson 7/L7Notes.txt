@@ -1,0 +1,44 @@
+LESSON SEVEN NOTES
+
+-Note: Much of this lesson covers changes to 'temperatureConverterThree'
+
+-While Loop
+== Repeats a block of code as long as (or while) a condition is true
+== Format
+--- while (<boolean expression>) <body>
+== Example
+
+//print numbers from 1 to 10
+int x = 1;
+while (x <= 10)
+{
+   System.out.println(x);
+   x = x + 1;
+}
+
+== You can shorten the boolean expressions by omitting the '== true' or '==false' bits.
+== Example:
+
+while (variable)
+{
+   System.out.print("Variable is true");
+}
+
+while (! variable)
+{
+   System.out.print("Variable is false");
+}
+
+== Swell
+
+-Crashes & Exceptions
+== A CRASH is when your program just breaks and stops working, yielding an error message
+== An EXCEPTION is an event or error that disrupts the flow of the program's instructions
+== An INPUT EDIT is program logic that makes sure users are giving us good data (like, not giving 'Eighty-two' when asked for a number)
+
+-Do-While Loops (Do Loops)
+== Format
+--- do <body> while (<boolean expression>);
+== Differences from While Loops
+--- Do Loops always execute the body of the loop at least once
+--- Do Loops check the condition at the end of each repetition, while the while loop checks at the start (so the while loop may never execute the body if the condition is false the first time)

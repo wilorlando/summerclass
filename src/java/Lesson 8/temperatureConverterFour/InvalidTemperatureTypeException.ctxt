@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=InvalidTemperatureTypeException()
+comment0.text=\r\n\ Default\ constructo\ for\ InvalidTemperatureTypeException\ obejcts.\ It\r\n\ create\ an\ InvalidTemperatureTypeException\ with\ a\ null\ detail\ message.\r\n
+comment1.params=message
+comment1.target=InvalidTemperatureTypeException(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ InvalidTemperatureTypeException\ objects.\r\n\ It\ creates\ an\ InvalidTemperatureTypeException\ object\ with\ the\ specified\ detail\ message.\r\n
+numComments=2

@@ -1,0 +1,379 @@
+LESSON NINE JAVA
+WILD INLAWS APPEAR EDITION
+
+-The elusive 'args'
+== That damn mysterious bit in a main method declaration. Remember?
+== It's a parameter. Short for 'arguments'.
+== It receives any arguments passed by the operating system when the program starts.
+
+-BlueJ's Debugger
+== Tool, included by BlueJ and most other IDEs, to let you see what's going on in a program while it runs.
+--- See DebuggerExample for a clearer explanation
+== Breakpoints
+--- Little red stopsign that you can set/remove by clicking on a line number in BlueJ
+--- When the program reaches a breakpoint, execution STOPS.
+--- The debugger then displays the state of the program in the DEBUGGER WINDOW
+== Debugger Window
+--- (It's recommended to look at a BlueJ debugger window while reading this part)
+--- Threads
+==== Code that can run independently of other code
+==== That means it can run in parallel, and let the computer do more things at one time.
+==== The 'Thread' pane on the Debugger Window shows all active application threads
+--- Call Sequence
+==== List of method calls in reverse order
+==== The top line is the most recent call
+==== Also called a CALL STACK
+--- Three Panes for Variables
+==== Top pane is 'static' variables in the class containing the breakpoint
+----- A 'static' variable is one that exists in the class before we create any objects]
+==== Middle pane is 'instance' variables in the class
+----- 'Instance' variables are variables that are part of each object
+==== Bottom pane is 'local' variables
+----- 'Local' variables are the ones defined within the currently running method
+--- Halt Button
+==== Usually isn't available, since the program is usually already stopped when this window is active
+--- Step Button
+==== Tells BlueJ to execute one more statement and then stop again to show its results
+--- Step Into Button
+==== Similar to Step, but does one thing different when the executed statement is a method call
+==== Step Into calls the method and stops at the method's first line, while Step calls and runs the whole method before stopping at the next statement after the method call
+--- Continue Button
+==== Tells BlueJ to continue running the program until a) the next breakpoint or b) the end of the program
+--- Terminate Button
+==== Tells BlueJ to end the debugger and stop running the program
+
+
+-Switch-Case Control Structure
+== Can replace a series of nested if-else statements
+== 'switch' structure that allows us to check the value of a variable and branch any number of different ways based on that value (as long as the value is one of the six primitive type or a String)
+== Format
+
+switch (<variable name>) {
+	case <value1>:
+		//code for this case
+		break;
+	case <value 2>:
+	case <value3>:
+		//code for this case
+		break;
+	.
+	.
+	.
+	case <valueN>:
+		//code for this case
+		break;
+	default:
+		//code for all other cases
+}
+
+--- <variable name> is the variable we want to test
+--- The values <value1> through <valueN> are the values we want to have different actions for
+--- The code for each case statement follows the case statement containing that value, and you can list as many case values as you need
+--- The 'default' case is optional. It defines the course of action if <variable name> doesn't match any of the cases (kinda like an 'else' statement)
+--- The 'break' statement tells Java to exit the whole 'switch' block
+==== If a 'break' statement is missing for a value, Java will FALL THROUGH to the next value's code
+==== Because of this, the 'break' statement is normally essential for each case
+==== Note that <value2> has NO break statement. This can be convenient when two values require the same action. In this case, Java executs the same code for <value2> as <value3>
+== Example (SwitchCaseExample)
+
+public class SwitchTest1 {
+    public static void main(String[] args) {
+        int monthNumber = 0;
+        String monthName = "";
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Enter a month's number: ");
+        if (in.hasNextInt()) {
+            monthNumber = in.nextInt();
+            switch (monthNumber) {
+                case 1:
+                    monthName = "January";
+                    break;
+                case 2:
+                    monthName = "February";
+                    break;
+                case 3:
+                    monthName = "March";
+                    break;
+                case 4:
+                    monthName = "April";
+                    break;
+                case 5:
+                    monthName = "May";
+                    break;
+                case 6:
+                    monthName = "June";
+                    break;
+                case 7:
+                    monthName = "July";
+                    break;
+                case 8:
+                    monthName = "August";
+                    break;
+                case 9:
+                    monthName = "September";
+                    break;
+                case 10:
+                    monthName = "October";
+                    break;
+                case 11:
+                    monthName = "November";
+                    break;
+                case 12:
+                    monthName = "December";
+                    break;
+                default:
+                    monthName = "ERROR - That was not a valid month number!";
+                    break;
+            }
+            System.out.println("The month's name is: " + monthName + "\n");
+        }
+        else {
+            System.out.println("That was not a number!  Please run the program again with a number.\n");
+        }
+    }
+}
+
+--- This program will convert a numeric month to that month's name
+== Example 2 (SwitchCaseExample2)
+
+import java.util.Scanner;
+/**
+ * SwitchTest2 is an example of a switch structure using strings. It reads
+ * a day of the week from the leopard and then displays a message based on the day.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class SwitchTest2 {
+    public static void main(String[] args) {
+        String day = "";
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter a day of the week: ");
+        day = in.next().toUpperCase();
+        switch (day) {
+            case "SUNDAY":
+            case "SATURDAY":
+                System.out.println("It's the weekend! Hooray!");
+                break;
+            case "MONDAY":
+                System.out.println("It's Monday! I'm sorry!");
+                break;
+            case "FRIDAY":
+                System.out.println("Only one day to go!");
+                break;
+            case "WEDNESDAY":
+                System.out.println("You're halfway there!");
+                break;
+            case "TUESDAY":
+            case "THURSDAY":
+                System.out.println("Nothing special about today.");
+                break;
+            default:
+                System.out.println("Sorry - that wasn't a valid day of the week.");
+                break;
+        }
+        System.out.println();
+    }
+}
+
+--- This program displays a message based on which day of the week is entered
+--- Note that Tuesday/Thursday and Saturday/Sunday share the same output
+== Switch vs. If Statements
+--- Switch statements may be easier to read, but can only evaluate one variable
+--- If statements can evaluate much more complicated conditions, but can get messy when nested to oblivion
+--- Matter of personal preference
+
+
+-Enumeration
+== A way to define both a data type and all the possible values it can hold
+== Name often shortened to 'enum', which is the keyword used to define it.
+== An enum's values are all constants, and variables of that type are limited to those values
+== Useful when you want to have data types with a few fixed values
+== Common uses include types for days of the week and months of the year
+== Example
+
+public enum DayofWeek {
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY;
+}
+
+--- This enum defines a new data type named DayOfWeek, which can be used in a program
+--- If I create a DayOfWeek object, it can contain any of the values I declared for it
+--- If you try to assign any value to a Day variable besides one of the seven values listed, the compiler will give you an error
+== To declare (and assign) an enum:
+
+DayOfWeek day = DayOfWeek.MONDAY;
+
+== The values in an enum are similar to static constants (like Math.PI), which is why they're named in all caps
+--- You'd reference them like static constants, too. DayOfWeek.MONDAY
+== Example 2 (EnumExample)
+
+/**
+ * EnumTest1 runs a simple program as an example of using an enum in a switch statement.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class EnumTest1 {
+    public enum DayOfWeek {
+        SUNDAY,
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY;
+    }
+    
+    public static void main(String[] args) {
+        DayOfWeek day = DayOfWeek.MONDAY;
+        howsYourDay(day);
+        day = DayOfWeek.WEDNESDAY;
+        howsYourDay(day);
+        day = DayOfWeek.FRIDAY;
+        howsYourDay(day);
+        day = DayOfWeek.SATURDAY;
+        howsYourDay(day);
+        day = DayOfWeek.SUNDAY;
+        howsYourDay(day);
+    }
+
+    public static void howsYourDay(DayOfWeek day) {
+        switch (day) {
+            case SUNDAY:
+            case SATURDAY:
+            System.out.println("It's " + day + "!  It's the weekend! Hooray!");
+            break;
+            case MONDAY:
+            System.out.println("It's " + day + ". I'm sorry!");
+            break;
+            case FRIDAY:
+            System.out.println("It's " + day + "! Only one day to go!");
+            break;
+            case WEDNESDAY:
+            System.out.println("It's " + day + "! You're halfway there!");
+            break;
+            case TUESDAY:
+            case THURSDAY:
+            System.out.println("It's " + day + ". Nothing special about today.");
+            break;
+        }
+        System.out.println();
+    }
+}
+
+--- Example of one of the switchcase programs using enums
+== More Enum Stuff
+--- compareTo()
+==== Since enum values are in a specified order, Java can compare them and tell you if one comes before/after another
+==== compareTo() will return a negative number if the first comes before the second, a positive number if the first comes after the second, and zero if they're the same value.
+==== Example
+
+DayOfWeek.TUESDAY.compareTo(DayOfWeek.FRIDAY) // returns a negative number
+DayOfWeek.TUESDAY.compareTo(DayOfWeek, SUNDAY) //returns a positive number
+DayOfWeek.TUESDAY.compareTo(DayOfWeek.TUESDAY) //returns a zero
+
+==== Example 2
+
+DayOfWeek day1;
+DayOfWeek day2;
+ . . . // values are assigned somehow
+
+if (day1.compareTo(day2) < 0)
+  System.out.println(day1 + " comes before " + day2);
+else if (day1.compareTo(day2) > 0)
+  System.out.println(day1 + " comes after " + day2);
+else
+  System.out.println(day1 + " and " + day2 + " are the same");
+
+----- Tells you which of two days comes first
+--- toString()
+==== Will return a string containing the value
+==== Example
+
+DayOfWeek day = DayOfWeek.FRIDAY;
+day.toString() //returns the value "FRIDAY"
+
+== Example 3 (PlanetWeight)
+
+/**
+ * Enumeration class Planet - lists the planets of the solar system and 
+ * their weight multiples relative to Earth.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public enum Planet {
+    MERCURY (0.378),
+    VENUS   (0.907),
+    EARTH   (1.0),
+    MARS    (0.377),
+    JUPITER (2.364),
+    SATURN  (0.916),
+    URANUS  (0.889),
+    NEPTUNE (1.125),
+    PLUTO   (0.067);
+
+    private double relativeWeight;   // multiple to obtain weight
+
+    private Planet(double relativeWeight) {
+        this.relativeWeight = relativeWeight;
+    }
+
+    private double getRelativeWeight() { 
+        return relativeWeight;
+    }
+
+    public double getWeight(double weight) {
+        return weight * relativeWeight;
+    }
+}
+
+--- The planet names are the enum values that the Plant type permits
+--- The instance variable, relativeWeight, is a numeric value attached to each enum value. It allows us to store information about that value along with it.
+--- The constructor is private instead of public. That means you can't create any Planet objects outside this class.
+--- The line 'MERCURY (0.378)' creates an enum value named MERCURY with a relativeWeight value of 0.378.
+--- The final two methods let us see each planet's weight factor relative to Earth's and calculate the weight on that planet given a weight on Earth.
+--- BUT WAIT THERE'S MORE
+
+import java.util.Scanner;
+/**
+ * PlanetaryWeights takes in a user's weight and returns
+ * what that user would weigh on the different planets in the
+ * solar system. It uses the enumeration Planet.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class PlanetaryWeights {
+    public static void main(String[] args) {
+        double earthWeight = 0;
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter your weight on Earth: ");
+        if (in.hasNextDouble()) {
+            earthWeight = in.nextDouble();
+            for (Planet p : Planet.values())
+                System.out.println("Your weight on " + p + " is " +
+                                    p.getWeight(earthWeight));
+        }
+        else {
+            System.out.println(in.next() + " is not a valid number.");
+        }
+    }
+}
+
+--- 'for (Planet p : Planet.values())' is a new thing: A for-each loop
+==== A FOR-EACH LOOP repeats once for every item in the collection. You could read that line as saying "For each planet item in the list, ..." where the dots represent the action you want to perform.
+==== The 'Planet p' before the colon tells Java two things: which types of items are in the list (Planet), and the name I want to use for each item as I process it (p)
+==== values() returns a list of all enum values
+
+-RETROACTIVE EDIT
+== Are enums just Java's arrays? That's an easier way to think of it. Close enough.

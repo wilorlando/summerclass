@@ -1,0 +1,167 @@
+LESSON THREE JAVA SON
+
+-Primitive Data Types
+== Simple information format included in the Java language
+== Also knows as "built-in data types" or "basic data types"
+== Eight types (All of 'em)
+--- byte
+--- short
+--- int
+--- long
+--- float
+--- double
+--- char
+--- boolean
+== There they are. Confusingly. Here's a better way to classify them:
+
+- Numeric types
+== Numeric primitive datatypes store numbers. Duh.
+== The first FOUR store integers (negative, positive, or zero, whole numbers):
+--- byte (smaller than short, used if you're REALLY worried about storage, stores up to |127|)
+--- short (smaller than int, used only if you're worried about storage, stores up to |32,767)
+--- int (most standard and commonly used integer type)
+--- long (for values too large for int (higher than |2^31 - 1|, or |2,147,283,647|))
+== The next TWO store floating-point numbers (numbers that include decimal places)
+--- float (accurate to eight digits)
+--- double (accurate to sixteen digits; used more commonly than float)
+
+- Non-numeric types
+== Take a guess.
+== The first ONE holds any single character ("A" or "z" or "#" or "$") (Uses Unicode)
+--- char
+== The last ONE holds a simple true/false value (Duh)
+--- boolean
+
+- Using Primitive Data Types
+== Literals
+--- The way we express a fixed value in hava.
+--- Examples: 3.14, 'a', "pancakes"
+--- Seven types
+==== Integers
+==== Floating-Point Numbers
+==== Characters (a, B, @)
+==== Booleans (true/false)
+==== Binary (1 and 0)
+----- Java treats any number beginning with 0b or 0B as a binary numbers, and will allow only ones and zeros following it
+----- Example: 0b0101010. That's 42 in normalspeak.
+==== Hexadecimals (Base-16 numbers)
+----- Use digits 0 through 9 and A through F
+----- Any number beginning with 0x or 0X is a hexadecimal.
+----- Example: 0x13BD.
+==== Strings
+----- Not a primitive type, but Java include string literals because they're used so often
+----- Java treats any characters between double quotation marks to be a string
+----- Example: "This is a string"
+----- Declared with "String <string name>;", for whatever reason. Uppercase S because... screw your rules, apparently.
+--- Backslash in Literals
+---- Can add special characters to string/character literals by putting a backslash (\) in front ("He said, /'This is cool!/'")
+---- Can use \n for a newline character ("This is a string\non two lines!") and \t for a tab character
+== Named Values
+--- Data field that's been given a name
+--- Two types
+==== Variables
+----- Value that can change
+----- Basically a placeholder value
+----- Examples: x, y, z
+----- Must be declared (int i;) before use in code
+----- Assigned information to store with an assignment operator. Java's AO is the equal sign (i = 99;).
+----- Value on the RIGHT is always stored in the variable to the LEFT. Like RobotC. Again, duh.
+----- Must be initialized (given a starting value) before use in code. Can be initialized and declared in the same line (int i = 99;)
+----- Remember variables' naming conventions. "xCoordinate" is a valid name. "_VArIaBle2XxX" is not.
+==== Named Constants
+----- Name whose data value can't change
+----- Examples: Math.PI (always represents 3.141592653589793)
+----- Named in all uppercase letters with underscores between words (e.g. INCHES_PER_FOOT)
+----- Example of some constants' declarations:
+
+final int INT_CONSTANT = 0; // int constant
+final double DOUBLE_CONSTANT = 0.0; // double constant
+final String STRING_CONST = "Constant string";  // string constant
+
+----- Swell
+
+-Reference Data Types
+== Also known as "objects"
+== Difference from Primitives
+--- Primitives types all share one property. A primitive var's memory location contains the var's value. For an int with a value of zero, its memory location will contain the number zero.
+--- Reference variables DON'T contain their objects' actual data in their memory location, since object sizes can vary. Instead, the variable contains the reference (aka "memory address") of the object it refers to.
+--- Example: If I create a String object to hold this- "a string"- and declare a variable named s to refer to it, the variable's memory location won't contain the character string. Instead, it will contain the memory address of the String object that contains the character string.
+--- In that example, the actual String object has no name of its own. Instead there's a variable named s, and in its memory location is a reference to the String object.
+--- We usually don't treat primitive and reference variables much differently when programming. Just be aware of the difference. It will make a difference later in the course.
+--- Both variables and constants can be either data type (primitive or reference).
+
+-Wrapper Classes
+== Help manage primitive types
+== Provide a class that in many ways can act like a primitive type, yet is still a class.
+== Lets us use primitive values where objects are normally required, because Java lets you substitute primitive types for wrapper objects.
+== Each wrapper class (except Character) has a method to converts (or parse) strings into the wrapper's primitive type.
+== Examples:
+--- If I have a String variable v containing the value "50"... 
+--- Byte.parseByte(v) will give me a byte value of 50
+--- Integer.parseInt(v) will give me an int value of 50
+--- Double.parseDouble(v) will give me a double value of 50.0
+--- If v were to contain "true" or "false", Boolean.parseBoolean(v) would give back a Boolean value of true or false.
+--- Meaning of the Periods
+==== Tell Java that the part of the name after the period belongs to the part of the name before the period
+==== In Math.PI, PI is a constant within the Math class. parseInt() is a method inside the Integer class. Etc.
+==== Period sometimes called the Dot Operator
+== Each wrapper class also has a toString() method that converts a value from a primitive type into a String object.
+--- For example, Integer.toString(999) returns the string "999"
+== Each of the numeric wrapper classes can return the type's min and max value.
+--- For example. Byte.MIN_VALUE would tell you the smallest byte value.
+
+-Narrow & Wide Numeric Types
+== Short thing here
+== Numeric types are classified as wider or narrower than one another.
+== A type is wider than another if it can hold a broader range of values.
+== Numerics in order from narrowest to widest: byte, short, int, long, float, double.
+== Java will let you assign a narrower type to a wider variable, but not the reverse.
+== Example:
+
+int i = 0;
+double d = 0.0;
+d = i;  // this will work
+i = d;  // this won't work
+
+== Java would then return a "possible loss of precision" error for the fourth line, because double can hold values that an int can't.
+
+-Casting
+== Converting a value of one data type to a value of another data type
+== Two kinds:
+--- Implicit Casting
+==== Java will convert values that are safe to us. We don't specify the change to Java.
+--- Explicit Casting
+==== Java won't convert unsafe values unless we EXPLICITLY tell it to make the change.
+==== If the value in the wider type doesn't fit into the narrower type, Java just cuts off the part that doesn't fit.
+==== Example:
+
+int i = 0;
+double d = 0.0;
+d = i;  // this will work
+i = (int)d;  // this will work too
+
+==== Java doesn't round, it just throws out the part of the number that won't fit. Be careful.
+
+-String Concatenation
+== Can convert any of Java's primitive types to a character string
+== Process of linking multiple strings into one
+== Concatenation operator is the plus sign
+== Example:
+
+String s = "abc";
+String t = "DEF";
+int i = 99;
+double d = 9.999;
+
+String u = s + t;  // puts "abcDEF" into u
+u = s + i;         // puts "abc99" into u
+u = t + d;         // puts "DEF9.999" into u
+
+== Example2:
+
+System.out.print("The value in my int variable is ");
+System.out.println(myInteger);
+
+--- ...Can instead become...
+
+System.out.println("The value in my int variable is " + myInteger);

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=type\ degrees
+comment0.target=Temperature(java.lang.String,\ double)
+comment0.text=\n\ This\ constructor\ for\ Temperature\ sets\ the\ temperature\n\ values\ to\ the\ value\ in\ degrees,\ based\ on\ type\n\ \n\ @param\ type\ temperature\ scale\ to\ use\n\ @param\ degrees\ degrees\ Fahrenheit\n
+comment1.params=
+comment1.target=double\ getDegreesFahrenheit()
+comment2.params=
+comment2.target=double\ getDegreesCelsius()
+comment2.text=\n\ getDegreesCelsius\ retrieves\ the\ Celsius\ temperature\ value\n\ \n\ @return\ a\ double\ value\ containing\ the\ Celsius\ temperature\n
+comment3.params=
+comment3.target=double\ getDegreesKelvin()
+comment3.text=\n\ getDegreesKelvin\ retrieves\ the\ Kelvin\ temperature\ value\n\ \n\ @return\ a\ double\ value\ containing\ the\ Kelvin\ temperature\n
+comment4.params=degrees
+comment4.target=void\ setDegreesFahrenheit(double)
+comment4.text=\n\ The\ setDegreesFahrenheit\ method\ sets\ the\ Fahrenheit\ temperature\n\ \n\ @param\ degrees\ the\ fahrenheit\ value\ to\ store\n
+comment5.params=degrees
+comment5.target=void\ setDegreesCelsius(double)
+comment6.params=degrees
+comment6.target=void\ setDegreesKelvin(double)
+numComments=7
