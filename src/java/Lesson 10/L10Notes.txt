@@ -1,0 +1,315 @@
+LESSON TEN JAVA NOTES
+EVENTUALLY GOING ON GITHUB EDITION
+
+
+-Formatted Output
+== printf()
+--- Java's 'formatted print method', more flexible than print() and println()
+--- Can set the number of columns a field should take, how decimal places to use for numbers, etc
+--- Accepts multiple arguments
+==== The first argument is called the 'format string', which is just the thing you want to print. This is the only argument print() and println() will take.
+==== The format string contains 'format specifiers'. They describe the output format for data values.
+==== One or more data values always follow the format string
+==== printf() formats those data values and puts them into the output according to the format specifiers
+--- Example
+
+/**
+ * FirstFormatExample provides a quick example of printf() formatting.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class FirstFormatExample {
+    /**
+     * The main() method displays several strings and numbers in columns
+     */
+    public static void main(String[] args) {
+        System.out.printf("%-15s  %-15s  %13s%n","Name","Position",
+                          "Hourly Wage");
+        System.out.printf("%-15s  %-15s  %13s%n","---------------",
+                          "---------------","-------------");
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","John Doe",
+                          "Busboy",9.1);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Jane Doe",
+                          "Cook",10.7);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Jack Doe",
+                          "Architect",37.83);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Joan Doe",
+                          "Electronic Engr",45.79);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Barack Obama",
+                          "US President",192.31);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Tim Tebow",
+                          "Quarterback",302.88);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","LeBron James",
+                          "B-Ball Player",9168.27);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","David Beckham",
+                          "Soccer Player",22115.38);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Warren Buffett",
+                          "Investor",30218.76826923076923);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Bill Gates",
+                          "Software Guru",1682692.30769230769231);
+    }
+}
+
+==== This produces the following output:
+
+Name             Position           Hourly Wage
+---------------  ---------------  -------------
+John Doe         Busboy           $        9.10
+Jane Doe         Cook             $       10.70
+Jack Doe         Architect        $       37.83
+Joan Doe         Electronic Engr  $       45.79
+Barack Obama     US President     $      192.31
+Tim Tebow        Quarterback      $      302.88
+LeBron James     B-Ball Player    $    9,168.27
+David Beckham    Soccer Player    $   22,115.38
+Warren Buffett   Investor         $   30,218.77
+Bill Gates       Software Guru    $1,682,692.31
+
+==== The characters following the percent signs in printf() are FORMAT SPECIFIERS
+==== The first two format specifiers, '%-15s  %-15s', tell Java that the first two data elements (because there are two specifiers) should align with the left-hand margin (because of the '-'), will take up 15 output columns (because of the '15'), and will be string data (that's the 's').
+----- When we say a data elements takes up 15 output columns, that means it'll be at least 15 spaces wide (and longer if need be)
+==== The third specifier (in the first two calls) is '%13s'. This tells Java to expect a string (s) for the third argument and to reserve 13 columns (13) for it.
+----- These first three specifiers format the column headings
+==== The third specifier in the REMAINING calls is '%,12.2f'. It tells Java that:
+----- The third data element (because it's the third argument)...
+----- ...is a floating-point number (because of the 'f')...
+----- ...should display two decimal places (because of the '.2')...
+----- ...should use 12 output columns (because of the '12')...
+----- ...and should have comma separators between hundreds and thousands and millions and so on (because of the ',').
+==== The fourth specifier in each call is '%n', which inserts a newline character into the output. That means the output will show each call on its own line.
+==== Any test in the first string, besides the specifiers, displays as given. In this case, that includes spaces between columns and the dollar sign in front of the numbers.
+
+
+
+
+
+
+-How Format Specifiers Work
+== Format
+
+%[argument index$][flags][width][.precision]conversion
+
+--- Did that make less than a nothing of sense? No worries.
+--- Every specifier begins with a percent sign (%)
+--- An optional ARGUMENT INDEX tells Java which data element to get its data from, starting with 1$ for the first data element, 2$ for the second, and so on.
+==== This allows you to use data elements out of sequence or more than once.
+==== Without an index, frintf() uses the data values in sequence: The first value with the first specifier, the second value with the second specifier, and so on.
+--- Optional FLAGS tell Java how to modify the output. Common flags are:
+==== ',' to insert separators in numbers
+==== '-' to left-justify the data
+==== '0' to pad a number to the left with leading zeros
+==== '(' to enclose negative numbers in parentheses
+--- An optional WIDTH tells Java how many output columns to use for the data element as a minimum. If the data is wider, it'll use more columns.
+--- The optional PRECISION tells Java how many decimal places numeric floating-point output should hava. You'd use this to make data line up properly when working with wildly varying numbers.
+--- The only required part of the specifier is the CONVERSION.
+==== The CONVERSION tells Java what type of data element to convert to a string for output
+==== An uppercase conversion code, where allowed, will convert output to all uppercase
+==== Common Conversions
+----- 's' or 'S' for strings
+----- 'c' or 'C' for Unicode characters
+----- 'd' for decimal integers
+----- 'f' for floating-point numbers
+----- 't' or 'T' for date and time conversions
+----- 'n' to insert a newline character into the output
+----- '%' to put a percent sign in the output
+----- ...And many more! Google 'Java format specifier conversion list' or something.
+== Example
+
+/**
+ * SecondFormatExample provides more examples of printf() formatting.
+ *
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class SecondFormatExample {
+	/**
+	 * The main() method displays several format options for numbers.
+	 */
+	public static void main(String[] args) {
+		System.out.printf("Format is %%10f:    %10f%n", 123.45);
+        	System.out.printf("Format is %%10.0f:  %10.0f%n",123.45);
+       		System.out.printf("Format is %%10.1f:  %10.1f%n",123.45);
+        	System.out.printf("Format is %%10.2f:  %10.2f%n",123.45);
+        	System.out.printf("Format is %%10.3f:  %10.3f%n",123.45);
+        	System.out.printf("Format is %%010.3f: %010.3f%n",123.45);
+	}
+}
+
+--- Its output is this:
+
+Format is %10f:    123.450000
+Format is %10.0f:         123
+Format is %10.1f:       123.5
+Format is %10.2f:      123.45
+Format is %10.3f:     123.450
+Format is %010.3f: 000123.450
+
+--- This program takes one number and formats it six ways.
+--- Note that in the format string, a double percent sign shows up in the output as a single percent sign.
+--- The first format, %10f, tells Java to use 10 positions to display the output. Java pads the number on the right with zeros to fill the 10 spaces.
+--- The next four lines show from zero to three decimal places for the same number. Note, too, that Java rounds up when a digit of 5 or greater gets truncated.
+--- The last line shows the use of a 0 in the format specifier to pad the number on the left with zeros.
+
+
+
+
+-Date and Time Formatting with printf()
+== This example uses two new classes, Calendar and GregorianCalendar, to build an internal date/time object
+== Example
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import static java.util.Calendar.*;
+/**
+ * ThirdFormatExample provides more examples of printf() formatting.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class ThirdFormatExample {
+    /**
+     * The main() method displays several Date and time options
+     */
+    public static void main(String[] args) {
+        Calendar c = new GregorianCalendar();
+        System.out.printf("Today is %tA, %1$tB %1$te, %1$tY.%n", c);
+        System.out.printf("The time is %tl:%1$tM:%1$tS.%1$tL %1$Tp.%n", c);
+    }
+}
+
+--- Output:
+
+Today is Monday, July 20, 2015.
+The time is 6:01:55.052 PM.
+
+--- This code displays the day of the week, date, and time of day to the millisecond, using printf() to format the output nicely.
+--- In each statement, each specifier after the first one uses '1$' to reuse the first data argument.
+--- The conversions begin with 't' or 'T' to indicate a time/date conversion.
+--- The next character tells Java which format we want.
+==== In the first output statement, 'A' is the conversion for fully spelled-out day of the week.
+==== 'B' gives us the fully spelled-out month.
+==== 'e' gives us a 1-position or 2-position day of the month.
+==== 'Y' displays a four-digit year.
+--- In the next line, 'l' displays a 1-digit or 2-digit hour from 1 to 12.
+==== 'M' gives us a 2-digit minute
+==== 'S' gets a 2-digit second
+==== 'L' provides 3-digit milliseconds
+==== 'p' gives us an AM/PM indicator
+
+
+
+
+
+
+-The Java API
+== Java's API (Application Program Interface) is where you can get all the information you need to use the classes that come with Java.
+== You can Google Java's API to see all the stuff, by the way. Be warned: It's a lot of information and may be daunting.
+== When the API opens, you'll see three panels on the screen.
+--- The top-left panel shows a list of Java 'packages'
+==== In Java libraries, a PACKAGE is a group of related classes, subpackages, or both
+==== This list shows several: java.applet, java.awt, java.awt.color (a subpackage of java.awt), and so on.
+==== Over 200 packages deal with input and output (java.io), databases (java.sql), user interface components (java.awt and javax.swing(, and many more aspects of java
+==== Clicking a package name will display the list of classes in that package in the lower-left panel
+--- The lower-left panel shows a list of all classes in the selected package
+==== The opening view shows all the classes in all the packages
+--- The large panel on the right shows the details of any class selected in the lower-left panel
+==== The opening view here is another list of all the packages, along with a brief description of the purpose of each
+== If you're following along with the API site up, click on 'java.lang' in the top left panel
+--- The java.lang package automatically loads whenever you compile a Java class or program.
+--- These are some of the most commonly used Java classes, like String, System, and Math, along with 25 or so others.
+--- Still following along? Click on 'Math' in the lower left panel
+==== The first line in the right-hand panel, now 'java.lang', tells us what package the class (Math) is from
+==== The second line is the class name
+==== The next two lines show the INHERITANCE HIERARCHY for the class (We talked about inheritance stuff in Lesson 8)
+----- Ultimately every class in Java inherits from 'Object', but some classes have several other classes in between
+----- In this case, 'Object' is the only class that 'Math' inherits from
+----- If you ever need to know what classes any class inherits from, this is where to find out
+
+
+
+
+
+
+
+-Finding the Field Summary
+== (Still in java.lang.math in the API website, by the way. See above)
+== Scroll down in the large right-hand panel to find a FIELD SUMMARY
+--- A FIELD SUMMARY is a section that summarizes public fields of the class
+--- The Math class has two public fields: 'E' and 'PI'
+--- These two fields represent import mathematical values that you might use if you perform calculations involving circles (PI) or logarithms (E)
+
+
+
+
+
+-Method Summary
+== (Still in the java.lang.math stuff from above)
+== Scroll down again to the method summary section
+== It will show the first few of a long list of commonly used mathematical methods in the Math class
+== The list shows each method's type (the data type it returns), its name, its parameter list, and a brief description of what the method does
+== In the 'Math' class, they're all static, so we can call them by prefixing their names with the class name (Like Math.abs(-5), which would return 5)
+
+
+
+
+-Field and Method Details
+== (Still in java.lang.math. See above)
+--- The last two sections in the 'Math' class documentation are detailed descriptions about its fields and methods
+--- You'd get the same info by clicking on the field name or method name in the summary section
+--- Each of these sections describes the field or method in detail, starting with the exact details of how it's declared
+
+
+
+
+
+
+-String Class Documentation
+== Java's 'String' class is part of the java.lang package
+== String Objects Are Immutable
+--- Strings in Java are constant; Their values CANNOT be changed after they are created
+--- Example
+
+String s = "a string";
+   // . . . further down in my code . . .
+s = "another string";
+
+==== This looks like you're changing the value of the String object 's', right? Wrong.
+==== You actually just created a new object 's', replacing the old one. Great job.
+== String Objects Can Store Thousands of Characters
+--- Because Java uses Unicode for strings, you can write in Cyrillic and Hebrew and Arabic and shit.
+--- You can set values for unusual characters using a '\u' prefix
+==== Example
+
+String s = "\u03A3"
+
+----- This statement puts the Greek uppercase letter sigma into a String object
+== Exploring String's Field Summary
+--- You can find the Field Summary on the API website under String's documentation
+--- The only public field String has is a COMPARATOR OBJECT
+==== COMPARATORS allow alternate sort sequences when you're sorting lists using Java's 'Collections.sort()' method. This Comparator, specifically, allows you to ignore case when sorting.
+==== The CASE_INSENSITIVE_ORDER would make Unicode sort "abc" before "XYZ", for example
+--- Following the field summary (on the API website) is String's constructor summary
+==== If a class has public constructors (and most do), you'll find a list of them here. String has 15.
+--- The easiest way to create a String in a program is just how you'd expect
+==== Example
+
+String s = "my string";
+
+== Understanding String's Method Summary
+--- The Method Summary is just a list of methods available to that class (on the API website)
+--- The most commonly used String methods are probably equals() and equalsIgnoreCase()
+==== Example
+
+"abc".equals("ABC") //false
+"def".equalsIgnoreCase("DeF") //true
+
+--- Other Common String Methods (Look 'em up)
+==== compareTo()
+==== compareToIgnoreCase()
+==== contains()
+==== indexOf()
+==== length()
+==== toUpperCase()
+==== toLowerCase()
+==== substring()
