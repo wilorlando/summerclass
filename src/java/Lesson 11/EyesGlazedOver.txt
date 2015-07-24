@@ -1,0 +1,38 @@
+//These are paragraphs explaining how CreateFrame's main() method works
+//Namely, the first two lines
+//I'm storing this here for when it looks remotely like English to me
+
+
+
+
+
+WindowFrame's main() Method                                                                             
+
+
+
+The only thing left to do is set up a main() method that creates our WindowFrame object and displays it on-screen. So that's what we'll look at next.
+
+Probably the strangest and hardest part of this whole process to explain is the first two lines of the main() method, so we're going to talk about them for a bit. Just to save you a little scrolling, here's what they look like again:
+
+        SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+
+These lines involve several topics that we haven't discussed yet, and you probably don't have the background yet to understand in detail. So I'm going to give you an option here: If you like, you can accept that this is Oracle's recommended way to start a GUI app and skip to Chapter 3.
+
+Now if you're reading this paragraph I'm assuming you're a diehard "gotta-know-how-it-works" fanatic. So here goes . . .
+
+Java has the ability to multitask, or in technical terms, run multiple threads. A thread is an independent execution path. If I start a new thread and run some code on it, it can execute in parallel with, and completely independently of, the program that started it. That's an efficient approach in the world of multicore computers.
+
+Java maintains a thread it calls its AWT Event Dispatch Thread, and that thread should manage all GUI updates. The SwingUtilities class method named invokeLater() sets up an object to use that thread as soon as the thread is available. The only requirement is that the object be a Runnable object, which means it contains a run() method that the thread can call.
+
+The parameter for the call to invokeLater() in this case is an anonymous Runnable object, which you can create with the code new Runnable() { }. Within those brackets, you'd define a run() method that tells Java what this object should do. The run() method contains the code that will create our new window. I'll describe that code in Chapter 3.
+
+A full explanation of threads in general and the Event Dispatch Thread in particular would take more time and spaaaaaace than we have. But a couple of links in the Supplementary Material relate to threads and concurrency (the official term for running more than one thing in parallel).
+
+Let's move on to creating a Java window and displaying it.
+
+
+
+
+
+//GOOD LUCK FUTURE SELF

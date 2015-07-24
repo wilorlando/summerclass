@@ -1,0 +1,283 @@
+LESSON ELEVEN JAVA NOTES
+NEARING THE END EDITION
+
+
+-We've been working only with text-based programs so far
+-Java can work in two more environments:
+== A browser-based environment (as in, web browsers). Java can create small applications called 'applets' to run in a browser environment
+== A windowed environment, which is used to develop standalone applications like BlueJ.
+
+
+
+
+
+
+
+
+-Looking at a Java Window
+== A FRAME is a blank window
+--- It has a title bar with the minimize/fullscreen/exit buttons, a little border, and a blank space in the middle where stuff goes
+--- You can create a frame with Java
+--- Example (CreateFrame)
+
+import java.awt.Dimension;
+import java.awt.Insets;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
+public class WindowFrame extends JFrame {
+	public WindowFrame() {
+		setTitle("Window Frame");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 300);
+		setLocationRelativeTo(null); //centers window in display screen
+	}
+
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				WindowFrame dw = newWindowFrame();
+				dw.setVisible(true);
+				Dimension dim = dw.getSize();
+				Insets ins = dw.getInsets();
+				System.out.println("Window Size is " + dim.width + " by " + dim.height);
+                    		System.out.println("Window top inset is " + ins.top);
+                    		System.out.println("Window bottom inset is " + ins.bottom);
+                    		System.out.println("Window left inset is " + ins.left);
+                    		System.out.println("Window right inset is " + ins.right);
+                		}
+          		});
+	}
+}
+
+==== If that made no sense, no worries. Read on.
+==== GUI Tool Packages: AWT and Swing
+----- That example imported from two packages: java.awt (AWT stands for Abstract Window Toolkit) and javax.swing. These are Java's two main GUI tool packages.
+----- AWT contains many of the basic GUI and graphics classes that Java uses, and provides a Java interface to many of the operating system's GUI objects
+----- Most GUI programs import the complete packages, like this:
+
+import java.awt.*;
+import javax.swing.*;
+
+===== The instructor only imported individual classes in the example so it'd be easy to see which classes were used
+----- The Swing package is an update to Java's GUI tools that provides more consistent-looking GUIs across platforms. It uses Java GUI objects instead of those that various OS's provide.
+----- Many Swing classes have class names that start with 'J' to distinguish them from their AWT counterparts
+==== WindowFrame Class and Constructor (from the example above)
+----- As mentioned in Lesson 8, 'extends JFrame', at the end of the WindowFrame class declaration, just makes WindowFrame inherit all data elements and methods from JFrame in addition to what's added in WindowFrame
+----- Constructor
+====== (This is the 'public WindowFrame() {' stuff)
+====== Sets the window's parameters so it looks and behaves the way we want it to
+====== 'setTitle()' sets the title of the window (duh)
+====== 'setDefaultCloseOperation()' sets the behavior when the user clicks the red X in the top right (to close the window). Default minimizes but keeps the program running. 'JFrame.EXIT_ON_CLOSE' shuts down the program as well
+====== 'setSize()' sets the window's size. This window is 400 pixels wide by 300 pixels tall.
+====== 'setLocationRelativeTo()' tells Java where to open the window. Default is top left. 'null' centers it in the middle of the screen.
+==== WindowFrame main()
+----- Creates the WindowFrame object and displays it on-screen
+----- The first two lines of main(), 'SwingUtilities.invokeLater(new Runnable() {' and 'public void run() {', are hard to explain. eyes glazed over while reading. Basically, it's Oracle's recommended way to start a GUI app.
+====== For a more in-depth explanation... Sorry. Something about threads, which are independent execution paths.
+====== The 'what the shit is this' paragraphs have been included in 'EyesGlazedOver.txt'. Go there for mroe info.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Creating and Displaying the Java Window
+== (Still referring to the example above)
+== This line:
+
+WindowFrame dw = new WindowFrame();
+
+--- creates a WindowFrame variable named dw and a new WindowFrame object for it to refer to. After this statement executes: The window exists, but you can't see it on the display screen.
+== This line:
+
+dw.setVisible(true);
+
+--- sets the window's visible property to 'true', thereby making it display on-screen
+== The rest of the lines:
+
+Dimension dim = dw.getSize();
+Insets ins = dw.getInsets();
+System.out.println("Window Size is " + dim.width + " by " + dim.height);
+System.out.println("Window top inset is " + ins.top);
+System.out.println("Window bottom inset is " + ins.bottom);
+System.out.println("Window left inset is " + ins.left);
+System.out.println("Window right inset is " + ins.right);
+
+--- a) create a new Dimension variable and uses getSize() to get a Dimension object for it
+--- b) create a new Insets variable and object using getInsets (The Insets class describes the border of a GUI)
+--- c) print a bunch of information about the window
+
+
+
+
+
+
+
+
+
+-A Window with Stuff
+== Example (DrawingWindow)
+
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
+public class DrawingWindow extends JFrame {
+
+    public DrawingWindow() {
+        setTitle("Drawing Window");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        add(new DrawingSurface());
+
+        setSize(400, 300);
+        setLocationRelativeTo(null); // centers window in display screen
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    DrawingWindow dw = new DrawingWindow();
+                    dw.setVisible(true);
+                }
+            });
+    }
+}
+
+//(These are two separate classes, by the way)
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Insets;
+import javax.swing.JPanel;
+
+class DrawingSurface extends JPanel {
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        Graphics2D g2d = (Graphics2D) g;
+        Dimension size = getSize();
+        Insets insets = getInsets();
+        int w = size.width - insets.left - insets.right;
+        int h = size.height - insets.top - insets.bottom;
+        
+        g2d.setColor(Color.white);
+        g2d.fillRect(0,0,w,h);
+
+        g2d.setColor(Color.blue);
+        g2d.drawLine(2, 2, 2, h-3);
+        g2d.drawLine(2, h-3, w-3, h-3);
+        g2d.drawLine(w-3, h-3, w-3, 2);
+        g2d.drawLine(w-3, 2, 2, 2);
+
+        g2d.setColor(Color.red);
+        g2d.drawRect(5, 5, 180, 20);
+        g2d.drawString("The window's width is " + size.width + ".", 10, 20);
+
+        g2d.setColor(Color.black);
+        g2d.drawRect(5, 35, 185, 20);
+        g2d.drawString("The window's height is " + size.height + ".", 10, 50);
+
+        g2d.setColor(Color.gray);
+        g2d.drawRect(5, 65, 185, 20);
+        g2d.drawString("The window's left inset is " + insets.left + ".", 10, 80);
+
+        g2d.setColor(Color.green);
+        g2d.drawRect(5, 95, 195, 20);
+        g2d.drawString("The window's right inset is " + insets.right + ".", 10, 110);
+
+        g2d.setColor(Color.orange);
+        g2d.drawRect(5, 125, 185, 20);
+        g2d.drawString("The window's top inset is " + insets.top + ".", 10, 140);
+
+        g2d.setColor(Color.pink);
+        g2d.drawRect(5, 155, 210, 20);
+        g2d.drawString("The window's bottom inset is " + insets.bottom + ".", 10, 170);
+    }
+}
+
+--- Much to talk about. Buckle your pants.
+--- The line in the middle of DrawingWindow's constructor ('add(new DrawingSurface())') is using the add() method, which lets us add a visible component to our frame. In this case, we're adding the DrawingSurface object (the second class)
+--- DrawingSurface is a subclass of JPanel (because of 'extends JPanel'). JPanel is Swing's primary class for holding other display objects, and it'll provide the "surface" or "canvas" where we'll draw
+==== JPanel has a method named paintComponent(), which we'll OVERRIDE in order to do our drawing
+==== OVERRIDING a method means we'll replace the method we inherit with one we'll write
+==== Overriding is a common practice when we want our class to do things a bit differently than the class we're inheriting from
+==== paintComponent's parameter is a Graphics object named 'g'. We'll use that object to do our drawing; It's sort of our paintbrush.
+==== 'super.paintComponent(g)' calls the method in our parent class (JPanel) that we're overriding. We're essentially using it to clear/erase the panel, and paint an opaque background. The default JPanel is an empty space; Calling its paintComponent() clears out the whole thing. This'll be handy when we start to animate.
+==== 'Graphics2D g2d = (Graphics2d) g;' CASTS our Graphics object into a Graphics2D object
+----- CASTING is Java's process for changing one data type into another, as long as Java knows how to make the transition
+==== The next four lines just get the height and width of the DrawingSurface space. We now know how much room we have to work with, and are ready to draw.
+==== We'll do all our drawing by calling methods in the Graphics2D class
+----- The first two calls paint a white background
+====== The first line, 'g2d.setColor(Color.white)', sets the color we want to draw in. Java's Color class has a group of predefined colors set up in it. 'white' is one of them.
+====== The second line, 'g2d.fillRect(0,0,w,h)' calls the method that draws a filled rectangle with the color we just set, white. The first two arguments are the x-coord and y-coord of the top left corner of the rectangle. The corner will be at the origin of the window, the point (0,0). The third argument is the width of the rectangle; Since 'w' is the width of the window, the rectangle is as wide as the window. Ditto with the four argument, height, and 'h'/
+== Understanding Java's Coordinates
+--- The origin of the window, (0,0), is the top-left corner.
+--- As we move to the right, the x-coordinate increases
+--- As we move down, the y-coordinate increases
+--- Java measures coordinates in pixels
+--- The top-right corner is (w-1, 0), where w is the width of the window.
+--- The bottom-left corner is (0, h-1), where h is the height of the window
+--- The bottom-right corner is (w-1, h-1)
+--- This is the same as Python. I think. Probably. Carry on.
+
+
+
+
+
+
+
+
+
+
+
+-Drawing in the Window
+== (Referring to the example above)
+== These five lines:
+
+g2d.setColor(Color.blue);
+g2d.drawLine(2, 2, 2, h-3);
+g2d.drawLine(2, h-3, w-3, h-3);
+g2d.drawLine(w-3, h-3, w-3, 2);
+g2d.drawLine(w-3, 2, 2, 2);
+
+--- draw the blue line near the edge of the window
+--- The first line changes the drawing color to blue
+--- The next four lines use drawLine() to draw four lines around the edge of the window, 2 pixels from the edges.
+==== The Graphics2D drawLine() method will draw a line between any two points
+==== The first two arguments are the xy coords of one end of the line, and the third and fourth arguments are the coords for the other end of the line.
+==== So the first drawLine() draws a vertical line down the left edge of the window, 2 pixels away from the edge, at (2,2) and (2,h-3)
+== These three lines:
+
+g2d.setColor(Color.red);
+g2d.drawRect(5, 5, 180, 20);
+g2d.drawString("The window's width is " + size.width + ".", 10, 20);
+
+--- change the color to red and draw a red rectangle from the point (5,5) to (185,25), a width of 180 and a height of 20. drawRect() is just like fillRect(), except it draws the outline instead the full rectangle
+--- The third line, drawString(), paints text on the screen
+==== The first argument is the string we want to display
+==== The two numeric arguments are the coordinates of the left end of the string's BASELINE
+----- A font's BASELINE is like the line you learned to print on in grade school. You know the one. p's and q's and g's dip below it, while most other letters stand directly on top. That one.
+
+
+
+-I got really tired and apathetic at this point. Here are some more functions.
+== fillRect()
+== fillOval()
+== drawArc()
+== fillArc()
+== drawImage()
+== drawRoundRect() and fillRoundRect()
+== setStroke()
+== Also buzzwords like Polygon and Color and shit.
