@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 4 (Working with Objects)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 4 (Working with Objects)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 4 (Working with Objects)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/ld.js"></script><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 4 (Working with Objects)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/global.js"></script><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/course.js"></script><script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 4 (Working with Objects)_files/patch.css" media="all"><link href="./Lesson 4 (Working with Objects)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 4 (Working with Objects)_files/Lesson 4 (Working with Objects).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 4 (Working with Objects)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 4 (Working with Objects)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 4 (Working with Objects)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=4#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            4: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Working With Objects</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=4">Lesson 4</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 4 (Working with Objects)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 4 (Working with Objects)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 4 (Working with Objects)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 4 (Working with Objects)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 4 (Working with Objects)_files/header04.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<div class="jab-redbox">
+<p><strong>"Object-oriented programming is an exceptionally bad idea which could only have originated in California."</strong></p>
+<p align="right">—Edsger Dijkstra, Dutch computer scientist<strong></strong></p>
+</div>
+<p><strong>Introduction</strong></p>
+<p>In this lesson, we'll look at how Java uses classes and objects. Java is an <em>object-oriented programming</em> (OOP) language. They're not as bad as Professor Dijkstra made them out to be!</p>
+<p>OOP languages have two major benefits:</p>
+<ul type="disc">
+    <li><strong>They're</strong> <strong>modular.</strong> Years ago, programming was painstaking and solitary. One person generally wrote a program from beginning to end. But most of today's software is too complex for one person to build. OOP allows teams of programmers to crank out sophisticated programs in record time. </li>
+</ul>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>Each person on the team is responsible for one or more small parts (<em>modules</em>) of the project. For a word-processing program, one programmer might work on the spell checker. Another might import art. A third might develop buttons for the toolbar. Using an OOP language like Java makes it easier to combine modules into a working whole. </p>
+</blockquote>
+<ul type="disc">
+    <li><strong>They're reusable.</strong> Have you noticed that Microsoft<em> </em>applications look alike? The toolbar (or "ribbon") and spell checker in Word look and act like the ones in Excel. Features from word processors crop up in spreadsheets and presentations. And the Save As dialog box looks the same in most applications. </li>
+</ul>
+<p>OOP languages allow programmers to easily use modules in multiple applications. This can save tremendous amounts of time. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt=" " src="./Lesson 4 (Working with Objects)_files/L04-01.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>Because Java's an OOP language, it'll let you build programs around these reusable modules. And you don't have to hire a team of programmers. The folks at Oracle have given us hundreds of reusable modules to play with! </p>
+<p>These modules come with the Java Development Kit (JDK) you downloaded. The JDK has a collection of reusable modules that OOP calls <em>classes</em>. The collection of classes in the JDK is the <em>Java Class Library</em>. One recent count I saw listed over 3,900 classes in this library.</p>
+<p>You might be thinking, "What exactly are classes?" Good question! We'll get to that in the next chapter. </p>
+</blockquote>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Java Classes: What They Can Do For You</strong></p>
+<p>A class is almost any type in Java other than one of its primitive types. I've mentioned <font class="font_monospace_black">String</font>, a class that holds character strings, and we've talked about Java's wrapper classes that enclose primitive types. </p>
+<p>Another way to describe a class is a reusable module that you can use in your Java programs to save yourself time and hassle. Here are some examples:</p>
+<ul>
+    <li>If you want to display text, the <font class="font_monospace_black">System</font> class makes it easy using a default output device: your screen. We've used this class in our HelloWorld program and in other output statements in Lessons 2 and 3.
+    </li>
+    <li>A class named <font class="font_monospace_black">Color</font> will help you manufacture all the colors you want.
+    </li>
+    <li>If you want to draw circles, rectangles, and lines, use the <font class="font_monospace_black">Graphics</font> class to produce them. </li>
+</ul>
+<p>You're getting the picture, right? Java's classes provide us with many capabilities we won't have to create ourselves.</p>
+<p>My last part of the definition of a class is that it's a structure that contains information and actions that use the information. The information is the <em>attributes</em> of the class, or its data. The actions are its <em>methods</em>. (Some languages call methods "functions" or "subroutines.")</p>
+<p><strong>Creating Something From Nothing</strong> </p>
+<p>To write programs, we'll need to write our own classes from scratch. So we'll start by looking at what goes into a class and what we get out of it.</p>
+<p>A class is like a blueprint. It contains all the necessary information to build <em>objects</em> (just as a blueprint does for a building) and all the necessary actions those object can perform, such as opening windows or turning on air conditioning in a building. </p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt="A class is like a blueprint." src="./Lesson 4 (Working with Objects)_files/L04-02.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">A class is like a blueprint.</font></p>
+<p>As you work on programs in this course, you'll build objects from classes to accomplish your goals. In the same way a contractor uses a blueprint to build a house (or several similar houses), you'll use a class to build one or more similar objects in your program.</p>
+<p>Every time you use a class to create an object, you've created an <em>instance</em> of that class. (Instance is the formal OOP term; most programmers use the term <em>object</em> just as often. They mean the same thing.)</p>
+<p>Houses built from a single blueprint have similar features. In the same way, objects built from the same class have similar attributes and capabilities, even though the details may be different.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt=" Houses from a single blueprint" src="./Lesson 4 (Working with Objects)_files/L04-03.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> Houses from a single blueprint</font></p>
+<p>In the same way, if you use Java's <font class="font_monospace_black">JButton</font> class to create two clickable buttons in one window, you create two different instances of the class. Both buttons would have the same characteristics (attributes), including text, size, location, and color. But the values in those attributes would be different. One might have the text "OK" while the other might say "Cancel." They could be different sizes and colors, and they should be in different locations. </p>
+<p>You'd use the same actions (methods) to format the buttons, to set their colors, size, and location, and to change the text on each button.</p>
+<p>Before we talk about how to use classes, let's talk about their attributes and what's inside them.</p>
+<p><strong>What Are Class Attributes?</strong> </p>
+<p>In order for most classes to be useful, they have to contain information, or data. Data elements in a class are called its <em>attributes</em>. I'll usually say <em>data</em> since that's a shorter and familiar term, but you'll hear the term <em>attribute</em> as well.</p>
+<p>Since classes represent things (buttons, fonts, or windows, for example), attributes are data items that describe those things. <font class="font_monospace_black">JButton</font> objects, for example, have attributes that describe color, position, size, and text, among other things.</p>
+<p>When a programmer defines a class, he or she defines data elements that the class needs in order to work. And since the creator of a class knows how that class works, she or he is the best one to make sure that values in those attributes are valid and don't get changed by just anyone at any time. The creator of the class controls how the class changes and uses data values. So programmers usually hide attributes. </p>
+<p>If the programmer has hidden the data, you might wonder how another program or class is going to use it. The answer is the methods of the class. </p>
+<p>The author of a class is responsible for defining actions that are valid for the class. Some of those actions will allow other classes and programs to access the hidden data. And the actions of a class are defined in its methods.<strong> </strong></p>
+<p><strong>What Are Methods?</strong> </p>
+<p>Let's do a quick review. You know now that a Java program can use objects. You also know that each object gets built from a blueprint we call a class. Finally, you know that every object you create is an instance of that class, and that the object's hidden attributes describe it.</p>
+<p>If you want your program to be useful, you're going to need to make your objects do something! You do that with methods . . . step-by-step instructions that tell objects what they need to do to be useful.</p>
+<p>Suppose you want to write a Java program that displays a couple of buttons (or, if you want to get technical, instances of the <font class="font_monospace_black">JButton</font> class). Let's further suppose you want to change the buttons' colors, text colors, sizes, and locations. Since you don't know the names of the attributes in the objects that control these buttons, how do you change them? By using the buttons' methods.</p>
+<p>And how can you find out about the methods? Java has some documentation called its <em>API</em>, or application programmer interface. There's a link to the API in the Supplementary Material at the end of this lesson.</p>
+<p>If you look up the <font class="font_monospace_black">JButton</font> class in the API, you'll find methods called <font class="font_monospace_black">setBackground()</font>, <font class="font_monospace_black">setForeground()</font>, <font class="font_monospace_black">setLocation()</font>, and <font class="font_monospace_black">setSize()</font>, among others. These methods update the button's attributes for us. They also make sure that we don't use negative sizes, bad locations, or invisible colors. So methods set data values and protect attributes from errors. Since programmers want others to use methods, most methods are visible. </p>
+<p>I've included a lot of terms and definitions in this chapter. So before we move on to Chapter 3, try this game to see how well you remember them.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_hangman" align="middle" height="420" width="600" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L04-04.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L04-04.swf" height="420" width="600" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L04-04.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=4#skip_game_L04CH04_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><iframe src="about:blank" frameborder="0" height="420" scrolling="no" width="600" class="pf_interactivity"></iframe>
+<a name="skip_game_L04CH04_b" id="skip_game_L04CH04_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>Was the Hangman game difficult? It's hard to get a clear picture of how things like this work without actually seeing them in action and using them. So let's take an OOP approach to our HelloWorld project.<br>
+<br>
+</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Creating an OOP Version of HelloWorld</strong></p>
+<p>Creating an OOP version of HelloWorld may seem unreasonably complicated and complex. For simple Java projects like HelloWorld, it's much easier to write a short <font class="font_monospace_black">main()</font> method to display text.</p>
+<p>As soon as you get into larger projects, though, doing everything in one method becomes impossible. So we're going to write a simple project in an OOP form. I'm sure it will raise questions, so let me hear about them in the Discussion Area.</p>
+<p>Now on with the fun and games!</p>
+<p><strong>Designing a Class</strong> </p>
+<p>We want to design a class that's useful and reusable. All our HelloWorld program did was display the text "Hello, world!" We can't change its output unless we rewrite, recompile, and rerun it. I'd like our OOP approach to be more flexible, so let's design a class that will display any text we give it. Let's make it store the text internally, so the text can display more than once if we want it to.</p>
+<p>Someone who used this class to display text would create an object from our class, tell it what text to display, and then ask it to display the text.</p>
+<p>First start a new BlueJ project, just as you did for HelloWorld in Lesson 2. Choose the <strong>New Project</strong> option from the Project menu, and name it anything that makes sense to you; I named mine Text Writer. Once you've created your project, you'll have a BlueJ project window without any class icons in it. Here's a screenshot of what that might look like:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt="Text Writer project" src="./Lesson 4 (Working with Objects)_files/L04-05.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Text Writer project</font></p>
+<p>Now create your new class. I named mine TextWriter. Java names can't have any spaces in them, so I ran the words together. </p>
+<p>When you open the editor window for the class, you'll see the code that BlueJ generated. I'll leave it to you to update comments as you like, but remember that it's a good idea to keep them up to date.</p>
+<p>Once you have the editor open, delete all the code in the class so you have an empty class, like this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt=" TextWriter class declarationt" src="./Lesson 4 (Working with Objects)_files/L04-06.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> TextWriter class declaration</font></p>
+<p>I'm not going to show the whole window all the time; most of the time, I'll just show you the code, both to save spaaaaaace and so you can copy and paste it.</p>
+<p>Now let's write our class. We need attributes (data to work with) and methods to do the work. </p>
+<p>Let's start with attributes. What information do we need in our class? All we'll need for this class is someplace to keep the text we want to display. </p>
+<p><strong>Declaring Instance Data</strong> </p>
+<p>In Java, before we can save data in an attribute or get data out of it, we have to tell Java about it. We call that <em>declaring </em>the attribute. We'll often use these two types of data elements: <em>instance variables</em> and <em>local variables</em>. We already saw some local variables in Lesson 3, in the <font class="font_monospace_black">main()</font> method.</p>
+<p>An <em>instance variable</em> is a little different. It's a variable (or data attribute) that will exist in each and every instance (or object) of the class. That's how we'll want to store text in TextWriter, so if we create three TextWriter objects, each object will have its own variable and be able to store its own text.</p>
+<p>Declaring an instance variable is similar to declaring a local variable. We need to tell Java its type and its name.</p>
+<p>But an instance variable declaration also differs from a local declaration. You declare instance variables inside the class but outside the methods. Traditionally, instance variable declarations come first in a class, so we can see right at the top of the class what its data elements are.</p>
+<p>Instance declarations also have an additional modifier. They take this form:</p>
+<p class="font_monospace_black" align="center">&lt;access modifier&gt; &lt;data type&gt; &lt;variable name&gt;; </p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_hangman" align="middle" height="100" width="350" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L04-06a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L04-06a.swf" height="100" width="350" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L04-06a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=4#skip_game_L04CH06_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 4 (Working with Objects)_files/L04-06a.html" frameborder="0" height="100" scrolling="no" width="350" class="pf_interactivity"></iframe>
+<a name="skip_game_L04CH06_b" id="skip_game_L04CH06_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>An <em>access modifier</em> comes first, and it tells Java who can see and use a variable. The two most commonly used access modifiers in Java are <font class="font_monospace_black">public</font> and <font class="font_monospace_black">private</font>. We already saw <font class="font_monospace_black">public</font> when we defined <font class="font_monospace_black">HelloWorld </font>class and its <font class="font_monospace_black">main()</font> method. A <font class="font_monospace_black">public</font> modifier tells Java that any program or class can see and use the name. </p>
+<p>We just said in Chapter 2, though, that we want our attributes to be hidden. The <font class="font_monospace_black">private</font> modifier does that. It tells Java to allow users to see and use the variable inside this class only. </p>
+<p>After the access modifier, the variable's type and name appear just as they would in a local declaration. As you learned earlier, it's possible to store text in <font class="font_monospace_black">String</font> objects, so that will be our type. Since this variable will hold text we want to display, I'll call it <font class="font_monospace_black">textToDisplay</font>. </p>
+<p>The declaration should look like this:</p>
+<p class="font_monospace_black">private String textToDisplay; // the text to be displayed </p>
+<p>Once that's in our class, it'll look like this. (I'm not going to repeat all the comment lines in the interest of saving spaaaaaace.)</p>
+<div class="scroll">
+<pre>public class TextWriter {
+    private String textToDisplay; // the text to be displayed
+}
+</pre>
+</div>
+<p>In Lesson 3, we talked about initializing variables (giving each one a value that you may or may not change later). If you don't initialize instance variables, they have default values. </p>
+<ul>
+    <li>For numeric instance variables, the default is zero.
+    </li>
+    <li>For Booleans, the default is <font class="font_monospace_black">false</font>.
+    </li>
+    <li>For characters, it's the null character (which isn't printable).
+    </li>
+    <li>For reference variables like our <font class="font_monospace_black">String</font> variable here, it's <font class="font_monospace_black">null</font>, which means the variable has no object to refer to. </li>
+</ul>
+<p>Since I didn't initialize our variable in the declaration, it's a null reference. There's no string for it to refer to yet. We'll get a string for it later in the lesson.</p>
+<p><strong>Designing Methods</strong> </p>
+<p>Now that we've declared a data attribute for our class, we can move on to its methods, which define the actions our objects will be able to perform. </p>
+<p>When someone wants to run one of the actions, we say that person will <em>call the method</em> that does the action. When a program calls a method, the computer goes to that method, runs its action or actions, and then comes back (returns) to the place in the program that it was called from. We'll see the details of how to do that in the next chapter.</p>
+<p>In our <font class="font_monospace_black">TextWriter</font> class, I'm going to define three methods. Then I'm going to talk about <em>constructors</em>—special methods that initialize objects.</p>
+<p>The actions I want to include in <font class="font_monospace_black">TextWriter</font> are: </p>
+<ul>
+    <li>Storing a string value to be displayed
+    </li>
+    <li>Getting a stored value
+    </li>
+    <li>Displaying a stored value </li>
+</ul>
+<p>OOP divides methods into two categories. I'm not too fond of the category names, but I didn't get to choose them. The categories are <em>mutators</em> (methods that change the value in a variable) and <em>accessors</em> (methods that just look at values without changing them). The first method I described in the bulleted list is a mutator, and the other two are accessors. </p>
+<p>Now that we've got the terminology out of the way, we can get on with the design.</p>
+<p>Since we need to store a value before we can display it, we'll do the update method first. In Java, methods that set values are often called <em>set methods</em> or just <em>setters</em>, terms I prefer to "mutator." Programmers usually name them "set" and then the name of the variable. So I'll name this method <font class="font_monospace_black">setTextToDisplay()</font>. </p>
+<p>Let me show you the method, and then I'll explain its parts.</p>
+<div class="scroll">
+<pre>public void setTextToDisplay(String inputText) {
+    textToDisplay = inputText;
+}
+</pre>
+</div>
+<p>We already know what <font class="font_monospace_black">public</font> means—that anyone can call this method. The next word tells Java what type of value (if any) this method should return to anyone who calls it: The word <font class="font_monospace_black">void </font>tells you that this method won't return any value. </p>
+<p>Next comes the method name, <font class="font_monospace_black">setTextToDisplay</font>. Then there are parentheses. A name with parentheses after it is always a method name. </p>
+<p>Inside the parentheses, we tell Java what information we expect from whoever calls the method. The formal name is a <em>parameter list</em>. Each parameter has a type and a name. The list can have as many parameters as we need, separated by commas. </p>
+<p>We need only one piece of information for this method, and that's the text we want to store. So the type for our only parameter is <font class="font_monospace_black">String</font>. </p>
+<p>Besides a type, we also need to give Java a name for each parameter. In this case, I named the parameter <font class="font_monospace_black">inputText</font>. I said we should use descriptive names, and I'm trying to do that.&nbsp;&nbsp; </p>
+<p>That describes the first line of our method. We call that line the method's <em>signature</em>; it tells Java the method's name, what information it needs, and what information it returns. That's all a user needs to know in order to call it.</p>
+<p>Following the signature, we always use a left curly bracket to start the body of the method. In this case, the body is simple. It takes the text the user gives us in the parameter <font class="font_monospace_black">inputText </font>and stores it in the instance variable <font class="font_monospace_black">textToDisplay</font>. We'll use an assignment statement like those from Lesson 3:</p>
+<p class="font_monospace_black">textToDisplay = inputText;</p>
+<p>It copies the reference (or memory address) of the text string from <font class="font_monospace_black">inputText</font> into <font class="font_monospace_black">textToDisplay</font>, so it's no longer a null reference. Now it has a string to point to.</p>
+<p>That's all our method needs to do, so we close the method with a right curly bracket:</p>
+<div class="scroll">
+<pre>public class TextWriter {
+    private String textToDisplay; // the text to be displayed
+
+    public void setTextToDisplay(String inputText) {
+        textToDisplay = inputText;
+    }
+}
+</pre>
+</div>
+<p>The second method, which will give callers a copy of the stored string, is a <em>get method</em> or a <em>getter</em>. Here's the method:</p>
+<div class="scroll">
+<pre>public String getTextToDisplay() {
+    return textToDisplay;
+}
+</pre>
+</div>
+<p>The second word, <font class="font_monospace_black">String</font>, tells Java that whoever calls this method will get a text string back from it. There's no parameter list—just empty parentheses. This method doesn't need any information from its callers; they're asking us for something instead. </p>
+<p>The information we want to return is in the variable <font class="font_monospace_black">textToDisplay</font>. That's what the <font class="font_monospace_black">return</font> command does—it tells Java what to return to the caller. </p>
+<p>The third method displays the text, so I'll name it <font class="font_monospace_black">display</font>. Since we've seen an output statement in our first version of HelloWorld, this method shouldn't need any explanation:</p>
+<div class="scroll">
+<pre>public void display() {
+    System.out.println(textToDisplay);
+}
+
+</pre>
+</div>
+<p>With all three methods in it, our class looks like this:</p>
+<div class="scroll">
+<pre>public class TextWriter {
+    private String textToDisplay; // the text to be displayed
+
+    public void setTextToDisplay(String inputText) {
+        textToDisplay = inputText;
+    }
+
+    public String getTextToDisplay() {
+        return textToDisplay;
+    }
+
+    public void display() {
+        System.out.println(textToDisplay);
+    }
+}
+</pre>
+</div>
+<p>Let's move on to the next piece of the puzzle.</p>
+<p><strong>Writing Constructors</strong> </p>
+<p>Constructors have a special purpose: to initialize new objects. We use constructors whenever we create new objects. If we write a class without giving it a constructor, Java will supply a default constructor that initializes instance variables to default values.</p>
+<p>Some Java professionals argue that constructors aren't methods. But they're so similar to methods that I consider them methods with a special purpose. There's more information about this topic in the Supplementary Material if you're interested. </p>
+<p>I always write at least one constructor. First, that way I can tell Java what should go into each instance variable, even if it's the same value Java would put there. Second, it's good documentation for anyone else who reads my code; they'll see what to expect when they create a new object.</p>
+<p>Constructors look a bit different from other methods, though. First of all, the constructor's name is always the same as the class name. And a constructor doesn't have a return type—not even <font class="font_monospace_black">void</font>. </p>
+<p>Let me show you two constructors I'm proposing for our TextWriter class, and then I'll talk about them a bit more before we wrap up this lesson. </p>
+<div class="scroll">
+<pre>public TextWriter() {
+    textToDisplay = "";
+}
+
+public TextWriter(String inputText) {
+    textToDisplay = inputText;
+}
+</pre>
+</div>
+<p>
+</p><p>Please add these constructors to the top of the <font class="font_monospace_black">TextWriter</font> class, between</p>
+<pre><font style="font-size: 13px;">public class TextWriter {</font></pre>
+<font style="font-size: 13px;">
+</font>
+<pre><font style="font-size: 13px;">&nbsp;&nbsp;&nbsp; private String textToDisplay;</font></pre>
+<p>and</p>
+<p>&nbsp;&nbsp;&nbsp; <font class="font_monospace_black">public void setTextToDisplay(String inputText) {</font></p>
+That's where most programmers put constructors—after instance variables and before other methods. Java doesn't care where they are in the class as long as they're not inside other methods, but putting them here makes them easy to find.<p></p>
+<p>You can see that the two constructors have the same name. How does that work? Well, it's an example of what we call <em>overloading</em>. In Java I can overload methods and constructors, which means having two or more methods with the same name. Java tells them apart using their parameter lists, which have to be unique either in the number of parameters, the types of parameters, or both. </p>
+<p>The last time I looked, the <font class="font_monospace_black">String</font> class had 13 different constructors. They allow us to build strings from a lot of different sources.</p>
+<p>In the case of the constructors above, the first one (called the <em>default constructor</em> since it has no parameters) will initialize my object with an empty string. The second constructor will initialize the object with whatever string is in its parameter.</p>
+<p>It's up to the designer of a class to decide the best way to create objects, what information has to be there (if any), and how many constructors to include.</p>
+<p>On the other side of the issue, when I want to create an object from a class that has more than one constructor, which one I use is up to me. In the case of the <font class="font_monospace_black">TextWriter </font>class, I can call its default constructor to create an object with an empty string and add the text later using <font class="font_monospace_black">setTextToDisplay()</font>. Or I can create the object with text already in it by using the second constructor. </p>
+<p>How do we call constructors, anyway? And since constructors can run only when we create objects, how do we create objects? Read on!</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Creating Objects</strong></p>
+<p>We've built a class that can create objects, and these objects can store a text string using either the constructor or the <font class="font_monospace_black">setTextToDisplay()</font> method. The objects can also display the text string using the <font class="font_monospace_black">display()</font> method, and they can give the text string back to the caller using the <font class="font_monospace_black">getTextToDisplay()</font> method. But we still need to know how to tell the class we want to create objects and call their methods. </p>
+<p>Let's go back to BlueJ's main project window. You can close the editor window for <font class="font_monospace_black">TextWriter </font>now if you like; we won't need it for a few minutes. </p>
+<p>In BlueJ's main window, click the <strong>New Class</strong> button, and create another class named <font class="font_monospace_black">TextWriterDriver</font>. We'll put code in this class that will create and use <font class="font_monospace_black">TextWriter</font> objects. Programmers often do this to test classes they've written: They create another class whose only purpose is to use and test the first class. Classes of this second type are <em>driver classes</em>.</p>
+<p>A Create New Class dialog box will appear. Click <strong>OK</strong>, and a second icon should appear in the BlueJ window with the new name in it, something like this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt="BlueJ project window with multiple classes" src="./Lesson 4 (Working with Objects)_files/L04-09.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">BlueJ project window with multiple classes</font></p>
+<p>Your icons may be arranged differently, but you can drag them around anywhere you like.</p>
+<p>A project can include any number of classes. The largest BlueJ project I have on my computer right now has 63 classes in it. We won't need any large projects like that, but I just want you to know that you can have more than one class in a project.</p>
+<p>Now that you've created the class, open its editor window, and delete the code that BlueJ provided. Replace it with this code:</p>
+<div class="scroll">
+<pre>public class TextWriterDriver {
+    public static void main(String[] args) {
+
+    }
+}
+</pre>
+</div>
+<p>This will be an executable class since it has a <font class="font_monospace_black">main()</font> method. And that's the only method it will have, since its only purpose is to try out our <font class="font_monospace_black">TextWriter</font> class. </p>
+<p>To test everything, I'll need to try both constructors and all three methods. I'll also show you a little more about declaring variables. First I'll add this variable declaration inside the <font class="font_monospace_black">main()</font> method:</p>
+<p class="font_monospace_black">TextWriter tw1;</p>
+<p>This tells Java I want a variable in my <font class="font_monospace_black">main()</font> method: a variable named <font class="font_monospace_black">tw1</font> whose type is <font class="font_monospace_black">TextWriter</font>. I named it that because it's going to be my first TextWriter variable; I'll add another one in a little bit. This will be a local variable in <font class="font_monospace_black">main()</font>. Since the type is TextWriter, Java knows it'll refer to a TextWriter object.</p>
+<p>Since we want the variable to refer to an object, let's create one for it. Add this line after the last one:</p>
+<p class="font_monospace_black">tw1 = new TextWriter();</p>
+<p>We already talked about assignments, and that's what this statement is. But what does it assign to <font class="font_monospace_black">tw1</font>? </p>
+<p>The right half of the statement tells Java to create a new TextWriter object. (The <font class="font_monospace_black">new</font> keyword always creates a new object.) The class name, TextWriter, tells Java what type of object to create. And since I didn't put anything in the parentheses after it, Java knows to call the default constructor. So after that statement runs, I'll have an object to try out.</p>
+<p>Next, let's store some text in the object. We'll call the object's <font class="font_monospace_black">setTextToDisplay() </font>method to do that. When we call an object's method in Java, we tell Java what object to go to, and then which of its methods to run, like this:</p>
+<p class="font_monospace_black">tw1.setTextToDisplay("This line is from my first Java object!");</p>
+<p>The period between the object name and the method name is Java's <em>dot operator</em>. As I mentioned in Lesson 3, programmers use the dot operator to tell Java that the name after the dot is inside the name before the dot. In this case, the method<font class="font_monospace_black"> setTextToDisplay()</font> is part of the object that <font class="font_monospace_black">tw1</font> refers to. I've given the method a text string argument that should get stored in the object's <font class="font_monospace_black">textToDisplay</font> variable.</p>
+<p>How can I make sure it got stored there? How about by displaying the contents of the variable? I can do that by calling the object's <font class="font_monospace_black">display()</font> method, like this:</p>
+<p class="font_monospace_black">tw1.display();</p>
+<p>The <font class="font_monospace_black">display()</font> method doesn't accept any arguments, so I didn't enter any.</p>
+<p>Okay! That's enough to try out. If you run your <font class="font_monospace_black">main()</font> method, it should produce this output:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt="First object&#39;s display" src="./Lesson 4 (Working with Objects)_files/L04-10.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">First object's display</font></p>
+<p>If it doesn't, come over to the Discussion Area, and let me know.</p>
+<p>So far I've tested one constructor and two methods. Let's wrap this up with two more lines of code:</p>
+<p><font class="font_monospace_black">TextWriter tw2 = new TextWriter("And this line is from my second object.");</font></p>
+<p><font class="font_monospace_black">System.out.println(tw2.getTextToDisplay());</font></p>
+<p>The first line does three things: </p>
+<ul>
+    <li>The left side of the assignment declares a new <font class="font_monospace_black">TextWriter</font> variable named <font class="font_monospace_black">tw2</font>.
+    </li>
+    <li>The right side creates a new <font class="font_monospace_black">TextWriter</font> object using the second constructor, since I put a string argument into its parentheses.
+    </li>
+    <li>The assignment connects the variable to the object. </li>
+</ul>
+<p>I still have the <font class="font_monospace_black">getTextToDisplay() </font>method to try. The last line of code above calls that method for object <font class="font_monospace_black">tw2 </font>to retrieve its text, and whatever text it gives back will be displayed by the call to <font class="font_monospace_black">println()</font>. When you run the driver program, you should see this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 4 (Working with Objects)_files/pf_placeholder_a.png" border="0"><img alt="First and second objects&#39; display" src="./Lesson 4 (Working with Objects)_files/L04-11.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">First and second objects' display</font></p>
+<p>Please join me in Chapter 5 for a summary of classes, objects, and driver programs.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><b>Summary</b></p>
+<p>Today we've written our first class that's designed to create objects, and we've written a driver program that tests it. Along the way, you learned about instance variables, methods, constructors, parameters, and creating and using objects. </p>
+<p>I was in a fog for several lessons in my first programming class, so I just copied and edited the teacher's code. But once it sank in, I found out I really enjoyed it . . . and I still do almost 40 years later.</p>
+<p>Be sure to do the assignment, take your quiz, and drop by this lesson's Discussion Area.</p>
+<p>And in case it helps, here are the two complete classes we built today so you can compare your code to mine if you'd like. Again, I've left out comments in the interest of spaaaaaace.<br>
+<br>
+</p>
+<p><b>TextWriter Class</b> </p>
+<div class="scroll">
+<pre>public class TextWriter {
+    private String textToDisplay;
+
+    public TextWriter() {
+        textToDisplay = "";
+    }
+
+    public TextWriter(String inputText) {
+        textToDisplay = inputText;
+    }
+
+    public void setTextToDisplay(String inputText) {
+        textToDisplay = inputText;
+    }
+
+    public String getTextToDisplay() {
+        return textToDisplay;
+    }
+
+    public void display() {
+        System.out.println(textToDisplay);
+    }
+}
+</pre>
+</div>
+<p><b>TextWriterDriver Class</b> </p>
+<div class="scroll">
+<pre>public class TextWriterDriver {
+    public static void main(String[] args) {
+        TextWriter tw1;
+        tw1 = new TextWriter();
+        tw1.setTextToDisplay("This line is from my first Java object!");
+        tw1.display();
+        TextWriter tw2 = new TextWriter("And this line is from my second object.");
+        System.out.println(tw2.getTextToDisplay());
+    }
+}
+</pre>
+</div>
+<p><b>&nbsp;</b></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/7/docs/api/" target="_blank">
+                                Java Class Library API</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/7/docs/api/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Remember the application programmer interface I mentioned in Chapter 2? This link will take you to it. The API contains a detailed description of all the classes and libraries in Java.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.javaworld.com/jw-10-2000/jw-1013-constructors.html" target="_blank">
+                                Understanding Constructors: How Constructors Differ From Methods</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.javaworld.com/jw-10-2000/jw-1013-constructors.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            I mentioned in Chapter 3 that the differences between methods and constructors can be confusing. This article sheds some light on the subject.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.tutorialspoint.com/java/java_basic_datatypes.htm" target="_blank">
+                                Java's Basic Data Types Tutorial</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.tutorialspoint.com/java/java_basic_datatypes.htm</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page gives a good summary of Java's data types.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><b>Q:</b> Is there any difference between an object and an instance of a class?</p>
+<p><b>A:</b> No, the terms are synonymous. An object is an instance, and an instance is an object.<br>
+<br>
+<br>
+<b>Q:</b> Let's say I create and initialize a reference variable in one statement, like this:</p>
+<p class="font_monospace_black">TextWriter tw2 = new TextWriter("And this line is from my second object.");</p>
+<p>Why does the class name <font class="font_monospace_black">TextWriter</font> have to be on both sides of the assignment?</p>
+<p><b>A:</b> The class name on the left says what type the variable should be, and the class name on the right says what type of object to create. They're usually the same, but not always. </p>
+<p>In <i>Intermediate Java Programming</i>, I'll talk about why and when the class names can be different. (How's that for a shameless plug for my other Java class?)</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>Using the example from the lesson as a starting point, change both classes as follows:</p>
+<ul>
+    <li>Add a method to TextWriter that clears out the variable textToDisplay, leaving it as an empty string.
+    </li>
+    <li>Add code to TextWriterDriver that creates a third TextWriter object with some text in it and displays that text.
+    </li>
+    <li>To test your new method, add more code to TextWriterDriver that clears the text in the third TextWriter object and displays it again to show that there's no text left. </li>
+</ul>
+<p>Here are my solutions to this assignment. Try it out yourself before looking at mine, please.</p>
+<p align="center"><input name="" id="L04CH01_show_solution" value="Click here to see a sample solution for the TextWriter class." type="button" style="cursor: pointer;"></p>
+<div id="L04CH01-solution">
+<p>&nbsp;</p>
+<div class="scroll">
+<pre>public class TextWriter {
+    private String textToDisplay;
+
+    public TextWriter() {
+        textToDisplay = "";
+    }
+
+    public TextWriter(String inputText) {
+        textToDisplay = inputText;
+    }
+
+    public void setTextToDisplay(String inputText) {
+        textToDisplay = inputText;
+    }
+
+    public String getTextToDisplay() {
+        return textToDisplay;
+    }
+    
+    public void clearTextToDisplay() {
+        textToDisplay = "";
+    }
+
+    public void display() {
+        System.out.println(textToDisplay);
+    }
+}
+</pre>
+</div>
+</div>
+<p align="center"><input name="" id="L04CH02_show_solution" value="Click here to see a sample solution for the TextWriterDriver class." type="button" style="cursor: pointer;"></p>
+<div id="L04CH02-solution">
+<p>&nbsp;</p>
+<div class="scroll">
+<pre>public class TextWriterDriver {
+    public static void main(String[] args) {
+        TextWriter tw1;
+        tw1 = new TextWriter();
+        tw1.setTextToDisplay("This line is from my first Java object!");
+        tw1.display();
+        TextWriter tw2 = new TextWriter("And this line is from my second object.");
+        System.out.println(tw2.getTextToDisplay());
+        TextWriter tw3 = new TextWriter("This is the string I'll clear out later.");
+        tw3.display();
+        tw3.clearTextToDisplay();
+        System.out.println("The next line is the display after calling clearTextToDisplay:");
+        tw3.display();
+        System.out.println("The previous line was the display after calling clearTextToDisplay:");
+    }
+}
+</pre>
+</div>
+</div>
+<p>&nbsp;</p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=4#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='4';
+s.prop7='4';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=4';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=4';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 4 (Working with Objects)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 4 (Working with Objects)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933338918&amp;cv=7&amp;fst=1437933338918&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D4&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D4" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="about:blank" style="display: none;"></iframe></div></body></html>

@@ -1,0 +1,345 @@
+LESSON 12 JAVA NOTES
+APPARENTLY I CAN LOOK AT THE ALL-MULTIPLE-CHOICE EXAM BEFORE TAKING IT EDITION
+
+
+
+-Note: Most of this lesson deals with creating a program, Bouncing Ball.
+
+
+-Animating One Ball
+== Three classes, two of which are near-identical to the two from last lesson
+--- BouncingBallWindow creates a window
+--- BouncingBall provides a JPanel object to draw in (and now controls animation)
+--- Ball is new. It represents a single ball that can bounce around a window. It contains all the info on the ball's size, color, speed, and position. Also includes code to draw itself into the panel that BouncingBall manages.
+== Changes
+--- The only change to BouncingBallWindow was the inclusion of the 'pack()' method, which sets the size of thew window as small as it can be while still displaying all of its contents
+--- BouncingBall
+
+import java.awt.*;
+import javax.swing.*;
+/**
+ * BouncingBall produces a panel with one ball bouncing off the edges.
+ * 
+ * It uses a single instance of the Ball class to provide the bouncer.
+ */
+public class BouncingBall extends JPanel {
+    private final Dimension SIZE = new Dimension(600,450); // Panel size
+    private final int UPDATE_RATE = 24; // Number of refreshes per second
+    private Ball ball; // The beautiful bouncing ball
+    private Thread ballThread; // Animation thread
+    
+    /** 
+     * Constructor sets up the panel and starts its animation thread 
+     */
+    public BouncingBall() {
+        setPreferredSize(SIZE); // Set panel size
+        ball = new Ball(SIZE); // Create a Ball object
+        // Start the ball bouncing (in its own animation thread)
+        ballThread = new Thread() {
+                public void run() {
+                    while (true) { // Execute one update step
+                        // Calculate the balls' new positions
+                        ball.move();
+                        // Refresh the display
+                        repaint(); // Callback paintComponent()
+                        // Delay so the animation's not too fast
+                        try {
+                            Thread.sleep(1000 / UPDATE_RATE);  // milliseconds
+                        } catch (InterruptedException ex) { }
+                    }
+                }
+            };
+        ballThread.start();  // Start the animation
+    }
+
+    /** 
+     * Override the JPanel paintComponent method with our drawing of a ball 
+     */
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);    // Paint background
+        Graphics2D g2d= (Graphics2D) g;
+        // Draw the box's background
+        g2d.setColor(Color.BLACK);
+        g2d.fillRect(0, 0, getWidth(), getHeight());
+
+        // Draw the ball
+        ball.paint(g2d);
+    }
+}
+
+==== The first four lines declare two constants and two variables or use in the animation
+----- The first constant, SIZE, is a Dimension object we'll use to set the size of the panel
+----- The second constant, UPDATE_RATE, is an integer that will control how many times per second we refresh the screen. If done too often, ball moves too fast. If done too slow, ball moves too slowly. It's set at 24, a film's framerate. Filthy peasant.
+----- The first variable, 'ball', refers to a Ball variable that will control the movement and appearance of our ball.
+----- The second variable, 'ballThread', refers to the Thread object that will run our animation. Remember (from L11), Java recommends you do GUI work on a separate thread. Common practice to put animation into its own thread too.
+====== Animation needs its own thread. Why? General rule: Anything you do in a program that's independent, runs continually, and takes up a lot of processing time, should run in its own thread. This animation runs constantly and can run on its own without depending on other code. More complex animation takes up a lot of processing time, too.
+==== Constructor
+----- Uses setPreferredSize, which sets our panel's size
+----- Second line creates Ball object. It passes it the size of the screen so the ball will "know" how much room it has to bounce around in.
+----- Rest of constructor creates and starts the animation thread ballThread. Similar to the Runnable object we used in main() of first class. Also has run() method to control actions the thread will take. In this run() method, we want to repeatedly draw the window as long as the window is open, so we set up a simple while(true) loop to repeat until the user shuts the program.
+----- Call to the thread's start() method to start the animation running
+==== Animation Loop
+----- Calls ball's move() method to move the ball slightly
+----- Calls JPanel's repaint() method to redraw the window
+----- Calls a sleep() method to pause for a few milliseconds, to give the appearance of smoother movement
+==== paintComponent()
+----- Paints a black background in the window
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Ball: A Class That Moves Itself Around
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.Graphics2D;
+
+public class Ball {
+    private Dimension screenSize;
+    private Color color;
+    private Point location;
+    private int radius;
+    private int diameter;
+    private Point speed;
+
+    public Ball(Dimension screenSize) {
+        this.screenSize = screenSize;
+        radius = ((int)(Math.random()*40))+10;
+        diameter = radius * 2;
+        location = new Point(screenSize.width/2,screenSize.height/2);
+        color = new Color((float)Math.random(),(float)Math.random(),(float)Math.random());
+        speed = new Point(1 + ((int)(Math.random()*10)), 1 + ((int)(Math.random()*10)));
+    }
+
+    public int getDiameter() {
+        return diameter;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
+
+    public Point getSpeed() {
+        return speed;
+    }
+
+    public void move() {
+        location.setLocation(location.x+speed.x,location.y+speed.y);
+        if ( (location.x < 0) || (location.x > screenSize.width-diameter) )
+            speed.x = -speed.x;
+        if ( (location.y < 0) || (location.y > screenSize.height-diameter) )
+            speed.y = -speed.y;
+    }
+
+    public void paint(Graphics2D g2d) {
+        g2d.setColor(color);
+        g2d.fillOval(location.x, location.y, diameter, diameter);
+    }
+}
+
+== The Dimension variable screenSize holds the dimensions of the window that the ball can bounce around in. Needed to calculate our bounces correctly.
+== Variables
+
+private Dimension screenSize;
+    private Color color;
+    private Point location;
+    private int radius;
+    private int diameter;
+    private Point speed;
+
+--- The Color variable 'color' holds the ball's *gasp* color
+--- The Point variable 'location' holds the ball's current location. A Point object holds two numbers (xcoord and ycoord) that represent a point on the screen.
+--- The int variable 'radius' holds the radius of the ball
+--- The int variable 'diameter' holds the diameter of the ball. Not necessary to store both radius and diameter, but it simplifies expressions in the class
+--- The Point variable 'speed' holds the ball's current speed. Xcoord is the ball's horizontal speed (positive number moves right, negative left), and ycoord is vertical speed (positive down, negative up). Larger number, faster ball moves.
+== Ball's Constructor
+
+    public Ball(Dimension screenSize) {
+        this.screenSize = screenSize;
+        radius = ((int)(Math.random()*40))+10;
+        diameter = radius * 2;
+        location = new Point(screenSize.width/2,screenSize.height/2);
+        color = new Color((float)Math.random(),(float)Math.random(),(float)Math.random());
+        speed = new Point(1 + ((int)(Math.random()*10)), 1 + ((int)(Math.random()*10)));
+    }
+
+--- Requires a Dimension object from the caller that tells us how much room the ball has to bounce around in
+--- First line stores the value the caller gives us into instance variable
+==== The variable in the class and the constructor parameter have the same name. Since the parameter is a local variable in the constructor, using the name alone refers to the parameter. If "this." is in front, it refers to the object's variable.
+--- Second line sets the ball's radius. Uses a method from the Math class named 'random()'. Math's random() is a random number generator that returns a random 'double' value between zero and one. Calling it gets a value we can't predict.
+==== Once I get random number, multiply by 40 to get a random value between 0 and 40. Then add 10 to the result to get a random number between 10 and 50.
+==== Finally, the radius value is changed from a double to an int. Ball's radius is now between 10 and 50 pixels, and is a whole number.
+--- Third line multiplies 'radius' by two and stores the value as diameter.
+--- Fourth line sets the ball's starting location. Ball will always start at the middle of window.
+--- Fifth line sets ball's color value. Uses random() again for each of the three RGB values so that you get a different color every time you run the program.
+--- Sixth line of constructor sets the ball's speed. Will get two random numbers between 1 and 11. Because both numbers are always positive, the ball will always move down and to the right.
+== Ball's Other Methods
+
+    public int getDiameter() {
+        return diameter;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
+
+    public Point getSpeed() {
+        return speed;
+    }
+
+    public void move() {
+        location.setLocation(location.x+speed.x,location.y+speed.y);
+        if ( (location.x < 0) || (location.x > screenSize.width-diameter) )
+            speed.x = -speed.x;
+        if ( (location.y < 0) || (location.y > screenSize.height-diameter) )
+            speed.y = -speed.y;
+    }
+
+    public void paint(Graphics2D g2d) {
+        g2d.setColor(color);
+        g2d.fillOval(location.x, location.y, diameter, diameter);
+    }
+
+--- First four methods are simple get methods that allow a user to see what the ball's settings are. They haven't been used in this project.
+--- move()
+==== Moves the ball by calling the Point method setLocation() to set new coordinates. The new location is the previous one with the ball's speed values added to it. So the blal will move from 1 to 10 pixels up or down and from 1 to 10 pixels left or right to its new location
+==== Once the new location is set, the method checks to see if we've reached one of the boundaries of our window. It checks the xcoord first to see if we've moved off the left or right edge.
+==== Remember, the location in our Point is for the topleft corner of an imaginary box around the ball. So to check the left edge, we compare our xcoord with 0, the left boundary. To check the right edge, we compare the xcoord with the width of our window minus the ball's diameter. That way we'll change direction as soon as the right edge of our ball touches the right edge of the screen.
+==== If our xcoord is outside those values, we change our speed's sign so the ball will start moving in the opposite direction. After checking the xcoord, it also checks the ycoord against the screen's height using the same technique.
+--- paint()
+==== Takes the Graphics2D object (that our caller passes to us) and uses it to draw on.
+==== The first line sets the drawing color to the color of the blal, and the second draws an oval on the panel at the ball's location using the ball's diameter. Simple.
+
+
+
+
+
+
+
+
+
+
+
+
+-Animating Multiple Objects
+== Modifying 'Bouncing Ball' to include multiple balls in the window. New program's called 'Bouncing Balls'
+== Changes
+--- The Ball class doesn't need to change at all.
+--- BouncingBallWindow class only needs cosmetic changes. It's renamed to BouncingBallsWindow, and the title of the window is changed to 'Ten Bouncing Balls'.
+--- BouncingBall
+==== First off, the class name's changed to BouncingBalls.
+
+import java.awt.*;
+import java.util.Formatter;
+import javax.swing.*;
+/**
+ * BouncingBalls
+ * 
+ */
+public class BouncingBalls extends JPanel {
+    private final Dimension SIZE = new Dimension(600,450); // Panel size
+    private final int UPDATE_RATE = 30; // Number of refreshes per second
+    private Ball[] balls; // An array of 10 balls
+    private Thread ballThread; // Animation thread
+    
+    /** 
+     * Constructor sets up the panel and starts its animation thread 
+     */
+    public BouncingBalls() {
+        int index = 0;
+        setPreferredSize(SIZE);
+        balls = new Ball[10];
+        while (index < balls.length) {
+            balls[index] = new Ball(SIZE);
+            index++;
+        }
+        // Start the balls bouncing (in their own thread)
+        ballThread = new Thread() {
+                public void run() {
+                    while (true) { // Execute one update step
+                        // Calculate the balls' new positions
+                        int index = 0;
+                        while (index < balls.length) {
+                            balls[index].move();
+                            index++;
+                        }
+                        // Refresh the display
+                        repaint(); // Callback paintComponent()
+                        // Delay so the animation's not too fast
+                        try {
+                            Thread.sleep(1000/UPDATE_RATE);  // milliseconds
+                        } catch (InterruptedException ex) { }
+                    }
+                }
+            };
+        ballThread.start();  // Callback run()
+    }
+
+    /** 
+     * Override the JPanel paintComponent method with our drawing of 10 balls 
+     */
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);    // Paint background
+        Graphics2D g2d= (Graphics2D) g;
+        // Draw the box
+        g2d.setColor(Color.BLACK);
+        g2d.fillRect(0, 0, getWidth(), getHeight());
+
+        // Draw the balls
+        int index = 0;
+        while (index < balls.length) {
+            balls[index].paint(g2d);
+            index++;
+        }
+    }
+}
+
+==== The third declaration's changed from:
+
+private Ball ball; //The beautiful bouncing balls
+
+==== to
+
+private Ball[] balls; //An array of 10 balls
+
+----- ARRAY SIDEBAR
+====== An ARRAY is a data structure that holds a group of items of the same type. Once you've built the array, you can reference any item in it by creating an INDEX containing its position in the array.
+====== It's like having a shopping list and being able to check off the items one at a time in any order. I can check off the fourth item first if I find it at the store before the other items in the list, then the second item, then the twelfth, and so on.
+----- /ARRAY SIDEBAR
+----- In Java, square brackets indicate arrays. In the above declaration, Ball[] tells Java that the variable 'balls' refers to an array of Ball items instead of a single Ball object.
+----- Once I finish building the array, I can use the variable name followed by an index in square brackets to get a single Ball object out of the array. So balls[2] refers to a single Ball object, as does balls[5] or balls[7]
+----- Note on arrays: Java uses ZERO-BASED INDEXING. Just means that the first element of an array uses an index of 0, not 1.
+==== Added this as the first local variable of the constructor:
+
+int index = 0;
+
+==== Instead of one line that declares a single Ball object, we have this:
+
+balls = new Ball[10];
+while (index < balls.length) {
+	balls[index] = new Ball(SIZE)
+	index++;
+}
+
+----- The first line creates the array and tells Java how many items we want it to hold. (In this case it's ten, but it can be any number as long as you've got enough memory to hold the array)
+----- The while loop, starting in the second line, starts with a value of 0 in 'index', and the loop repeats until index reaches the end of the array. Every Java array has a field named 'length' that tells us the size of the array. So balls.length in this case contains the value 10, and th eloop repeats 10 times. Each time through the loop, a new Ball object gets created and stored in the next array location. The next line incremenets 'index', both so the loop will end and so we'll update the next array location.
+======= So, at the point we set up our animation thread, we have 10 Ball objects in our array ready to go, each with its own color/size/speed/location/direction
+==== In the animation thread, the only difference is that all 10 balls are moved before repainting instead of just one

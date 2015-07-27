@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=8 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 8 (Fixing Errors in Java)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 8 (Fixing Errors in Java)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/ld.js"></script><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 8 (Fixing Errors in Java)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/global.js"></script><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/course.js"></script><script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 8 (Fixing Errors in Java)_files/patch.css" media="all"><link href="./Lesson 8 (Fixing Errors in Java)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 8 (Fixing Errors in Java)_files/Lesson 8 (Fixing Errors in Java).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 8 (Fixing Errors in Java)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 8 (Fixing Errors in Java)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 8 (Fixing Errors in Java)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=8#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            8: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Fixing Errors in Java</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=8">Lesson 8</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 8 (Fixing Errors in Java)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 8 (Fixing Errors in Java)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 8 (Fixing Errors in Java)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 8 (Fixing Errors in Java)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 8 (Fixing Errors in Java)_files/header08.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<div class="jab-redbox">
+<p><strong>"The primary duty of an exception handler is to get the error out of the lap of the programmer and into the surprised face of the user. Provided you keep this cardinal rule in mind, you can't go far wrong."</strong></p>
+<p align="right">—Verity Stob</p>
+</div>
+<p><strong>Introduction</strong></p>
+<p>Our temperature conversion project meets all the requirements of our original design, but some aspects of it aren't ideal. The client class makes some of the decisions and does some of the processing regarding temperatures, and that should really be the job of the Temperature class.</p>
+<p>For example, our client class (TemperatureDriver) has to check each temperature's type before accepting it as valid and creating a Temperature object. What if we decided we needed to incorporate a fourth temperature scale into our class? Then we'd have to change the code of every program using our class—which could potentially be a large number—to check and process that fourth temperature type. </p>
+<p>Wouldn't it be better if our Temperature class could tell users whether a temperature type is valid before creating a Temperature object? We can do that, and in the next chapter, I'll show you how.</p>
+<p>We've also looked (briefly) at what happens when our program runs into an exception. Programmers say it <em>crashes</em> or <em>blows up</em>. Not very convenient, wouldn't you say? So in this lesson we'll look at how Java generates exceptions. You'll find out how we can intercept those exceptions and use them to make our programs more <em>robust</em> (less likely to "crash and burn").</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="A crash happens when program and user don&#39;t get along!" src="./Lesson 8 (Fixing Errors in Java)_files/L08-01.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">A crash happens when program and user don't get along!</font></p>
+<p>Let's get started!</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Class Methods</strong></p>
+<p>It would be helpful to know whether we have a valid temperature type and value before we create a Temperature object. It would be great to just call a method in the Temperature class that could tell us that. But all the methods we've used until now are part of objects, and it isn't possible to call them until you create an object.</p>
+<p>Fortunately, Java gives us a way to call a method without creating an object first.</p>
+<p>Java's <font class="font_monospace_black">static</font> keyword tells it that we want the method that it qualifies to belong to the class as a whole rather than being part of any particular object. Java can run a static class without creating any objects. This procedure is a <em>class method</em>, in contrast to the <em>instance methods</em> we've been using. </p>
+<p>Programmers often use class methods when they need an action that isn't tied to any specific object. For example, the methods in the Math class that we use for many mathematical operations are all static class methods. If I want to find the square root of the value in a variable <font class="font_monospace_black">x</font>, I can call <font class="font_monospace_black">Math.sqrt(x)</font> to do that. I don't have to create a Math object to call the method. Note that in the call, the method name has a prefix that reveals the class name rather than an object name.</p>
+<p>Java's standard <font class="font_monospace_black">main()</font> method is static. Now you know why Java requires the <font class="font_monospace_black">static</font> keyword for the <font class="font_monospace_black">main()</font> method.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 8 (Fixing Errors in Java)_files/L08-02.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>We're going to create a couple of static methods in the Temperature class. A user can call these to verify that the temperature type and temperature value are valid before the user creates a Temperature object.</p>
+<p>These two methods will need the <font class="font_monospace_black">static</font> keyword. The first method we'll add is one that will take a temperature type and tell the caller whether it's valid. So we need a parameter of type <font class="font_monospace_black">String</font> to receive the type value, and we need to return <font class="font_monospace_black">true</font> or <font class="font_monospace_black">false</font> to tell the user whether the type is valid. </p>
+<p>I've named my method <font class="font_monospace_black">isTypeValid()</font> to indicate what it does. Java methods that have names starting with "is" typically return <font class="font_monospace_black">boolean</font> values to answer the question their name asks.</p>
+<p>Here's the method, which other than the <font class="font_monospace_black">static</font> keyword should all be familiar to you. I won't spend a lot of time telling you more about it unless you have questions for me. Let me know in the Discussion Area if you do.</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public static boolean isTypeValid(String temperatureType) {
+    if (temperatureType.equalsIgnoreCase("C") ||
+            temperatureType.equalsIgnoreCase("F") ||
+            temperatureType.equalsIgnoreCase("K"))
+        return true;
+    else
+        return false;
+}
+</pre>
+</div>
+<p>
+We can use this to simplify this part of our <font class="font_monospace_black">main()</font> method:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if (temperatureType.equalsIgnoreCase("Q") ||
+        temperatureType.equalsIgnoreCase("C") || 
+        temperatureType.equalsIgnoreCase("F") ||
+        temperatureType.equalsIgnoreCase("K")) {
+    goodType = true;
+}
+</pre>
+</div>
+<p>
+by changing it to this:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if (temperatureType.equalsIgnoreCase("Q") ||
+        Temperature.isTypeValid(temperatureType)) {
+    goodType = true;
+}
+</pre>
+</div>
+<p>
+That makes things simpler, doesn't it? If we added a new temperature scale, we could just change the <font class="font_monospace_black">isTypeValid()</font> method to check the new type and not change the driver program at all!</p>
+<p>The second method is similar. I call it <font class="font_monospace_black">isTemperatureValid()</font>, and here it is:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public static boolean isTemperatureValid(String temperatureType, double temperature) {
+    if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; temperature &gt;= -273.15) ||
+        (temperatureType.equalsIgnoreCase("F") &amp;&amp; temperature &gt;= -459.67) ||
+        (temperatureType.equalsIgnoreCase("K") &amp;&amp; temperature &gt;= 0.0))
+        return true;
+    else
+        return false;
+}
+</pre>
+</div>
+<p>
+Similarly, we can simplify this part of <font class="font_monospace_black">main()</font>:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; inputTemperature &gt;= -273.15) ||
+    (temperatureType.equalsIgnoreCase("F") &amp;&amp; inputTemperature &gt;= -459.67) ||
+    (temperatureType.equalsIgnoreCase("K") &amp;&amp; inputTemperature &gt;= 0))
+    goodTemperature = true;
+</pre>
+</div>
+<p>
+like this:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if (Temperature.isTemperatureValid(temperatureType, inputTemperature))
+    goodTemperature = true;
+</pre>
+</div>
+<p>Doesn't that look better? The revised version didn't change the results, but it made the program more <em>encapsulated</em>, which is a fancy term for "self-contained." Now you or other programmers can add or remove temperature types with less work because the Temperature class handles more tasks.</p>
+<p>Just to keep you in sync, here's a new copy of the complete classes:</p>
+<p><strong>TemperatureDriver Class</strong></p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 4.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+        boolean moreTemperatures = true; // another temperature?
+        boolean goodType = false; // good temperature type?
+        boolean goodTemperature = false; // good temperature value?
+
+        while (moreTemperatures) {
+            System.out.print("Enter a temperature type (C=Celsius, " +
+                "F=Fahrenheit, K=Kelvin, Q=Quit): ");
+            temperatureType = keyInput.next();
+            goodType = false;
+            while ( ! goodType) {
+                if (temperatureType.equalsIgnoreCase("Q") ||
+                        Temperature.isTypeValid(temperatureType)) {
+                    goodType = true;
+                }
+                else {
+                    System.out.println("Invalid temperature type!");
+                    System.out.println("The type must be C, F, K, or Q.");
+                    System.out.print("Please enter the temperature type again: ");
+                    temperatureType = keyInput.next();
+                }
+            }
+            if (temperatureType.equalsIgnoreCase("Q")) { // quit
+                moreTemperatures = false;
+                System.out.println("\nProgram ended.");
+            }
+            else {
+                goodTemperature = false;
+                do {
+                    System.out.print("Enter a temperature: ");
+                    if (keyInput.hasNextDouble()) {
+                        inputTemperature = keyInput.nextDouble();
+                        if (Temperature.isTemperatureValid(temperatureType, inputTemperature))
+                            goodTemperature = true;
+                        else {
+                            System.out.println("You entered an invalid temperature!");
+                            System.out.println("It must be greater than absolute zero.");
+                            System.out.println("Try again.");
+                        }
+                    }
+                    else {
+                        System.out.println("You entered an invalid temperature!");
+                        System.out.println("It must be a numeric value.");
+                        System.out.println("Try again.");
+                        keyInput.next();
+                    }
+                } while ( ! goodTemperature);
+
+                t1 = new Temperature(temperatureType, inputTemperature);
+
+                if (temperatureType.equalsIgnoreCase("F")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Fahrenheit");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("C")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Celsius");
+                    System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("K")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Kelvin");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit.");
+                }
+            }
+        }
+    }
+}
+</pre>
+</div>
+<p>
+<strong>Temperature Class</strong></p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * Temperature converts temperature from Fahrenheit, Celsius,
+ * or Kelvin scale to the other two scales.
+ * 
+ * @author Merrill Hall 
+ * @version 4.0
+ */
+public class Temperature {
+    private double degreesFahrenheit;  // Fahrenheit temperature
+    private double degreesCelsius;  // Celsius temperature
+    private double degreesKelvin;  // Kelvin temperature
+
+    /**
+     * This constructor for Temperature sets the temperature
+     * values to the value from degrees, based on the type
+     *  
+     * @param  type      temperature scale to use
+     * @param  degrees   degrees Fahrenheit
+     */
+    public Temperature(String type, double degrees) {
+        if (type.equalsIgnoreCase("C"))
+            setDegreesCelsius(degrees);
+        else if (type.equalsIgnoreCase("F"))
+            setDegreesFahrenheit(degrees);
+        else if (type.equalsIgnoreCase("K"))
+            setDegreesKelvin(degrees);
+    }
+
+    public static boolean isTypeValid(String temperatureType) {
+        if (temperatureType.equalsIgnoreCase("C") ||
+                temperatureType.equalsIgnoreCase("F") ||
+                temperatureType.equalsIgnoreCase("K"))
+            return true;
+        else
+            return false;
+    }
+
+
+    public static boolean isTemperatureValid(String temperatureType, double temperature) {
+        if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; temperature &gt;= -273.15) ||
+                (temperatureType.equalsIgnoreCase("F") &amp;&amp; temperature &gt;= -459.67) ||
+                (temperatureType.equalsIgnoreCase("K") &amp;&amp; temperature &gt;= 0.0))
+            return true;
+        else
+            return false;
+    }
+
+    /**
+     * The setDegreesFahrenheit method sets the Fahrenheit temperature
+     * 
+     * @param  degrees The Fahrenheit value to store 
+     */
+    public void setDegreesFahrenheit(double degrees) {
+        degreesFahrenheit = degrees; // set Fahrenheit value
+        degreesCelsius    = (degreesFahrenheit - 32.0) * 5.0 / 9.0; // set Celsius value
+        degreesKelvin     = degreesCelsius + 273.15; // set Kelvin value
+    } 
+
+    /**
+     * The setDegreesCelsius method sets the Celsius temperature
+     * 
+     * @param  degrees The Celsius value to store 
+     */
+    public void setDegreesCelsius(double degrees) {
+        degreesCelsius    = degrees;
+        degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+        degreesKelvin     = degreesCelsius + 273.15;
+    }
+
+    /**
+     * The setDegreesKelvin method sets the Kelvin temperature
+     * 
+     * @param  degrees The Kelvin value to store 
+     */
+    public void setDegreesKelvin(double degrees) {
+        degreesKelvin     = degrees;
+        degreesCelsius    = degreesKelvin - 273.15;
+        degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+    }
+
+    /**
+     * getDegreesCelsius retrieves the Celsius temperature value
+     * 
+     * @return a double value containing the Celsius temperature
+     */
+    public double getDegreesCelsius() {
+        return degreesCelsius;
+    }
+
+    /**
+     * getDegreesKelvin retrieves the Kelvin temperature value
+     * 
+     * @return a double value containing the Kelvin temperature
+     */
+    public double getDegreesKelvin() {
+        return degreesKelvin;
+    }
+
+    /**
+     * getDegreesFahrenheit retrieves the Fahrenheit temperature value
+     * 
+     * @return a double value containing the Fahrenheit temperature
+     */
+    public double getDegreesFahrenheit() {
+        return degreesFahrenheit;
+    }
+}
+</pre>
+</div>
+<p>
+It's unlikely that we'd want to add another temperature scale to our conversion project. But class methods and fields have many practical applications. For instance, <font class="font_monospace_black">System.in</font>, <font class="font_monospace_black">System.out</font>, and <font class="font_monospace_black">System.err</font> are static class variables in the System class that provide us connections with default input and output devices. And <font class="font_monospace_black">Math.PI</font> and <font class="font_monospace_black">Math.E</font> are mathematical constants we can use without having to define them ourselves.</p>
+<p>There are many examples of static class elements in Java's classes. Class elements make your code more encapsulated and less likely to throw an exception. Still, exceptions are part of every programmer's life, so let's talk about how to handle them. Please join me in Chapter 3.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Exception Handling</strong></p>
+<p>An exception is an event that interrupts the normal flow of a program's logic. In this chapter, we'll talk a bit about the different types of exceptions you might encounter. Then we'll look at how to <em>trap</em> them so (we hope) they won't blow up your programs. Then you'll find out how to generate exceptions of your own if you need them. (Yes, you really might want to test your code by putting errors in it!)</p>
+<p>Perhaps the most common problem that programs encounter in programs is <em>unexpected input</em>. We mentioned that briefly in Lesson 7. For instance, if a user entered letters when we expected a number before we checked the input, we got an InputMismatchException that caused our program to crash. </p>
+<p>Java's <em>application program interface</em> (API) defines several exceptions, and every method's documentation includes (or should include) a list of the exceptions it might generate, or <em>throw</em>.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 8 (Fixing Errors in Java)_files/L08-03.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The terminology in Java for generating an exception is throwing it. A thrown exception will cause the program to blow up . . . unless the program handles it by trapping it. When we trap an exception and process it, programmers call that <em>catching</em> it. </p>
+<p>Let's look at some of the basic exception types.</p>
+<p>All Java exceptions are subclasses (more on that shortly) of the Exception classes, and they come in two basic "varieties": <em>runtime exceptions</em> and <em>checked exceptions</em>. </p>
+<p>Checked exceptions are ones that the compiler can check and catch; the compiler will make sure there's code to process them, either by handling the problem or by "passing the buck" to another level. </p>
+<p>Runtime exceptions typically come from programming problems that the compiler can't really anticipate. These include dividing by zero, using a null reference, or making invalid input that leads to an InputMismatchException. </p>
+<p>Even though it's a bit more work to set up checked exceptions than it is to set up runtime exceptions, we should use checked exceptions whenever possible for a couple of reasons. </p>
+<ul>
+    <li>Checked exceptions allow the compiler to make sure that programmers consider what should happen when the program encounters exceptions—and that reduces the likelihood of program crashes. </li>
+    <li>The exceptions themselves are their own documentation of what might happen, and they help a programmer to plan for problems. So they reduce system problems in the long run.</li>
+</ul>
+<p>I've probably thoroughly confused the issue by talking a lot about concepts we haven't dealt with yet! Let's get into how to use exceptions.</p>
+<p><strong>Catching Exceptions</strong></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 8 (Fixing Errors in Java)_files/L08-03a.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>Let's suppose someone wants to use our Temperature class, but the person just does what the first version of our driver program did: try to read a <font class="font_monospace_black">double</font> value for a temperature and not check it first. The user could end up with the same InputMismatchException I showed you in the last lesson. </p>
+<p>One way to deal with this problem is checking the input data first (which is a better, more efficient solution, by the way). But another way is to catch the exception. I'm going to show you how to do that, even though it's not a good practice to catch exceptions when we could have avoided them in the first place. </p>
+<p>To catch an exception, we need to put the code that can cause the exception into what's called a <em>try block</em>. Then the code that deals with exceptions goes into a <em>catch block</em>. Here's how our do-while loop could look for our InputMismatchException:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>do {
+    System.out.print("Enter a temperature: ");
+    try {
+        inputTemperature = keyInput.nextDouble();
+        if (Temperature.isTemperatureValid(temperatureType, inputTemperature)) {
+            goodTemperature = true;
+        }
+        else {
+            System.out.println("You entered an invalid temperature!");
+            System.out.println("It must be greater than absolute zero.");
+            System.out.println("Try again.");
+            keyInput.next();
+        }
+    }
+    catch (InputMismatchException e) {
+        System.out.println("You entered an invalid temperature!");
+        System.out.println("It must be a numeric value.");
+        System.out.println("Try again.");
+        keyInput.next();
+    }
+} while ( ! goodTemperature);
+</pre>
+</div>
+<p>
+What will happen when this code runs? The first line of the do-while loop asks the user for a temperature value. After the user enters a value, the next line will try to read a <font class="font_monospace_black">double</font> value, and if it's valid, it will proceed to the code that follows in the <font class="font_monospace_black">if</font> statement. The program will ignore the catch block.</p>
+<p>If, however, the user enters anything besides a valid number, the program will generate an InputMismatchException, and that in turn will cause the code in the catch block to execute. The program will ignore the remainder of the try block.</p>
+<p>So using that try-catch technique, we can achieve the same results as we did before. As I said, though, this code is considerably less efficient than calling the <font class="font_monospace_black">hasNextDouble()</font> method to check for numeric input, so this isn't the preferred way to code.</p>
+<p>Let's look at the general format of the try-catch mechanism, since this technique is important in trapping errors. Here's the general format:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>try {
+    // code that might cause an exception
+}
+catch (&lt;ExceptionType1&gt; name) {
+    // code for the first exception
+}
+catch (&lt;ExceptionType2&gt; name) {
+    // code for the second exception
+}
+ . . .
+finally {
+    // code to execute whether there's an exception or not
+}
+</pre>
+</div>
+<p>
+You can see from the format that it's possible to have more than one catch block for a try block. You can have as many as you need to trap all the exceptions the code in the try block might generate. And after all of them, a <em>finally</em> <em>block</em> is optional, but you can use it for code that the program should execute after the try block whether or not there's an exception.</p>
+<p>For example, a file-reading process might cause several exceptions. (I know we haven't looked at processing files yet, but I'm just using this as an example.) Among the exceptions a file process could encounter are FileNotFoundException, InputMismatchException, and IOException. </p>
+<p>Here's a try-catch-finally sequence to handle all those. Since the program should close a file regardless of whether the program encountered an error, I'll include a finally block with logic to close the file.</p>
+<p>
+</p>
+<div class="scroll">
+<pre>try {
+    // code to process file(s)
+}
+catch (FileNotFoundException e) {
+    // code to handle a missing file condition 
+}
+catch (InputMismatchException e) {
+    // code to handle invalid data conditions
+}
+catch {IOException e) {
+    // code to handle I/O exceptions
+}
+finally {
+    // code to close the file(s)
+}
+</pre>
+</div>
+<p>
+I mentioned that the compiler checks to make sure some exceptions get handled in a program. How would the compiler know which checked exceptions a method might throw? For that matter, now that you know how to handle exceptions, how do you know which exceptions to code for? Read on!</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Specifying and Throwing Exceptions</strong></p>
+<p>Methods in Java can tell the compiler that they may throw an exception if they contain code that can possibly throw one. In fact, if they can throw a checked exception, they must tell the compiler. They do that by using the <em>throws</em> <em>clause</em> in the method declaration.</p>
+<p>Here's what that looks like. Let's say I wanted to do some file processing as in the example at the end of Chapter 3, but I didn't want to have the try-catch logic in my method. I could pass any of the above exceptions to the next level like this, assuming my method has the name <font class="font_monospace_black">processFile()</font>:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public void processFile() throws FileNotFoundException, 
+                                 InputMismatchException,
+                                 IOException {
+    // code to process file(s)
+}
+</pre>
+</div>
+<p>
+</p>
+<p>That throws clause tells the compiler (and anyone else who wants to use the method) that I know my code may throw those exceptions, but I want the program to handle those at another level. So it won't check my method for try-catch logic to process them. And any programmer who wants to use the method can see that she or he will need to either handle the exception or pass it along to the next level in the <em>call stack</em>.
+</p>
+<p>Let me explain a bit about the call stack. It's the system's list of active methods. So if method A calls method B, and then B calls C, there are three methods in the call stack. </p>
+<p>If an exception occurs in C, and C doesn't handle it, Java moves on to B to see if there's a handler there. If not, it moves on to A. If there's no handler there, then the program will blow up. So Java searches every level for an exception handler before giving up and blowing up the program. Take a look at the following flow chart to see what I mean:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 8 (Fixing Errors in Java)_files/L08-04.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>When method C throws its exception, Java moves to the next level in the stack and checks method B for an exception handler. Since B doesn't have one, Java continues to the next level and checks method A for a handler. In this case, it finds one, and Java handles the exception there. Because of the exception, methods B and C don't return normally, so the exception handler will have to manage that detail too.</p>
+<p>Let's talk about a real example. The Scanner class, which we've used quite a bit, throws several checked exceptions. Some of its constructors that use file names, for example, may throw a FileNotFoundException, and some of its methods may throw an IOException. When we use those methods, should we handle the exception, or does it make more sense to pass it on to the next level? </p>
+<p>Deciding whether to handle an exception or pass it on to another method in the call stack is a design decision that you should base on the type of class you're designing and how people will use it. Since Scanner's constructors depend on their callers for file names, if a file isn't there, it makes sense to pass the error back to the caller through the throws clause.</p>
+<p>Now let's look at specifics in the Temperature class. As I mentioned, it's possible for a user of my Temperature class to be inconsiderate and call my constructor with a type or temperature that the user hasn't verified. What should I do about that? </p>
+<p>I can't just ignore it, and since this lesson is about exceptions, it's logical to assume that I might want to throw an exception. Now Java has lots of exceptions already defined, but where would the fun be if we just used one of those? Instead we're going to create new exception classes for our errors.</p>
+<p>The first error we'll consider is an invalid type, so we're going to set up a new exception class with a name that indicates exactly what the problem is. In your Temperature project, use BlueJ's <strong>New Class</strong> button to create a new class, and name it InvalidTemperatureTypeException. Once you've created the class, set it up like this:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * InvalidTemperatureTypeException is an exception that gets thrown if
+ * a user tried to create a Temperature object using an invalid temperature
+ * type.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class InvalidTemperatureTypeException extends Exception {
+    /**
+     * Default constructor for InvalidTemperatureTypeException objects. It
+     * creates an InvalidTemperatureTypeException with a null detail 
+     * message.
+     */
+    public InvalidTemperatureTypeException() {
+        super();
+    }
+
+    /**
+     * Constructor for InvalidTemperatureTypeException objects. It creates
+     * an InvalidTemperatureTypeException object with the specified detail
+     * message.
+     */
+    public InvalidTemperatureTypeException(String message) {
+        super(message);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>I'll mention several new things about this class, but we won't get into much detail about them as that would take too long and be too far off our main topic. I'll cover some of them in more detail in the <em>Intermediate Java Programming</em> course.
+</p>
+<p>This class has a new keyword in its first line: <font class="font_monospace_black">extends</font>. That keyword tells Java we want this class to be a <em>subclass</em>, or <em>child</em>, of another class (in this case, the class is Exception). So we can also say that Exception is the <em>superclass</em>, or <em>parent</em>, of this one. What that means is that our class will <em>inherit</em>, or have, all the attributes and methods that Exception has.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 8 (Fixing Errors in Java)_files/L08-05.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>We won't use any of Exception's attributes or methods in this case except for Exception's constructor, which we call with the call to <font class="font_monospace_black">super()</font>. The <em>super</em> <em>keyword</em> tells Java we want to refer to the superclass and call its constructor from this class's constructor. It's common for a constructor in a subclass to call the constructor of its superclass in this way. That's how we can initialize the superclass attributes properly. (As I mentioned in Lesson 3, when you initialize something, you give it a value to start off with, even though you may change that value later on.) </p>
+<p>In this case our default constructor creates an exception object with a null message. The other constructor allows its user to include an error message. In either case the exception name will display to let the user know what type of problem we ran into. In our Temperature class, we'll include an error message to specify more details. You'll see how we do that in just a minute.</p>
+<p>There's only one other thing I need to mention right now, and then we'll get on with using our exception class. </p>
+<p>You may have noticed that the only methods I defined for our InvalidTemperatureTypeException class are its constructors. That's because the class inherits from the Exception class all the other methods that it needs for an exception. If you'd like to see those methods, the list is available in the Java API documentation for Exception. The Exception class in turn inherits its methods from the Throwable class, so if you're looking into the details, you may need to look there too.</p>
+<p>Now back to our main discussion. How can we use this new exception class we've created? Let me show you in a new revision to Temperature's constructor:</p>
+<div class="scroll">
+<pre>/**
+     * This constructor for Temperature sets the temperature
+     * values to the value from degrees, based on the type
+     *  
+     * @param  type      temperature scale to use
+     * @param  degrees   degrees Fahrenheit
+     * @throws InvalidTemperatureTypeException if type is not C, F, or K
+     */
+    public Temperature(String type, double degrees) 
+            throws InvalidTemperatureTypeException {
+        if ( ! isTypeValid(type) )
+            throw new InvalidTemperatureTypeException(type + " is not a valid type.");
+        if (type.equalsIgnoreCase("C"))
+            setDegreesCelsius(degrees);
+        else if (type.equalsIgnoreCase("F"))
+            setDegreesFahrenheit(degrees);
+        else if (type.equalsIgnoreCase("K"))
+            setDegreesKelvin(degrees);
+    }
+</pre>
+</div>
+<p>I've made two changes to the constructor. The first is to add this clause to the method declaration so that the compiler will know that this method may throw the exception:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>throws InvalidTemperatureTypeException {</pre>
+</div>
+<p>Then I added this code to check the type and throw the exception if need be:
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if ( ! isTypeValid(type) )
+    throw new InvalidTemperatureTypeException(type + " is not a valid type.");
+</pre>
+</div>
+<p>
+</p>
+<p>This code creates a new InvalidTemperatureTypeException object with an appropriate message, and then it throws it to the calling code.
+</p>
+<p>If you've tried compiling your project at this point, you may have noticed that the driver program won't compile any longer! The compiler is now aware that our Temperature constructor can throw a checked exception, and our driver doesn't handle it or pass it on. Since the calling method is our <font class="font_monospace_black">main()</font> method, I'm going to add a try-catch handler for the exception. Java allows the <font class="font_monospace_black">main()</font> method to pass on a checked exception, but programmers consider that bad coding.</p>
+<p>We'll need to handle our exception when we call our constructor, so I'm going to put the constructor call and all the code after it into the try block and then catch our new exception. Here's what the new try-catch block in my driver program looks like:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>try {
+    t1 = new Temperature(temperatureType, inputTemperature);
+    if (temperatureType.equalsIgnoreCase("F")) {
+        System.out.println("You entered " + inputTemperature + 
+                           " degrees Fahrenheit");
+        System.out.println("which is " + t1.getDegreesCelsius() + 
+                           " degrees Celsius"); 
+        System.out.println("and " + t1.getDegreesKelvin() + 
+                           " degrees Kelvin.");
+    }
+    else if (temperatureType.equalsIgnoreCase("C")) {
+        System.out.println("You entered " + inputTemperature + 
+                           " degrees Celsius");
+        System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                           " degrees Fahrenheit"); 
+        System.out.println("and " + t1.getDegreesKelvin() + 
+                           " degrees Kelvin.");
+    }
+    else if (temperatureType.equalsIgnoreCase("K")) {
+        System.out.println("You entered " + inputTemperature + 
+                           " degrees Kelvin");
+        System.out.println("which is " + t1.getDegreesCelsius() + 
+                           " degrees Celsius"); 
+        System.out.println("and " + t1.getDegreesFahrenheit() + 
+                           " degrees Fahrenheit.");
+    }
+}
+catch (InvalidTemperatureTypeException e) {
+    System.err.println(e);
+    System.exit(1);
+}
+</pre>
+</div>
+<p>
+</p>
+<p>I needed to move all the code into the try block since it uses the variable <font class="font_monospace_black">t1</font>. The try block initializes the <font class="font_monospace_black">t1</font> variable, so the code using it needs to be in the try block too. If it isn't, the compiler will tell us that it might not be initialized.
+</p>
+<p>There's one more exception to add to our Temperature class, but I'll leave that for this lesson's assignment. Please join me in Lesson 5 for a summary.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>Here's a matching game to help you recall some of the terms we covered today.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_matchbox" align="middle" height="500" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L08-06.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L08-06.swf" height="500" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L08-06.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=8#skip_game_L08CH05_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 8 (Fixing Errors in Java)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 8 (Fixing Errors in Java)_files/L08-06.html" frameborder="0" height="500" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L08CH05_b" id="skip_game_L08CH05_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>I hope you did well on the game. If you had trouble, please post a message in the Discussion Area telling me which parts of the lesson you didn't understand. </p>
+<p>Error handling is always an issue in computer programs. The more robust a program is, the less likely it is to suffer a catastrophic failure. We've seen a couple of ways to improve our classes in this lesson: </p>
+<ul>
+    <li><strong>Static methods:</strong> A user can call these to check on values before trying to put values into an object. </li>
+    <li><strong>Throwing checked exceptions:</strong> We can do this when we run into a situation that just doesn't work. Throwing checked exceptions also horses a user to handle them when calling the methods, since the compiler makes sure to handle them somewhere in the call stack.</li>
+</ul>
+<p>Be sure to work through the assignment, and let me know in the Discussion Area if you have any questions about it or about the lesson.</p>
+<p>We're finally done with our temperature conversion example; I think we've just about beaten it to death, don't you? Next time we'll look at a couple of other Java features: its switch statement and enumerations. Those are different ways to check values and to branch to alternative actions based on the values. I'll see you in Lesson 9.</p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.javaworld.com/javaqa/2001-11/03-qa-1121-mrhappy.html?page=1" target="_blank">
+                                Mr. Happy Object Teaches Static Methods</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.javaworld.com/javaqa/2001-11/03-qa-1121-mrhappy.html?page=1</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is a lighthearted tutorial on static methods and variables. The first couple of pages include examples of a static variable and method that are easy to understand.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html" target="_blank">
+                                Understanding Instance and Class Methods</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is Oracle's tutorial page on class methods and variables.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/index.html" target="_blank">
+                                Lesson: Exceptions</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/essential/exceptions/index.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This tutorial describes Java's exception classes and exception handling in more detail than I've been able to give in this lesson.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://tutorials.jenkov.com/java-exception-handling/index.html" target="_blank">
+                                Java Exception Handling</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://tutorials.jenkov.com/java-exception-handling/index.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Here's a tutorial on Java exceptions. Software developer Jakob Jenkov provides another perspective on Java's exception handling features.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> The exception mechanism with its throw, try, and catch code seems complex. Isn't there some easier way to handle errors?</p>
+<p><strong>A:</strong> Yes and no. The easy way would be to prevent errors. But just as there are no perfect users, there are also no perfect programmers! </p>
+<p>Since we can't guarantee that programs will always prevent errors, we need to include some sort of error mechanism. And the exception mechanism is no more cumbersome than the ways that other computer languages handle errors. Also, the exception mechanism guarantees that somewhere in the call stack, the program must either handle an exception or pass it on to another level.<br>
+<br>
+</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>I'd like you to add one more new exception class to your temperature conversion project: InvalidTemperatureException. You'll throw that exception when your user tries to store a temperature that's below absolute zero in a Temperature object. Once you've created the exception class, you can use it in several ways.</p>
+<p>Here's one way to do it:</p>
+<ol>
+    <li>Create a new class in the project, <font class="font_monospace_black">InvalidTemperatureException</font>, that's similar to <font class="font_monospace_black">InvalidTemperatureTypeException</font> but has a different name.</li>
+    <li>Add a check for valid temperatures to each of the set methods: <font class="font_monospace_black">setDegreesFahrenheit()</font>, <font class="font_monospace_black">setDegreesCelsius()</font>, and <font class="font_monospace_black">setDegreesKelvin()</font>. You can use a call to <font class="font_monospace_black">isTemperatureValid()</font> to do that check. If the temperature isn't valid, throw an InvalidTemperatureException. You'll also need to add a throws clause to the method declaration.</li>
+    <li>Since the constructor could call the set method and get back the exception, you'll need to add the InvalidTemperatureException to the constructor's throws clause.</li>
+    <li>Last, add a second catch block to the try-catch code in the <font class="font_monospace_black">main()</font> method so that the program handles both exceptions there.</li>
+</ol>
+<p>If you'd like to compare your code to mine, here are the four classes in my project now.</p>
+<p align="center"><input name="" id="L08CH01a_show_solution" value="Click here to see TemperatureDriverClass" type="button" style="cursor: pointer;"></p>
+<div id="L08CH01a-solution">
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+import java.util.InputMismatchException;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 4.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+        boolean moreTemperatures = true; // another temperature?
+
+        while (moreTemperatures) {
+            System.out.print("Enter a temperature type (C=Celsius, " +
+                "F=Fahrenheit, K=Kelvin, Q=Quit): ");
+            temperatureType = keyInput.next();
+            if (temperatureType.equalsIgnoreCase("Q")) { // quit
+                moreTemperatures = false;
+                System.out.println("\nProgram ended.");
+            }
+            else {
+                System.out.print("Enter a temperature: ");
+                try {
+                    inputTemperature = keyInput.nextDouble();
+                }
+                catch (InputMismatchException e) {
+                    System.err.println(e + ": You entered an invalid temperature!" +
+                        "\nIt must be a numeric value.");
+                    System.exit(1);
+                }
+
+                try {
+                    t1 = new Temperature(temperatureType, inputTemperature);
+                    if (temperatureType.equalsIgnoreCase("F")) {
+                        System.out.println("You entered " + inputTemperature + 
+                            " degrees Fahrenheit");
+                        System.out.println("which is " + t1.getDegreesCelsius() + 
+                            " degrees Celsius"); 
+                        System.out.println("and " + t1.getDegreesKelvin() + 
+                            " degrees Kelvin.");
+                    }
+                    else if (temperatureType.equalsIgnoreCase("C")) {
+                        System.out.println("You entered " + inputTemperature + 
+                            " degrees Celsius");
+                        System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                            " degrees Fahrenheit"); 
+                        System.out.println("and " + t1.getDegreesKelvin() + 
+                            " degrees Kelvin.");
+                    }
+                    else if (temperatureType.equalsIgnoreCase("K")) {
+                        System.out.println("You entered " + inputTemperature + 
+                            " degrees Kelvin");
+                        System.out.println("which is " + t1.getDegreesCelsius() + 
+                            " degrees Celsius"); 
+                        System.out.println("and " + t1.getDegreesFahrenheit() + 
+                            " degrees Fahrenheit.");
+                    }
+                }
+                catch (InvalidTemperatureTypeException e) {
+                    System.err.println(e);
+                    System.exit(1);
+                }
+                catch (InvalidTemperatureException e) {
+                    System.err.println(e);
+                    System.exit(1);
+                }
+            }
+        }
+    }
+} 
+
+</pre>
+</div>
+</div>
+<br>
+<p align="center"><input name="" id="L08CH01b_show_solution" value="Click here to see Temperature Class" type="button" style="cursor: pointer;"></p>
+<div id="L08CH01b-solution">
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * Temperature converts temperature from Fahrenheit, Celsius,
+ * or Kelvin scale to the other two scales.
+ * 
+ * @author Merrill Hall 
+ * @version 4.0
+ */
+public class Temperature {
+    private double degreesFahrenheit;  // Fahrenheit temperature
+    private double degreesCelsius;  // Celsius temperature
+    private double degreesKelvin;  // Kelvin temperature
+
+    /**
+     * This constructor for Temperature sets the temperature
+     * values to the value from degrees, based on the type
+     *  
+     * @param  type      temperature scale to use
+     * @param  degrees   degrees Fahrenheit
+     * @throws InvalidTemperatureTypeException if type is not C, F, or K
+     */
+    public Temperature(String type, double degrees) 
+            throws InvalidTemperatureTypeException, InvalidTemperatureException {
+        if ( ! isTypeValid(type) )
+            throw new InvalidTemperatureTypeException(type + " is not a valid type.");
+        if (type.equalsIgnoreCase("C"))
+            setDegreesCelsius(degrees);
+        else if (type.equalsIgnoreCase("F"))
+            setDegreesFahrenheit(degrees);
+        else if (type.equalsIgnoreCase("K"))
+            setDegreesKelvin(degrees);
+    }
+
+    /**
+     * The isTypeValid method checks a temperature type to make sure it's valid.
+     * 
+     * @param  temperatureType the temperature type to validate
+     * @return true if the type is C, F, or K; false otherwise
+     */
+    public static boolean isTypeValid(String temperatureType) {
+        if (temperatureType.equalsIgnoreCase("C") ||
+        temperatureType.equalsIgnoreCase("F") ||
+        temperatureType.equalsIgnoreCase("K"))
+            return true;
+        else
+            return false;
+    }
+
+    /**
+     * The isTemperatureValid method checks a temperature to make sure it's valid.
+     * 
+     * @param  temperatureType the temperature type
+     * @param  temperature the temperature to validate
+     * @return true if the temperature is absolute zero or above; false otherwise
+     */
+    public static boolean isTemperatureValid(String temperatureType, double temperature) {
+        if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; temperature &gt;= -273.15) ||
+        (temperatureType.equalsIgnoreCase("F") &amp;&amp; temperature &gt;= -459.67) ||
+        (temperatureType.equalsIgnoreCase("K") &amp;&amp; temperature &gt;= 0.0))
+            return true;
+        else
+            return false;
+    }
+
+    /**
+     * The setDegreesFahrenheit method sets the Fahrenheit temperature
+     * 
+     * @param  degrees The Fahrenheit value to store 
+     */
+    public void setDegreesFahrenheit(double degrees)
+            throws InvalidTemperatureException {
+        if (!isTemperatureValid("F", degrees))
+            throw new InvalidTemperatureException(degrees + " is an invalid Fahrenheit value.");
+        degreesFahrenheit = degrees; // set Fahrenheit value
+        degreesCelsius    = (degreesFahrenheit - 32.0) * 5.0 / 9.0; // set Celsius value
+        degreesKelvin     = degreesCelsius + 273.15; // set Kelvin value
+    } 
+
+    /**
+     * The setDegreesCelsius method sets the Celsius temperature
+     * 
+     * @param  degrees The Celsius value to store 
+     */
+    public void setDegreesCelsius(double degrees)
+            throws InvalidTemperatureException {
+        if (!isTemperatureValid("C", degrees))
+            throw new InvalidTemperatureException(degrees + " is an invalid Celsius value.");
+        degreesCelsius    = degrees;
+        degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+        degreesKelvin     = degreesCelsius + 273.15;
+    }
+
+    /**
+     * The setDegreesKelvin method sets the Kelvin temperature
+     * 
+     * @param  degrees The Kelvin value to store 
+     */
+    public void setDegreesKelvin(double degrees)
+            throws InvalidTemperatureException {
+        if (!isTemperatureValid("K", degrees))
+            throw new InvalidTemperatureException(degrees + " is an invalid Kelvin value.");
+        degreesKelvin     = degrees;
+        degreesCelsius    = degreesKelvin - 273.15;
+        degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+    }
+
+    /**
+     * getDegreesCelsius retrieves the Celsius temperature value
+     * 
+     * @return a double value containing the Celsius temperature
+     */
+    public double getDegreesCelsius() {
+        return degreesCelsius;
+    }
+
+    /**
+     * getDegreesKelvin retrieves the Kelvin temperature value
+     * 
+     * @return a double value containing the Kelvin temperature
+     */
+    public double getDegreesKelvin() {
+        return degreesKelvin;
+    }
+
+    /**
+     * getDegreesFahrenheit retrieves the Fahrenheit temperature value
+     * 
+     * @return a double value containing the Fahrenheit temperature
+     */
+    public double getDegreesFahrenheit() {
+        return degreesFahrenheit;
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p align="center"><input name="" id="L08CH01c_show_solution" value="Click here to see InvalidTemperatureTypeException Class" type="button" style="cursor: pointer;"></p>
+<div id="L08CH01c-solution">
+<div class="scroll">
+<pre>/**
+ * InvalidTemperatureTypeException is an exception that gets thrown if
+ * a user tried to create a Temperature object using an invalid temperature
+ * type.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class InvalidTemperatureTypeException extends Exception {
+    /**
+     * Default constructor for InvalidTemperatureTypeException objects. It
+     * creates an InvalidTemperatureTypeException with a null detail 
+     * message.
+     */
+    public InvalidTemperatureTypeException() {
+        super();
+    }
+
+    /**
+     * Constructor for InvalidTemperatureTypeException objects. It creates
+     * an InvalidTemperatureTypeException object with the specified detail 
+     * message.
+     */
+    public InvalidTemperatureTypeException(String message) {
+        super(message);
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p align="center"><input name="" id="L08CH01d_show_solution" value="Click here to see InvalidTemperatureException Class" type="button" style="cursor: pointer;"></p>
+<div id="L08CH01d-solution">
+<div class="scroll">
+<pre>/**
+ * InvalidTemperatureException is an exception that gets thrown if
+ * a user tried to create a Temperature object using an invalid 
+ * temperature, which is one below absolute zero.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class InvalidTemperatureException extends Exception {
+    /**
+     * Default constructor for InvalidTemperatureException objects. It
+     * creates an InvalidTemperatureException with a null detail 
+     * message.
+     */
+    public InvalidTemperatureException() {
+        super();
+    }
+
+    /**
+     * Constructor for InvalidTemperatureException objects. It creates
+     * an InvalidTemperatureException object with the specified detail 
+     * message.
+     */
+    public InvalidTemperatureException(String message) {
+        super(message);
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p>&nbsp;&nbsp;&nbsp; </p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=8#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='8';
+s.prop7='8';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=8';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=8';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 8 (Fixing Errors in Java)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 8 (Fixing Errors in Java)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933641904&amp;cv=7&amp;fst=1437933641904&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D8&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D8" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Lesson 8 (Fixing Errors in Java)_files/dis.html" style="display: none;"></iframe></div></body></html>

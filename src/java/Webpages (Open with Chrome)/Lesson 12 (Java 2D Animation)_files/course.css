@@ -1,0 +1,224 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+.jab-redbox {
+width: 96%;
+border: none; 
+padding: 10px;
+
+margin-left: auto; /*need this for centering divs in Firefox*/
+margin-right: auto; /*need this for centering divs in Firefox*/
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+background: #F2F2F2;
+}
+
+.jab-redbox p {
+	color: #B60000;
+}
+
+.jab-redbox li {
+	color: #B60000;
+}
+.jab-redbox ol {
+	color: #B60000;
+}
+
+
+li {
+	margin-bottom: 1.2em;
+}
+.mouseover a {
+text-decoration:none;
+color:#0033CC;
+font-weight:bold;
+}
+
+.mouseover a:visited {
+text-decoration:none;
+color:#0033CC;
+font-weight:bold;
+}
+
+/* The following line controls the hover background color. */
+/* Color can be any color including transparent.  */
+
+.mouseover a:hover { 
+text-decoration:none;
+color:#0066FF;
+}
+
+/* Operationally critical */
+
+.mouseover a span  { 
+display:none
+} 
+
+/* hide the text */
+
+.mouseover a:hover span  { 
+display:inline;
+background:#f8f6f3;
+text-decoration:none;
+color: red;
+font-style:italic;
+font-weight:normal;
+}
+
+/* code css   */
+pre
+{
+  font-weight: normal;
+  color: black;
+  font-family: "Courier New";
+  font-size: 14px;
+ /* line-height: 16px; */
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+
+code
+{
+  font-family: "Courier New, Courier, monospace";
+  font-size: 12px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.font_monospace_black{
+	font-family:"Courier New", Courier, monospace;
+	color:#000
+}
+
+.noscroll
+{
+  width:575px;
+  border:1px solid #f2f2f2;
+  background-color:#F3F6F8;
+  padding: 4px;
+}
+
+.scroll
+{
+  width:575px;
+  border:1px solid #f2f2f2;
+  background-color:#F3F6F8;
+  padding: 4px;
+  overflow: clip;
+  overflow-x: scroll;
+}
+
+/* Place this style in your course.css file */
+#L03CH03-solution{
+	display:none;
+}
+
+/* Place this style in your course.css file */
+#L03CH04-solution{
+	display:none;
+}
+
+/* Place this style in your course.css file */
+#L04CH01-solution{
+	display:none;
+}
+
+#L04CH02-solution{
+	display:none;
+}
+
+#L05CH01-solution{
+	display:none;
+}
+
+#L05CH02-solution{
+	display:none;
+}
+
+#L05CH03-solution{
+	display:none;
+}
+
+#L05CH04-solution{
+	display:none;
+}
+#L06CH04-solution{
+	display:none;
+}
+
+#L06CH05-solution{
+	display:none;
+}
+#L06CH05a-solution{
+	display:none;
+}
+#L06CH05b-solution{
+	display:none;
+}
+#L06CH05c-solution{
+	display:none;
+}
+#L06CH05d-solution{
+	display:none;
+}
+#L06CH05e-solution{
+	display:none;
+}
+
+#L07CH01-solution{
+	display:none;
+}
+
+#L07CH03-solution{
+	display:none;
+}
+
+#L07CH04-solution{
+	display:none;
+}
+
+#L07CH05a-solution{
+	display:none;
+}
+#L07CH05b-solution{
+	display:none;
+}
+#L07CH05c-solution{
+	display:none;
+}
+
+#L08CH01a-solution{
+	display:none;
+}
+#L08CH01b-solution{
+	display:none;
+}
+#L08CH01c-solution{
+	display:none;
+}
+#L08CH01d-solution{
+	display:none;
+}
+#L09CH01-solution{
+	display:none;
+}
+#L10CH01-solution{
+	display:none;
+}
+#L10CH05-solution{
+	display:none;
+}
+#L11CH04-solution{
+	display:none;
+}
+#L12CH04-solution{
+	display:none;
+}
+

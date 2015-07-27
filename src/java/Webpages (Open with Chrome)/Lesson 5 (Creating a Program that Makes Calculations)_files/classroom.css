@@ -1,0 +1,3 @@
+﻿/* NO JAVASCRIPT */
+#sansjs { position: relative; z-index: 100; top: 0; left: 0; width: 100%; background: red; color: #fff; padding: 2px; line-height: 2em; font-size: 0.9em; text-align: center; font-weight: bold; }
+.index-highlight { background-color: #FFFF00; }

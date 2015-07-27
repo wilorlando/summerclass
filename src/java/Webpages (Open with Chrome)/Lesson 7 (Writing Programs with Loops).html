@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 7 (Writing Programs with Loops)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 7 (Writing Programs with Loops)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/ld.js"></script><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 7 (Writing Programs with Loops)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/global.js"></script><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/course.js"></script><script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 7 (Writing Programs with Loops)_files/patch.css" media="all"><link href="./Lesson 7 (Writing Programs with Loops)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 7 (Writing Programs with Loops)_files/Lesson 7 (Writing Programs with Loops).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 7 (Writing Programs with Loops)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 7 (Writing Programs with Loops)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 7 (Writing Programs with Loops)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            7: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Writing Programs With Loops</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7">Lesson 7</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 7 (Writing Programs with Loops)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 7 (Writing Programs with Loops)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 7 (Writing Programs with Loops)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 7 (Writing Programs with Loops)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 7 (Writing Programs with Loops)_files/header07.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<div class="jab-redbox">
+<p><strong>"Insanity: doing the same thing over and over again and expecting different results."</strong></p>
+<p align="right">—often attributed to Albert Einstein</p>
+</div>
+<br>
+<div class="jab-redbox">
+<p><strong> "Endless Loop: <em>n</em>., see Loop, Endless.</strong></p>
+<strong>
+</strong>
+<p><strong>&nbsp;Loop, Endless: <em>n</em>., see Endless Loop."</strong></p>
+<p align="right">—Random Shack Data Processing Dictionary</p>
+</div>
+<p><strong>Introduction</strong></p>
+<p>We're ready to finish the temperature conversion program as we laid it out in Lesson 5. The missing pieces are:</p>
+<ul type="disc">
+    <li>Ending the program if our user enters Q for a temperature type </li>
+    <li>Asking for a type again if the user enters an invalid type </li>
+    <li>Asking for a temperature again if the temperature isn't a number or is outside valid limits </li>
+    <li>Starting the whole process again after each conversion </li>
+</ul>
+<p>Another way of saying each of these is: Repeat the whole process until we get a temperature type of Q, repeat the request for a type until we get a valid one, and repeat the request for a temperature until we get a good one.</p>
+<p>The common element here is repetition. Many programs repeat actions either while some condition is true or until some condition occurs. Programming languages use these actions so frequently that they all include some sort of <em>loop</em> control structure to make repetition easy for a programmer to do.</p>
+<p>Java is no exception. It has several types of loops, and in this lesson, we'll look at two of them. </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Java's </strong><font class="font_monospace_black">while</font> <strong>Loop</strong> </p>
+<p>The <font class="font_monospace_black">while</font> loop repeats a block of code as long as (or while) a condition is true. Its form is:</p>
+<p><font class="font_monospace_black">while (&lt;<em>boolean expression</em>&gt;) &lt;<em>body</em>&gt;</font> </p>
+<p>The rules for <font class="font_monospace_black">&lt;<em>boolean expression</em>&gt;</font> in a <font class="font_monospace_black">while</font> statement are the same as for an <font class="font_monospace_black">if</font> statement. Likewise, the rules for the <font class="font_monospace_black">&lt;<em>body</em>&gt;</font> of a <font class="font_monospace_black">while</font><font class="font_monospace_black"> </font>are the same as in an <font class="font_monospace_black">if</font> statement. </p>
+<p>Here's an example of a simple <font class="font_monospace_black">while</font> loop that will display numbers from 1 to 10. </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>int x = 1;
+while (x &lt;= 10) {
+    System.out.println(x);
+    x = x + 1;
+}
+</pre>
+</font></div>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_animLoop" align="middle" height="250" width="250" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-01a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-01a.swf" height="250" width="250" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-01a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7#skip_game_L07CH02_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 7 (Writing Programs with Loops)_files/L07-01a.html" frameborder="0" height="250" scrolling="no" width="250" class="pf_interactivity"></iframe>
+<a name="skip_game_L07CH02_b" id="skip_game_L07CH02_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>
+The first thing this loop does is check to see if <font class="font_monospace_black">x </font>is 10 or less. The loop body won't execute unless the condition is true. A <font class="font_monospace_black">while</font> loop checks the condition before the loop's body executes, and if the condition is false, it skips the body, stops the loop, and continues with whatever code follows the loop.</p>
+<p>Since the variable <font class="font_monospace_black">x </font>in this case starts out with a value of 1, the body of the loop executes. The body's first line displays the value of <font class="font_monospace_black">x</font> on the screen, and the next line <em>increments</em> (increases by 1) the value of <font class="font_monospace_black">x</font>. </p>
+<p>Let's look at the increment statement for a moment. </p>
+<p>In this case, <font class="font_monospace_black">x</font> is on both sides of the equal sign. This is one of the programming practices that may seem strange to someone just learning to program. But remember that this statement isn't an equation; it's an assignment. Java evaluates the right side of the statement before storing anything in the left side. So in this case, the statement tells Java to take the value from <font class="font_monospace_black">x</font>, add 1 to it, and store it back into <font class="font_monospace_black">x.</font> You'll see lots of variations on this theme in programming. </p>
+<p>At the end of the first time through the loop, then, <font class="font_monospace_black">x</font> has a value of 2. Since this is still less than 10, the loop repeats, then repeats again, incrementing <font class="font_monospace_black">x</font> each time until <font class="font_monospace_black">x</font> reaches a value of 11. At that point the condition becomes false, and the loop stops.</p>
+<p><strong>Using a </strong><font class="font_monospace_black"><strong>while</strong></font> <strong>Loop</strong> </p>
+<p>Now that you know what a <font class="font_monospace_black">while</font> loop looks like, how can we use it in our program? </p>
+<p>The first loop we're going to add is the one that will repeat the whole process until our user enters Q for a temperature type. This loop will include all the actions in our <font class="font_monospace_black">main()</font> method, so we'll start it right after our variable declarations. </p>
+<p>Before starting the loop, however, let's talk about how to control its repetitions. One way would be to use a condition that checks that the entry isn't Q. That would look like this:</p>
+<p class="font_monospace_black">while ( ! temperatureType.equals("Q"))</p>
+<p>As you can see, that type of condition is somewhat awkward to deal with and read. I try to avoid negative conditions when I can because they're confusing. So I'll control my loop with another common programming technique. </p>
+<p>I'm going to declare a <font class="font_monospace_black">boolean</font> variable whose only purpose is to control my loop. Since it will tell me whether my user has more temperatures to convert, I'm going to name it <font class="font_monospace_black">moreTemperatures</font> and set its initial value to <font class="font_monospace_black">true</font>. We'll repeat our loop as long as the value remains <font class="font_monospace_black">true</font>. So let's add a line to our variable declarations that looks like this: </p>
+<p class="font_monospace_black">boolean moreTemperatures = true; // more temperatures to convert?</p>
+<p>Now that we have a simple variable we can test to control our loop, let's start the loop like this: </p>
+<p class="font_monospace_black">while (moreTemperatures) {</p>
+<p>I want to make sure it's clear that everything following <font class="font_monospace_black">main()</font> is part of the loop. So let's indent everything from there to the end of <font class="font_monospace_black">main()</font> and then add another closing curly bracket to end the loop. </p>
+<p>Before I show you the complete new <font class="font_monospace_black">main()</font> method, we need to add the option for the letter Q. Once I do that and change the text slightly using equal signs to shorten it, our <font class="font_monospace_black">main()</font> method looks like this: </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>public static void main(String[] args) {
+    double inputTemperature = 0.0;
+    Scanner keyInput = new Scanner(System.in); 
+    Temperature t1;
+    String temperatureType = "";
+    boolean moreTemperatures = true;
+
+    while (moreTemperatures) {
+        System.out.print("Enter a temperature type (C=Celsius, " +
+                "F=Fahrenheit, K=Kelvin, Q=Quit): ");
+        temperatureType = keyInput.next();
+        System.out.print("Enter a temperature: "); 
+        inputTemperature = keyInput.nextDouble();
+        t1 = new Temperature(temperatureType, inputTemperature);
+
+        if (temperatureType.equalsIgnoreCase("F")) {
+            System.out.println("You entered " + inputTemperature + 
+                    " degrees Fahrenheit"); 
+            System.out.println("which is " + t1.getDegreesCelsius() + 
+                    " degrees Celsius"); 
+            System.out.println("and " + t1.getDegreesKelvin() + 
+                    " degrees Kelvin.");
+        }
+        else if (temperatureType.equalsIgnoreCase("C")) {
+            System.out.println("You entered " + inputTemperature + 
+                    " degrees Celsius"); 
+            System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                    " degrees Fahrenheit"); 
+            System.out.println("and " + t1.getDegreesKelvin() + 
+                    " degrees Kelvin.");
+        }
+        else if (temperatureType.equalsIgnoreCase("K")) {
+            System.out.println("You entered " + inputTemperature + 
+                    " degrees Kelvin"); 
+            System.out.println("which is " + t1.getDegreesCelsius() + 
+                    " degrees Celsius"); 
+            System.out.println("and " + t1.getDegreesFahrenheit() + 
+                    " degrees Fahrenheit.");
+        }
+    }
+}
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+<p>Okay, now I have a loop, but it will never end because I never change the value of <font class="font_monospace_black">moreTemperatures</font> inside the loop. One of the most common programming errors related to loops is failing to update the variable that ends the loop. I can fix that with a simple <font class="font_monospace_black">if</font> statement:</p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>if (temperatureType.equalsIgnoreCase("Q")) { // quit
+    moreTemperatures = false;
+    System.out.println("\nProgram ended.");
+}
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+I put this code just after reading the temperature type and before reading the temperature itself. Of course, the flip side of this <font class="font_monospace_black">if</font> statement is that if the condition is <font class="font_monospace_black">false</font>, we want to convert a temperature. So let's indent the rest of the code in <font class="font_monospace_black">main()</font> again and put it all into an "else" block that will read the temperature and then convert it to the other types.
+<p>This program will now keep running until our user enters Q as the temperature type. We don't have to keep restarting the program to enter another temperature. Here's a screen shot of a single run of my program at this point:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="Successful" outer="" loop="" execution""="" src="./Lesson 7 (Writing Programs with Loops)_files/L07-01.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Successful outer loop execution</font></p>
+<p>I called this the <em>outer loop</em> in the caption because we're going to put more loops inside it. These <em>inner loops</em> will execute independently inside the outer loop—possibly many times, depending on user input. These inner loops will control edits so we get good data for our conversions. We aren't going to assume any longer that our users are perfect and won't make mistakes. </p>
+<p>These inner loops and edits will be the topic of the next two chapters.</p>
+<p>In case you have any problems at this point and would like to compare your program to mine, here's a link to my complete driver program: </p>
+<p align="center"><input name="" id="L07CH01_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L07CH01-solution">
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 3.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+        boolean moreTemperatures = true;
+
+        while (moreTemperatures) {
+            System.out.print("Enter a temperature type (C=Celsius, " +
+                "F=Fahrenheit, K=Kelvin, Q=Quit): ");
+            temperatureType = keyInput.next();
+            if (temperatureType.equalsIgnoreCase("Q")) { // quit
+                moreTemperatures = false;
+                System.out.println("\nProgram ended.");
+            }
+            else {
+                System.out.print("Enter a temperature: ");
+                inputTemperature = keyInput.nextDouble();
+                t1 = new Temperature(temperatureType, inputTemperature);
+
+                if (temperatureType.equalsIgnoreCase("F")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Fahrenheit");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("C")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Celsius");
+                    System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("K")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Kelvin");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit.");
+                }
+            }
+        }
+    }
+}
+</pre>
+</font></div>
+</div>
+<p> </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>More Loops</strong> </p>
+<p>We now have a temperature conversion program that will repeat itself until our user enters a Q to quit. </p>
+<p>However, if you've made any mistakes while testing this program, you probably noticed that it doesn't do well with unexpected input. For example, if you put in anything besides the letters C or c, F or f, K or k, or Q or q, the program still asks for a temperature even though it doesn't really know what type the temperature is, and once it has a temperature, it doesn't do anything with it. That's not how we'd like it to behave. </p>
+<p>Also, if you've entered anything besides a number when the program asked for a temperature, you've seen an even bigger problem: The program breaks! (Or in common programming terminology, it <em>crashes</em> or <em>blows up</em>.) We get an error that our program doesn't know how to handle. It looks something like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="Exception error message" "="" src="./Lesson 7 (Writing Programs with Loops)_files/L07-02.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Exception error message</font></p>
+<p>BlueJ tries to help by opening our source code and highlighting the line that caused the problem. In this case, the line it highlights is: </p>
+<p class="font_monospace_black">inputTemp = keyInput.nextDouble();</p>
+<p>This line reads the numeric temperature value. </p>
+<p>BlueJ also displays an error message at the bottom of the terminal window (as you can see in the image above). That message explains what caused our program to fail. In this case, the error reads <em>java.util.InputMismatchException</em>. When a Java program runs into situations it can't handle, it issues (or in Java terminology, it <em>throws</em>) what it calls <em>exceptions</em>. An <em>exception</em> is an event or an error that disrupts the flow of the program's instructions. The computer can't detect the problem at compile time, but the error stops the flow of the program at run time. </p>
+<p>Java has many types of exceptions, and in future lessons, we'll discuss catching them and handling them. The <em>exception type</em> in the error (in this case it's <em>InputMismatchException</em>) is Java's attempt to tell us what went wrong.</p>
+<p>Our exception was an input mismatch, which means that Java couldn't figure out how to make the input into the type of data it was looking for. Since our program was looking for a valid number, any input that's not a number will cause this error. You can see that I entered "xyz" in the window above to cause the exception.</p>
+<p>One sign of a well-designed program is its ability to handle bad input without crashing. Our program doesn't do that yet, although our original program description told us what was supposed to happen: The program was supposed to circle back and ask for the input again. </p>
+<p>So what we'll do next is add <em>input edits</em> to our program to make sure that the input we get is right, and if not, then to ask for it again. An input edit is program logic that makes sure our users are giving us good data. We'll start with an edit of the temperature type in this chapter and deal with the numeric temperature value in the next chapter. </p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="note" src="./Lesson 7 (Writing Programs with Loops)_files/note.png" align="right" class="pf_image">
+<p><strong>There's More Than One Way to Solve a Problem</strong> </p>
+<p>We're going to take the simplest approach in this lesson, which is to put the edits directly into our driver program. In the next lesson, I'll show you a different approach that I think is better. I'm doing it the simpler way now because I need to introduce a few more topics before we can use the other technique.</p>
+</div>
+<p>How can we edit the temperature type? We need to tell the user about the mistake and ask for the input again. How do we do that? We need to go back to the start of our <font class="font_monospace_black">while</font> loop, right after we asked for the temperature type.&nbsp;</p>
+<p>First let's look at how to make sure we get one of the valid values: Q, C, F, or K. We want to keep asking for a type until we get one of those. When I say "keep asking," I'm implying that we need to repeat an action, which will require another loop. This one will be inside the loop we already have, since that outer loop already controls converting temperatures until the user tells us to quit. This new <em>inner loop</em> (also called a <em>nested loop</em>) will make sure that every time we ask for a type, we'll get a good one. </p>
+<p>Near the start of that outer loop, right after we read the user's input, I want to add an inner loop that will repeat until we get a good input value. The condition for this loop will be similar to the one for our outer loop, which repeats until the <font class="font_monospace_black">boolean</font> value changes. We're going to use another <font class="font_monospace_black">boolean</font> variable to control this loop too, since this time we have even more conditions to check. </p>
+<p>This time I'll name my boolean <font class="font_monospace_black">goodType</font>. A value of <font class="font_monospace_black">true</font> will indicate that we have a valid temperature type, and a value of <font class="font_monospace_black">false</font> will tell us we don't yet. So it'll start out <font class="font_monospace_black">false</font>. Here's the declaration I'll add to the top of the <font class="font_monospace_black">main()</font> method: </p>
+<p class="font_monospace_black">boolean goodType = false;</p>
+<p>Since I may process multiple temperatures in our outer loop, I also need to reset the <font class="font_monospace_black">boolean</font> to <font class="font_monospace_black">false </font>every time I process a new temperature. So I'll set up that assignment and the basic loop structure like this, right after the statement that reads the temperature type and stores it into <font class="font_monospace_black">temperatureType</font>: </p>
+<p>
+</p>
+<div class="scroll">
+<pre>// variable declarations, outer loop, and prompt are here
+temperatureType = keyInput.next();
+goodType = false;
+while ( ! goodType) {
+}
+</pre>
+</div>
+That sets up the condition to control our new loop. But what needs to go in it?
+<p>I need an <font class="font_monospace_black">if</font> statement to either tell me I have a good temperature by setting <font class="font_monospace_black">goodType</font> to <font class="font_monospace_black">true</font> or give my user an error message and ask for a new type. I have four letters to check in the <font class="font_monospace_black">if</font>, and since I want to allow uppercase and lowercase letters, I'll use the String method <font class="font_monospace_black">equalsIgnoreCase()</font> again. </p>
+<p>If our user entered a valid type, all we need to do is set <font class="font_monospace_black">goodType</font> to <font class="font_monospace_black">true</font>, and the loop will end. If the type isn't one we want, we need an error message, a request for a new value, and a statement to read that value before we go back to the top of the loop. You may choose different text for your error messages, but my statements look like this: </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>if (temperatureType.equalsIgnoreCase("Q") ||
+        temperatureType.equalsIgnoreCase("C") || 
+        temperatureType.equalsIgnoreCase("F") ||
+        temperatureType.equalsIgnoreCase("K")) {
+    goodType = true;
+}
+else {
+    System.out.println("Invalid temperature type!");
+    System.out.println("The type must be C, F, K, or Q.");
+    System.out.print("Please enter the temperature type again: ");
+    temperatureType = keyInput.next();
+}
+
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+If you put these lines into the inner loop, you'll be ready to try this. You should be able to repeat the request for temperature type until you get a good one. Try it a few times and see.
+<p>Here's an example of what it might look like: </p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="First successful inner loop execution" ;"="" src="./Lesson 7 (Writing Programs with Loops)_files/L07-03.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">First successful inner loop execution</font></p>
+<p>That looks better, doesn't it? </p>
+<p>Once your program is working to this point, go on to the next chapter. That's where we'll add our last loop, which will make sure we have a valid number for a temperature. If you have any trouble getting it to work, be sure to let me know in the Discussion Area.</p>
+<p>In case you have any problems, here's a link to my complete <font class="font_monospace_black">TemperatureDriver</font> class at this point so you can compare it to yours: </p>
+<p align="center"><input name="" id="L07CH03_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L07CH03-solution">
+<div class="scroll"><font class="font_monospace_black">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 3.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+        boolean moreTemperatures = true;
+        boolean goodType = false;
+
+        while (moreTemperatures) {
+            System.out.print("Enter a temperature type (C=Celsius, " +
+                "F=Fahrenheit, K=Kelvin, Q=Quit): ");
+            temperatureType = keyInput.next();
+            goodType = false;
+            while ( ! goodType) {
+                if (temperatureType.equalsIgnoreCase("Q") ||
+                        temperatureType.equalsIgnoreCase("C") || 
+                        temperatureType.equalsIgnoreCase("F") ||
+                        temperatureType.equalsIgnoreCase("K")) {
+                    goodType = true;
+                }
+                else {
+                    System.out.println("Invalid temperature type!");
+                    System.out.println("The type must be C, F, K, or Q.");
+                    System.out.print("Please enter the temperature type again: ");
+                    temperatureType = keyInput.next();
+                }
+            }
+            if (temperatureType.equalsIgnoreCase("Q")) { // quit
+                moreTemperatures = false;
+                System.out.println("\nProgram ended.");
+            }
+            else {
+                System.out.print("Enter a temperature: ");
+                inputTemperature = keyInput.nextDouble();
+                t1 = new Temperature(temperatureType, inputTemperature);
+
+                if (temperatureType.equalsIgnoreCase("F")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Fahrenheit");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("C")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Celsius");
+                    System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("K")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Kelvin");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit.");
+                }
+            }
+        }
+    }
+}
+</pre>
+</font></div>
+</div>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Checking for Valid Temperatures</strong> </p>
+<p>The last thing we need to check is the value our user enters for a temperature. We need to check several things before we can decide if it's valid. </p>
+<p>First we need to make sure it's a number. And once we know it's a number, we need to make sure it's valid for the type of temperature we're converting. For a Kelvin temperature, the value can't be less than zero. For Celsius, it can't be less than −273.15. And for Fahrenheit, it can't be less than −459.67. These temperatures represent absolute zero, the coldest temperature that's possible in our universe.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="Final program execution" "="" src="./Lesson 7 (Writing Programs with Loops)_files/L07-03b.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>We'll need a loop for this, since we need to repeat the checks until we get a valid temperature. Back in the introduction to this lesson, I said we'd look at two Java loop formats in this lesson. I showed you the <font class="font_monospace_black">while</font> loop already. Now we're going to use a <font class="font_monospace_black">do-while</font> loop, sometimes just called a <font class="font_monospace_black">do</font> loop. Its format is a little different from the <font class="font_monospace_black">while</font> loop's, and it looks like this: </p>
+<p><font class="font_monospace_black">do &lt;<em>body</em>&gt; while (&lt;<em>boolean expression</em>&gt;);</font></p>
+<p>As you can see, there's the keyword <font class="font_monospace_black">do</font> in front of the loop, and then the body with the statement or statements to be repeated. Last, there's the keyword <font class="font_monospace_black">while</font> with the condition to be checked. </p>
+<p>Notice the semicolon at the end of the loop. This <font class="font_monospace_black">while</font> clause isn't followed by any other part of the loop, so the semicolon's there to end the statement.</p>
+<p>What are the execution differences between the <font class="font_monospace_black">do</font> and <font class="font_monospace_black">while</font> loops?</p>
+<ul>
+    <li>The <font class="font_monospace_black">do</font> loop always executes the body of the loop at least once.</li>
+    <li>The <font class="font_monospace_black">do</font> loop checks the condition at the end of each repetition, and the <font class="font_monospace_black">while</font> loop checks its condition at the start of each pass through the loop. So the <font class="font_monospace_black">while</font> loop may never execute the loop body if the condition is <font class="font_monospace_black">false</font> the first time it checks. </li>
+</ul>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_animDoWhile" align="middle" height="250" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-03a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-03a.swf" height="250" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-03a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7#skip_game_L07CH04_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 7 (Writing Programs with Loops)_files/L07-03a.html" frameborder="0" height="250" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L07CH04_b" id="skip_game_L07CH04_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>We're going use another <font class="font_monospace_black">boolean</font> variable for this loop. Since this variable will tell me whether we have a good temperature, we're going to name it <font class="font_monospace_black">goodTemperature</font> and initialize it to <font class="font_monospace_black">false</font>. So let's add this declaration to the top of our <font class="font_monospace_black">main()</font> method: </p>
+<p class="font_monospace_black">boolean goodTemperature = false;</p>
+<p>Also, since we may repeat this process for multiple temperatures, we'll need to reset it every time we start this loop, just as we did above for <font class="font_monospace_black">goodType</font>. </p>
+<p>We're ready to lay out our last loop now. I'm going to show you an abbreviated form of our <font class="font_monospace_black">main()</font> method with most of the code missing so you can see the loop and decision structure. That way we'll all be on the same page before we make any more changes. </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>public static void main(String[] args) {    
+    // previous variable definitions
+    boolean moreTemperatures = true; // more temperatures?         
+    boolean goodType = false; // good temperature type?         
+    boolean goodTemperature = false; // good temperature value?
+
+    while (moreTemperatures) {
+        // read the temperature type
+
+        // check type
+        goodType = false;
+        while ( ! goodType) {
+            if (inputType.equalsIgnoreCase("Q") ||
+                    inputType.equalsIgnoreCase("C") ||
+                    inputType.equalsIgnoreCase("F") ||
+                    inputType.equalsIgnoreCase("K")) {
+                goodType = true;
+            }
+            else {
+                // generate error message and ask for type again
+            }
+        }
+
+        if (inputType.equalsIgnoreCase("Q")) {
+            // code to quit the program
+        }
+        else {
+            goodTemperature = false;
+            do {
+                // code to read temperature
+            } while ( ! goodTemperature);
+            // code to process temperature
+        }
+    }
+}
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+This last inner loop goes at the start of the <font class="font_monospace_black">else</font> clause of the <font class="font_monospace_black">if</font> statement that checks for Q. Everything that was inside that <font class="font_monospace_black">else</font> clause goes after this loop. The loop will repeat until <font class="font_monospace_black">goodTemperature</font> becomes <font class="font_monospace_black">true</font>, and then the loop will stop.
+<p>Once we know we have a good temperature, we can set <font class="font_monospace_black">goodTemperature</font> to true, and then process the temperature value. Let me show you how that will work.</p>
+<p>What's the first thing we need to do in this last loop in order to make sure we have a valid temperature? We need to get a temperature value from our user in order to check it. So let's put our prompt and input statement in there, which will make the loop look like this: </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>goodTemperature = false; 
+do {
+    System.out.print("Enter a temperature: ");
+    inputTemperature = keyInput.nextDouble();
+    // the rest of the code to check temperatures goes here
+} while ( ! goodTemperature); 
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+We definitely want to start our loop with the prompt, but what about the second statement? Remember what happened when we tried to read a number, and the user typed something else? Our program crashed. We want to determine if there's a number to read before we try to read it. Fortunately, the <font class="font_monospace_black">Scanner</font> class has a method that will help us.
+<p>In addition to its <font class="font_monospace_black">nextDouble()</font> method, <font class="font_monospace_black">Scanner</font> has a method named <font class="font_monospace_black">hasNextDouble()</font> that will do what we want. Before we actually try to read the value, it'll tell us if the user has entered a valid number by giving us back a value of <font class="font_monospace_black">true</font> if the user entered a number and a value of <font class="font_monospace_black">false</font> if not.</p>
+<p>We can use a call to this method as the condition in an <font class="font_monospace_black">if</font> statement that will decide whether to read a number. If a call to <font class="font_monospace_black">hasNextDouble()</font> comes back <font class="font_monospace_black">true</font> , we'll read the number. If it comes back <font class="font_monospace_black">false</font>, we'll display an error message. If the input isn't a number, we'll also need to read it to get it out of the input stream, but we don't really care what it is, so we don't need to save it in a variable. </p>
+<p>Here is code that does what we want: </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>if (keyInput.hasNextDouble()) {
+    inputTemperature = keyInput.nextDouble();
+}
+else {
+    System.out.println("You entered an invalid temperature!");
+    System.out.println("It must be a numeric value.");
+    System.out.println("Try again.");
+    keyInput.next();
+}
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+<p>Now we know whether we have a number, and we've handled the case where we don't by telling our user to try again.
+</p>
+<p>The final edits will check if we have a valid temperature for each temperature type. Since we already know that our temperature is numeric, the only check we have left to make is whether that number is above absolute zero. So let's add that check and set <font class="font_monospace_black">goodTemperature</font> if everything's okay and put out an error message if it's not. Here's the <font class="font_monospace_black">if</font> statement we'll use:</p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; inputTemperature &gt;= -273.15) ||
+    (temperatureType.equalsIgnoreCase("F") &amp;&amp; inputTemperature &gt;= -459.67) ||
+    (temperatureType.equalsIgnoreCase("K") &amp;&amp; inputTemperature &gt;= 0))
+    goodTemperature = true;
+else {
+    System.out.println("You entered an invalid temperature!");
+    System.out.println("It must be greater than absolute zero.");
+    System.out.println("Try again.");
+}
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+That statement should go right after the call to <font class="font_monospace_black">nextDouble()</font>, which makes our loop (including the <font class="font_monospace_black">boolean</font> reset in front of it) look like this:
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>goodTemperature = false;
+do {
+    System.out.print("Enter a temperature: ");
+    if (keyInput.hasNextDouble()) {
+        inputTemperature = keyInput.nextDouble();
+        if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; inputTemperature &gt;= -273.15) ||
+            (temperatureType.equalsIgnoreCase("F") &amp;&amp; inputTemperature &gt;= -459.67) ||
+            (temperatureType.equalsIgnoreCase("K") &amp;&amp; inputTemperature &gt;= 0))
+            goodTemperature = true;
+        else {
+            System.out.println("You entered an invalid temperature!");
+            System.out.println("It must be greater than absolute zero.");
+            System.out.println("Try again.");
+        }
+    }
+    else {
+        System.out.println("You entered an invalid temperature!");
+        System.out.println("It must be a numeric value.");
+        System.out.println("Try again.");
+        keyInput.next();
+    }
+} while ( ! goodTemperature);
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+<p>Believe it or not, we're done! (Well, we're done with this lesson.) Try your program, and see if it does what we advertised up front. Let me know if you have any trouble with it or questions about what we've done. Just to prove it works, here's some output from my version of it:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><img alt="Final program execution" "="" src="./Lesson 7 (Writing Programs with Loops)_files/L07-04.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Final program execution</font></p>
+<p>And here's a copy of my program for you to compare to if you'd like.</p>
+<p align="center"><input name="" id="L07CH04_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L07CH04-solution">
+<div class="scroll"><font class="font_monospace_black">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 3.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+        boolean moreTemperatures = true; // another temperature?
+        boolean goodType = false; // good temperature type?
+        boolean goodTemperature = false; // good temperature value?
+
+        while (moreTemperatures) {
+            System.out.print("Enter a temperature type (C=Celsius, " +
+                "F=Fahrenheit, K=Kelvin, Q=Quit): ");
+            temperatureType = keyInput.next();
+            goodType = false;
+            while ( ! goodType) {
+                if (temperatureType.equalsIgnoreCase("Q") ||
+                temperatureType.equalsIgnoreCase("C") || 
+                temperatureType.equalsIgnoreCase("F") ||
+                temperatureType.equalsIgnoreCase("K")) {
+                    goodType = true;
+                }
+                else {
+                    System.out.println("Invalid temperature type!");
+                    System.out.println("The type must be C, F, K, or Q.");
+                    System.out.print("Please enter the temperature type again: ");
+                    temperatureType = keyInput.next();
+                }
+            }
+            if (temperatureType.equalsIgnoreCase("Q")) { // quit
+                moreTemperatures = false;
+                System.out.println("\nProgram ended.");
+            }
+            else {
+                goodTemperature = false;
+                do {
+                    System.out.print("Enter a temperature: ");
+                    if (keyInput.hasNextDouble()) {
+                        inputTemperature = keyInput.nextDouble();
+                        if ((temperatureType.equalsIgnoreCase("C") &amp;&amp; inputTemperature &gt;= -273.15) ||
+                            (temperatureType.equalsIgnoreCase("F") &amp;&amp; inputTemperature &gt;= -459.67) ||
+                            (temperatureType.equalsIgnoreCase("K") &amp;&amp; inputTemperature &gt;= 0))
+                            goodTemperature = true;
+                        else {
+                            System.out.println("You entered an invalid temperature!");
+                            System.out.println("It must be greater than absolute zero.");
+                            System.out.println("Try again.");
+                        }
+                    }
+                    else {
+                        System.out.println("You entered an invalid temperature!");
+                        System.out.println("It must be a numeric value.");
+                        System.out.println("Try again.");
+                        keyInput.next();
+                    }
+                } while ( ! goodTemperature);
+
+                t1 = new Temperature(temperatureType, inputTemperature);
+
+                if (temperatureType.equalsIgnoreCase("F")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Fahrenheit");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("C")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Celsius");
+                    System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit"); 
+                    System.out.println("and " + t1.getDegreesKelvin() + 
+                        " degrees Kelvin.");
+                }
+                else if (temperatureType.equalsIgnoreCase("K")) {
+                    System.out.println("You entered " + inputTemperature + 
+                        " degrees Kelvin");
+                    System.out.println("which is " + t1.getDegreesCelsius() + 
+                        " degrees Celsius"); 
+                    System.out.println("and " + t1.getDegreesFahrenheit() + 
+                        " degrees Fahrenheit.");
+                }
+            }
+        }
+    }
+}
+</pre>
+</font></div>
+</div>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>Try this activity to see how well you understand loops in Java. </p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_pokebox7" align="middle" height="460" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-05.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-05.swf" height="460" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L07-05.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7#skip_game_L07CH05_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 7 (Writing Programs with Loops)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 7 (Writing Programs with Loops)_files/L07-05.html" frameborder="0" height="460" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L07CH05_b" id="skip_game_L07CH05_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>Did you get them all right? If any of them confused you, be sure to review the chapters, consult the index, or ask me a question in the Discussion Area.</p>
+<p>We've finally completed the program based on the design from Lesson 4. And in this lesson you used loops to make our code repeat itself based on conditions we set and test. You learned a bit about input edits too.</p>
+<p>Once again, if you get any results that don't make sense, let me know in the Discussion Area. I'll be glad to help you. </p>
+<p>In Lesson 8, we'll revisit the way we managed our edits, and I'll explain why I think there's a better way to do them. We'll also talk about two important Java tools: static methods and Java exceptions. See you then. </p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.fredosaurus.com/notes-java/flow/loops/loops.html" target="_blank">
+                                Loops: Introduction</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.fredosaurus.com/notes-java/flow/loops/loops.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is a tutorial on Java loops, including some we haven't discussed. If you look at this tutorial, be sure to follow the links to the second-level descriptions of each type of loop. The top level is just a summary.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.cs.grinnell.edu/~rebelsky/Espresso/Readings/loops.html" target="_blank">
+                                Loops in Java</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.cs.grinnell.edu/~rebelsky/Espresso/Readings/loops.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This site covers four types of loops.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> Why does Java have more than one type of loop?<br>
+<br>
+<strong>A:</strong> We could do everything with one type of loop. But the code becomes much cleaner and easier to write and read if we use other loop structures. </p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>For today's assignment, try using loops for a few simple but repetitive tasks. You can or try one or more of my suggestions, or you can choose your own tasks.</p>
+<p>For a simple loop, ask for a starting and ending number, and display the numbers in between. For a slightly more complex loop, handle the case where the ending number is less than the starting number by counting backward.</p>
+<p align="center"><input name="" id="L07CH05a_show_solution" value="Click here to see my version of this loop" type="button" style="cursor: pointer;"></p>
+<div id="L07CH05a-solution">
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * This program counts up or down between two numbers.
+ * 
+ * @author Merrill Hall
+ * @version 1 11-Jun-2013
+ */
+public class CountingLoop {
+    public static void main(String[] args) {
+        // declare variables
+        int start = 0;
+        int end = 0;
+        int counter = 0;
+        Scanner input = new Scanner(System.in);
+
+        // get starting and ending numbers
+        System.out.print("Enter a starting number: ");
+        start = input.nextInt();
+        counter = start;
+        System.out.print("Enter an ending number: ");
+        end = input.nextInt();
+
+        // counting loops
+        System.out.println("\nCounting from " + start + " to " + end + ":");
+        if (start &lt;= end) {  // counting up
+            while (counter &lt;= end) {
+                System.out.println("   " + counter);
+                counter = counter + 1;
+            }
+        }
+        else {  // counting down
+            while (counter &gt;= end) {
+                System.out.println("   " + counter);
+                counter = counter - 1;
+            }
+        }
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p>Another possibility is to ask for a positive integer and calculate its factorial value. The factorial value of a number <em>n</em> is 1 × 2 × 3 × … × <em>n</em>. So the factorial value of 4 is 1 × 2 × 3 × 4, or 24.</p>
+<p align="center"><input name="" id="L07CH05b_show_solution" value="Click here to see my version of this loop" type="button" style="cursor: pointer;"></p>
+<div id="L07CH05b-solution">
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * This program calculates the factorial of a number between 0 and 20.
+ * The 21st value exceeds the capacity of a long type.
+ * 
+ * @author Merrill Hall
+ * @version 1 11-Jun-2013
+ */
+public class FactorialLoop {
+    public static void main(String[] args) {
+        // declare variables
+        long factorial = 1;
+        int number = 0;
+        int counter = 0;
+        Scanner input = new Scanner(System.in);
+
+        // get and check number
+        System.out.print("Enter an integer between 0 and 20: ");
+        number = input.nextInt();
+        if (number &lt; 0 || number &gt; 20) {
+            System.out.println("That number was not between 0 and 20.  Try running the program again.");
+            System.exit(0);
+        }
+
+        // factorial loop
+        counter = 2;
+        while (counter &lt;= number) {
+            factorial = factorial * counter;
+            counter = counter + 1;
+        }
+        System.out.println(number + "! is " + factorial);
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p>Here's another suggestion: Ask for a number, and calculate that many terms in the Fibonacci sequence. Fibonacci numbers start with 0 and 1, and then each one is the sum of the two before it. The first few terms in the sequence are 0, 1, 1, 2, 3, 5, 8, 13, 21, and 34. So the next Fibonacci number (the 11th one) would be 21 + 34, or 55.</p>
+<p align="center"><input name="" id="L07CH05c_show_solution" value="Click here to see my version of this loop" type="button" style="cursor: pointer;"></p>
+<div id="L07CH05c-solution">
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * This program calculates the first n numbers of the Fibonacci sequence.
+ * The 93rd value exceeds the capacity of a long type.
+ * 
+ * @author Merrill Hall
+ * @version 1 11-Jun-2013
+ */
+public class Fibonacci {
+    public static void main(String[] args) {
+        // declare variables
+        long firstFibonacci = 0;
+        long secondFibonacci = 1;
+        long fibonacciValue = 0;
+        int number = 0;
+        int counter = 1;
+        Scanner input = new Scanner(System.in);
+
+        // get and check number
+        System.out.print("Enter an integer between 1 and 92: ");
+        number = input.nextInt();
+        if (number &lt; 1  || number &gt; 92 ) {
+            System.out.println("That number was not between 1 and 92.  Try running the program again.");
+            System.exit(0);
+        }
+
+        // Fibonacci loop
+        counter = 1;
+        while (counter &lt;= number) {
+            if (counter == 1) {
+                fibonacciValue = firstFibonacci;
+            }
+            else if (counter == 2) {
+                fibonacciValue = secondFibonacci;
+            }
+            else {
+                fibonacciValue = firstFibonacci + secondFibonacci;
+                firstFibonacci = secondFibonacci;
+                secondFibonacci = fibonacciValue;
+            }
+            System.out.println("Fibonacci value #" + counter + " is " + fibonacciValue);
+            counter = counter + 1;
+        }
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p>After you're done, drop by the Discussion Area to let us know how it went.</p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=7#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='7';
+s.prop7='7';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=7';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=7';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 7 (Writing Programs with Loops)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 7 (Writing Programs with Loops)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933616722&amp;cv=7&amp;fst=1437933616722&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D7&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D7" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Lesson 7 (Writing Programs with Loops)_files/dis.html" style="display: none;"></iframe></div></body></html>

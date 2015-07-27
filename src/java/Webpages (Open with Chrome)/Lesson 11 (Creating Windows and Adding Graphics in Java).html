@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<!-- saved from url=(0141)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=11 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/ld.js"></script><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/global.js"></script><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/course.js"></script><script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/patch.css" media="all"><link href="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/Lesson 11 (Creating Windows and Adding Graphics in Java).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=11#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            11: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Creating Windows and Adding Graphics in Java</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=11">Lesson 11</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/header11.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p><strong>Introduction</strong></p>
+<div class="jab-redbox">
+<p><strong>"Well, Steve . . . I think it's more like we both had this rich neighbor named Xerox, and I broke into his house to steal the TV set and found out that you had already stolen it." </strong></p>
+<p align="right">—Bill Gates to Steve Jobs</p>
+</div>
+<p>
+I like the quotation above. We often forget that neither Apple nor Microsoft came up with the first working system that had a mouse and a pointer. It was Xerox, in its Palo Alto Research Center (PARC) in 1973.</p>
+<p>Xerox never marketed the system, but the company used it internally and at several universities. It influenced the development of GUI (graphical user interface) operating systems, though, especially Apple's first GUI systems, the Lisa and Mac. (By the way, Microsoft and Apple didn't "steal" the ideas—they were already in the public domain.)</p>
+<p>So far in this course, everything has been <em>text-based</em>. We've worked entirely with text input and output, which is how all computers worked in the old days. Even though there's a lot more to learn about using Java in a text-based environment, I think it's time for a break from that so you can learn to use Java in another way. </p>
+<p>Java can work in two other environments besides text. The first is a <em>browser-based</em> <em>environment</em>. You use that environment every time you go onto the World Wide Web . . . and I know you're familiar with that, or you wouldn't have made it this far in this course! Java can create <em>applets</em>, or small applications, that it loads and executes in a browser environment.</p>
+<p>The other Java environment is a <em>windowed environment</em>, which programmers use to develop stand-alone applications that run in Windows, Linux, OS X, and on other platforms. BlueJ is a good example of a stand-alone application written in Java. </p>
+<p>Writing full-blown GUI applications is more than we can cover in the remainder of this course, but we'll look at the basics of writing a windowed application. We'll talk about the parts of a window within a Java program—there might be more of them than you're aware of. Then we'll put some basic graphics into the window. </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Looking at a Java Window</strong> </p>
+<p>A computer window looks different in different operating systems. Since Windows is the dominant system, we'll use Windows illustrations here. Here's a snapshot of a Windows frame and its visible parts:</p>
+<p><strong>Introduction</strong></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" A Java frame in Windows" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-01.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> A Java frame in Windows</font></p>
+<p>Let me describe the various parts of the window, which Java programmers usually call a <em>frame</em>. Then we'll look at the code that created it.
+</p>
+<p>This frame has three parts that are visible and more that aren't. The first visible part is the title bar across the top, which contains a small logo, the frame's name, and three buttons provided by the operating system that minimize, maximize, and close the window.</p>
+<p>The second visible part of the frame is the border—the blue edge around the other three sides.</p>
+<p>The last visible part is the remainder of the frame itself, inside the border. The title bar and the border cover part of the frame. (Just a reminder: The title bar and border sizes will vary between operating systems, so what you see on your computer may not look exactly like mine.) Java lets us figure out the actual visible part of the frame we can use, though. For example, the program that produced the above window also gave me this output with information about it.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Information about a Java window" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-02.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Information about a Java window</font></p>
+<p>You can see from this that the size of the window in figure 1 was 400 pixels wide by 300 pixels tall. The title bar is 30 pixels tall in my operating system, and the three borders are each eight pixels thick.
+</p>
+<p>Here's the code that produced that window and the text output:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.Dimension;
+import java.awt.Insets;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
+public class WindowFrame extends JFrame {
+
+    public WindowFrame() {
+        setTitle("Window Frame");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 300);
+        setLocationRelativeTo(null); // centers window in display screen
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    WindowFrame dw = new WindowFrame();
+                    dw.setVisible(true);
+                    Dimension dim = dw.getSize();
+                    Insets ins = dw.getInsets();
+                    System.out.println("Window Size is " + dim.width + " by " + dim.height);
+                    System.out.println("Window top inset is " + ins.top);
+                    System.out.println("Window bottom inset is " + ins.bottom);
+                    System.out.println("Window left inset is " + ins.left);
+                    System.out.println("Window right inset is " + ins.right);
+                }
+            });
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Let's go through this code piece by piece so you understand it.
+</p>
+<p><strong>Java's GUI Tool Packages: AWT and Swing</strong></p>
+<p>The imports for this program are from two packages: <font class="font_monospace_black">java.awt</font> (AWT or Abstract Window Toolkit) and <font class="font_monospace_black">javax.swing</font>. These are Java's two main GUI tool packages. </p>
+<p>AWT dates from the beginning of Java's history. It contains many of the basic GUI and graphics classes that Java still uses, and it provides a Java interface to many of the operating system's GUI objects. </p>
+<p>You'll see many GUI programs that use wild cards to import the complete packages, like this:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.*;
+import javax.swing.*;
+</pre>
+</div>
+<p>
+</p>
+<p>I chose to import the classes we needed for this example individually so it would be clear which classes we're using from each package.
+</p>
+<p>The Swing package is an update to Java's GUI tools introduced in Java 1.2 that provides more consistent-looking GUIs across platforms. It uses Java GUI objects instead of those that the various operating systems provide. Some designers prefer AWT tools because the GUI applications developed that way look more like those developed for the specific operating system. So a Java GUI app in Windows looks more like a native Windows app, and the same app in Mac OS X looks more like a native Mac app. </p>
+<p>Other designers prefer the tools in Swing because they're more consistent across platforms, with the same app having the same Java look on both Windows and Mac platforms. The Swing toolkit also provides more built-in options for designers to use. </p>
+<p>I'm going to take a standard approach in this course and use Swing for our GUI lessons. Many Swing classes have class names that start with "J" to distinguish them from their AWT counterparts.</p>
+<p><strong>The </strong><strong class="font_monospace_black">WindowFrame</strong><strong> Class and Constructor</strong></p>
+<p>The class declaration in our code names our class <font class="font_monospace_black">WindowFrame</font> and extends the <font class="font_monospace_black">JFrame</font> class, which is Swing's frame class. As I mentioned in Lesson 8, extending a class means that our class will inherit all the data elements and methods from <font class="font_monospace_black">JFrame</font> in addition to what we add to it in <font class="font_monospace_black">WindowFrame</font>. So we'll already have everything included that we need to set up our window. Our basic job will be to set its parameters so it looks and behaves the way we want it to.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Information about a Java window" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-02a.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The class constructor takes care of most of that. (As I mentioned in Lessons 3 and 4, a constructor is a special method that gives objects a value to start with, even though that value may change later.) The first line calls <font class="font_monospace_black">JFrame</font>'s <font class="font_monospace_black">setTitle()</font> method to set the text we want to appear in the window's title bar.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Information about a Java window" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-02b.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The next line sets the behavior we want our window to take when a user clicks its close button in the title bar (a red rectangle in Windows and a red circle on a Mac). The default action is to hide (minimize) the window but leave the program running. By using the Java constant <font class="font_monospace_black">JFrame.EXIT_ON_CLOSE</font>, we're telling Java we want the application to shut down when the user clicks that button.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Information about a Java window" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-02c.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The constructor's third line sets the size we want for our window using <font class="font_monospace_black">JFrame</font>'s <font class="font_monospace_black">setSize(</font><font class="font_monospace_black">)</font> method. I set this example window to 400 pixels wide by 300 pixels tall.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Information about a Java window" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-02d.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The last line in the constructor tells Java where to put the window when it opens. The default is to put it at the top left of the screen. You can set its absolute location using the <font class="font_monospace_black">setLocation()</font> method. The option I chose, calling <font class="font_monospace_black">setLocationRelativeTo(null)</font>, tells Java to center the window in the display screen.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Information about a Java window" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-02e.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>Those are all the settings we need in our window class, so that's the end of our class constructor.</p>
+<p><strong class="font_monospace_black">WindowFrame</strong><strong>'s </strong><strong class="font_monospace_black">main()</strong><strong> Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p>The only thing left to do is set up a <font class="font_monospace_black">main()</font> method that creates our <font class="font_monospace_black">WindowFrame</font> object and displays it on-screen. So that's what we'll look at next.</p>
+<p>Probably the strangest and hardest part of this whole process to explain is the first two lines of the <font class="font_monospace_black">main() </font>method, so we're going to talk about them for a bit. Just to save you a little scrolling, here's what they look like again:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>        SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+</pre>
+</div>
+<p>These lines involve several topics that we haven't discussed yet, and you probably don't have the background yet to understand in detail. So I'm going to give you an option here: If you like, you can accept that this is Oracle's recommended way to start a GUI app and skip to Chapter 3.</p>
+<p>Now if you're reading this paragraph I'm assuming you're a diehard "gotta-know-how-it-works" fanatic. So here goes . . .</p>
+<p>Java has the ability to multitask, or in technical terms, run multiple <em>threads</em>. A thread is an independent execution path. If I start a new thread and run some code on it, it can execute in parallel with, and completely independently of, the program that started it. That's an efficient approach in the world of multicore computers.</p>
+<p>Java maintains a thread it calls its AWT Event Dispatch Thread, and that thread should manage all GUI updates. The <font class="font_monospace_black">SwingUtilities</font> class method named <font class="font_monospace_black">invokeLater()</font> sets up an object to use that thread as soon as the thread is available. The only requirement is that the object be a <font class="font_monospace_black">Runnable</font> object, which means it contains a <font class="font_monospace_black">run()</font> method that the thread can call. </p>
+<p>The parameter for the call to <font class="font_monospace_black">invokeLater()</font> in this case is an anonymous <font class="font_monospace_black">Runnable</font> object, which you can create with the code <font class="font_monospace_black">new Runnable() { }</font>. Within those brackets, you'd define a <font class="font_monospace_black">run()</font> method that tells Java what this object should do. The <font class="font_monospace_black">run()</font> method contains the code that will create our new window. I'll describe that code in Chapter 3.</p>
+<p>A full explanation of threads in general and the Event Dispatch Thread in particular would take more time and spaaaaaace than we have. But a couple of links in the Supplementary Material relate to threads and <em>concurrency</em> (the official term for running more than one thing in parallel). </p>
+<p>Let's move on to creating a Java window and displaying it.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Creating and Displaying the Java Window</strong></p>
+<p>The rest of the <font class="font_monospace_black">main()</font> method is the code that actually creates the window object and displays it. In this case some code displays some of the window's characteristics in BlueJ's terminal window. </p>
+<p>The next line in our method,</p>
+<p class="font_monospace_black">WindowFrame dw = new WindowFrame();</p>
+<p>creates a <font class="font_monospace_black">WindowFrame</font> variable named <font class="font_monospace_black">dw</font> and a new <font class="font_monospace_black">WindowFrame</font> object for it to refer to. After this statement executes, our window exists, but you can't see it on the display screen. The following line fixes that by setting the window's visible property to <font class="font_monospace_black">true</font> so the window displays on-screen:</p>
+<p class="font_monospace_black">dw.setVisible(true);</p>
+<p>That completes the code to set up and display a window in Java. I could stop here, and the window would display just fine. But I've added a few lines of code that tell us a bit about our window:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>Dimension dim = dw.getSize();
+Insets ins = dw.getInsets();
+System.out.println("Window Size is " + dim.width + " by " + dim.height);
+System.out.println("Window top inset is " + ins.top);
+System.out.println("Window bottom inset is " + ins.bottom);
+System.out.println("Window left inset is " + ins.left);
+System.out.println("Window right inset is " + ins.right);
+</pre>
+</div>
+<p>
+</p>
+<p>The first line creates a new <font class="font_monospace_black">Dimension</font> variable and uses the <font class="font_monospace_black">Frame getSize()</font> method to get a <font class="font_monospace_black">Dimension</font> object for it. Java's <font class="font_monospace_black">Dimensio</font><font class="font_monospace_black">n</font> class describes the size of a GUI component, giving us its width and height in pixels.
+</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/note.png" align="right" class="pf_image">
+<p><strong>What's a Pixel?</strong> </p>
+<p>A <em>pixel</em>, or picture element, is one of the tiny dots that make up the display surface of your screen. We'll be talking about pixels, their colors, and their coordinates a lot in this lesson and in Lesson 12. </p>
+</div>
+<p>The next line creates a new <font class="font_monospace_black">Insets</font> variable and object using the <font class="font_monospace_black">getInsets()</font> method. The <font class="font_monospace_black">Insets </font>class describes the borders of a GUI component, giving us the depth of the borders on all four sides.</p>
+<p>These classes are two of a few Java classes that have <font class="font_monospace_black">public</font> variables in them. The <font class="font_monospace_black">Dimension</font>'s <font class="font_monospace_black">width</font> and <font class="font_monospace_black">length</font> fields tell us the size of a GUI component. <font class="font_monospace_black">Inset</font>'s <font class="font_monospace_black">top</font>, <font class="font_monospace_black">bottom</font>, <font class="font_monospace_black">left</font>, and <font class="font_monospace_black">right </font>fields tell us how deep the border of the component is on those sides. In the terminal window that I showed you in Chapter 2, I used these objects and their variables to display the size of the frame and the depths of the title bar and border.</p>
+<p>That was a lot of explanation for a simple program that just shows us a window. But now we'll start putting something into that window.</p>
+<p><strong>A Window With Something In It</strong></p>
+<p>Let's start this topic with an image of the window we're building. Then I'll show you the code I used to create it.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" A window with something in it" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-03.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> A window with something in it</font></p>
+<p>As you can see, I've drawn a blue rectangle just inside the borders of the window and some smaller rectangles inside it with text similar to what the first example displayed in the terminal window. Creating this window involved two classes instead of one.
+</p>
+<p>Here's the code for the first class—the class with our <font class="font_monospace_black">main()</font> method. It looks like the code for our first, empty, window.</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
+public class DrawingWindow extends JFrame {
+
+    public DrawingWindow() {
+        setTitle("Drawing Window");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        add(new DrawingSurface());
+
+        setSize(400, 300);
+        setLocationRelativeTo(null); // centers window in display screen
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    DrawingWindow dw = new DrawingWindow();
+                    dw.setVisible(true);
+                }
+            });
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Notice the line in the middle of the constructor that calls <font class="font_monospace_black">add(new DrawingSurface())</font>. Our frame's <font class="font_monospace_black">add()</font> method is what lets us add a visible component to our frame. What we're adding to it in this case is a new <font class="font_monospace_black">DrawingSurface</font> object. And that brings me to our second class for this project, <font class="font_monospace_black">DrawingSurface</font>, which will do some drawing and display it in the window:
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Insets;
+import javax.swing.JPanel;
+
+class DrawingSurface extends JPanel {
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        Graphics2D g2d = (Graphics2D) g;
+        Dimension size = getSize();
+        Insets insets = getInsets();
+        int w = size.width - insets.left - insets.right;
+        int h = size.height - insets.top - insets.bottom;
+        
+        g2d.setColor(Color.white);
+        g2d.fillRect(0,0,w,h);
+
+        g2d.setColor(Color.blue);
+        g2d.drawLine(2, 2, 2, h-3);
+        g2d.drawLine(2, h-3, w-3, h-3);
+        g2d.drawLine(w-3, h-3, w-3, 2);
+        g2d.drawLine(w-3, 2, 2, 2);
+
+        g2d.setColor(Color.red);
+        g2d.drawRect(5, 5, 180, 20);
+        g2d.drawString("The window's width is " + size.width + ".", 10, 20);
+
+        g2d.setColor(Color.black);
+        g2d.drawRect(5, 35, 185, 20);
+        g2d.drawString("The window's height is " + size.height + ".", 10, 50);
+
+        g2d.setColor(Color.gray);
+        g2d.drawRect(5, 65, 185, 20);
+        g2d.drawString("The window's left inset is " + insets.left + ".", 10, 80);
+
+        g2d.setColor(Color.green);
+        g2d.drawRect(5, 95, 195, 20);
+        g2d.drawString("The window's right inset is " + insets.right + ".", 10, 110);
+
+        g2d.setColor(Color.orange);
+        g2d.drawRect(5, 125, 185, 20);
+        g2d.drawString("The window's top inset is " + insets.top + ".", 10, 140);
+
+        g2d.setColor(Color.pink);
+        g2d.drawRect(5, 155, 210, 20);
+        g2d.drawString("The window's bottom inset is " + insets.bottom + ".", 10, 170);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>This may look like a lot of code, but it's repetitive. So let's look at what we've got.
+</p>
+<p>The first line after the imports declares our class as a subclass of <font class="font_monospace_black">JPanel</font>. So our class will inherit all <font class="font_monospace_black">JPanel</font>'s properties and methods. <font class="font_monospace_black">JPanel</font> is Swing's primary class for holding other display objects, and it's going to provide the "surface" or "canvas" where we'll draw.</p>
+<p><font class="font_monospace_black">JPanel</font> has a method named <font class="font_monospace_black">paintComponent()</font>, which we'll <em>override</em> in order to do our drawing. Overriding a method means we'll replace the method we inherit with the one we'll write. It's a common practice when we want our class to do things a little differently than the class we're inheriting from. It's especially common to add to it, and that's what we'll do.</p>
+<p>The first thing about the <font class="font_monospace_black">paintComponent()</font> method I want to mention is its parameter, a <font class="font_monospace_black">Graphics</font> object named <font class="font_monospace_black">g</font>. We get that object when we call the <font class="font_monospace_black">paintComponent()</font> method. We'll use this object to do our drawing, so it's sort of our paintbrush.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" A window with something in it" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-03a.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The next line is another new one: <font class="font_monospace_black">"super.paintComponent(g)"</font>, which calls the method in our parent class that we're overriding. It goes to our class's superclass, which is <font class="font_monospace_black">JPanel</font>, and runs its <font class="font_monospace_black">paintComponent()</font> method. </p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" A window with something in it" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-03b.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>Why would we want to do that? We're essentially using it to clear, or erase, the panel and paint an opaque background. The default <font class="font_monospace_black">JPanel</font> is an empty spaaaaaace, and calling its <font class="font_monospace_black">paintComponent()</font> method clears out the whole thing. This will come in handy once we get to animation, where each time we paint the window we need to erase the previous contents. The rest of our version of the method will be adding things to it.</p>
+<p>The next line is another line to copy just the way it is. It <em>casts</em> our <font class="font_monospace_black">Graphics</font> object into a <font class="font_monospace_black">Graphics2D</font> object. Casting is Java's process for changing one data type into another, as long as Java knows how to make the transition.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" A window with something in it" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-03c.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>To maintain backward compatibility so that programs written in previous versions of Java will still run, the parameter for this method has to be a <font class="font_monospace_black">Graphics</font> object. But it's actually been updated to a newer version of the class, a subclass of <font class="font_monospace_black">Graphics</font> named <font class="font_monospace_black">Graphics2D</font>. So the object we receive in our method is actually a <font class="font_monospace_black">Graphics2D</font> object wrapped in a <font class="font_monospace_black">Graphics</font> "shell." When we cast it, we're telling Java we really know it's a <font class="font_monospace_black">Graphics2D</font> object, and that's how we want to use it.</p>
+<p>The next four lines repeat what we did in the first program to get the height and width of our window. This time we're getting the width and height of our <font class="font_monospace_black">DrawingSurface</font> spaaaaaace. Now we know how much room we have to work with. And we're finally ready to draw!</p>
+<p>We'll do all our drawing by calling methods in the <font class="font_monospace_black">Graphics2D</font> class. The first two calls paint a white background. I did that because windows in different operating systems have different default background colors, and I want to be consistent across platforms. </p>
+<p>The first call, <font class="font_monospace_black">"g2d.setColor(Color.white)"</font>, sets the color we want to draw in. Java's <font class="font_monospace_black">Color</font> class has a group of predefined colors set up in it. The color <font class="font_monospace_black">white</font> is one of them, and we'll see others as we go along. (You can see the complete list in the API documentation for the <font class="font_monospace_black">Color</font> class.)</p>
+<p>The next line, <font class="font_monospace_black">"g2d.fillRect(0,0,w,h)"</font>, calls the method that draws a filled rectangle with the color we just set, white. The first two arguments in the call are the x-coordinate and y-coordinate of the top-left corner of the rectangle. That corner will be at the origin of the window, the point <font class="font_monospace_black">(0,0)</font>. </p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/note.png" align="right" class="pf_image">
+<p><strong>Understanding Java's Coordinates</strong> </p>
+<p>In computer graphics, the origin of the window, position <font class="font_monospace_black">(0,0)</font>, is the top-left corner. As we move to the right, the x-coordinate increases, just as it does in the Cartesian coordinate systems you probably learned in high school algebra. But the y-coordinate in graphics increases as we go down the window, which is different from the graphing coordinates in algebra. And Java measures coordinates in pixels rather than inches or centimeters.</p>
+<p>In our window, then, the top-left corner is the point <font class="font_monospace_black">(0,0)</font>. The top-right corner is <font class="font_monospace_black">(w-1,0)</font>, where <font class="font_monospace_black">w</font> is the width of the window. The bottom-left corner is <font class="font_monospace_black">(0,h-1)</font>, where <font class="font_monospace_black">h</font> is the height of the window. And the bottom-right corner is <font class="font_monospace_black">(w-1,h-1)</font>. </p>
+</div>
+<p>The third argument is the width of the rectangle, and since <font class="font_monospace_black">w</font> is the width of the window, it's as wide as our window. The fourth argument is the height of the rectangle, and since <font class="font_monospace_black">h</font> is the height of the window, the rectangle is also as high as our window. So that call to <font class="font_monospace_black">fillRect()</font> draws a filled white rectangle that becomes the background for our drawing.</p>
+<p>In the next chapter we'll review the rest of the code from that window and see how to draw other items.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Drawing in Our Window</strong></p>
+<p>The next four lines draw the blue line near the edges of the window. Here are those lines again:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>        g2d.setColor(Color.blue);
+        g2d.drawLine(2, 2, 2, h-3);
+        g2d.drawLine(2, h-3, w-3, h-3);
+        g2d.drawLine(w-3, h-3, w-3, 2);
+        g2d.drawLine(w-3, 2, 2, 2);
+</pre>
+</div>
+<p>The first line changes the drawing color to blue. The next four lines use the <font class="font_monospace_black">drawLine()</font> method to draw four lines around the edges of the window, two pixels away from the edges. The <font class="font_monospace_black">Graphics2D drawLine()</font> method will draw a line between any two points. </p>
+<p>The first two arguments are the x-coordinate and y-coordinate of one end of the line; the third and fourth arguments are the coordinates of the other end of the line. So the first call to <font class="font_monospace_black">drawLine()</font> above draws a vertical line down the left edge of the window, two pixels away from the edge, between the points <font class="font_monospace_black">(2,2)</font> and <font class="font_monospace_black">(2,h-3)</font>.</p>
+<p>The second call to <font class="font_monospace_black">drawLine()</font> draws a horizontal line along the bottom edge of the window between points <font class="font_monospace_black">(2,h-3)</font> and <font class="font_monospace_black">(w-3, h-3)</font>.</p>
+<p>The third call draws another vertical line from <font class="font_monospace_black">(w-3,h-3)</font> up along the right edge to <font class="font_monospace_black">(w-3,2)</font>.</p>
+<p>And the last call draws another horizontal line along the top, from <font class="font_monospace_black">(w-3,2)</font> back to the top-left corner at <font class="font_monospace_black">(2,2)</font>. After that call, we have a blue box around the edge of the window. (I could have drawn it with one call to <font class="font_monospace_black">drawRect()</font>, but I wanted to talk about drawing lines first.)</p>
+<p>Here are the next three lines in the code:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>        g2d.setColor(Color.red);
+        g2d.drawRect(5, 5, 180, 20);
+        g2d.drawString("The window's width is " + size.width + ".", 10, 20);
+</pre>
+</div>
+<p>These lines change the color to red and draw a red rectangle from the point <font class="font_monospace_black">(5,5</font><font class="font_monospace_black">)</font> to <font class="font_monospace_black">(185,25)</font>, a width of 180 and a height of 20. The <font class="font_monospace_black">drawRect()</font> method is just like the <font class="font_monospace_black">fillRect()</font> that we used for the background except that it draws the outline of a rectangle instead of a filled rectangle.</p>
+<p>The third line, the call to <font class="font_monospace_black">drawString()</font>, is the way we can paint text on the screen. This line uses the default font; we'll talk in a bit about how to use other fonts. </p>
+<p>The first argument in the call is the string we want to display, and the two numeric arguments are the coordinates of the left end of the string's <em>baseline</em>. A font's baseline is like the line you learned to print on in grade school. It's the red line at the bottom edge of the letters in the image below. If you'd like more information on font measurements, you can refer to the Supplementary Material.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt=" Font measurements, including the baseline" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-04.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> Font measurements, including the baseline</font></p>
+<p>The net result of those three lines of code is to draw a red rectangle with a line of red text in it giving us our width in pixels. Note that the width this time is different from the full width of the window. This is the width of what Java calls our <font class="font_monospace_black">DrawingSurface</font>, which in this case is the interior dimensions of the window.</p>
+<p>The rest of the program is five more repetitions of these three lines of code, using different colors, sizes of rectangles, and text strings.</p>
+<p>And that's the basic process for drawing in a Java window. But as you might suspect, we can't stop there. We can use a lot more drawing tools in the <font class="font_monospace_black">Graphics2D</font> class.</p>
+<p>For example, take a look at this image. A kindergartner could draw it, but it shows some of the other drawing methods that Java makes available.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt="  Kindergarten art of a house and sun" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-05.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> Kindergarten art of a house and sun</font></p>
+<p>This image consists of five rectangles, two ovals (the doorknob is an oval even though the screen resolution doesn't look like it), and a triangle.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/note.png" align="right" class="pf_image">
+<p><strong>The Basics of Geometry</strong> </p>
+<p>For those of us doing our best to forget geometry, a <em>polygon</em> is a two-dimensional shape with three or more straight sides. That includes triangles (three-sided), rectangles (four-sided), pentagons (five-sided), and so on.</p>
+<p>Java defines polygons as a sequence of points that form the corners of the polygon, with each point joined to the next with a line to form the sides. The final point joins back to the first to form the final side.</p>
+</div>
+<p>The <font class="font_monospace_black">DrawingWindow</font> class for this example is identical to that from the previous example except for the name of the second class it refers to (<font class="font_monospace_black">DrawingArt</font> instead of <font class="font_monospace_black">DrawingSurface</font>) and its size (400 × 400 rather than 400 × 300). So I'm going to focus on the code for the second class, <font class="font_monospace_black">DrawingArt</font>, which is here:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Polygon;
+import javax.swing.JPanel;
+
+class DrawingArt extends JPanel {
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        Graphics2D g2d = (Graphics2D) g;
+        
+        // draw a light blue sky
+        g2d.setColor(Color.cyan);
+        g2d.fillRect(0, 0, getWidth(), getHeight());
+        
+        // draw green grass
+        g2d.setColor(Color.green);
+        g2d.fillRect(0, 300, getWidth(), getHeight()-300);
+
+        // draw the red wall
+        g2d.setColor(Color.red);
+        g2d.fillRect(100, 200, 150, 150);
+        
+        // draw the window
+        g2d.setColor(Color.black);
+        g2d.fillRect(120, 220, 35, 35);
+        
+        // draw the door
+        g2d.setColor(Color.blue);
+        g2d.fillRect(175, 275, 50, 75);
+
+        // draw the sun
+        g2d.setColor(Color.yellow);
+        g2d.fillOval(275, 50, 75, 75);
+
+        // draw the doorknob
+        g2d.setColor(Color.yellow);
+        g2d.fillOval(180, 310, 5, 5);
+        
+        // draw the roof
+        Polygon p = new Polygon();
+        p.addPoint(75,200);
+        p.addPoint(175,125);
+        p.addPoint(275,200);
+        g2d.setColor(new Color(145,97,13));
+        g2d.fillPolygon(p);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>The first few lines of code are the same as in our previous example except for the class name. Then we have five pairs of code lines that use <font class="font_monospace_black">fillRect()</font> to draw five rectangles: a blue one for the sky, a green one for grass, a red one for a wall, a black one for a window, and a blue one for a door.
+</p>
+<p>Then there are two pairs of lines that use <font class="font_monospace_black">fillOval()</font>, a method that draws filled ovals, to draw two yellow circles for the sun and the doorknob. </p>
+<p>In Java, you position ovals and circles using a <em>bounding rectangle</em>, which is the smallest rectangle that can hold the oval. The four arguments that draw an oval work just the same as for a rectangle, but instead of drawing the rectangle, Java draws the oval that fits into the rectangle. For example, the following image shows the sun from our kindergarten art along with its bounding rectangle.<strong> </strong></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><img alt="Circle and bounding rectangle" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-06.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The last six lines of code draw the triangle for the roof. Java doesn't have a method to draw triangles, but it has one for polygons, which will work just fine.</p>
+<p>Creating a polygon is easy. The first of those six lines of code creates a <font class="font_monospace_black">Polygon</font> object named <font class="font_monospace_black">p</font>. The next three lines add three points that define the three corners of the triangle. The first point uses the same y-coordinate as the top of the wall (200) and an x-coordinate just a little to the left of the wall (75). The second point defines the peak of the roof. It's at the midpoint of the wall (x is 175) and a little above it (y is 125). The third point is to the right of the wall (x is 275), and it's even with the top of the wall (y is 200). That defines the shape of the roof.</p>
+<p>The next line of code defines the roof's color. I wanted a brown roof, and the <font class="font_monospace_black">Color</font> class doesn't have a predefined brown shade. So I pulled up an online color chart at <a href="http://www.colorpicker.com/" target="_blank">www.colorpicker.com</a> and found a shade of brown I liked. The chart showed me the numbers to use to create it. </p>
+<p>The three numbers I used for my <font class="font_monospace_black">Color</font> constructor define the shades of red, green, and blue for the color—in other words, its <em>RGB values</em>. Those values can be any integer between 0 and 255. Using the RGB definition, I can define 256<sup>3</sup> colors, or 16,777,216 colors. You can figure out just about any color you want using a color chart, and then you can use the values from the chart to create your color.</p>
+<p>The last line of the <font class="font_monospace_black">DrawingArt</font> class draws the roof, which completes our picture. </p>
+<p>There are a lot more methods in the <font class="font_monospace_black">Graphics2D</font> class, and more inherited from the <font class="font_monospace_black">Graphics</font> class, that you can use for drawing images. And my students have far more imagination when it comes to using them than I do! Here's a short list of the ones I've found useful and their purposes:</p>
+<ul>
+    <li><font class="font_monospace_black">drawArc()</font> and <font class="font_monospace_black">fillArc()</font> draw partial ovals.</li>
+    <li><font class="font_monospace_black">drawImage()</font> displays an image that's been loaded from a JPEG, BMP, or PNG file.</li>
+    <li><font class="font_monospace_black">drawRoundRect()</font> and <font class="font_monospace_black">fillRoundRect()</font> draw rounded rectangles.</li>
+    <li><font class="font_monospace_black">setStroke()</font> sets line thickness and patterns of dashed and dotted lines.</li>
+</ul>
+<p>There's more information about two-dimensional graphics in the Supplementary Material. </p>
+<p>What did you think of our exploration of Java art? Will you use colors and designs in your own projects?</p>
+<p>Please join me in Chapter 5 so we can finish Lesson 11.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>How well do you understand the code we discussed today? Here's a matching game to test your recall.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_matchbox" height="440" align="middle" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L11-07.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L11-07.swf" height="440" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L11-07.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=11#skip_game_L11CH05_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/L11-07.html" frameborder="0" height="440" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L11CH05_b" id="skip_game_L11CH05_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>I hope you did well. If you had trouble, please review the terms that gave you trouble, or ask me about them in the Discussion Area.</p>
+<p>Today we focused on creating a Java window with some simple images using the two-dimensional graphics tools that Java provides. Creating a window is complicated, but once you have a window and a panel to draw in, it can be a lot of fun.</p>
+<p>In our last lesson together, we'll look at more of Java's graphics tools and build some simple animations. I'll see you there.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/essential/concurrency/index.html" target="_blank">
+                                Oracle Tutorial on Threads and Concurrency</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/essential/concurrency/index.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            </p><p>You can learn more about threads and concurrency in this (rather technical) tutorial.</p>
+<p></p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html" target="_blank">
+                                Concurrency and Swing</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            </p><p>This page explains how to use threads in a GUI program to make it as stable as possible. (We talked about threads and concurrency at the end of Chapter 2.)</p>
+<p></p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html" target="_blank">
+                                Inheritance</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Oracle's tutorial on inheritance and casting includes helpful examples.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://stackoverflow.com/questions/5289393/casting-variables-in-java" target="_blank">
+                                Casting Variables in Java</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://stackoverflow.com/questions/5289393/casting-variables-in-java</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This informal Q-and-A discussion can help you understand casting.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/IandI/override.html" target="_blank">
+                                Overriding and Hiding Methods</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/IandI/override.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            How can you override superclass methods in a subclass? This tutorial shows you.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://en.wikipedia.org/wiki/Baseline_%28typography%29" target="_blank">
+                                Baseline (Typography)</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://en.wikipedia.org/wiki/Baseline_%28typography%29</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This article describes the measurements of a print or display font, including its baseline, which I referred to in Chapter 4.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/2d/" target="_blank">
+                                Trail: 2D Graphics</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/2d/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This tutorial trail (a sequence of related tutorials) at Oracle's site gives you additional training in Java's 2D graphics classes and tools.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> What about 3-D graphics? You've mentioned only 2-D graphics in this lesson.</p>
+<p><strong>A:</strong> Java has a whole set of tools for programming 3-D graphics. But that could be an entire course in itself, so I haven't addressed it here. There's a site dedicated to 3-D graphics in Java, including a beginner's tutorial, at <a href="http://www.java3d.org/" target="_blank">www.java3d.org</a>.</p>
+<p>
+        
+</p></div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            I'd like you to either draw your own simple image (like my kindergarten art in Chapter 4) or embellish my art. I've had students add trees, birds, clouds, sidewalks, driveways, smoking chimneys, and cats to my image—but not all of those at once! So let your imagination run wild, and let me see some of your art. You can post your code in the Discussion Area, and I'll run it to see what you've drawn.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=11#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='11';
+s.prop7='11';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=11';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=11';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 11 (Creating Windows and Adding Graphics in Java)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933728081&amp;cv=7&amp;fst=1437933728081&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D11&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D11" /&gt;</iframe></body></html>

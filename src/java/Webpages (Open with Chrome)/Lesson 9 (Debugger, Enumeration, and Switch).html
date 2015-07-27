@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=9 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/ld.js"></script><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/global.js"></script><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/course.js"></script><script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/patch.css" media="all"><script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/captions.js"></script><link href="./Lesson 9 (Debugger, Enumeration, and Switch)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 9 (Debugger, Enumeration, and Switch)_files/Lesson 9 (Debugger, Enumeration, and Switch).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=9#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            9: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Three Tools: Debugger, Enumeration, and Switch</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=9">Lesson 9</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/header09.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<div class="jab-redbox">
+<p><strong>"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." </strong></p>
+<p align="right">—Brian W. Kernighan, Canadian computer scientist and coauthor of <br>
+the first book on the C programming language</p>
+</div>
+<p><strong>Introduction</strong></p>
+<p>This lesson's a bit of a potpourri. We'll start with a look at one of BlueJ's tools, its <em>debugger</em>. The debugger lets us look at what's going on while the program is executing. We can see the values of our variables, and we can execute one statement at a time to check its effects. Most integrated development environments have debuggers, so if you're using one of the other IDEs that supports Java, it will have similar capabilities.</p>
+<p>Then we'll look at one of Java's data type declarations: enum, or enumeration. It lets us declare a new data type and its values. I'll explain what that means in the lesson.</p>
+<p>Last we'll look at Java's <em>switch statement</em>, sometimes called a case statement. It allows us to use a different structure based on a data value to replace a list of nested <font class="font_monospace_black">if</font> statements.</p>
+<p>I'm guessing that's all pretty confusing right now, so I'd better get busy explaining it!</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>BlueJ's Debugger</strong></p>
+<p>I'm sure you've wanted to look "under the covers" and see what's going on while a program is running. Debuggers let you do just that. Most IDEs include them, and BlueJ is no exception. Let me show you a short program, and then we'll look at the debugger window showing what's going on while it runs.</p>
+<p>First, here's my code in a format you can copy and paste if you want to.</p>
+<p align="center"><input name="" id="L09CH01_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L09CH01-solution">
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * This class is a simple program whose use is displaying BlueJ's
+ * debugger functions.
+ */
+public class DebuggerExample {
+    /**
+     * main method with variables, a loop, an if statement, and a method call
+     */
+    public static void main(String[] args) {
+        int x = 0;
+        double y = 0.0;
+
+        x = 1;
+        y = Math.PI;
+
+        while (x &lt; 10) {
+            if (x &lt; 5)
+                System.out.println("x = " + x);
+            else
+                System.out.println("y = " + y);
+            x = x + 1;
+            y = y + 0.1;
+        }
+
+        y = myMethod(x);
+        System.out.println("y = " + y);
+    }
+
+    /**
+     * A method with a parameter and return value 
+     */
+    public static double myMethod(int z)
+    {
+        return z * 2.5;
+    }
+}
+</pre>
+</div>
+</div>
+This program is simple, but it has items we can trace in the debugger. We can watch the loop iterate, the variable values change, and the <font class="font_monospace_black">if</font> statement make a choice. We can also observe a call to and return from a method.
+<p>Here's what my program looks like in BlueJ's editor window:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img alt="Program code with breakpoints" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/L09-01.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Program code with breakpoints</font></p>
+<p>Notice the two miniature stop signs in the left margin where the line numbers appear. These are <em>breakpoints</em>. When the program gets to a breakpoint, execution stops, and the debugger displays the state of the program in the <em>debugger window</em>. That window is where we can watch what's going on in the program.
+</p>
+<p>You can set and clear breakpoints by clicking in the left margin of an executable statement in the editor window. If you have BlueJ set to show line numbers, just click on the line number. Otherwise click where the line number would be. You will need to compile your class before you can add breakpoints. </p>
+<p>When I ran the program above, and execution got to the first breakpoint, here's the window that opened up:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img alt=" BlueJ&#39;s debugger window" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/L09-02.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> BlueJ's debugger window</font></p>
+<p>We'll ignore the Threads pane of the window since we haven't discussed threads in this course. A <em>thread</em> in Java is some code that can run independently of other code. That means it can run in parallel and let the computer do more than one thing at a time. The Threads pane shows all active application threads. In this case the only thread running is our <font class="font_monospace_black">main()</font> method.
+</p>
+<p>The next pane down on the left shows the list of method calls in reverse order. The top line is the most recent call. This is the call stack we talked about in Lesson 8.</p>
+<p>On the right side are three panes for variables. The top one is for <em>static variables</em> (if there are any) in the class containing the breakpoint. We discussed the <font class="font_monospace_black">static</font> keyword in Lesson 8. A static variable is one that exists in the class before we create any objects. &nbsp;</p>
+<p>The middle pane shows the <em>instance variables</em> for the class—the variables that are part of each object. The bottom pane lists the <em>local variables</em>—the ones defined within the currently running method. In this case the method is <font class="font_monospace_black">main</font>, and the only local variable is the parameter named <font class="font_monospace_black">args</font>. Args is short for "arguments" and is there to receive any arguments passed by the operating system when the program starts. Since we haven't used that parameter, it's a null reference.</p>
+<p>Across the bottom are five buttons. </p>
+<ul>
+    <li>The Halt button usually isn't available since the program is usually already stopped when this window is active. </li>
+    <li>The Step button tells BlueJ to execute one statement and then stop again to show its results. </li>
+    <li>The Step Into button is similar, but it does one thing differently when the statement being executed is a method call. For method calls, the Step button calls the method, runs it, and stops at the next statement after the method call. The Step Into button calls the method and stops at the method's first line. </li>
+    <li>The Continue button tells BlueJ to continue running the program until the next breakpoint or until the program ends. </li>
+    <li>The last button, Terminate, tells BlueJ to stop running the program and to end the debugger.</li>
+</ul>
+<p>Let me show you an example of running the debugger.</p>
+<div class="figure">
+<div class="jw" style="display: none;">Loading video…</div>
+<script type="text/javascript">/* ------------------- 5.8 Video Script Start ------------------- */
+
+placeHolderNum = "L09-02-v01";
+runJWsetup();
+courseCode = "jab-3";  /* optional */
+fileName = "L09-02";
+videoCaption = "";
+posterImage = "L09-02.png";
+hasCC = true;
+CCbackground = false;
+hasHD = false;
+vidWidth = 500;
+vidHeight = 470;
+stopStretch = false;
+runJWloader();/* ------------------- 5.8 Video Script Stop ------------------- */</script><div id="vidFrame_L09-02-v01" class="classroomJwVideoContainer"><div align="center"><div id="placeholderL09-02-v01_wrapper" style="position: relative; width: 500px; height: 470px;"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/jwplayer/player.swf" width="100%" height="100%" bgcolor="#000000" id="placeholderL09-02-v01" name="placeholderL09-02-v01" tabindex="0"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D9&amp;id=placeholderL09-02-v01&amp;file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL09-02_low.mp4&amp;image=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL09-02.png&amp;skin=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fglobal%2Fjwplayer%2Fmodieus.zip&amp;plugins=https%3A%2F%2Fsecurelp.longtailvideo.com%2F5%2Fcaptions%2Fcaptions.swf&amp;captions.file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL09-02.xml&amp;captions.state=false&amp;captions.back=false&amp;captions.pluginmode=HYBRID&amp;controlbar.position=over"></object><div id="placeholderL09-02-v01_captions" style="position: absolute; z-index: 10; left: 0px; top: 0px;"></div></div><br><div class="video_caption"><font class="caption"></font></div></div></div><script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/HTML5_jwplayers.js"></script><script src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/HTML5_video.js"></script>
+<div style="TEXT-ALIGN: center" class="caption"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/video/L09-02.pdf" target="_blank">Click here to download the video transcript&nbsp;<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/Transcript.png" border="0" class="pf_image"></a></div>
+</div>
+<p>Those are the basics of how to use BlueJ's debugger. I suggest playing around with it on your own by setting breakpoints in some of your programs and then running them, and by experimenting with the debugger buttons. A debugger can be a big help when you can't find bugs by just observing a program's output.</p>
+<p>Let's switch to a different topic in Chapter 3.<br>
+<br>
+</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Switch-Case Control Structure</strong></p>
+<p>Sometimes when we have a lot of values to check, a series of nested if-else statements can be tedious. Java has a <font class="font_monospace_black">switch</font> structure that allows us to check the value of a variable and branch any number of different ways based on that value, as long as the value is one of Java's integral types (<font class="font_monospace_black">char</font>, <font class="font_monospace_black">byt</font><font class="font_monospace_black">e</font>, <font class="font_monospace_black">short</font>, <font class="font_monospace_black">int</font>, <font class="font_monospace_black">long</font>, or <font class="font_monospace_black">boolean</font>) or a <font class="font_monospace_black">String</font> object.</p>
+<p>Here's the general format of a <font class="font_monospace_black">switch</font> statement, which involves both the <font class="font_monospace_black">switc</font><font class="font_monospace_black">h</font> and <font class="font_monospace_black">case</font> keywords:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>switch (&lt;variable name&gt;) {
+    case &lt;value1&gt;:
+        // code for this case
+        break;
+    case &lt;value2&gt;:
+    case &lt;value3&gt;:
+        // code for this case
+        break;
+      .
+      .
+      .
+    case &lt;valuen&gt;:
+        // code for this case
+        break;
+    default:
+        // code for all other cases
+}
+</pre>
+</div>
+<p>
+</p>
+<p>The &lt;<em>variable name</em>&gt; in the first line, right after the <font class="font_monospace_black">switch</font> keyword, is the variable whose value we want to test. The values &lt;<em>value1</em>&gt; through &lt;<em>valuen</em>&gt; following each <font class="font_monospace_black">case</font> keyword are all the values we want to have different actions for. The code for each value follows the case statement containing that value, and you can list as many case values as you need. The final case, <font class="font_monospace_black">default</font>, is optional. You'll use it if the variable doesn't contain any of the listed values.
+</p>
+<p>Notice that the code for each value ends with a <font class="font_monospace_black">break</font> statement. The break statement tells Java to exit the switch block. If the break statement is missing for a value, then after executing the code for that value, execution will <em>fall through</em>, or continue, to the next value's code. So the break statement is normally essential for each case.</p>
+<p>However, note that the case for &lt;<em>value2</em>&gt; doesn't have a break statement. That can be convenient when two values require the same action. In this case, Java will execute the same code for &lt;<em>value2</em>&gt; and &lt;<em>value3</em>&gt;.</p>
+<p>I think an example will help clarify things. Here's a simple Java program that converts a numeric month to that month's name:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * SwitchTest1 is a simple example of a switch structure. It reads
+ * a number from the leopard, converts that number to the equivalent 
+ * month's name, and displays that name.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class SwitchTest1 {
+    public static void main(String[] args) {
+        int monthNumber = 0;
+        String monthName = "";
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Enter a month's number: ");
+        if (in.hasNextInt()) {
+            monthNumber = in.nextInt();
+            switch (monthNumber) {
+                case 1:
+                    monthName = "January";
+                    break;
+                case 2:
+                    monthName = "February";
+                    break;
+                case 3:
+                    monthName = "March";
+                    break;
+                case 4:
+                    monthName = "April";
+                    break;
+                case 5:
+                    monthName = "May";
+                    break;
+                case 6:
+                    monthName = "June";
+                    break;
+                case 7:
+                    monthName = "July";
+                    break;
+                case 8:
+                    monthName = "August";
+                    break;
+                case 9:
+                    monthName = "September";
+                    break;
+                case 10:
+                    monthName = "October";
+                    break;
+                case 11:
+                    monthName = "November";
+                    break;
+                case 12:
+                    monthName = "December";
+                    break;
+                default:
+                    monthName = "ERROR - That was not a valid month number!";
+                    break;
+            }
+            System.out.println("The month's name is: " + monthName + "\n");
+        }
+        else {
+            System.out.println("That was not a number!  Please run the program again with a number.\n");
+        }
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Copy that code, and paste it into BlueJ. Run it through the debugger a few times, and take a look at its output. Let me know in the Discussion Area if you have any questions about it.
+</p>
+<p>Here's another example that shows how to combine values that have the same action. This example uses strings for the values, and it displays a message based on the day of the week:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * SwitchTest2 is an example of a switch structure using strings. It reads
+ * a day of the week from the leopard and then displays a message based on the day.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class SwitchTest2 {
+    public static void main(String[] args) {
+        String day = "";
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter a day of the week: ");
+        day = in.next().toUpperCase();
+        switch (day) {
+            case "SUNDAY":
+            case "SATURDAY":
+                System.out.println("It's the weekend! Hooray!");
+                break;
+            case "MONDAY":
+                System.out.println("It's Monday! I'm sorry!");
+                break;
+            case "FRIDAY":
+                System.out.println("Only one day to go!");
+                break;
+            case "WEDNESDAY":
+                System.out.println("You're halfway there!");
+                break;
+            case "TUESDAY":
+            case "THURSDAY":
+                System.out.println("Nothing special about today.");
+                break;
+            default:
+                System.out.println("Sorry - that wasn't a valid day of the week.");
+                break;
+        }
+        System.out.println();
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Since any logic that works in a switch block can also be performed using nested <font class="font_monospace_black">if</font> statements, the choice to use a switch instead of <font class="font_monospace_black">if</font>s is one of design and coding preference. For the most part, a programmer uses switch statements when he or she believes the logic would be clearer and easier to read using a switch rather than a set of <font class="font_monospace_black">if</font>s.
+</p>
+<p>One advantage of <font class="font_monospace_black">if</font> logic over switches is that an <font class="font_monospace_black">if</font> statement can evaluate far more complex conditions. A switch statement is limited to checking the value of a single variable.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/you_try.png" align="right" class="pf_image">
+<p><strong>Now You Try</strong></p>
+<p>See if you can write a simple program to convert the numbers 1 through 7 to the appropriate name of a day of the week (or to change the names of the days to a number). If you have any questions, please come visit me in the Discussion Area.</p>
+</div>
+<p>How did you do? Was it helpful to look at my example as you wrote your program?</p>
+<p>Let's move on to a different topic in Chapter 4: enumeration.<strong> </strong></p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Enumeration</strong></p>
+<p>Another useful tool in Java is <em>enumeration</em>, which is a way to define both a data type and all the possible values it can hold. Its name is often shortened to <em>enum</em>, which is the keyword used to define it.</p>
+<p>An enumeration's values are all constants, and variables of that type are limited to those values. Enums are useful when you want to have data types with a few fixed values. Common uses include types for the days of the week and the months of the year.</p>
+<p>I think an example will help clarify this. Here's a simple Java enumeration that defines the days of the week in order:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public enum DayOfWeek {
+  SUNDAY,
+  MONDAY,
+  TUESDAY,
+  WEDNESDAY,
+  THURSDAY,
+  FRIDAY,
+  SATURDAY;
+}
+</pre>
+</div>
+<p>
+</p>
+<p>This enum defines a new data type named <font class="font_monospace_black">DayOfWeek</font>, which I can use in a program. If I create a <font class="font_monospace_black">DayOfWeek</font> object, it can contain any of the seven values I declared for it. If you try to assign any value to a Day variable besides one of the seven values listed, the compiler will give you an error.
+</p>
+<p>A declaration and assignment might look like this:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>DayOfWeek day = DayOfWeek.MONDAY;</pre>
+</div>
+<p>The values in an enum are similar to static constants like <font class="font_monospace_black">Math.PI</font>. That's why programmers traditionally name them in all capital letters. You'd reference them like static constants, too, using their class name followed by the constant name, as in <font class="font_monospace_black">DayOfWeek.MONDAY</font>.</p>
+<p>Here's an example of a program using an enum like <font class="font_monospace_black">DayOfWeek</font> to help you see how you might use enums in your programs. I'm going to write a switch statement similar to the one in the last example I gave you, but this time the switch cases will use an enum's values. Here's one way that might look:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * EnumTest1 runs a simple program as an example of using an enum in a switch statement.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class EnumTest1 {
+    public static void main(String[] args) {
+        DayOfWeek day = DayOfWeek.MONDAY;
+        howsYourDay(day);
+        day = DayOfWeek.WEDNESDAY;
+        howsYourDay(day);
+        day = DayOfWeek.FRIDAY;
+        howsYourDay(day);
+        day = DayOfWeek.SATURDAY;
+        howsYourDay(day);
+        day = DayOfWeek.SUNDAY;
+        howsYourDay(day);
+    }
+
+    public static void howsYourDay(DayOfWeek day) {
+        switch (day) {
+            case SUNDAY:
+            case SATURDAY:
+            System.out.println("It's " + day + "!  It's the weekend! Hooray!");
+            break;
+            case MONDAY:
+            System.out.println("It's " + day + ". I'm sorry!");
+            break;
+            case FRIDAY:
+            System.out.println("It's " + day + "! Only one day to go!");
+            break;
+            case WEDNESDAY:
+            System.out.println("It's " + day + "! You're halfway there!");
+            break;
+            case TUESDAY:
+            case THURSDAY:
+            System.out.println("It's " + day + ". Nothing special about today.");
+            break;
+        }
+        System.out.println();
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>I want to point out two things about this little program.
+</p>
+<ul>
+    <li>As you can see, enums are structures that you can use in a switch structure as the case values you want to check for. </li>
+    <li>Each output statement uses the enum variable for output. Java will convert an enum variable into a string with its value when concatenated to a string or used in output (or both, as in this example). As we discussed back in Lesson 5, when you concatenate part of a program, you attach a second string to the end of a first string. </li>
+</ul>
+<p>If you have any questions about the program, please let me know in the Discussion Area.</p>
+<p>At the risk of digging a little too deeply into their structure, let me mention just a few more things about enums. Java's enums also contain some built-in methods that are very useful. The first one is <font class="font_monospace_black">compareTo()</font>. Since enum values are in a specified order, Java can compare them for you and tell you if one comes before or after another. </p>
+<p>The <font class="font_monospace_black">compareTo()</font> method will return a negative number if the first comes before the second, a positive number if the first comes after the second, and zero if they're the same value. For example, </p>
+<p>
+</p>
+<div class="scroll">
+<pre>DayOfWeek.TUESDAY.compareTo(DayOfWeek.FRIDAY)</pre>
+</div>
+<p>returns a negative number, while</p>
+<p>
+</p>
+<div class="scroll">
+<pre>DayOfWeek.TUESDAY.compareTo(DayOfWeek.SUNDAY)</pre>
+</div>
+<p>returns a positive number, and</p>
+<p>
+</p>
+<div class="scroll">
+<pre>DayOfWeek.TUESDAY.compareTo(DayOfWeek.TUESDAY)</pre>
+</div>
+<p>returns zero. So this logic would tell you which of two days comes first: </p>
+<p>
+</p>
+<div class="scroll">
+<pre>DayOfWeek day1;
+DayOfWeek day2;
+ . . . // values are assigned somehow
+
+if (day1.compareTo(day2) &lt; 0)
+  System.out.println(day1 + " comes before " + day2);
+else if (day1.compareTo(day2) &gt; 0)
+  System.out.println(day1 + " comes after " + day2);
+else
+  System.out.println(day1 + " and " + day2 + " are the same");
+</pre>
+</div>
+<p>
+</p>
+<p>Another useful method for an enum is <font class="font_monospace_black">toString()</font>, which will return a string containing the value. So after this declaration:
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>DayOfWeek day = DayOfWeek.FRIDAY;</pre>
+</div>
+<p>the call
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>day.toString()</pre>
+</div>
+<p>would return the value "FRIDAY". So if I need to display the value of an enum variable that came from another source, and which I didn't set, I can use <font class="font_monospace_black">toString()</font> to do that.
+</p>
+<p>Java's enumerations also let you add your own data or methods. Let me show you an example that uses an enum of the planets in our solar system. In addition to its enum properties, each planet's value will have its relative gravity when compared to Earth so we can calculate relative weights. Here's the enum, and then I'll explain it and show you how to use it.</p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * Enumeration class Planet - lists the planets of the solar system and 
+ * their weight multiples relative to Earth.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public enum Planet {
+    MERCURY (0.378),
+    VENUS   (0.907),
+    EARTH   (1.0),
+    MARS    (0.377),
+    JUPITER (2.364),
+    SATURN  (0.916),
+    URANUS  (0.889),
+    NEPTUNE (1.125),
+    PLUTO   (0.067);
+
+    private double relativeWeight;   // multiple to obtain weight
+
+    private Planet(double relativeWeight) {
+        this.relativeWeight = relativeWeight;
+    }
+
+    private double getRelativeWeight() { 
+        return relativeWeight;
+    }
+
+    public double getWeight(double weight) {
+        return weight * relativeWeight;
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Yes, I still consider Pluto a planet! I grew up in a solar system with nine planets, and I like it that way!
+</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/L09-02a.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>But Pluto aside, this enum has several new features. To start with, instead of just names for the enumerated values, there are numeric values in parentheses. There's also an instance variable declared, a constructor, and two other methods. Let's talk about each of these.</p>
+<p>In this enumeration, the planet names are the enum values that the <font class="font_monospace_black">Planet</font> type permits.</p>
+<p>The instance variable, <font class="font_monospace_black">relativeWeight</font>, is a numeric value attached to each enum value. It allows us to store information about that value along with it. The number represents the fraction of Earth's gravity that the given planet has, so we can calculate someone's weight on each of those planets.</p>
+<p>The constructor, in this case and in all enumerations, is private instead of public like we've been using. That means that you can't create any <font class="font_monospace_black">Planet</font> objects outside this class, and the Java compiler enforces that by making sure that all enum constructors are private. Only the list of enum values makes calls to the constructor, and that list also provides the value for the <font class="font_monospace_black">relativeWeight</font> number for each planet name. So the line</p>
+<p>
+</p>
+<div class="scroll">
+<pre>    MERCURY (0.378),</pre>
+</div>
+<p> </p>
+<p>creates an enum value named MERCURY with a <font class="font_monospace_black">relativeWeight</font> value of 0.378. That means someone who weighs 100 pounds on Earth would weigh 37.8 pounds on Mercury.</p>
+<p>Finally the two methods let us see each planet's weight factor relative to Earth's and calculate the weight on that planet given a weight from Earth.</p>
+<p>Now how can we use all that additional information? I thought you'd never ask. Or maybe you wish I'd wrap this up! I will, right after I show you how to use this enum in a little program. Here it is:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * PlanetaryWeights takes in a user's weight and returns
+ * what that user would weigh on the different planets in the
+ * solar system. It uses the enumeration Planet.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class PlanetaryWeights {
+    public static void main(String[] args) {
+        double earthWeight = 0;
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter your weight on Earth: ");
+        if (in.hasNextDouble()) {
+            earthWeight = in.nextDouble();
+            for (Planet p : Planet.values())
+                System.out.println("Your weight on " + p + " is " +
+                                    p.getWeight(earthWeight));
+        }
+        else {
+            System.out.println(in.next() + " is not a valid number.");
+        }
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>This program is simple. It declares a variable named <font class="font_monospace_black">earthWeight</font> to capture the weight a user enters, and it sets up a <font class="font_monospace_black">Scanner</font> variable called <font class="font_monospace_black">in</font> to read the user's input for us.
+</p>
+<p>After prompting the user, the program checks for numeric input. If the input isn't a number, then the program displays an error and quits.</p>
+<p>If the input is a number, then the program reads it and stores it in the variable <font class="font_monospace_black">earthWeight</font>.</p>
+<p>The next statement is the only new type in this program. It's a loop format in Java that deals with a list or other collection, and it guarantees to process each item in the collection exactly once. If the collection has an order, as lists do, then the program will process the items from the collection in that order. Here's the statement:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>            for (Planet p : Planet.values())</pre>
+</div>
+<p> </p>
+<p>This is a <em>for-each loop</em> because it repeats once for every item in the collection. You could read this line as saying, "For each planet item in the list, . . ." where the dots represent the action you want to perform. </p>
+<p>The "Planet p" before the colon tells Java two things: which types of items are in the list (<font class="font_monospace_black">Planet</font>), and the name I want to use for each item as I process it (<font class="font_monospace_black">p</font>). </p>
+<p>The part of the statement after the colon is the source of the list whose items I want to process. In this case, it's a call to a method named <font class="font_monospace_black">values()</font> that Java adds to every enumeration. That method produces a list of all the enum values. So in this case, it returns a list of the nine planet names, and the for-each loop gives them to us one at a time in the variable <font class="font_monospace_black">p</font> so we can act on each one.</p>
+<p>The action we're taking is simple—it's just an output statement with some text, the value of the <font class="font_monospace_black">Planet</font> item we're dealing with, and a call to that planet's <font class="font_monospace_black">getWeight</font> method to convert the weight from Earth dimensions to that planet's weight. If I run this program using my current weight of 190 pounds, here's the output I'll see:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>Enter your weight on Earth: 190
+Your weight on MERCURY is 71.82000000000001
+Your weight on VENUS is 172.33
+Your weight on EARTH is 190.0
+Your weight on MARS is 71.63
+Your weight on JUPITER is 449.15999999999997
+Your weight on SATURN is 174.04000000000002
+Your weight on URANUS is 168.91
+Your weight on NEPTUNE is 213.75
+Your weight on PLUTO is 12.73
+</pre>
+</div>
+<p>
+</p>
+<p>A few of those weights are poorly formatted due to the way computers store floating-point numbers. In the next lesson I'll show you a way in Java to produce exactly the format we want for numbers.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>Here's a matching game so you can test your knowledge of the three concepts we covered today.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_matchbox" align="middle" height="615" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L09-03.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L09-03.swf" height="615" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L09-03.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=9#skip_game_L09CH05_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/pf_placeholder_a.png" border="0"><iframe src="about:blank" frameborder="0" height="615" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L09CH05_b" id="skip_game_L09CH05_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>Were you able to match the terms for all three concepts, or are some of the details still fuzzy? The assignment and quiz will help you add to and demonstrate your knowledge.</p>
+<p>This lesson's been a wild ride, jumping from one topic to another. But I think you have some effective new tools to use in your Java repertoire.</p>
+<p>The debugger is a very useful tool that BlueJ and most Java IDEs provide so we can track exactly what's going on in our programs at each step. It can really help when we have a bug that's hard to find.</p>
+<p>Java's switch statement is a somewhat easier-to-read form of multi-way branching when you have only a limited set of integral values or strings to check for.</p>
+<p>And enumerations are a good way for us to describe a fixed set (like the planets in the solar system) or a list of related constant values (like the calculations for a single weight on different planets). They make our programs easier to read, and they reduce the number of typos we put into our programs because the compiler can check the values for us.</p>
+<p>Take a look at the assignment when you're ready, and if you have any questions, you know where to find me!</p>
+<p>Lesson 10's focus will be a few more topics that aren't related to each other but that are important to know and very handy to use. We'll look at ways to format our output by specifying the size of output fields and the number of decimal places. We'll also look in some depth at the information available for us in Java's API, or Application Program Interface, which is the complete list of the classes that come prepackaged with Java. I'll see you next time!<strong></strong></p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="https://today.java.net/pub/a/today/2005/08/30/bluej.html" target="_blank">
+                                JavaTech: The Sweet Song of the BlueJ, Part 2</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        https://today.java.net/pub/a/today/2005/08/30/bluej.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This tutorial explains how to find a bug using BlueJ's debugger. (I didn't include Part 1 because we've already covered that content.)</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://vimeo.com/28198954" target="_blank">
+                                BlueJ Debugger Video</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://vimeo.com/28198954</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This link shows a short video about using BlueJ's debugger to trace a program's activity.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html" target="_blank">
+                                The Java Tutorials: The switch Statement</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Here is Oracle's tutorial on Java's switch statement.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.youtube.com/watch?v=kj6mYRrJeU8" target="_blank">
+                                Video Tutorial on switch Statement</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.youtube.com/watch?v=kj6mYRrJeU8</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This seven-minute video describes simple switch statements.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html" target="_blank">
+                                The Java Tutorials: Enum Types</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Check out Oracle's tutorial on enumeration.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> I've never worked with a Zip file before. What are they, and how do I extract their contents?</p>
+<p><strong>A:</strong> Zip files contain compressed data. People often use them to transmit data over the Internet since they have a couple of major advantages over downloading or uploading uncompressed files. First, they're smaller than uncompressed files, so they download faster. Second, one Zip file can contain many source files, so the user can download them all at once instead of separately.</p>
+<p>Once you've downloaded a Zip file, "unzipping" it is easy. If you use Mac OS X, just double-click the file, and the computer will extract its contents into the same directory that contains the Zip file. If there's only one source file in the Zip file, it should appear in that directory. If there are multiple files, OS X will create a new directory there to contain all the files.</p>
+<p>If you run Windows, just right-click the Zip file, and choose the option <strong>Extract All</strong> from the drop-down menu. Windows will ask you where you want to extract the file or files to, and you can select the directory you want.</p>
+<p>If you have any trouble unzipping my files, please let me know, and I'll try to help you get the problem resolved.<br>
+<br>
+</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>Please build an enumeration for the 12 months of the year. Then, in a program, ask your user for a numeric month (1-12), and use a switch statement to set an enumeration variable to the correct value for that month. Once you've done that, use the enumeration variable to display the proper name for the month. In other words, if the user enters the number 3, your program will display "The month is March." Try to develop your own solution before looking at mine below. </p>
+<p>I've provided two solutions. Both are complete BlueJ projects compressed into Zip files. If you download and expand the files, you'll have the projects to look at in BlueJ. If you're not familiar with Zip files, check the FAQs for this lesson for instructions on how to expand them.</p>
+<p align="center"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/download/L09-Assignment1.zip" target="_blank"><strong>Assignment solution download.</strong></a> </p>
+<p align="center"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/download/L09-Assignment2.zip" target="_blank"><strong>Assignment solution download #2.</strong></a> </p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=9#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='9';
+s.prop7='9';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=9';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=9';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 9 (Debugger, Enumeration, and Switch)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933668479&amp;cv=7&amp;fst=1437933668479&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D9&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D9" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="about:blank" style="display: none;"></iframe></div></body></html>

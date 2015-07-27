@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<!-- saved from url=(0141)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=12 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 12 (Java 2D Animation)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/global.js"></script><script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/course.js"></script><script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 12 (Java 2D Animation)_files/patch.css" media="all"><link href="./Lesson 12 (Java 2D Animation)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 12 (Java 2D Animation)_files/Lesson 12 (Java 2D Animation).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 12 (Java 2D Animation)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 12 (Java 2D Animation)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 12 (Java 2D Animation)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=12#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            12: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Java 2-D Animation</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=12">Lesson 12</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 12 (Java 2D Animation)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 12 (Java 2D Animation)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 12 (Java 2D Animation)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 12 (Java 2D Animation)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 12 (Java 2D Animation)_files/header12.jpg" class="pf_image"></p>
+<p><strong>Introduction</strong></p>
+<div class="jab-redbox">
+<p><strong>"Animation is not the art of drawings that move but the art of movements that are drawn."</strong></p>
+<p align="right">—Norman McLaren</p>
+<p><strong>"Animation is about creating the illusion of life. And you can't create it if you don't have one."</strong></p>
+<p align="right">—Brad Bird</p>
+</div>
+<p>Well, we've reached our last lesson! You've come a long way in your Java skills, and I hope you've enjoyed our time together as much as I have.</p>
+<p>This lesson will continue our short exploration of Java's 2-D graphics. You'll find out how to redraw the image in a window and move it slightly each time. As I'm sure you know, if you do that fast enough, it will appear that the objects in the window are moving. Here are the two animations I want to cover in this lesson:</p>
+<div class="figure">
+<div class="jw" style="display: none;">Loading video…</div>
+<script type="text/javascript">/* ------------------- 5.8 Video Script Start ------------------- */
+placeHolderNum = "L12-V01";
+runJWsetup();
+courseCode = "jab-3";  /* optional */
+fileName = "L12-V01";
+videoCaption = "";
+posterImage = "L12-V01.png";
+hasCC = false;
+CCbackground = false;
+hasHD = false;
+vidWidth = 500;
+vidHeight = 396;
+stopStretch = false;
+runJWloader();/* ------------------- 5.8 Video Script Stop ------------------- */</script><div id="vidFrame_L12-V01" class="classroomJwVideoContainer"><div align="center"><div id="placeholderL12-V01_wrapper" style="position: relative; width: 500px; height: 396px;"><img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/jwplayer/player.swf" width="100%" height="100%" bgcolor="#000000" id="placeholderL12-V01" name="placeholderL12-V01" tabindex="0" class="pf_interactivity"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D12&amp;id=placeholderL12-V01&amp;file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL12-V01_low.mp4&amp;image=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL12-V01.png&amp;skin=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fglobal%2Fjwplayer%2Fmodieus.zip&amp;controlbar.position=over"></object></div><br><div class="video_caption"><font class="caption"></font></div></div></div><script src="./Lesson 12 (Java 2D Animation)_files/HTML5_jwplayers.js"></script><script src="./Lesson 12 (Java 2D Animation)_files/HTML5_video.js"></script>
+</div>
+<div class="figure">
+<div class="jw" style="display: none;">Loading video…</div>
+<script type="text/javascript">/* ------------------- 5.8 Video Script Start ------------------- */
+placeHolderNum = "L12-V02";
+runJWsetup();
+courseCode = "jab-3";  /* optional */
+fileName = "L12-V02";
+videoCaption = "";
+posterImage = "L12-V02.png";
+hasCC = false;
+CCbackground = false;
+hasHD = false;
+vidWidth = 500;
+vidHeight = 396;
+stopStretch = false;
+runJWloader();/* ------------------- 5.8 Video Script Stop ------------------- */</script><div id="vidFrame_L12-V02" class="classroomJwVideoContainer"><div align="center"><div id="placeholderL12-V02_wrapper" style="position: relative; width: 500px; height: 396px;"><img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/jwplayer/player.swf" width="100%" height="100%" bgcolor="#000000" id="placeholderL12-V02" name="placeholderL12-V02" tabindex="0" class="pf_interactivity"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D12&amp;id=placeholderL12-V02&amp;file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL12-V02_low.mp4&amp;image=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL12-V02.png&amp;skin=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fglobal%2Fjwplayer%2Fmodieus.zip&amp;controlbar.position=over"></object></div><br><div class="video_caption"><font class="caption"></font></div></div></div><script src="./Lesson 12 (Java 2D Animation)_files/HTML5_video.js"></script>
+</div>
+<p>As always, it'll take us a while to get there, so let's get started.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Animating One Ball</strong></p>
+<p>We'll start by animating one ball. I'll say up front that like most projects, there are many ways to do this. I've chosen the one that I like best. So if you see other implementations of animations like this one, please understand that you're not locked into my way of doing things.</p>
+<p>I'll start by showing you my BlueJ project window because I've added a third class to the drawing process:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Bouncing ball project window" src="./Lesson 12 (Java 2D Animation)_files/L12-01.jpg" class="pf_image"><br>
+<font class="caption"> Bouncing ball project window</font></p>
+<p>The top two classes in the window pretty much fill the same purpose as the two classes we used in our drawings in the last lesson. There's only one change to the top-level class, <font class="font_monospace_black">BouncingBallWindow</font>, other than class names, and I'll mention it in just a minute.</p>
+<p>The middle class, <font class="font_monospace_black">BouncingBall</font>, is the one that provides our <font class="font_monospace_black">JPanel</font> object to draw in, just like in the examples from Lesson 11. But in this case there are several changes from the last lesson. All the code that controls the animation is in this class, and we'll talk about it in detail soon.</p>
+<p>The third class, <font class="font_monospace_black">Ball</font>, is new. It represents a single ball that can bounce around a window. It contains all the information on the ball's size, color, speed, and position. It also includes code to draw itself into the panel that <font class="font_monospace_black">BouncingBall</font> manages. We'll see how all that works after we discuss the first two classes.</p>
+<p><font class="font_monospace_black"><strong>BouncingBallWindow</strong></font><strong> Changes</strong></p>
+<p>Here's the code for <font class="font_monospace_black">BouncingBallWindow</font>:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import javax.swing.*;
+/**
+ * BouncingBallWindow is the top level of three that produce a window with
+ * an animated bouncing ball in it.
+ * 
+ * @author Merrill Hall 
+ * @version 1
+ */
+public class BouncingBallWindow extends JFrame {
+    public BouncingBallWindow() {  // Create window
+        setTitle("One Bouncing Ball");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        add(new BouncingBall());  // Add bouncing ball panel
+
+        pack();  // Set the window size
+        setLocationRelativeTo(null);  // Center the window in the display
+    }
+
+    public static void main(String[] args) {
+        // Run GUI in the Event Dispatcher Thread (EDT)
+        SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    // Set up main window (using Swing's Jframe)
+                    BouncingBallWindow bbw = new BouncingBallWindow();
+                    bbw.setVisible(true);
+                }
+            });
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>The only change other than class names and the window title is the next-to-last line in the constructor, which calls the <font class="font_monospace_black">pack()</font> method. I used this method for a couple of reasons. One is to show you how it works. It sets the size of the window as small as it can be and still display all its contents. So <font class="font_monospace_black">pack()</font> sets the window size based on what's in the window. The other reason is—as we'll see when we get to the next class—that I need to know the size of the panel for drawing before I can get the size from the frame, just as we did in Lesson 11.
+</p>
+<p>And that's the total of the changes to our frame code. That was simple, wasn't it?</p>
+<p><font class="font_monospace_black"><strong>BouncingBall</strong></font><strong> Class</strong></p>
+<p>Let's move on to the second class. It'll be a bit more involved, I promise. Take a look at my code for it, and then we'll talk about it:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.*;
+import javax.swing.*;
+/**
+ * BouncingBall produces a panel with one ball bouncing off the edges.
+ * 
+ * It uses a single instance of the Ball class to provide the bouncer.
+ */
+public class BouncingBall extends JPanel {
+    private final Dimension SIZE = new Dimension(600,450); // Panel size
+    private final int UPDATE_RATE = 24; // Number of refreshes per second
+    private Ball ball; // The beautiful bouncing ball
+    private Thread ballThread; // Animation thread
+    
+    /** 
+     * Constructor sets up the panel and starts its animation thread 
+     */
+    public BouncingBall() {
+        setPreferredSize(SIZE); // Set panel size
+        ball = new Ball(SIZE); // Create a Ball object
+        // Start the ball bouncing (in its own animation thread)
+        ballThread = new Thread() {
+                public void run() {
+                    while (true) { // Execute one update step
+                        // Calculate the balls' new positions
+                        ball.move();
+                        // Refresh the display
+                        repaint(); // Callback paintComponent()
+                        // Delay so the animation's not too fast
+                        try {
+                            Thread.sleep(1000 / UPDATE_RATE);  // milliseconds
+                        } catch (InterruptedException ex) { }
+                    }
+                }
+            };
+        ballThread.start();  // Start the animation
+    }
+
+    /** 
+     * Override the JPanel paintComponent method with our drawing of a ball 
+     */
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);    // Paint background
+        Graphics2D g2d= (Graphics2D) g;
+        // Draw the box's background
+        g2d.setColor(Color.BLACK);
+        g2d.fillRect(0, 0, getWidth(), getHeight());
+
+        // Draw the ball
+        ball.paint(g2d);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Let's take it from the top!
+</p>
+<p>The first four lines in our class declare two constants and two variables that we'll use in the animation. </p>
+<p>The first constant, <font class="font_monospace_black">SIZE</font>, is a <font class="font_monospace_black">Dimension</font> object that we'll use to set the size of our panel. Note that the name is in all uppercase letters. If you remember our discussion of Java names back in Lesson 2, you'll know that constants are named that way.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 12 (Java 2D Animation)_files/L12-05a.jpg" class="pf_image"></p>
+<p>The second constant, <font class="font_monospace_black">UPDATE_RATE</font>, is an integer that will control how many times per second we refresh the screen. If we do it too often, our ball will move too fast. If we don't do it often enough, and our ball will move too slowly. I set it at 24, the same refresh rate that most films use. It's fast enough that your eyes won't notice the pauses between refreshes.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 12 (Java 2D Animation)_files/L12-05b.jpg" class="pf_image"></p>
+<p>The first variable, <font class="font_monospace_black">ball</font>, refers to a <font class="font_monospace_black">Ball </font>variable that will control the movement and appearance of our ball. The second variable, <font class="font_monospace_black">ballThread</font>, refers to the <font class="font_monospace_black">Thread</font> object that will run our animation. If you remember from Lesson 11, Java recommends that you do GUI work in a separate thread. It's also common practice to put animation into its own thread, so that's what we'll do here.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 12 (Java 2D Animation)_files/L12-05c.jpg" class="pf_image"></p>
+<p>Following the instance variable declarations is our constructor. Its first line calls a method we haven't seen before, <font class="font_monospace_black">setPreferredSize()</font>. Just as its name suggests, it's the method that sets our panel's size, which the frame will use to determine its size. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 12 (Java 2D Animation)_files/L12-05d.jpg" class="pf_image"></p>
+<p>In order to use the panel's size in the constructor, I needed to know its size before it's available from the outer frame. So I needed to set it in this class rather than in <font class="font_monospace_black">BouncingBallWindow</font>. That's why I used the <font class="font_monospace_black">pack()</font> method there instead of <font class="font_monospace_black">setSize()</font>.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 12 (Java 2D Animation)_files/L12-06.jpg" class="pf_image"></p>
+<p>The second line of the method creates our <font class="font_monospace_black">Ball</font> object. It passes it the size of the screen so the ball will "know" how much room it has to bounce around in. We'll see how <font class="font_monospace_black">Ball</font> uses that information when we look at the <font class="font_monospace_black">Ball</font> class in the next chapter.</p>
+<p>The rest of the constructor creates and starts the animation thread <font class="font_monospace_black">ballThread</font>. It's similar to the <font class="font_monospace_black">Runnable</font> object we used in the <font class="font_monospace_black">main()</font> method of the first class. It also has a <font class="font_monospace_black">run()</font> method that controls the actions the thread will take. In our <font class="font_monospace_black">run()</font> method this time, we want to repeatedly draw our window as long as the window is open, so we set up a simple <font class="font_monospace_black">while(true)</font> loop that will repeat until the user shuts down the program.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 12 (Java 2D Animation)_files/rule.png" align="right" class="pf_image">
+<p><strong>An Animation Needs Its Own Thread</strong></p>
+<p>Why do we want to run our animation in its own thread? Here's a general rule in Java: Anything you do in a Java program that's independent, that runs continually, and that takes up a lot of processing time should run in its own thread. </p>
+<p>Our animation is a loop that runs constantly and can run on its own without depending on other code. That meets two out of the three criteria. Our animation doesn't take up a lot of processing time, since it's sleeping most of the time (as we'll see in a minute). But more complex animation can take a <em>lot</em> of processing, so it's a good idea to get used to running animations in their own threads.</p>
+</div>
+<p>Inside our animation loop we do three things. First we call the ball's <font class="font_monospace_black">move()</font> method to move the ball slightly. The ball knows how fast it's supposed to move and in what direction, so we let it take care of that. </p>
+<p>Then we call <font class="font_monospace_black">JPanel</font>'s <font class="font_monospace_black">repaint()</font> method to redraw the window. The <font class="font_monospace_black">repaint()</font> method will call <font class="font_monospace_black">paintComponent()</font> at the right time to do our drawing. </p>
+<p>After that the loop pauses for some number of milliseconds (thousandths of a second) to control the animation speed. If we didn't include this pause, the ball would move too fast to appear to be smooth movement. To pause, we call the thread's <font class="font_monospace_black">sleep()</font> method and tell it how many milliseconds to wait before waking up and running again. Since that method can throw an exception if something interrupts it, we need to enclose it in a <font class="font_monospace_black">try</font> block. But since there's nothing going on in our program to cause an interruption, the <font class="font_monospace_black">catch</font> block is just empty.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="BlueJ window" src="./Lesson 12 (Java 2D Animation)_files/L12-02.jpg" class="pf_image"></p>
+<p>The last statement in our constructor is a call to the thread's <font class="font_monospace_black">start()</font> method to start the animation running.</p>
+<p>The last part of our <font class="font_monospace_black">BouncingBall</font> class is our <font class="font_monospace_black">paintComponent()</font> method, which works the way it did in our previous lesson to paint our image. First it paints a black background in the window. Then comes the only difference I want to point out. Instead of painting the whole image in this method, we call the ball's <font class="font_monospace_black">paint()</font> method, which knows where to paint the ball in the window. In order for it to do that, though, it needs the panel's <font class="font_monospace_black">Graphics2D</font> object, so we pass it to the method as an argument.</p>
+<p>That covers our middle class. The only complicated new piece is the thread code in the middle of the constructor. Please let me know in the Discussion Area if you have any questions about it.</p>
+<p>Now let's look at the <font class="font_monospace_black">Ball</font> class and see how it does what it does.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><font class="font_monospace_black"><strong>Ball</strong></font><strong>:</strong><strong> A Class That Moves Itself Around</strong></p>
+<p>Here's what my <font class="font_monospace_black">Ball</font> class looks like:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.Graphics2D;
+
+public class Ball {
+    private Dimension screenSize;
+    private Color color;
+    private Point location;
+    private int radius;
+    private int diameter;
+    private Point speed;
+
+    public Ball(Dimension screenSize) {
+        this.screenSize = screenSize;
+        radius = ((int)(Math.random()*40))+10;
+        diameter = radius * 2;
+        location = new Point(screenSize.width/2,screenSize.height/2);
+        color = new Color((float)Math.random(),(float)Math.random(),(float)Math.random());
+        speed = new Point(1 + ((int)(Math.random()*10)), 1 + ((int)(Math.random()*10)));
+    }
+
+    public int getDiameter() {
+        return diameter;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
+
+    public Point getSpeed() {
+        return speed;
+    }
+
+    public void move() {
+        location.setLocation(location.x+speed.x,location.y+speed.y);
+        if ( (location.x &lt; 0) || (location.x &gt; screenSize.width-diameter) )
+            speed.x = -speed.x;
+        if ( (location.y &lt; 0) || (location.y &gt; screenSize.height-diameter) )
+            speed.y = -speed.y;
+    }
+
+    public void paint(Graphics2D g2d) {
+        g2d.setColor(color);
+        g2d.fillOval(location.x, location.y, diameter, diameter);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Again, let's go through it piece by piece. First let's look at its variable declarations.
+</p>
+<ul>
+    <li>The <font class="font_monospace_black">Dimension</font> variable <font class="font_monospace_black">screenSize</font> holds the dimensions of the window that the ball can bounce around in. We need that size in order to calculate our bounces correctly. (Try giving it a size that doesn't match the size of your window and see what happens!)</li>
+    <p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-03.jpg" class="pf_image"></p>
+    <li>The <font class="font_monospace_black">Color</font> variable <font class="font_monospace_black">color</font> holds the color of the ball.</li>
+    <li>The <font class="font_monospace_black">Point</font> variable <font class="font_monospace_black">location</font> holds the ball's current location. A <font class="font_monospace_black">Point</font> object holds two numbers (an x-coordinate and a y-coordinate) that represent a point on the screen.</li>
+    <li>The <font class="font_monospace_black">int</font> variable <font class="font_monospace_black">radius</font> holds the radius of the ball.</li>
+    <li>The <font class="font_monospace_black">int</font> variable <font class="font_monospace_black">diameter</font> holds the diameter of the ball. It's not necessary to store both the radius and the diameter since you can easily calculate one based on the other, but I chose to do it this way since it simplifies the expressions in the class.</li>
+    <li>The <font class="font_monospace_black">Point</font> variable <font class="font_monospace_black">speed</font> holds the ball's current speed. It shows another use for the two numbers in the <font class="font_monospace_black">Point</font> class instead of representing a fixed location. The x-coordinate in this object is the ball's horizontal speed. A positive number moves right, and a negative number moves left. The y-coordinate is the ball's vertical speed. A positive number moves down, and a negative number moves up. The larger the number is, the faster the ball moves.</li>
+</ul>
+<p><font class="font_monospace_black"><strong>Ball</strong></font><strong>'s Constructor</strong></p>
+<p>Next let's look at the class constructor. It requires a <font class="font_monospace_black">Dimension</font> argument from the caller that tells us how much room the ball has to bounce around in. </p>
+<p>The first line in the constructor stores the value the caller gives us into our instance variable. You can see another use of the keyword "<font class="font_monospace_black">this</font>" here, and it's a common way to use it. </p>
+<p>The variable in the class and the parameter in the constructor have the same name. Since the parameter is a local variable in the constructor, if I use that name alone it refers to the parameter. If I put "<font class="font_monospace_black">this.</font>" in front of the name, it refers to the object's variable. So the first line copies the value from the parameter and stores it in the variable so we can use it later.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07a.jpg" class="pf_image"></p>
+<p>The second line sets the ball's radius. It uses a new (to us) method from the <font class="font_monospace_black">Math</font> class named <font class="font_monospace_black">random()</font>. <font class="font_monospace_black">Math</font>'s <font class="font_monospace_black">random()</font> method is a random number generator that returns a random <font class="font_monospace_black">double</font> value between zero and one. Calling it gets us a number whose value we can't predict, which is often useful in programming. In this case I'm using it to randomize the size of the ball. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07b.jpg" class="pf_image"></p>
+<p>If you run the bouncing ball project several times, you should notice that the ball's size and color change each time. In this case, once I get the random number, I multiply it by 40 to get a random value between 0 and 40. Then I add 10 to that result to get a random number between 10 and 50. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07c.jpg" class="pf_image"></p>
+<p>Finally the radius value gets cast from a <font class="font_monospace_black">double</font> to an <font class="font_monospace_black">int</font>. The result of the calculation is a ball with a random radius between 10 and 50 pixels. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07d.jpg" class="pf_image"></p>
+<p>The third line calculates and stores the diameter from the radius. As I said earlier, that's not necessary, but it simplifies the expressions we'll use later.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07e.jpg" class="pf_image"></p>
+<p>The fourth line sets the ball's starting location. For simplicity's sake I decided to always start the ball at the middle of the window, so I used an x-coordinate that's half the screen's width and a y-coordinate that's half the screen's height. To do those calculations I used the <font class="font_monospace_black">height</font> and <font class="font_monospace_black">width</font> fields from the <font class="font_monospace_black">Dimension</font><font class="font_monospace_black"></font> object <font class="font_monospace_black">screenSize</font>.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07f.jpg" class="pf_image"></p>
+<p>The fifth line sets the ball's color value. It uses the <font class="font_monospace_black">random()</font> method again for each of the three RGB values so that I get a different color each time I run the program.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07g.jpg" class="pf_image"></p>
+<p>The sixth (and last) line of the constructor sets the ball's speed. I used <font class="font_monospace_black">random()</font> in the calculations again to get two random numbers between 0 and 10, and then I added 1 to them so the speed will never be zero. Our beginning speeds are always positive, so the ball will always start out moving down and to the right, but the angle and speed will vary.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-07h.jpg" class="pf_image"></p>
+<p><font class="font_monospace_black"><strong>Ball</strong></font><strong>'s Other Methods</strong></p>
+<p>The next methods in <font class="font_monospace_black">Ball</font> are simple get methods that allow a user to see what the ball's settings are. I haven't used those methods in this project, but they're there if you want to use them. For example, you could use them to display the ball's settings in the window where it's bouncing around if you wanted to.</p>
+<p>The last two methods are the ones I want to describe in detail. They're the <font class="font_monospace_black">move()</font> method, which "moves" the ball, and the <font class="font_monospace_black">paint()</font> method, which draws the ball onto the panel.</p>
+<p>Let's see how the <font class="font_monospace_black">move()</font> method works first. It moves the ball by calling the <font class="font_monospace_black">Point</font> method <font class="font_monospace_black">setLocation() </font>to set new coordinates. The new location is the previous one with the ball's speed values added to it. So the ball will move from 1 to 10 pixels up or down and from 1 to 10 pixels left or right to its new location. </p>
+<p>Once the new location is set, the method checks to see if we've reached one of the boundaries of our window. It checks the x-coordinate first to see if we've moved off the left or right edge. </p>
+<p>Remember, the location in our <font class="font_monospace_black">Point</font> is for the top-left corner of an imaginary box around the ball. So to check the left edge, we compare our x-coordinate with 0, the left boundary. To check the right edge, though, we compare the x-coordinate with the width of our window minus the ball's diameter. That way we'll change direction as soon as the right edge of our ball (our x-coordinate plus the ball's diameter) touches the right edge of the screen. </p>
+<p>If our x-coordinate is outside those values, we change our speed's sign so the ball will start moving in the opposite direction. After checking the x-coordinate, it also checks the y-coordinate against the screen's height using the same technique.</p>
+<p>Last let's look at the <font class="font_monospace_black">paint()</font> method. After all we've gone over so far, it's pretty simple. It takes the <font class="font_monospace_black">Graphics2D</font> object that our caller passes to us and uses it to draw on. The first line of the method sets the drawing color to the color of the ball, and the second line draws an oval on the panel at the ball's location using the ball's diameter.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt=" Red Bouncing Ball" src="./Lesson 12 (Java 2D Animation)_files/L12-04.jpg" class="pf_image"></p>
+<p>And with that, our <font class="font_monospace_black">Ball</font> class is complete. I know that some of the calculations here are new and not very straightforward, so if you have questions about how any of it works, please let me know in the Discussion Area.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 12 (Java 2D Animation)_files/break.png" align="right" class="pf_image">
+<p><strong>Time to Play</strong></p>
+<p>Before we get into Chapter 4, take a break and play with the project for a bit. Try changing some of the settings like the window size, the ball's color or size, or its speed calculations, and see how it all works together. </p>
+</div>
+<p>In the next chapter I'll show you how to generate a larger number of balls and get them all running at once.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Animating Multiple Objects</strong></p>
+<p>We're down to our last major topic in our last lesson! In this chapter, I'll go over some modifications to our bouncing ball project that animates multiple balls in our window. </p>
+<p>We'll start with the same three classes we used for the single bouncing ball. When I went to add more, I used BlueJ's <strong>Save As</strong> option to save the whole project under a new name, <em>Bouncing Balls</em>.</p>
+<p>The good news is that the <font class="font_monospace_black">Ball</font> class doesn't need to change at all for this to work. We can create and animate as many <font class="font_monospace_black">Ball</font> objects as we like using the exact same <font class="font_monospace_black">Ball</font> class.</p>
+<p>The only changes to the top-level class are class name changes and a window title change. I changed my class names from <font class="font_monospace_black">BouncingBallWindow</font> to <font class="font_monospace_black">BouncingBallsWindow</font> and from <font class="font_monospace_black">BouncingBall</font> to <font class="font_monospace_black">BouncingBalls</font>. I also changed my window title to <em>Ten Bouncing Balls</em>. I don't need to go through that code with you again, so I won't show it here. If you want to look at it, it's behind this link:</p>
+<p align="center"><input name="" id="L12CH04_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L12CH04-solution">
+<div class="scroll">
+<pre>import javax.swing.*;
+/**
+ * BouncingBallsWindow is the top level of three that produce a window with
+ * 10 animated bouncing balls in it.
+ * 
+ * @author Merrill Hall 
+ * @version 1
+ */
+public class BouncingBallsWindow extends JFrame {
+    public BouncingBallsWindow() { // Create window
+        setTitle("Ten Bouncing Balls");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        add(new BouncingBalls()); // Add bouncing balls panel
+
+        pack();
+        setLocationRelativeTo(null); // Center window in display screen
+    }
+
+    public static void main(String[] args) {
+        // Run GUI in the Event Dispatcher Thread (EDT)
+        SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    // Set up main window (using Swing's Jframe)
+                    BouncingBallsWindow bbw = new BouncingBallsWindow();
+                    bbw.setVisible(true);
+                }
+            });
+    }
+}
+</pre>
+</div>
+</div>
+<p>That means that most of our changes are in the middle class, which I renamed <font class="font_monospace_black">BouncingBalls</font>. So one more time, here we go! I'll show you the code first, and then we'll discuss it:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.awt.*;
+import java.util.Formatter;
+import javax.swing.*;
+/**
+ * BouncingBalls
+ * 
+ */
+public class BouncingBalls extends JPanel {
+    private final Dimension SIZE = new Dimension(600,450); // Panel size
+    private final int UPDATE_RATE = 30; // Number of refreshes per second
+    private Ball[] balls; // An array of 10 balls
+    private Thread ballThread; // Animation thread
+    
+    /** 
+     * Constructor sets up the panel and starts its animation thread 
+     */
+    public BouncingBalls() {
+        int index = 0;
+        setPreferredSize(SIZE);
+        balls = new Ball[10];
+        while (index &lt; balls.length) {
+            balls[index] = new Ball(SIZE);
+            index++;
+        }
+        // Start the balls bouncing (in their own thread)
+        ballThread = new Thread() {
+                public void run() {
+                    while (true) { // Execute one update step
+                        // Calculate the balls' new positions
+                        int index = 0;
+                        while (index &lt; balls.length) {
+                            balls[index].move();
+                            index++;
+                        }
+                        // Refresh the display
+                        repaint(); // Callback paintComponent()
+                        // Delay so the animation's not too fast
+                        try {
+                            Thread.sleep(1000/UPDATE_RATE);  // milliseconds
+                        } catch (InterruptedException ex) { }
+                    }
+                }
+            };
+        ballThread.start();  // Callback run()
+    }
+
+    /** 
+     * Override the JPanel paintComponent method with our drawing of 10 balls 
+     */
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);    // Paint background
+        Graphics2D g2d= (Graphics2D) g;
+        // Draw the box
+        g2d.setColor(Color.BLACK);
+        g2d.fillRect(0, 0, getWidth(), getHeight());
+
+        // Draw the balls
+        int index = 0;
+        while (index &lt; balls.length) {
+            balls[index].paint(g2d);
+            index++;
+        }
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Since this class is similar to <font class="font_monospace_black">BouncingBall</font>, I'm going to focus on their differences rather than go through this one line by line. The first difference is the third declaration. In <font class="font_monospace_black">BouncingBall</font>, it's this line:</p>
+<p><font class="code_auto_scroll">private Ball ball; // The beautiful bouncing ball</font></p>
+<p>In <font class="font_monospace_black">BouncingBalls</font>, it looks like this:</p>
+<blockquote>
+<p><font class="font_monospace_black">private Ball[] balls; // An array of 10 balls</font></p>
+</blockquote>
+<p>I'm going to explain just a little about arrays—just enough for this lesson. I'll talk more about arrays in my <em>Intermediate Java Programming</em> course, in case you decide to take it. (Just thought I'd throw in a little plug for it here.)</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="note" src="./Lesson 12 (Java 2D Animation)_files/note.png" align="right" class="pf_image">
+<p><strong>What's an Array?</strong></p>
+<p>An <em>array</em> is a structure that appears in many programming languages,
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img style="float:right;margin-top:22px; margin-right:-10px;" alt="Shopping List" src="./Lesson 12 (Java 2D Animation)_files/L12-04.png" align="right" class="pf_image">
+dating back to Fortran in the 1950s. It's a data structure that holds a group of items of the same type. Once you've built the array, you can reference any item in it by creating an <em>index</em> containing its position in the array. </p>
+<p>It's like having a shopping list and being able to check off the items one at a time in any order. I can check off the fourth item first if I find it at the store before the other items in the list, then the second item, the seventh item, the first item, and so on.</p>
+</div>
+<p>In Java, square brackets indicate arrays. In the declaration above, <font class="font_monospace_black">Ball[]</font> tells Java that the variable <font class="font_monospace_black">balls</font> refers to an array of <font class="font_monospace_black">Ball</font> items instead of a single <font class="font_monospace_black">Ball</font> object. Once I finish building the array, I can use the variable name followed by an index in square brackets to get a single <font class="font_monospace_black">Ball</font> object out of the array. So <font class="font_monospace_black">balls[2]</font> refers to a single <font class="font_monospace_black">Ball</font> object, as does <font class="font_monospace_black">balls[5]</font> or <font class="font_monospace_black">balls[7]</font>.</p>
+<p>One important note about Java's array indexes, though: Java uses <em>zero-based indexing</em>. That means the first element of an array uses an index of 0, not 1. The reasons have to do with some fairly complicated formulas used to calculate memory addresses, and I'd rather not get into that here. But quite a few programming languages (including C, C++, C#, and others) use the same indexing scheme. </p>
+<p>So in our array, <font class="font_monospace_black">balls[0]</font> is the first object, <font class="font_monospace_black">balls[1]</font> is the second one, and <font class="font_monospace_black">balls[9]</font> is the last one. Be sure to tell me in the Discussion Area if any of this is confusing—I expect it might be.</p>
+<p>The next difference between the classes is the first local variable in the constructor:</p>
+<p><font class="font_monospace_black">&nbsp;&nbsp;&nbsp; int index = 0;</font></p>
+<p>We'll use this variable as the index when we're referring to our array.</p>
+<p>Next, instead of one line that declares a single <font class="font_monospace_black">Ball</font> object, we have these lines:</p>
+<div class="scroll">
+<pre>    balls = new Ball[10];
+    while (index &lt; balls.length) {
+      balls[index] = new Ball(SIZE);
+      index++;
+    }
+</pre>
+</div>
+<p>The first line actually creates the array and tells Java how many items we want it to hold. In this case it's 10, but it can be any number as long as you've got enough memory to hold the array. (My computer was okay with a hundred million entries, but it wouldn't allow a billion. I didn't try to pin it down any closer than that.)</p>
+<p>The <font class="font_monospace_black">while</font> loop that starts in the next line starts with a value of zero in <font class="font_monospace_black">index</font>, and the loop repeats until <font class="font_monospace_black">index</font> reaches the end of the array. Every Java array has a field named <font class="font_monospace_black">length</font> that tells us the size of the array. So <font class="font_monospace_black">balls.length</font> in this case contains the value 10, and the loop repeats 10 times. Each time through the loop, a new <font class="font_monospace_black">Ball</font> object gets created and stored in the next array location. The next line increments <font class="font_monospace_black">index</font>, both so the loop will end and so we'll update the next array location.</p>
+<p>So at the point we set up our animation thread, we have 10 <font class="font_monospace_black">Ball</font> objects in our array ready to go, each with its own color, size, location, speed, and direction.</p>
+<p>The only difference in the animation thread is that instead of moving one ball before repainting the window, I have another small loop that pulls each of the 10 balls out of the array and calls its <font class="font_monospace_black">move()</font> method, so that we move all 10 balls simultaneously.</p>
+<p>In just the same way, in the <font class="font_monospace_black">paintComponent()</font> method for this class, instead of calling one ball's <font class="font_monospace_black">paint()</font> method, I have a third loop set up that gets all 10 balls and calls each of their <font class="font_monospace_black">paint()</font> methods so that we repaint all 10 balls.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 12 (Java 2D Animation)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 12 (Java 2D Animation)_files/break.png" align="right" class="pf_image">
+<p><strong>Time to Play</strong></p>
+<p>If you recompile the project and rerun it now, you should see 10 different-colored balls starting from the middle of your window and diverging in 10 directions with 10 different speeds. And if you want to play around with the number of balls, you can set up any number by just changing the size of the array in the third line of the BouncingBalls constructor from 10 to some other number (as long as it's a positive number).</p>
+</div>
+<p>Let me know in the Discussion Area if you have any trouble getting the recompiled project to work.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>Once again we've covered a lot in this lesson, from the concept of redrawing a window to animate a single object to animating any number of objects. We've just begun to investigate what you can do with Java, but I hope I've whetted your appetite and that you'll pursue more programming in the future.</p>
+<p>And that brings us to the end of the lesson and the course! I've enjoyed going through it with you, and I hope you've enjoyed it too. </p>
+<p>I wish you well with all your future pursuits, especially Java programming! Thank you for taking this course with me.</p>
+<div id="finalStepsBox"><div style="text-align: center;"><div class="finalstepsrounded_global"><div id="finalSteps_item_intro"><p class="finalstepsroundedtitle_global"><img class="final_steps_icon" align="right" src="./Lesson 12 (Java 2D Animation)_files/steps_icon.png"><strong>Final Steps</strong></p><p>Now that you've finished the last lesson, is there anything else to do? Yes, several things!</p></div><ul><li id="finalSteps_item_quiz_assignment_faqs"><strong>Quiz, assignment, and FAQs:</strong> You still have a quiz for this lesson, as well as an assignment, so be sure to do these. Also, check out the FAQs for this lesson—you might find the answer to something you're wondering about here.</li><li id="finalSteps_item_resources"><strong>Resources for further learning:</strong> If you haven't already checked out the Recommended Books and Resources, now would be a great time. When it comes to a topic like <em>Introduction to Java Programming</em>, there's always more to learn. To access these, just click the <strong>Resources</strong> link. </li><li id="finalSteps_item_exam"><strong>Final exam:</strong> Here's the moment all those quizzes have been preparing you for—the cumulative final for this course. Let me give you a tip: Print the final before taking it so you can study and relieve any test anxiety you might have. (You can have the classroom open when you take the final too.) You only get one chance at the final, so you'll want to do your best. To access it, click the <strong>Completion</strong> link and then click <strong>Final Exam</strong>. Good luck!</li><li id="finalSteps_item_evaluation"><strong>Course evaluation:</strong> I'd love to know what you thought of this course and if you have any suggestions for improvement. So please take some time, either before or after you take the final, to fill out a brief evaluation. I appreciate your feedback, and future students will too! You'll find the link to this by clicking <strong>Completion</strong>, and then clicking <strong>Evaluation</strong>.</li><li id="finalSteps_item_discussion"><strong>Discussion Area:</strong> The Discussion Area will be open for two more weeks after Lesson 12's release, so please feel free to stop by and ask any questions (except about the final exam) and share your thoughts.</li></ul><p class="otherCoursesBar_global"><strong>Other Courses</strong></p><img class="otherCoursesIcon_global" src="./Lesson 12 (Java 2D Animation)_files/other_courses_icon.png"><p>If you enjoyed this course, here are a few other online courses you might be interested in:</p><div id="otherCoursesBox">
+<p><strong>Intermediate Java Programming</strong></p>
+<p>Deepen your understanding of the Java programming language, and start writing programs that are more sophisticated and professional. Learn how to save data permanently on a disk by writing it to a sequential data file. See how to read the file to get the data back and process it. Organize information using multiple classes in Java's class hierarchy and inheritance. Explore some of the hundreds of classes that are built into the Java language. Find out how to create GUI applications in Java using tools like windows, menus, buttons, text boxes, check boxes, scroll bars, and other GUI tools.<br>
+<br>
+Over the six weeks of this course, you'll build several complete applications that combine these concepts. You'll also use the knowledge you gain to solve programming problems included with the lessons—problems designed to help you master all the principles you learn.</p>
+<p><strong>Introduction to C# Programming</strong></p>
+<p>Learn the fundamentals of computer programming with C#, the in-demand and incredibly useful programming language that incorporates the best features of Visual Basic, C++, and Java.<br>
+<br>
+You'll develop your understanding of programming fundamentals: input/output operations, decision making, and looping. Then we'll explore the many benefits of object oriented programming, with plenty of vivid, real-life examples. You'll gain hands-on experience with sequential data files, and you'll be able to build a professional-looking and intuitive Graphical User Interface (GUI) application on your computer.</p>
+<p><strong>Introduction to Python 3 Programming</strong></p>
+<p>Enhance your résumé by adding Python to your programming skills! The Python programming language provides a way to develop code that's easy to create and understand. While Python contains the same basic structures as other languages, it also offers unique functionality that makes your life as a programmer easier.&nbsp;</p>
+<p>This course will show you how to create basic programming structures including decisions and loops. Then you'll move on to more advanced topics such as object-oriented programming with classes and exceptions. In addition, you'll explore unique Python data structures such as tuples and dictionaries. You'll even learn how to create Python programs with graphic elements that range from simple circles and squares to graphical user interface (GUI) objects like buttons and labels.&nbsp;</p>
+</div></div></div></div>
+
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://zetcode.com/gfx/java2d/" target="_blank">
+                                Java 2D Tutorial</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://zetcode.com/gfx/java2d/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Try this tutorial if you want more practice with 2D animation.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html" target="_blank">
+                                The Java Tutorials: Arrays</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This link takes you to Oracle's tutorial on Java arrays.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/reflect/special/arrayTrouble.html" target="_blank">
+                                The Java Tutorials: Troubleshooting</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/reflect/special/arrayTrouble.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Having trouble with Java arrays? This page will help you sort things out.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> Are arrays Java's primary means of supporting data collections?</p>
+<p><strong>A:</strong> No, Java has several other structures that support different types of data collections, like queues, stacks, sets, and so on. Arrays, however, are the most efficient collection structure in Java.<br>
+<br>
+</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>Here are a couple of assignment ideas for this lesson. You can do one or both of these. </p>
+<p>For the first one, try adding another animated bouncing shape to the bouncing balls in this lesson. It could be a square, an oval, or some other shape that you create and animate. <br>
+<br>
+You can start by copying the <font class="font_monospace_black">Ball</font> class and naming it for the shape you want to animate, and then have it draw that shape into the window. After that you'll need to change the <font class="font_monospace_black">BouncingBall</font> class, the <font class="font_monospace_black">BouncingBalls</font> class, or both to use the new shape. <br>
+<br>
+My complete BlueJ project is in a Zip file that you can download using this link. Then you can expand and examine it in BlueJ.</p>
+<p align="center"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/download/L12-Assignment1.zip" target="_blank"><strong>Click here to download.</strong></a> </p>
+<p>The second idea is a little more complex. Take the simple art project from Lesson 11 that drew a house and sun, and animate the sun to set behind the lawn in the picture. </p>
+<p>Again, my complete BlueJ project is in a Zip file that you can download using this link. Once you've downloaded it, you can expand it and look at my project in BlueJ.</p>
+<p align="center"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/download/L12-Assignment2.zip" target="_blank"><strong>Click here to download.</strong></a> </p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=12#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='12';
+s.prop7='12';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=12';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=12';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 12 (Java 2D Animation)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

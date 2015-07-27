@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 2 (Writing Your First Java Program)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 2 (Writing Your First Java Program)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/ld.js"></script><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 2 (Writing Your First Java Program)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/global.js"></script><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/course.js"></script><script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 2 (Writing Your First Java Program)_files/patch.css" media="all"><link href="./Lesson 2 (Writing Your First Java Program)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 2 (Writing Your First Java Program)_files/Lesson 2 (Writing Your First Java Program).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 2 (Writing Your First Java Program)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 2 (Writing Your First Java Program)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 2 (Writing Your First Java Program)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=2#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            2: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Writing Your First Java Program</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=2">Lesson 2</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 2 (Writing Your First Java Program)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 2 (Writing Your First Java Program)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 2 (Writing Your First Java Program)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 2 (Writing Your First Java Program)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 2 (Writing Your First Java Program)_files/header02.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p><strong>Introduction</strong></p>
+<div class="jab-redbox">
+<p><strong>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</strong></p>
+<p align="right">—Linus Torvalds, software engineer, hacker, and principal creator of the Linux operating system</p>
+</div>
+<p>As you can tell from the quotation above, I think programming is fun. It's often challenging, often frustrating, but I've enjoyed it the whole time I've been doing it. I hope that you find it as much fun as I have over the years.</p>
+<p>For our first Java program, we're going to follow tradition. Even in a field as new as computer programming, there are traditions. One of them is that someone's first program should display a "Hello, world!" message, so that's what ours will do.</p>
+<p>We're going to take two runs at this program. The first is the simplest way I know to write the program, and we'll go through it quickly. The second approach (in Lesson 3) will use Java's object-oriented program structure to produce the same output, and we're going to go through that version in more detail.</p>
+<p>Along the way, you'll learn a fair amount about Java's <em>syntax</em> (the rules about the format a program has to take), its data types, and its naming conventions.</p>
+<p>So if you're ready, let's jump in . . . </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Writing and Compiling a Program</strong></p>
+<p>First, start BlueJ by double-clicking its icon. If it opens with a project still active, you can close it using the Project menu's <strong>Close</strong> option. </p>
+<p>Now go to the Project menu and select <strong>New Project</strong>. BlueJ will open a New Project dialog box asking you which directory to put your project in. Choose a directory that you can remember, and then type your project name. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="Creating a new BlueJ project in Windows and in Mac OS X" src="./Lesson 2 (Writing Your First Java Program)_files/L02-01.jpg" class="pf_image"><br>
+<font class="caption">Creating a new BlueJ project in Windows and in Mac OS X</font></p>
+<p>In both versions, I put my project into the <em>Lesson2</em> folder and named it <em>MyFirstProject</em>. I included the Windows and Mac versions here because the screens look different, and it's important to get this right.</p>
+<p>The project name doesn't matter to BlueJ or Java, so enter one that makes sense to you and click <strong>Create</strong>. BlueJ will create a project folder that has the name you chose. You'll keep all the BlueJ and Java files for this project in this folder.</p>
+<p>You should now have an empty project, and your BlueJ project window will look something like this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt=" A new BlueJ project" src="./Lesson 2 (Writing Your First Java Program)_files/L02-02.jpg" class="pf_image"><br>
+<font class="caption"> A new BlueJ project</font></p>
+<p>The icon in the top-left corner of the project window is a README.TXT file that BlueJ automatically creates for you. You can use it later for documentation or other text information you want to include.</p>
+<p>To create your program, click BlueJ's <strong>Edit</strong> menu, and choose <strong>New Class</strong>, or click the <strong>New Class</strong> button at the top left. In Java, a <em>class</em> is like a blueprint that you use to create different objects. A dialog box will open, asking you to name your class and select its type. Enter the name <em>HelloWorld</em>, leave the class type as it is (the default is Class), and click <strong>OK. </strong></p>
+<div class="jab-redbox">
+<p><strong>Java's Rules for Naming Things</strong></p>
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt=" A new BlueJ project" src="./Lesson 2 (Writing Your First Java Program)_files/L02-02a.jpg" align="right" class="pf_image">
+<p>When you name a Java class, use a noun, since Java's classes represent entities, or things. I'm taking a little liberty<strong> </strong>with the name this time, since the traditional name for a first program is HelloWorld. </p>
+<p>Another<strong> </strong>convention is to capitalize the first letter of each word in the name. People call this system <em>camel case</em> because the capital letters stick up in the middle like a camel's humps.</p>
+<p>You can't include spaces in Java names, but letters, numbers, and underscores ( _ ) are valid. Some examples of Java class names from the Java libraries are <em>ArrayList</em>, <em>DirectoryManager</em>, <em>StandardCopyOption</em>, and <em>ArrayListOutOfBoundsException</em>. While Java will accept underscores in class names, they're rarely used there. We'll see examples of names with underscores later. </p>
+</div>
+<p>Once you click OK, a rectangular icon with the name you chose appears in your BlueJ window. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld class icon" src="./Lesson 2 (Writing Your First Java Program)_files/L02-03.jpg" class="pf_image"><br>
+<font class="caption">HelloWorld class icon</font></p>
+<p>The icon represents the class that you're creating. The diagonal lines tell you that the class icon hasn't been compiled yet. BlueJ has created a source code file for you—it's in the project folder, and its name is <em>HelloWorld.java</em>. When you create a new class in Java, its source code file must have the same name as the class, or the Java compiler won't accept it.</p>
+<p>Now you're ready to edit the source code file and make it the program we want it to be. To open the source code in the editor, double-click the <strong>HelloWorld</strong> box. The editor will open and will look like this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt=" BlueJ&#39;s text editor window" src="./Lesson 2 (Writing Your First Java Program)_files/L02-04.jpg" class="pf_image"><br>
+<font class="caption">BlueJ's text editor window</font></p>
+<p>This window is BlueJ's text editor, open to your new program file. BlueJ generated some default code, but we'll delete that and write our own. So select all the code in the editor window by using your mouse to highlight it all, and delete it. Then let's write a very short Java program.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld code" src="./Lesson 2 (Writing Your First Java Program)_files/L02-05.jpg" class="pf_image"><br>
+<font class="caption">HelloWorld code</font></p>
+<p>Copy and paste or type this text into the empty editor window.</p>
+<div class="scroll">
+<pre>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    } // End main
+} // End HelloWorld
+</pre>
+</div>
+<p>Click the <strong>Compile</strong> button at the top-left corner of the window. If you've typed everything correctly, you'll see a message that says something like, "Class compiled—no syntax errors." </p>
+<p>If you see an error message in that box, you may have typed something incorrectly, or perhaps you didn't copy and paste the entire code. Compare the code to what you see above, and see if you can find the problem. Then try compiling again. If you can't find the problem but it still won't compile, post the code in a message in the Discussion Area, and I'll take a look at it.</p>
+<p>If your program compiled without errors, then go back to the main BlueJ window, right-click the HelloWorld icon, and run the program by selecting the <strong>void main(String[] args)</strong> option from the drop-down menu. (If you're a Mac user, you'll press CONTROL as you click instead of right-clicking.) The result should look like this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-06.jpg" class="pf_image"><br>
+<font class="caption">HelloWorld output</font></p>
+<p>Congratulations! You've just written and executed a Java program.</p>
+<p>You might wonder why some of the words are different colors. Let me explain BlueJ's color-coding.</p>
+<ul>
+    <li><strong>Keywords:</strong> These are words that have special meaning in Java and that you can't use for any other purpose, such as names. BlueJ color-codes most of Java's keywords in a dark red font—for example, <font class="font_monospace_dark_red">public</font> and <font class="font_monospace_dark_red">static</font>.
+    </li>
+    <li><strong>Data types</strong>: These are the different information formats that Java uses. Java data types are brighter red, as you can see in <font class="font_monospace_red">class</font> and <font class="font_monospace_red">void</font>.
+    </li>
+    <li><strong>Text strings:</strong> A text string is any text in a program that you want to appear as text in Java. To let Java know that the words are text rather than keywords, data types, or other information that Java uses, you enclose the text in double quotation marks. BlueJ makes text strings green, like the string <font class="font_monospace_green">"Hello, world!"</font>. </li>
+</ul>
+<p>BlueJ puts everything else in black text.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 2 (Writing Your First Java Program)_files/tip.png" align="right" class="pf_image">
+<p><strong>Learning a Programming Language </strong></p>
+<p>Unless you already know another programming language—and maybe even if you do—a lot of the explanation in this lesson may not make sense at first. If that's the case, don't feel bad! I was in a fog for quite a while learning my first programming language, and that happened again when I started digging into Java. </p>
+<p>Most new programmers (and even a lot of experienced ones) feel confused when first encountering a new language. It takes some time, but I'll explain things as clearly as I can, and the terms and names will start to make sense as you gain experience. Please come to the Discussion Area and ask questions when you need to.</p>
+</div>
+<p>Now let's take a closer look at our new program. </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Reviewing Our New Program Line by Line</strong></p>
+<p>Here's the first line of the program.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-06a.jpg" class="pf_image"></p>
+<div class="scroll">
+<pre>public class HelloWorld {</pre>
+</div>
+<p>This line <em>declares</em> a new class to Java; that is, it tells Java that we want to create a new class named HelloWorld. We're not going to go over every detail at this point, but the line tells Java all these things:</p>
+<ul>
+    <li>It's a class (as opposed to other things we can declare).
+    </li>
+    <li>The class is public (anyone can use it).
+    </li>
+    <li>The name of the class is HelloWorld. </li>
+</ul>
+<p>Everything after the left curly bracket ( { ) and before the matching right bracket ( } ) that appears later in the code is going to be part of our new class.</p>
+<p>Every program in Java has to be contained in a class. Not every class is a complete program, though. Many (maybe most) Java classes aren't programs in their own right; instead, people designed them for use with other classes. In Lesson 3, you'll see an example of a class that's not a program.</p>
+<p>The second line of our program is:<strong></strong></p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-06b.jpg" class="pf_image"></p>
+<strong>
+<div class="scroll">
+<pre>    public static void main(String[] args) {</pre>
+</div>
+</strong>
+<p>This line tells Java that we want to declare a method named "main" inside our HelloWorld class. Everything after this left curly bracket ( { ) and before its matching right bracket ( } ) will be part of our main method. </p>
+<p><em>Methods</em> are Java's step-by-step instructions or procedures. If you know another programming language, you can think of methods as similar to what some languages call functions or subroutines. In Java, any name followed by a pair of parentheses is a method name, whether or not the parentheses have anything inside them.</p>
+<p>A class with a <em>main method</em> is a stand-alone program that the Java Virtual Machine (JVM) can execute. (As we discussed in Lesson 1, Chapter 5, the JVM is the part of a computer or other device that allows it to run Java programs.)</p>
+<p>What if a class doesn't have a main method? Then it can't be executed on its own. Its purpose is to be used within other classes.</p>
+<p>The main method in any class is where the JVM starts when it runs a program. It's the top-level logic for the program. And it has to be declared exactly as you see it in the above line of code.</p>
+<p>The third line of our program looks like this.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-06c.jpg" class="pf_image"></p>
+<div class="scroll">
+<pre>            System.out.println("Hello, world!");</pre>
+</div>
+<p>This line produces our program's output. It tells Java to do these things:</p>
+<ul>
+    <li>Go to the <font class="font_monospace_black">System</font> class (remember, class names start with uppercase letters).
+    </li>
+    <li>Find a variable in that class named <font class="font_monospace_black">out</font> that connects to the default output device.
+    </li>
+    <li>Call a method named <font class="font_monospace_black">println</font> that belongs to that variable. </li>
+</ul>
+<p>See the periods between those words? That's <em>dot notation</em> in Java. When you put periods between names, that means that the name on the right side of the dot is part of the name on the left side of the dot. Java puts all those things together into a series of steps (as I described in the bulleted list above) rather than looking at each word as a separate command. </p>
+<p>The<font class="font_monospace_black"> println()</font> method causes Java to take the information we gave it and put it onscreen. How does it know what to display? The last part of the line, within the parentheses, contains the information we want to put onscreen. Java programmers call that information the <em>argument</em> of the call.</p>
+<p>The line ends with a semicolon. Most statements in Java end in either a semicolon or a left curly bracket. The class and method declarations ended with left curly brackets, so they don't need semicolons.</p>
+<p>Let's move on to the fourth line.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-06d.jpg" class="pf_image"></p>
+<div class="scroll">
+<pre>  } // End main</pre>
+</div>
+<p>This line has the right curly bracket that matches the left curly bracket at the start of our main method. That means this line is the end of the main method. (Right curly brackets don't need semicolons after them.)</p>
+<p>The double slash marks indicate that there's a comment in this line. Java ignores comments when it's compiling the program. Comments are for us human readers, to help explain what's going on in the program. Everything from the slashes to the end of the line is a comment. In this case, I included a comment to remind me what the bracket is ending.</p>
+<p>Now here's the fifth line.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="HelloWorld output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-06e.jpg" class="pf_image"></p>
+<div class="scroll">
+<pre>} // End HelloWorld</pre>
+</div>
+<p>Like line 4, this line has a right curly bracket and a comment. In this case, the bracket matches the opening bracket for the class, so this closes the class contents. Our program has two sets of right curly brackets, which might be confusing for us but not for Java. The comment indicates that we've reached the end of the HelloWorld class.</p>
+<p>So that's our first program! Feel free to play with it to make it generate different lines or multiple lines. </p>
+<p>Try this true-false activity to see how well you remember some of the ideas we covered in this chapter.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_Quiz" align="middle" height="285" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L02-07.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L02-07.swf" height="285" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L02-07.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=2#skip_game_L02CH03_a" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 2 (Writing Your First Java Program)_files/L02-07.html" frameborder="0" height="285" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L02CH03_a" id="skip_game_L02CH03_a"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>How'd you do? Are these terms starting to become a little more familiar to you?</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 2 (Writing Your First Java Program)_files/break.png" align="right" class="pf_image">
+<p><strong>Take a Break</strong></p>
+<p>We've covered a lot of information so far. So feel free to take a break if you need to, or at least get up and stretch!</p>
+</div>
+<p>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Java's Programming Conventions</strong></p>
+<p>Let's look at a couple of conventions that Java programmers have developed over the years. These formatting practices make the code easier for us humans to read.</p>
+<p><strong>Comments: Single-Line and Multi-Line</strong> </p>
+<p>Like every other programming language I'm familiar with, Java allows programmers to add comments in the code. And like every other programming teacher, I encourage you to use lots of comments in your code so that when someone else reads it, it'll be easy for that person to sort out what's going on.</p>
+<p>Java supports two styles of comments.</p>
+<p>The first type is a <em>single-line comment</em>. This type may take only part of a line, but it never runs longer than one line. It begins with a double slash (//), and Java treats everything<strong> </strong>from the double slash to the end of the line as a comment. </p>
+<p>We've already seen a couple of examples of this type, but<strong> </strong>here are some more:</p>
+<div class="scroll">
+<pre>// This comment takes a whole line
+            // This comment starts in column 13
+    int x = 0;  // This comment follows some code on the same line
+</pre>
+</div>
+<p>All three of these are valid comments in Java. </p>
+<p>Take a look at the third example. For this one, Java will execute the code at the start of the<strong> </strong>line, and then it'll ignore the comment beginning with the slashes. So you can't put any executable code after a comment of this<strong> </strong>type on the same line, since Java will ignore it.</p>
+<p>You can also use a <em>multi-line comment</em> or <em>block comment</em>, which you can spread across any<strong> </strong>number of lines. This comment starts with the characters /* and continues until Java sees the characters */.<strong> </strong>Here are a couple of examples:</p>
+<div class="scroll">
+<pre>/* This comment takes part of a line */
+
+/* This comment 
+ * is spread
+ * across several lines
+ */
+</pre>
+</div>
+<p>Since these comments have a specific end point, you can put code after them in the same line, but most programmers don't because it makes the code harder for someone else to read and figure out.</p>
+<p>BlueJ highlights single-line and multi-line comments in gray.</p>
+<p>There's also a "documentation" type of comment that's a subset of the multi-line comments. This type of comment starts with /** instead of /*. Oracle has a program named Javadoc that reads the source code of a program and uses any documentation comments in the code to generate documentation.</p>
+<p>If you look at the editor window I showed you earlier, you'll see three documentation comments that BlueJ generated. I'll reproduce that editor window for you here so you don't have to go back.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt=" BlueJ&#39;s text editor window" src="./Lesson 2 (Writing Your First Java Program)_files/L02-04.jpg" class="pf_image"><br>
+<font class="caption">BlueJ's text editor window</font></p>
+<p>BlueJ lets you look at how Javadoc works. If you go to the top-right corner of BlueJ's editor window, click the drop-down menu there, and select <strong>Documentation</strong>, BlueJ will run Javadoc on the source code and show you what the documentation looks like. </p>
+<p>Here's the documentation that Javadoc generated from the comments in that first editor window: </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="Javadoc output" src="./Lesson 2 (Writing Your First Java Program)_files/L02-08.jpg" class="pf_image"><br>
+<font class="caption">Javadoc output</font></p>
+<p>If our class had documentation comments, you'd see them here. You'll see this type of documentation frequently.</p>
+<p>BlueJ colors documentation comments blue so they stand out when you're reading the code.</p>
+<p><strong>Java Code Formatting: Indents and Curly Brackets</strong> </p>
+<p>Many code format conventions are from earlier languages like C and C++. For instance, indenting a program makes it much easier to read once you get used to it. </p>
+<p>Take a look back at the images of the editor window. In both cases, the class declaration started in column 1. Method declarations were indented four spaces, and code within the methods was indented four more spaces. There's nothing magic about the number four; it's just widely used.</p>
+<p>If you want BlueJ to indent your code for you, go to the <strong>Edit</strong> menu and choose <strong>Auto-layout</strong>. Or you can hit the CTRL + SHIFT + I key combination in Windows, or COMMAND + SHIFT + I on a Mac, and BlueJ will try to indent the code correctly. It's not perfect, but it's a quick way to format code.</p>
+<p>Another coding convention has to do with placing opening curly brackets. If you look at that first editor window again, you'll see that each opening bracket is on its own line. In the second window, they're at the end of the preceding line. Here's that second window again. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt="The second editor window" src="./Lesson 2 (Writing Your First Java Program)_files/L02-05.jpg" class="pf_image"><br>
+<font class="caption">The second editor window</font></p>
+<p>Both ways of using curly brackets are common, so you can use either method.</p>
+<p>Now let's talk about how to name things in your Java programs.</p>
+<p><strong>Formatting Names in Java</strong> </p>
+<p>Java's name-formatting convention is so widely used that if you don't follow it, people will probably complain to you about it. So here's how the conventions work.</p>
+<p>A Java name can be any combination of letters, numbers, underscores, and dollar signs, as long as it doesn't start with a number. Spaces aren't allowed, and certain patterns have become so widely used that people expect to see them.</p>
+<p>Here are some tips to help you use names correctly in your Java programs:</p>
+<ul>
+    <li><strong>Don't start names with dollar signs or underscores.</strong> Those are usually reserved for system names, not document names.
+    </li>
+    <li><strong>Use descriptive names.</strong> A name should describe the document's purpose, so use names like<strong> </strong><font class="font_monospace_black">accountNumber</font>, <font class="font_monospace_black">firstName</font>, and<strong> </strong><font class="font_monospace_black">aLongJavaVariableName</font> rather than<strong> </strong><font class="font_monospace_black">x</font>, y, and<strong> </strong><font class="font_monospace_black">z</font>. You'll have to type more, but it'll be beneficial in the long run.
+    </li>
+    <li><strong><em>Variable names</em></strong><strong> are nouns that describe the data they will hold.</strong> They should start with a lowercase letter, and each word after the first should start with an uppercase letter. So<strong> </strong><font class="font_monospace_black">accountNumber</font>, <font class="font_monospace_black">firstName</font>, and <font class="font_monospace_black">aLongJavaVariableName</font> are all good variable names.
+    </li>
+    <li><strong><em>Method names</em></strong><strong> are verbs that describe the action they provide.</strong> They should follow the same formatting rules as variable names, but method names always have parentheses after them. Some examples are<strong> </strong><font class="font_monospace_black">setColor()</font> and <font class="font_monospace_black">getText()</font>.
+    </li>
+    <li><strong><em>Constant names</em></strong><strong> are for values that can't change.</strong> These are nouns, and they're all uppercase. Separate words with underscores. Java constant names look like this: <font class="font_monospace_black">PI</font>, <font class="font_monospace_black">MAX_VALUE</font>, and <font class="font_monospace_black">MIN_VALUE</font>.
+    </li>
+    <li><strong><em>Class names</em></strong><strong> are nouns that describe the entity they represent</strong>. They start with an uppercase letter, and all words after the first also start with uppercase letters.<font class="font_monospace_black"> String</font>, <font class="font_monospace_black">Math</font>, and <font class="font_monospace_black">Graphics</font> are class names that we'll use in this course. </li>
+</ul>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_format_Quiz" align="middle" height="175" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L02-11.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L02-11.swf" height="175" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L02-11.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=2#skip_game_L02CH04_a" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 2 (Writing Your First Java Program)_files/L02-11.html" frameborder="0" height="175" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L02CH04_a" id="skip_game_L02CH04_a"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>I know that seems like a lot of rules to follow! But as you use them, they'll become<strong> </strong>second nature.</p>
+<p>We have a couple of topics still to cover, and then we'll wrap up this lesson.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Using BlueJ's Preferences and Terminal Window </strong></p>
+<p>Here's how my BlueJ editor preferences are set. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt=" BlueJ Editor Preferences" src="./Lesson 2 (Writing Your First Java Program)_files/L02-09.jpg" class="pf_image"><br>
+<font class="caption"> BlueJ Editor Preferences</font></p>
+<p>Let me get into more detail about which preferences I use and why.</p>
+<ul>
+    <li>I use syntax highlighting (colored keywords).</li>
+    <li>I display my line numbers.</li>
+    <li>I auto-indent.</li>
+    <li>I let BlueJ match brackets for me.</li>
+    <li>I set the scope highlighting as dark as possible. </li>
+</ul>
+<p>I think the meaning of most of those is clear, except for <em>bracket matching</em>. That means if I put my cursor right after a bracket or parenthesis in the code, BlueJ will highlight the matching bracket for me in gray. </p>
+<p>If you have questions about any other of these preferences, please let me know in the Discussion Area.</p>
+<p>The only other preference I'll mention now is under the Miscellaneous tab. Here's what it looks like: </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 2 (Writing Your First Java Program)_files/pf_placeholder_a.png" border="0"><img alt=" BlueJ Miscellaneous Preferences" src="./Lesson 2 (Writing Your First Java Program)_files/L02-10.jpg" class="pf_image"><br>
+<font class="caption"> BlueJ Miscellaneous Preferences</font></p>
+<p>I've entered the URL for Oracle's Java 7 API so that if I click "Java Class Libraries" in the Help menu in BlueJ, it'll open the Web page for me in my browser so I can look at the Java documentation there.</p>
+<p>I'd also like to mention one thing about BlueJ's terminal window that most people don't like. The terminal window is set up to mimic a command-line environment, where input and output are not deleted when a program finishes running. They simply stay on the screen until they scroll off the top. So if you run a program several times, you'll see all the output and input for all the runs. You may have noticed that already. </p>
+<p>You can change that default action by going to the terminal window's <strong>Options</strong> menu and clicking the <strong>Clear screen at method call</strong> line. Once you've selected that option, BlueJ will clear the window each time you start a new program. I prefer that mode of operation, and I find that most students do too.</p>
+<p><strong>Summary </strong></p>
+<p>Congratulations! You've made it through another lesson.</p>
+<p>I know we've covered a lot of ground, and I don't expect you to remember everything the first time through. But believe me, by the time this course is done, you'll be able to breeze through a lot of this. So take a deep breath, let it out, and relax. And I'll talk to you in the Discussion Area if you have questions or comments for me. (I hope you do!)</p>
+<p>In our next lesson, we'll rewrite HelloWorld in a more object-oriented programming (OOP) style. I'll see you then.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.tutorialspoint.com/java/java_basic_datatypes.htm" target="_blank">
+                                Java's Basic Data Types Tutorial</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.tutorialspoint.com/java/java_basic_datatypes.htm</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page summarizes Java's data types.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.bluej.org/doc/documentation.html" target="_blank">
+                                BlueJ Tutorials and Documentation</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.bluej.org/doc/documentation.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page has several PDF downloads that provide more information about BlueJ, including a usage tutorial and a reference manual. Both are for BlueJ 2.0, which is an older version. But no newer versions of the documentation have been written yet, and everything in these downloads still applies to newer versions of BlueJ.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html" target="_blank">
+                                Javadoc Comment Tutorial</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            If you'd like more information on Javadoc, this link explains how to format Javadoc comments.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> I'm having trouble getting my program to compile, and I don't understand the error messages. I'd like to post my code in the Discussion Area for all to see. How do I do this?<br>
+<br>
+<strong>A:</strong> In the program text editor, use CTRL + A (hold down the CTRL key and press A) or COMMAND + A on a Mac to select the entire program. Then use CTRL + C (COMMAND + C on a Mac) to copy it, or select <strong>Copy</strong> from the <strong>Edit</strong> menu.<br>
+<br>
+Now start a new message in the Discussion Area. Fill in the form as usual, but when you get to the comments box, explain your problem, and then click your browser's <strong>Edit</strong> menu and choose <strong>Paste</strong> (or use CTRL + V in Windows or COMMAND + V on a Mac to paste the program into the message).</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>Take the program from the lesson and modify it to perform some additional output. If you'd like to keep the projects separate, start by using the <strong>Save As</strong> option in the project window's Project menu to save the complete project to a new directory. Then you can modify the copy without losing the original. </p>
+<p>Try experimenting with the output using the System.out.print() method as well as the System.out.println() method that was in the lesson's example. See if you can figure out the difference in how they work.</p>
+<p>Some examples of things you might try include:</p>
+<ul>
+    <li>Getting multiple output lines from one statement using Java's newline character ("\n")
+    </li>
+    <li>Getting multiple output statements to produce one line of output apiece</li>
+    <li>Getting multiple strings to print on one line using a combination of System.out.print() and System.out.println() </li>
+</ul>
+<p>If you want to see how I completed these tasks, please click the link below—but not till you've done your own modifications.</p>
+<p align="center"><input name="" id="L03CH04_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L03CH04-solution">
+<p>Getting multiple output lines from one statement using the newline character:<br>
+<br>
+</p>
+<div class="scroll">
+<pre>public class HelloWorldNewLine {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!\nIt's a beautiful day.");
+    } // End main
+} // End HelloWorldNewLine
+</pre>
+</div>
+<p>Getting multiple output statements to produce one line of output each:<br>
+<br>
+</p>
+<div class="scroll">
+<pre>public class HelloWorldMultipleStmts {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+        System.out.println();
+        System.out.println("It's a beautiful day.");
+    } // End main
+} // End HelloWorldMultipleStmts
+</pre>
+</div>
+<p>Displaying multiple strings on one line:</p>
+<div class="scroll">
+<pre>public class HelloWorldMultipleStrings {
+    public static void main(String[] args) {
+        System.out.print("Hello, world!");
+        System.out.println(" -- It's a beautiful day on the same line.");
+    } // End main
+} // End HelloWorldMultipleStrings
+</pre>
+</div>
+</div>
+<p>If you have any questions or problems, let me know in the Discussion Area, and we'll get them figured out.</p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=2#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='2';
+s.prop7='2';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=2';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=2';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 2 (Writing Your First Java Program)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 2 (Writing Your First Java Program)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933261224&amp;cv=7&amp;fst=1437933261224&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=16&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D2&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D2" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Lesson 2 (Writing Your First Java Program)_files/dis.html" style="display: none;"></iframe></div></body></html>

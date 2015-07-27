@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 1 (Introducing Java)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 1 (Introducing Java)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 1 (Introducing Java)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/ld.js"></script><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 1 (Introducing Java)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/global.js"></script><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/course.js"></script><script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 1 (Introducing Java)_files/patch.css" media="all"><script src="./Lesson 1 (Introducing Java)_files/captions.js"></script><link href="./Lesson 1 (Introducing Java)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 1 (Introducing Java)_files/Lesson 1 (Introducing Java).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 1 (Introducing Java)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 1 (Introducing Java)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 1 (Introducing Java)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=1#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            1: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Introducing Java</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=1">Lesson 1</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 1 (Introducing Java)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 1 (Introducing Java)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 1 (Introducing Java)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 1 (Introducing Java)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 1 (Introducing Java)_files/header01.jpg" class="pf_image"></p>
+<p><strong>Introduction</strong></p>
+<div class="jab-redbox">
+<p><strong>"Computers are good at following instructions, but not at reading your mind." </strong></p>
+<p align="right">—Donald Knuth, computer scientist and professor emeritus, Stanford University</p>
+</div>
+<p>Welcome to <em>Introduction to Java Programming</em>! My name is Brian Hall. I will be your teacher for the next six weeks, and my brother Mike will be helping out in the Discussion Area. Let us tell you a little about ourselves.
+</p>
+<p>Programming runs in our family. Our dad studied computer science in the 1970s and had a career developing software systems for a number of different organizations and types of computers.</p>
+<p>So, we grew up around computers and began programming them early on. Once we found out a little about how computers worked, we were hooked. They were the biggest toys we could find, and we wanted to learn how to play with them.</p>
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 1 (Introducing Java)_files/L01-01.jpg" align="right" class="pf_image">
+<p>We've both been working with them ever since, me in the film visual effects industry and Mike in machine learning and mobile applications. We still enjoy writing programs to get the computer to do what we need.&nbsp; We hope that you will enjoy it as much as we have.</p>
+<p>Over the next few weeks, we're going to introduce you to <em>Java</em>, a powerful computer programming language that people use for lots of different tasks.
+</p>
+<p>If you've ever tried to learn a new language, you're already pretty familiar with the skills you're going to need to master Java. To become fluent in any language, all you really have to do is master a bunch of new vocabulary words and then learn the rules for stringing those words together. </p>
+<p>We use the Java language the same way we use any other language: to communicate. The big difference between Java and human languages like Spanish or French is that we use Java to communicate with computers.</p>
+<p>By the time you finish this course, you'll have a good understanding of what Java is, what it can do, and how it works. You'll be able to create your own Java programs from scratch—even if you have no experience in computer programming right now.</p>
+<p>Ready to start? Then please proceed to the next chapter.<br>
+<br>
+</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>What Java Is</strong></p>
+<p>Java is a programming language, but that's not such a great definition for someone who hasn't used one before. After all, how many people really know what that means?</p>
+<p>Let me explain a bit better. A <em>programming language</em> is a tool we use to create computer programs. </p>
+<p>And what on earth is a computer program, you may ask?</p>
+<p>Well, computer programs (which are sometimes referred to as <em>software</em> or as <em>applications</em>) are just lists of instructions that tell a computer to perform a series of tasks in a certain order.</p>
+<p>In essence, then, Java is nothing more than a tool you can use to write instructions that you want your computer to carry out.</p>
+<p>Let me give you an analogy.</p>
+<p>Once upon a time, back in the dark ages before microwave ovens, my uncle Bill had to fend for himself at home while the rest of the family was out. This particular incident happened while he was in high school. His mom left him a note telling him how to heat up a TV dinner. The note said:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="The TV dinner is in the freezer. To cook it, preheat the oven to 450. After the oven is hot, put in the TV dinner for 30 minutes. Then let it cool for a few minutes before you eat it. When you finish eating, throw the tray in the trash, and wash any silverware you used. We should be home by 10:00." src="./Lesson 1 (Introducing Java)_files/L01-02.jpg" class="pf_image"><br>
+<font class="caption">Bill's mom's note</font></p>
+<p>That little note you just read fits my definition of a program, doesn't it? </p>
+<p>Remember, I defined a computer program as a list of instructions that tell a computer to perform a series of tasks in a certain order.</p>
+<p>Okay, so Bill isn't a computer. But if he were a computer, that note would be a program. After all, isn't the note just a list of instructions asking him to perform a series of tasks in a certain order? </p>
+<p>Look at it again. What's it say?</p>
+<p>First, find the dinner. Preheat the oven, and then heat the food. Then eat it. When you're done, clean up. </p>
+<p>If you've ever written a note similar to the one Bill's mom left for him, you have what it takes to create simple computer programs. </p>
+<p>There's just one important thing to remember: Computers aren't anywhere near as smart as people are. You and I can find TV dinners in a freezer because we're familiar with them. Unfortunately, computers don't have any such experience. If you wanted to teach a computer how to do that, you'd have to start at the beginning. In other words, you'd need to teach the computer how to recognize a freezer and a TV dinner, how to open a freezer, and so on.</p>
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 1 (Introducing Java)_files/L01-02a.jpg" align="right" class="pf_image">
+<p>And of course, you'd also have to teach the computer how to move before you could accomplish any of the above. If your computer is anything like mine, that isn't very likely.</p>
+<p>But in another way, my little story will show you how literal computers are. My uncle is somewhat literal too. He did exactly what the note said, just as a computer would. And his mom forgot one important step: She didn't tell him to take the dinner out of the box before heating it! She assumed he would know to do that. Instead, he just stuck the TV dinner, box and all, into the oven. In a few minutes, he had a nice fire going in the kitchen!</p>
+<p>Computers are like that. They do exactly what you say and in the order you say it. So we can make no assumptions when dealing with computers. In our programs, we'll need to tell them every detail of what we want them to do.</p>
+<p><strong>What Java Isn't</strong></p>
+<p>You may have heard of JavaScript, a programming language that helps people design interactive sites. Java and JavaScript are different programming languages that are only distantly related—even though their names are similar.<strong></strong></p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 1 (Introducing Java)_files/L01-03.jpg" class="pf_image"></p>
+<p>In the next chapter, we'll download the software you need to write and run your Java programs.<br>
+<br>
+</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>The Java JDK </strong></p>
+<p>The Java SE Development Kit (JDK) is the platform we'll use to develop our Java programs. Java has several editions:</p>
+<ul>
+    <li><strong>Java ME (Micro Edition)</strong> is for developing programs for small devices like cellphones, digital video recorders, cameras, microwave ovens, and so on.
+    </li>
+    <li><strong>Java SE (Standard Edition)</strong> is the one we'll use. It's the most commonly used edition for development and for training.
+    </li>
+    <li><strong>Java EE (Enterprise Edition)</strong> is for large organizations that need to develop complex applications that large numbers of people can use across networks. </li>
+</ul>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 1 (Introducing Java)_files/L01-03a.jpg" class="pf_image"></p>
+<p><strong>Java's Platform Independence </strong></p>
+<p>Java is one of the first programming languages that was designed to be <em>platform independent</em>, which means that a program written in Java will get along fine with almost any processor and almost any operating system. </p>
+<p>Before Java came along, programmers had to develop one version of a program for a Windows user, a second version of the same program for a Macintosh user, a third version for a Linux user, and so on. As you might imagine, the process was complicated, time-consuming, and expensive.</p>
+<p>But those days are history. With Java, you only need to create a program once, and it'll work on all those platforms—and others as well. This is a tremendous step forward in the world of computer programming. It's also why Java has become so popular for programs that run over the Internet. Internet programmers have no idea how many different types of computers their programs will need to run on. So Java makes their lives much easier!</p>
+<p>What's really exciting is the fact that Java programs can run on almost any computer-like device, as long as it has a processor and an operating system. You could (at least in theory) write a single program on your home computer and then see the thing run not only on other types of computers but also on Java-enabled cellphones, handheld organizers, home theater systems, your cat, or even your microwave oven! (Okay, that may be taking things a little far, but you get the idea.)</p>
+<p>Because Java makes multi-platform software development relatively effortless and convenient, it's one of the most popular programming languages in the world.</p>
+<p><strong>Downloading the JDK </strong></p>
+<p>Okay, that's enough background. Let's download the JDK.</p>
+<p>First of all, if you're running a Mac with Mac OS X, the JDK is already part of your operating system, so you can skip to the next chapter to get BlueJ.</p>
+<p>If you're using Windows or Linux, please click this link now:</p>
+<p align="center"><a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Download Site</a> (http://www.oracle.com/technetwork/java/javase/downloads/index.html)</p>
+<p>That should get you to this page at Oracle's website:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="Java download site" src="./Lesson 1 (Introducing Java)_files/L01-04.jpg" class="pf_image"><br>
+<font class="caption">Java download site</font></p>
+<p>To get the JDK, click the large <strong>Java Download</strong> button at the left center of the window.&nbsp;That should get you to this page with the link for Java for your operating system:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="Getting ready to download" src="./Lesson 1 (Introducing Java)_files/L01-05.jpg" class="pf_image"><br>
+<font class="caption">Getting ready to download</font></p>
+<p>The first group of download files in the gray area is for the most recent Java release. You'll need to accept the license agreement before you can download the JDK. If you're a Windows user, you'll need to click either the "Windows x86 (32-bit)" link for 32-bit Windows or the "Windows x64 (64-bit)" link for 64-bit Windows. If you're not sure which to use, it's safest to use the 32-bit version.&nbsp;If you're running Linux, your link is in the list as either an RPM file or a TAR.GZ file.<br>
+<br>
+When you download the JDK file, be sure to remember where you save it, as you'll need it for the installation step in the next chapter. It's probably easiest to store it on your desktop.<br>
+<br>
+As I'm sure you know, websites have a sad habit of changing without notice. So if these instructions don't match what you see, please let me know in the Discussion Area and I'll get them fixed.</p>
+<p>As I write this, the current stable version of the JDK is Version 8, Update 51, but version numbers change often and without warning. So if you see a different version number at the website, don't worry about it. Just download the current version. It'll work fine for this class.<br>
+<br>
+If you run into download problems, don't forget that I'm available in the Discussion Area. Let me know if you can't get it to download.<br>
+<br>
+When you've completed the JDK download, please continue to the next chapter, where we'll get BlueJ and then install both packages. (If you installed Java before reading this far, that's fine too.&nbsp;Go on to the next chapter, and download and install BlueJ.) </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Downloading BlueJ</strong></p>
+<p>First let's talk about what BlueJ is and why we're going to use it. </p>
+<p>BlueJ is an <em>integrated development environment</em>. An IDE is a set of tools that helps you create software programs. It provides an editor, a compiler, a debugger, and other tools that we'll use over the next few weeks.</p>
+<p>You can compile and run Java programs using just the JDK, without an IDE. But to do that, you have to use the old <em>command-line</em> computer interface that requires you to type commands instead of pointing and clicking. For example, here are the commands that I entered to compile and run one program:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="A simple program without an IDE" src="./Lesson 1 (Introducing Java)_files/L01-06.jpg" class="pf_image"><br>
+<font class="caption">A simple program without an IDE</font></p>
+<p>Unless you're particularly fond of this type of interface, it's probably easier for you to click a button than enter those commands. So we'll use BlueJ as our development tool.</p>
+<p>I chose BlueJ because it's designed for students, and it's easy to learn and use. If you already have another IDE you want to use (like NetBeans, Eclipse, or IntelliJ IDEA), feel free to use that. But my discussion in the lessons will center on BlueJ.</p>
+<p>BlueJ provides several tools for us in a window environment that most of us are more familiar with. </p>
+<ul>
+    <li>It contains a <em>text editor</em> that we'll use to create and edit our programs. </li>
+    <li>It contains links to the Java compiler that will let us compile programs with the click of a button. This link will also capture messages from the compiler and display them for us. (We'll talk more about text editors and compilers in Chapter 5.) </li>
+    <li>It'll execute our programs with a mouse click instead of requiring us to type commands.</li>
+</ul>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 1 (Introducing Java)_files/tip.png" align="right" class="pf_image">
+<p><strong>A Few Words of Encouragement</strong></p>
+<p>BlueJ is an example of what programmers can do in Java. It's written entirely in Java using Java classes and methods. So don't be discouraged if it seems like we're moving slowly. In less time than you think, you'll be able to write programs that'll do some interesting things.</p>
+</div>
+<p>Now let's download BlueJ. To find the download file, start with the BlueJ home page link in this lesson's Supplementary Material or click this link, and you should see the page below:</p>
+<p align="center"><a target="_blank" href="http://bluej.org/download/download.html">BlueJ Download Site</a> (http://www.bluej.org/download/download.html)</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="BlueJ home page" src="./Lesson 1 (Introducing Java)_files/L01-07.jpg" class="pf_image"><br>
+<font class="caption">BlueJ home page</font></p>
+<p>There may be more than one release available on the download page. The BlueJ developers sometimes post preview and beta releases there so people can try them out. To minimize problems, though, please stick to the official release.</p>
+<p>Several versions of the official release of BlueJ are available at the download page. There are versions for Windows, for the Mac, for Linux systems like Ubuntu, and one for all other systems. So be sure to get both the official release and the correct version for your computer. At the time of this writing, the version is BlueJ 3.1.0, but if you see a later version, go ahead and download that instead.</p>
+<p>One more note for Mac users: There are two releases for Macs based on the version of Mac OS X you have. If you have version 10.7.3 or newer, BlueJ includes Java version 7 in its download. If you have an older version of OS X, you'll need to get the "legacy" version of BlueJ that runs with Java 6, which is already installed as part of OS X. If this is a problem for you, please let me know in the Discussion Area.</p>
+<p>Once you've found the correct release and version, click the filename to its right, and save the file onto your computer. Again, the easiest place to find it quickly is probably your desktop.</p>
+<p><strong>Installing the JDK</strong></p>
+<p>As soon as your download finishes, install both the JDK and BlueJ. (If you're running a Mac, you can skip the JDK installation since the JDK is already included.) So for the rest of the JDK installation, my instructions assume that you're running a Windows computer. If you're running Linux, you'll need to modify your actions to fit that operating system. If you have trouble, come visit me in the Discussion Area.</p>
+<p>We want to install the JDK first because BlueJ looks for the JDK and will give you an error message if the JDK isn't there. To install the JDK, go to the installation file that you downloaded earlier, the one named something like "jdk-<em>xxx</em>-windows-i586.exe" or "jdk-<em>xxx</em>-windows-x64.exe," where <em>xxx</em> represents the JDK version number. When you find the file, double-click it to begin the installation. Unless you have a particular directory where you want to install it, just take all the default actions during the installation by clicking <strong>OK</strong> or <strong>Next</strong> or <strong>Yes</strong> whenever the installation asks you for a response.</p>
+<p>If you get any error messages, or if the installation doesn't finish correctly by telling you that the JDK was installed successfully, please let me know about it in the Discussion Area. </p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 1 (Introducing Java)_files/note.png" align="right" class="pf_image">
+<p><strong>No Icon for the JDK</strong></p>
+<p>You won't see an icon on your desktop to run the JDK. The only way to run Java directly is using the command-line interface I showed you at the beginning of this chapter. I recommend using BlueJ or another IDE instead since it makes life much easier.</p>
+</div>
+<p><strong>Installing BlueJ</strong></p>
+<p>Once the Java installation is complete, you'll need to install BlueJ. Find the BlueJ installation file and double-click it. Once again, just click <strong>OK</strong> or <strong>Next</strong> or <strong>Yes</strong> for any responses until the installation is complete. The only time I've seen problems with installing BlueJ is when students didn't install the JDK first. </p>
+<p>If BlueJ doesn't find the JDK in its normal directory, it may ask you where to look for it. If that happens, and you installed the JDK to a different directory than its default, just tell BlueJ where you put it. </p>
+<p>After the BlueJ installation finishes, we're almost ready to try it out to make sure everything works the way it should. To do that, we'll compile and run a couple of the example programs that came with BlueJ.</p>
+<p>First, though, we need to get one more download. That's an "examples" folder that includes several BlueJ test projects. We'll try out a couple of them to test your installation. You can get a Zip file containing that folder at this link:</p>
+<p align="center"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/download/examples.zip" target="_blank"><strong>Click here to download files.</strong></a> </p>
+<p>Save your downloaded Zip file to your desktop. Once you expand the Zip file, you'll have a folder named "examples" that you can use to try out BlueJ.</p>
+<p>Once that's done, go ahead and test BlueJ. Once you start it, you should see a window that looks something like the image below.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="BlueJ window" src="./Lesson 1 (Introducing Java)_files/L01-08.jpg" class="pf_image"><br>
+<font class="caption">BlueJ window</font></p>
+<p>Don't worry about all the different menus and buttons at this point. We'll be using them later. For now, just follow these instructions to make sure everything is working right.</p>
+<p>In this video, I'll walk you through the process of opening and running a project in BlueJ.</p>
+<div class="figure">
+<div class="jw" style="display: none;">Loading video…</div>
+<script type="text/javascript">/* ------------------- 5.8 Video Script Start ------------------- */
+
+placeHolderNum = "L01-08b-v01";
+runJWsetup();
+courseCode = "jab-3";  /* optional */
+fileName = "L01-08b";
+videoCaption = "";
+posterImage = "L01-08b.png";
+hasCC = true;
+CCbackground = false;
+hasHD = false;
+vidWidth = 500;
+vidHeight = 498;
+stopStretch = false;
+runJWloader();/* ------------------- 5.8 Video Script Stop ------------------- */</script><div id="vidFrame_L01-08b-v01" class="classroomJwVideoContainer"><div align="center"><div id="placeholderL01-08b-v01_wrapper" style="position: relative; width: 500px; height: 498px;"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/jwplayer/player.swf" width="100%" height="100%" bgcolor="#000000" id="placeholderL01-08b-v01" name="placeholderL01-08b-v01" tabindex="0"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D1&amp;id=placeholderL01-08b-v01&amp;file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL01-08b_low.mp4&amp;image=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL01-08b.png&amp;skin=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fglobal%2Fjwplayer%2Fmodieus.zip&amp;plugins=https%3A%2F%2Fsecurelp.longtailvideo.com%2F5%2Fcaptions%2Fcaptions.swf&amp;captions.file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL01-08b.xml&amp;captions.state=false&amp;captions.back=false&amp;captions.pluginmode=HYBRID&amp;controlbar.position=over"></object><div id="placeholderL01-08b-v01_captions" style="position: absolute; z-index: 10; left: 0px; top: 0px;"></div></div><br><div class="video_caption"><font class="caption"></font></div></div></div><script src="./Lesson 1 (Introducing Java)_files/HTML5_jwplayers.js"></script><script src="./Lesson 1 (Introducing Java)_files/HTML5_video.js"></script>
+<div style="TEXT-ALIGN: center" class="caption"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/video/L01-08b.pdf" target="_blank">Click here to download the video transcript&nbsp;<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 1 (Introducing Java)_files/Transcript.png" border="0" class="pf_image"></a></div>
+</div>
+<p>Click <strong>Project</strong> &gt; <strong>Open Project</strong>. The normal file open dialog box will appear. Open the examples folder you saved earlier, and within it, open the <strong>Hello</strong> project. You should see the project appear in the BlueJ window so that it looks something like the image below:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="The Hello project" src="./Lesson 1 (Introducing Java)_files/L01-09.jpg" class="pf_image"><br>
+<font class="caption">The Hello project</font></p>
+<p>The icon named Hello represents a simple Java program that writes the phrase, "Hello, world" to a window on the screen. The diagonal blue lines in the box mean that the program hasn't been compiled yet. (I'll explain more about compiling in the next chapter.) So click the <strong>Compile</strong> button to tell BlueJ to compile the program. </p>
+<p>The message <em>Compiling</em> will appear in the bottom left corner of the BlueJ window for a few seconds, and when the program has compiled, it'll change to <em>Compiling . . . Done</em>. The blue lines will also disappear from the Hello box. That means the program is compiled and ready to run.</p>
+<p>To run it, right-click the Hello box (Mac users should hold down the <em>CTRL</em> key while clicking) and choose the second option from the drop-down menu, "<strong>void main(String [] args)"</strong> as in the image below. This is the signature of the program's <em>main method</em>, where the highest-level logic of the program goes, and where Java always starts when it executes a program.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="Starting a program" src="./Lesson 1 (Introducing Java)_files/L01-10.jpg" class="pf_image"><br>
+<font class="caption">Starting a program</font></p>
+<p>When you click that menu option, you'll see a <em>Method Call</em> dialog box open up like the one in the image below. This is a dialog box that BlueJ uses to run a Java method. Click <strong>OK</strong> to run the program.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="Method Call dialog box" src="./Lesson 1 (Introducing Java)_files/L01-11.jpg" class="pf_image"><br>
+<font class="caption">Method Call dialog box</font></p>
+<p>When the program runs, all it does is display some text onscreen. BlueJ opens a new window, called the <em>terminal window</em>, to show you the text. We'll use this window for a lot of our programs' input and output. It should look like this:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="BlueJ&#39;s terminal window" src="./Lesson 1 (Introducing Java)_files/L01-12.jpg" class="pf_image"><br>
+<font class="caption">BlueJ's terminal window</font></p>
+<p>Congratulations! You've just compiled and run your first Java program!</p>
+<p> <br>
+<br>
+</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Creating and Running a Java Program </strong></p>
+<p>Now that you have Java and BlueJ installed and running, let's take a step back and look at the process of creating and running a Java program. Writing and running a Java program takes several steps. I've numbered them from one to four in the diagram:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="The" java="" program="" process"="" src="./Lesson 1 (Introducing Java)_files/L01-13.jpg" class="pf_image"><br>
+<font class="caption">The Java program process</font></p>
+<p>I know this looks complicated, but I'll walk you through it step by step. The squares in the diagram are files, the circles are tools, and the arrows show the flow of the process.</p>
+<p>The first step in creating a Java program is to write it using a text editor. You could use any text editor, but we'll use the one that BlueJ provides. </p>
+<p>The programs that we write in text are called <em>source code</em>. (This is true of any programming language, not just Java.) If you'd like to look at the source code for the program you just ran, you can do that by double-clicking the program icon in the BlueJ project window. But whatever text editor a programmer uses, the product is the same: Java source code.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="Program icon" src="./Lesson 1 (Introducing Java)_files/L01-13a.jpg" class="pf_image"><br>
+<font class="caption">Program icon</font></p>
+<p>As the diagram shows, the text editor saves the source code in a source code file. </p>
+<p>Once we've written a program, we have to get it into a form that a computer can run. So Step 2 in creating a Java program is to compile it. Special programs called <em>compilers</em> do that for just about every programming language. A compiler translates the source code you've written into a form that a computer can understand. In many cases, this is a string of ones and zeroes.</p>
+<p>Compilers also let you know about <em>syntax errors</em>, such as spelling a name wrong, leaving out some punctuation, and so on. Any program more than a few lines long will likely have some syntax errors in it the first time it goes through the compiler. When there are syntax errors, we fix them by editing the source code file, and then we save and compile it again.</p>
+<p>After we fix syntax errors, the compiler creates a new file. Some compilers create a finished file that will run directly on the computer. Files like that are <em>object code</em>, and they're the strings of ones and zeroes I mentioned a minute ago. </p>
+<p>Java doesn't do that, though. As the diagram shows, the Java compiler creates something called <em>bytecode</em> and puts it into a file. It's not object code, since it won't run directly on a computer. But in this case, that's a good thing, since object code can only run on the type of computer it's created for.</p>
+<p>If you remember, one of Java's main benefits is that you can compile a Java program without knowing where it will run. That's often the case with Internet programs. It works because the bytecode gets translated into object code on the computer where it's executed. I can take the bytecode from a PC, and it should run just as well on a large computer like a mainframe as long as the mainframe has a <em>Java Runtime Engine</em> (JRE), which is sometimes called a <em>Java Virtual Machine</em> (JVM).</p>
+<p>But anyway, back to the main topic. Once I have a bytecode file, I can run it (Step 3 in the diagram). If my program is an <em>application</em>, I can run it as a separate stand-alone program, like BlueJ.</p>
+<p>If my program is an applet, I'll need a Web browser or Java's AppletViewer to run it. <em>Applets</em> are small applications (which is why they're called applets) that are specially designed to run in a browser so they'll work on the Internet. We'll see how to create both types of programs in this course.</p>
+<p>Step 4 in the diagram happens only if there are <em>runtime errors</em>. If the program crashes or otherwise doesn't do what it should, then the programmer has to figure out why and fix it in the text editor. That starts the whole process again.</p>
+<p>The final result, which usually doesn't happen until we've been through this cycle a few times, is a working program that'll run on many different computer platforms and always do what it's designed to do. By the time we finish this course you'll have quite a bit of experience with this process and will be able to go through it with your eyes closed, so to speak. </p>
+<p>I know I've thrown a lot of terms at you in this chapter, so try this matching game to help you remember them. I won't keep track of your score—this is just for practice.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_multi-matchbox" align="middle" height="500" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L01-14.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L01-14.swf" height="500" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L01-14.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=1#skip_game_L01CH05_a" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 1 (Introducing Java)_files/L01-14.html" frameborder="0" height="500" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L01CH05_a" id="skip_game_L01CH05_a"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>How did you do? Were some of these terms familiar to you before you started this course?<br>
+<strong>&nbsp;</strong></p>
+<p><strong>Summary </strong></p>
+<p>We covered quite a bit of ground today, from introducing you to Java to downloading the software we need (both the Java JDK and BlueJ) to compiling and running a Java program using BlueJ. That's quite an accomplishment.</p>
+<p>We also discussed the complete process for writing, compiling, and running Java programs. We'll be going through this cycle of steps quite a few times over the next few weeks, so it's a good idea to be sure you understand how it works.</p>
+<p>In the next lesson, we'll start writing, compiling, and running our own Java programs. That's when things will really get interesting. I'll see you then!</p>
+<p><strong>Next Steps</strong></p>
+<p>After every lesson in this course, you can test your knowledge by taking a short, multiple-choice quiz. To access your first quiz, click the word <strong>Quizzes</strong> at the top or bottom of any page in this classroom. When the quiz form comes up, select <strong>Lesson 1</strong> <strong>Quiz</strong>.</p>
+<p>Once you've taken the quiz, apply what you've learned by doing this lesson's assignment. The assignments that accompany every lesson in this course will reinforce and expand your learning. To access your first one, click <strong>Assignments</strong> at the top or bottom of any page in the classroom. Then scroll down to the section for Lesson 1.</p>
+<div id="nextStepsBox"><div style="text-align: center;"><div class="nextstepsrounded_global"><div id="nextSteps_item_intro"><p class="nextstepsroundedtitle_global"><img class="next_steps_icon" align="right" src="./Lesson 1 (Introducing Java)_files/steps_icon.png"><strong>Next Steps</strong></p><p>Okay, you've finished your first lesson. Now what do you do?</p><p>You'll want to take the following steps, in any particular order you like:</p></div><ul><li id="nextSteps_item_quiz"><strong>Take the quiz</strong>. Reinforce what you learned in the lesson by testing yourself with a short five-question quiz. You can access the quiz for each lesson by clicking the <strong>Quizzes</strong> link. </li><li id="nextSteps_item_assignment"><strong>Do the assignment.</strong> Want some hands-on practice applying what you've just learned? Then roll up your sleeves and dig into the assignment! Just click the <strong>Assignments</strong> link to get to each lesson's assignment.</li><li id="nextSteps_item_faqs"><strong>Check out the FAQs</strong>. Since learning something new usually raises questions, every lesson in this course comes with an FAQs section. To get to the FAQs, click the <strong>Resources</strong> link, and then click <strong>FAQs</strong>.</li><li id="nextSteps_item_discussion"><strong>Drop by the Discussion Area</strong>. Come talk with me and your fellow students in the Discussion Area! Ask questions about anything that came up in the lesson, and share your insights with everyone. This is where we'll create a learning community.</li><li id="nextSteps_item_index"><strong>View the index</strong>. If you want to find a topic but can't quite remember where it was, then the index is the place to go. You'll find it by clicking the <strong>Resources</strong> link, and then clicking <strong>Course Index</strong>.</li><li id="nextSteps_item_resources"><strong>Browse resources for further learning</strong>. I've included a list of recommendations for books so you can continue learning more about this topic long after our time together ends. You'll find these&nbsp;by clicking the <strong>Resources</strong> link.</li></ul></div></div></div>
+<p>Also, since learning something new usually raises questions, every lesson in this course comes with an FAQs section. You'll find the link that goes to this lesson's Frequently Asked Questions by clicking the <strong>Resources</strong> link at the top or bottom of any page in this classroom.</p>
+<p>Within the <strong>Resources</strong> link, you'll also find the course index, which many students like to print and use as a detailed table of contents. Also, you'll find books and other resources that I've found helpful and would like to pass along to you in the Book Recommendations and Recommended Resources sections. These aren't required, but they're excellent sources for further learning.</p>
+<p>By the way, feel free to print the course material for future reference. You can do this by accessing the printer-friendly version of each lesson. To get to the printer-friendly version, just click <strong>Lessons</strong> at the top or bottom of any page in the classroom, click a lesson number or title, and then click <strong>Download Printer-Friendly Version</strong>. That way, you'll get all five chapters, the Supplementary Material, the FAQs, and the assignments for each lesson all in one pass.</p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://merrillhall.wordpress.com/2011/04/22/java-technology-the-early-years/" target="_blank">
+                                Java Technology: The Early Years</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://merrillhall.wordpress.com/2011/04/22/java-technology-the-early-years/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Here's a discussion of Java's birth and early evolution from the people who were there!</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">
+                                Oracle's Java Site</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.oracle.com/technetwork/java/javase/downloads/index.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is Oracle's top-level site for Java programmers. You can download the Java JDK, review documentation, read news, and more.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.bluej.org/download/download.html" target="_blank">
+                                BlueJ Download Page</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.bluej.org/download/download.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This site is where you can download BlueJ, the Java editor and compiler tool we'll be using in this class. You can also find more details about BlueJ as well as tutorials on using all its features.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-1/examples.zip" target="_blank">
+                                BlueJ Examples Folder</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-1/examples.zip</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This Zip file contains the compressed examples folder from BlueJ. You can download it here, expand it on your computer, and use it for this lesson's assignment.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> Will this Java class enable me to get a job as a programmer?<br>
+<br>
+<strong>A:</strong> This class is a start toward that goal. However, entry-level programmers on a job are expected to know more than this class has time to cover. You can follow up with more classes and online tutorials that will get you ready for a job in programming.<br>
+<br>
+<br>
+<strong>Q:</strong> I've never done any programming. Will I be able to understand the material in this course?<br>
+<br>
+<strong>A:</strong> This class doesn't assume <em>any</em> prior knowledge. We'll start with the most basic concepts and build on them, so you shouldn't have any trouble due to lack of experience. And if you have questions, the Discussion Area is the place to ask them. <br>
+<br>
+<br>
+<strong>Q:</strong> Is it possible to develop Java programs on computers running another operating system? If so, how do I get started?<br>
+<br>
+<strong>A:</strong> Of course! You can write Java programs on Windows, Mac, Linux, and other operating systems. The procedures are similar enough that it shouldn't be too hard for you to figure things out. The Java language is identical regardless of which operating system you use.<br>
+<br>
+You'll find links to different versions of the JDK at <a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>, the page we downloaded from.<br>
+<br>
+<br>
+<strong>Q:</strong> I don't know what Zip files are or how they work. Would you explain them to me?<br>
+<br>
+<strong>A:</strong> <em>Zipping</em> files compresses the data they contain. This makes the files take up less disk spaaaaaace and reduces the time it takes to transfer and download them. <br>
+<br>
+<strong>Windows Users:</strong> If Windows 7 or Windows 8 is your operating system, then you already have a utility on your computer that can open Zip files. After you download a Zip file, a window will pop up showing you the documents the file contains. To the left of the window will be a link that says <em>Extract all</em> or <em>Extract all files</em>. Click that link, and then follow the wizard.<br>
+<br>
+If you have an earlier operating system, you'll need to download a program for dealing with the Zip files we'll be using. The most common program for this is WinZip. Unfortunately, this program is free for only 45 days. After that, you have to pay $29.95 to continue using it. <br>
+<br>
+For more information about WinZip and about Zip files in general, visit <a href="http://www.winzip.com/aboutzip.htm" target="_blank">http://www.winzip.com/aboutzip.htm</a>.<br>
+<br>
+To download the free 45-day evaluation version of WinZip, go to <a href="http://www.winzip.com/downwz.htm" target="_blank">http://www.winzip.com/downwz.htm</a>.<br>
+<br>
+There are lots of free Zip utility programs. To find one, I suggest you visit <a href="http://www.tucows.com/" target="_blank">http://www.tucows.com</a> and click the <strong>Looking for downloads?</strong> link. When the downloads page comes up, type <em>Zip</em> into the field next to the magnifying glass. This will take you to a page of free, downloadable Zip programs. You can then read the user ratings and decide which one you'd like.<br>
+<br>
+<strong>Mac Users:</strong> On most Macs, you can open Zip files simply by double-clicking them. If you have an older Mac, you may need to download a program for unzipping files. You can get a free trial version of StuffIt by visiting <a href="http://www.stuffit.com/win/expander/index.html" target="_blank">http://www.stuffit.com/win/expander/index.html</a>. (After the 30-day trial, you'll have to pay $29.99 to continue using it.)<br>
+<br>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>For today's assignment, I'd like you to try running a different program with BlueJ. There's one other that you can run with our current knowledge of Java and BlueJ. In the same folder as the Hello project is another one named <em>appletdemo</em>. <br>
+<br>
+Open the appletdemo project in BlueJ and compile the program, which is named CaseConverter. Then run it by right-clicking on the program box and choosing <strong>Run Applet</strong> from the drop-down menu. (Just click <strong>OK</strong> when the Run Applet dialog box opens up.)</p>
+<p>The window that opens up should look like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 1 (Introducing Java)_files/L01-15.jpg" class="pf_image"></p>
+<p><strong>Applet demo</strong></p>
+<p>Once the applet's running, you can enter any text you want in the text box at the top and convert it to uppercase or lowercase letters by clicking the buttons at the bottom of the window. (That's why it's called CaseConverter!)<br>
+<br>
+When you're done, drop by the Discussion Area, and let me know how it all went. </p>
+<div class="figure">
+<div class="jw" style="display: none;">Loading video…</div>
+<script type="text/javascript">/* ------------------- 5.8 Video Script Start ------------------- */
+
+placeHolderNum = "L01-08a-v01";
+runJWsetup();
+courseCode = "jab-3";  /* optional */
+fileName = "L01-08a";
+videoCaption = "";
+posterImage = "L01-08a.png";
+hasCC = true;
+CCbackground = false;
+hasHD = false;
+vidWidth = 500;
+vidHeight = 498;
+stopStretch = false;
+runJWloader();/* ------------------- 5.8 Video Script Stop ------------------- */</script><div id="vidFrame_L01-08a-v01" class="classroomJwVideoContainer"><div align="center"><div id="placeholderL01-08a-v01_wrapper" style="position: relative; width: 500px; height: 498px;"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/jwplayer/player.swf" width="100%" height="100%" bgcolor="#000000" id="placeholderL01-08a-v01" name="placeholderL01-08a-v01" tabindex="0"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="netstreambasepath=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D1&amp;id=placeholderL01-08a-v01&amp;file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL01-08a_low.mp4&amp;image=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL01-08a.png&amp;skin=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fglobal%2Fjwplayer%2Fmodieus.zip&amp;plugins=https%3A%2F%2Fsecurelp.longtailvideo.com%2F5%2Fcaptions%2Fcaptions.swf&amp;captions.file=https%3A%2F%2Fapi.ed2go.com%2FCourseBuilder%2F2.0%2Fimages%2Fresources%2Fprod%2Fjab-3%2Fvideo%2FL01-08a.xml&amp;captions.state=false&amp;captions.back=false&amp;captions.pluginmode=HYBRID&amp;controlbar.position=over"></object><div id="placeholderL01-08a-v01_captions" style="position: absolute; z-index: 10; left: 0px; top: 0px;"></div></div><br><div class="video_caption"><font class="caption"></font></div></div></div><script src="./Lesson 1 (Introducing Java)_files/HTML5_video.js"></script>
+<div style="TEXT-ALIGN: center" class="caption"><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/video/L01-08a.pdf" target="_blank">Click here to download the video transcript&nbsp;<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 1 (Introducing Java)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 1 (Introducing Java)_files/Transcript.png" border="0" class="pf_image"></a></div>
+</div>
+<p>&nbsp;</p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=1#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='1';
+s.prop7='1';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=1';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=1';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 1 (Introducing Java)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 1 (Introducing Java)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933213379&amp;cv=7&amp;fst=1437933213379&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=13&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D1&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D1" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Lesson 1 (Introducing Java)_files/dis.html" style="display: none;"></iframe></div></body></html>

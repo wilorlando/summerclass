@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<!-- saved from url=(0141)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=10 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 10 (Formatting Output and the Java API)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/global.js"></script><script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/course.js"></script><script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 10 (Formatting Output and the Java API)_files/patch.css" media="all"><link href="./Lesson 10 (Formatting Output and the Java API)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 10 (Formatting Output and the Java API)_files/Lesson 10 (Formatting Output and the Java API).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 10 (Formatting Output and the Java API)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 10 (Formatting Output and the Java API)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 10 (Formatting Output and the Java API)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=10#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            10: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Formatting Output and the Java Application Program Interface</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=10">Lesson 10</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 10 (Formatting Output and the Java API)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 10 (Formatting Output and the Java API)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 10 (Formatting Output and the Java API)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 10 (Formatting Output and the Java API)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 10 (Formatting Output and the Java API)_files/header10.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<div class="jab-redbox">
+<p><strong>"Real programmers don't comment their code. If it was hard to write, it should be hard to understand and harder to modify."</strong></p>
+<p align="right">&nbsp;—Anonymous</p>
+</div>
+<p><strong>Introduction</strong></p>
+<p>The quotation above is a tongue-in-cheek comment about program documentation and comments. That's what most of this lesson is about: Java documentation. We'll look at Java's application program interface in detail. The API gives us all the information we need on how to use the classes in the Java libraries. The API tells us a lot about every class, like:</p>
+<ul>
+    <li>The package it's in</li>
+    <li>Its superclasses and subclasses</li>
+    <li>General information that will help us use it</li>
+    <li>Its public fields, if any</li>
+    <li>Its constructors and methods, including arguments, return values, and any exceptions</li>
+</ul>
+<p>We'll discuss some of the specifics of each of those so you'll know how to look for them when you need them. That way, you'll understand what the classes are and how you can use them. Contrary to the quotation above, real programmers document their code so others can use it easily.</p>
+<p>But first, as I promised in the Lesson 9, I want to talk about how we can get our output to look the way we want it to. We want to be able to format our output in columns, with the right number of decimal places and the correct commas, and perhaps with other formatting, such as dollar signs or percent signs. So in the next chapter we'll see how Java programmers get the formats they want for their output.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Formatted Output</strong></p>
+<p>We're going to look at one of the most often-used techniques for formatting output. It's a method that's been carried over from C and C++ into Java: the <font class="font_monospace_black">printf()</font> method. Another name for it is the <em>formatted print method</em>. It's very flexible, and we'll take a look at some of its more commonly used features.</p>
+<p>Java's a <font class="font_monospace_black">printf()</font> method gives us more control over output format than the <font class="font_monospace_black">print()</font> or <font class="font_monospace_black">println() </font>methods do. Those simply send a string to the output device, and you have to do any formatting in the string itself. That's difficult to do when you're displaying text or numbers that have varying widths. The <font class="font_monospace_black">printf()</font> method allows us to specify more details about what we want to display. For example, we can set the number of columns a field should take, how many decimal places to use for numbers, and so on.</p>
+<p>Here's how it works. While <font class="font_monospace_black">print()</font> and <font class="font_monospace_black">println()</font> accept only one argument, a string, <font class="font_monospace_black">printf()</font> accepts multiple arguments. Its first argument is a <em>format string</em> describing the output format. The format string contains <em>format specifiers</em> that are placeholders describing the output format for data values.</p>
+<p>One or more data values always follow the format string. The <font class="font_monospace_black">printf()</font> method formats the data values and puts them into the output according to the format specifiers in the format string. Let me give you an example, and then I'll explain how it works and go over some of the options we can use in the format specifiers.</p>
+<p>Here's a short program that displays some average hourly wages in three columns for different people, some imaginary and some real:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * FirstFormatExample provides a quick example of printf() formatting.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class FirstFormatExample {
+    /**
+     * The main() method displays several strings and numbers in columns
+     */
+    public static void main(String[] args) {
+        System.out.printf("%-15s  %-15s  %13s%n","Name","Position",
+                          "Hourly Wage");
+        System.out.printf("%-15s  %-15s  %13s%n","---------------",
+                          "---------------","-------------");
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","John Doe",
+                          "Busboy",9.1);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Jane Doe",
+                          "Cook",10.7);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Jack Doe",
+                          "Architect",37.83);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Joan Doe",
+                          "Electronic Engr",45.79);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Barack Obama",
+                          "US President",192.31);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Tim Tebow",
+                          "Quarterback",302.88);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","LeBron James",
+                          "B-Ball Player",9168.27);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","David Beckham",
+                          "Soccer Player",22115.38);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Warren Buffett",
+                          "Investor",30218.76826923076923);
+        System.out.printf("%-15s  %-15s  $%,12.2f%n","Bill Gates",
+                          "Software Guru",1682692.30769230769231);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>This program produces the following output:
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>Name             Position           Hourly Wage
+---------------  ---------------  -------------
+John Doe         Busboy           $        9.10
+Jane Doe         Cook             $       10.70
+Jack Doe         Architect        $       37.83
+Joan Doe         Electronic Engr  $       45.79
+Barack Obama     US President     $      192.31
+Tim Tebow        Quarterback      $      302.88
+LeBron James     B-Ball Player    $    9,168.27
+David Beckham    Soccer Player    $   22,115.38
+Warren Buffett   Investor         $   30,218.77
+Bill Gates       Software Guru    $1,682,692.31
+</pre>
+</div>
+<p>
+</p>
+<p>The <font class="font_monospace_black">printf()</font> method uses a <em>format string</em> with format specifiers (the characters following the percent signs) to describe the desired output. Each call to <font class="font_monospace_black">printf()</font> above uses four format specifiers to lay out how to display the data. Following the string with the specifiers are three data elements that the specifiers format for display.
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>System.out.printf("<span style="background-color: rgb(0, 176, 240);"></span><span style="">%-15s</span> <span style="">%-15s</span> <span style="">%13s %n</span><span style="background-color: rgb(0, 176, 240);"></span>",<br>                             "<span style="">Name</span>","<span style="">Position</span>", "<span style="">Hourly Wage</span>");
+</pre>
+</div>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-01.jpg" style="margin-bottom: -5px;" class="pf_image"></p>
+<p>
+The first two format specifiers in each string are "%-15s", which tell Java that the first two data elements should align with the left-hand margin (that's the "-"), will take up 15 output columns (that's the "15"), and will be string data (that's the "s"). When I say a data element will take up 15 output columns, I mean it'll be at least 15 spaces wide (and longer if it needs to be).</p>
+<p>The third specifier in the first two calls is "%13s". It tells Java to expect a string for the third argument and to reserve 13 columns for it. These specifiers format the column headings. </p>
+<p>The third specifier in all the remaining calls is "%,12.2f", which tells Java that the third data element is a floating-point number (that's the "f"), should display two decimal places (that's the ".2"), should use 12 output columns (that's the "12"), and should have comma separators between hundreds and thousands and millions and so on (that's the ",").</p>
+<p>The fourth specifier in each call is "%n", which inserts a newline character into the output. That means the output will show each call on its own line.</p>
+<p>Any text in the first string besides the specifiers displays as given. In this case, that includes spaces between columns and the dollar sign in front of the numbers.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 10 (Formatting Output and the Java API)_files/you_try.png" align="right" class="pf_image">
+<p><strong>Now You Try</strong> </p>
+<p>Try running the program yourself, and look at the columns and the modifiers. Let me know if you have any questions.</p>
+</div>
+<p><strong>How Format Specifiers Work</strong></p>
+<p>Here's the general format of the format specifiers, as described in the <font class="font_monospace_black">Formatter</font> class documentation, with square brackets around optional parts:</p>
+<p>&nbsp;&nbsp;&nbsp;<font class="font_monospace_black">&nbsp; %[argument_index$][flags][width][.precision]conversion</font></p>
+<p>And here are the rules and meanings of the parts of the specifier format:</p>
+<ul>
+    <li>Every specifier begins with a percent sign (%).</li>
+    <li>Next an optional <em>argument index</em> tells Java which data element to get its data from, starting with 1$ for the first data element, 2$ for the second, and so on. This allows you to use data elements out of sequence or more than once. Without an index, <font class="font_monospace_black">printf()</font> uses the data values in sequence—the first value with the first specifier, the second value with the second specifier, and so on.</li>
+    <li>Then optional <em>flags</em> tell Java how to modify the output. Common flags are:
+    <ul>
+        <li>"," to insert separators in numbers</li>
+        <li>"−" to left-justify the data</li>
+        <li>"0" to pad a number to the left with leading zeros</li>
+        <li>"(" to enclose negative numbers in parentheses</li>
+    </ul>
+    </li>
+</ul>
+<ul>
+    <li>An optional <em>width</em> tells Java how many output columns to use for the data element as a minimum. If the data is wider, it'll use more columns.</li>
+</ul>
+<ul>
+    <li>The optional <em>precision</em> tells Java how many decimal places numeric floating-point output should have. You'd use this to make your data line up properly even if you're working with widely varying numbers.</li>
+</ul>
+<ul>
+    <li>The only required part of the specifier is the <em>conversion</em>, which tells Java what type of data element to convert to a string for output. An uppercase conversion code, where allowed, will convert output to all uppercase. The most common conversions are:
+    </li>
+</ul>
+<ul>
+    <ul>
+        <li>"s" or "S" for strings</li>
+        <li>"c" or "C" for Unicode characters</li>
+        <li>"d" for decimal integers</li>
+        <li>"f" for floating-point numbers</li>
+        <li>"t" or "T" for date and time conversions</li>
+        <li>"n" to insert a newline character into the output</li>
+        <li>"%" to put a percent sign in the output</li>
+    </ul>
+</ul>
+<p>These are just a few of the options available in format specifiers. You can look at more by checking out the Supplementary Material. </p>
+<p>Let's look at a few more examples of format specifiers and their output. This example shows several ways to format one number:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+ * SecondFormatExample provides more examples of printf() formatting.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class SecondFormatExample {
+    /**
+     * The main() method displays several format options for numbers.
+     */
+    public static void main(String[] args) {
+        System.out.printf("Format is %%10f:    %10f%n",123.45);
+        System.out.printf("Format is %%10.0f:  %10.0f%n",123.45);
+        System.out.printf("Format is %%10.1f:  %10.1f%n",123.45);
+        System.out.printf("Format is %%10.2f:  %10.2f%n",123.45);
+        System.out.printf("Format is %%10.3f:  %10.3f%n",123.45);
+        System.out.printf("Format is %%010.3f: %010.3f%n",123.45);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Its output is this:
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>Format is %10f:    123.450000
+Format is %10.0f:         123
+Format is %10.1f:       123.5
+Format is %10.2f:      123.45
+Format is %10.3f:     123.450
+Format is %010.3f: 000123.450
+</pre>
+</div>
+<p>
+</p>
+<p>That example takes one number and formats it six ways. Note that in the format string, a double percent sign shows up in the output as a single percent sign.
+</p>
+<p>The first format, %10f, tells Java to use 10 positions to display the output. Java pads the number on the right with zeros to fill the 10 spaces.</p>
+<p>The next four lines show from zero to three decimal places for the same number. Note, too, that Java rounds up when a digit of 5 or greater gets truncated.</p>
+<p>The last line shows the use of a "0" in the format specifier to pad the number on the left with zeros.</p>
+<p>Let me know if you have any questions about running or modifying these examples.</p>
+<p><strong>Date and Time Formatting With </strong><strong class="font_monospace_black">printf()</strong><strong> </strong></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-01a.jpg" style="margin-bottom: -5px;" class="pf_image"></p>
+<p>This example uses two classes we haven't discussed, <font class="font_monospace_black">Calendar</font> and <font class="font_monospace_black">GregorianCalendar</font>, to build an internal date/time object. I'm not going to go into the details of those classes here—you can read about them in the API if you're interested. But here's code that displays the day of the week, date, and time of day to the millisecond. It uses <font class="font_monospace_black">printf()</font> to format the output nicely.</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Calendar;
+import java.util.GregorianCalendar;
+import static java.util.Calendar.*;
+/**
+ * ThirdFormatExample provides more examples of printf() formatting.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class ThirdFormatExample {
+    /**
+     * The main() method displays several Date and time options
+     */
+    public static void main(String[] args) {
+        Calendar c = new GregorianCalendar();
+        System.out.printf("Today is %tA, %1$tB %1$te, %1$tY.%n", c);
+        System.out.printf("The time is %tl:%1$tM:%1$tS.%1$tL %1$Tp.%n", c);
+    }
+}
+</pre>
+</div>
+<p>
+</p>
+<p>And here's the output:
+</p>
+<p>
+</p>
+<div class="scroll">
+<pre>Today is Friday, July 19, 2013.
+The time is 8:00:55.052 PM.
+</pre>
+</div>
+<p>
+</p>
+<p>In each statement, each specifier after the first one uses "1$" to reuse the first data argument. The conversions begin with "t" or "T" to indicate a time/date conversion. The next character tells Java which format we want. In the first output statement, "A" is the conversion for fully spelled-out day of the week. "B" gives us the fully spelled-out month. "e" gives us a 1- or 2-position day of the month. "Y" displays a four-digit year.
+</p>
+<p>In the next line, "l" (that's a lowercase "L") displays a 1- or 2-digit hour from 1 to 12. "M" gives us a 2-digit minute, "S" gets a 2-digit second, and "L" provides 3-digit milliseconds. Last, "p" gives us an a.m./p.m. indicator.</p>
+<p>I hope these examples give you some idea of the formatting possibilities in <font class="font_monospace_black">printf()</font>. You can find descriptions of many more by visiting the Supplementary Material. Play around with <font class="font_monospace_black">printf()</font> a bit, and let me know in the Discussion Area if you have questions. </p>
+<p>I've mentioned the API several times. In the next chapters, we'll look at the information we can get out of it.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>The Java API</strong></p>
+<p>Java's API, or Application Program Interface, is where you can get all the information you need to use the classes that come with Java. (As you learned back in Lesson 2, a class is like a blueprint that you can use to create different objects.)</p>
+<p>The amount of information can be daunting at first, so we're going to look at the different parts of the API, and then we'll examine the information that's available for each class. We'll dig into the API for a couple of frequently used classes so we can see how to use the information that's there.</p>
+<p>Let's look at the API home page and what it shows us. I've included the link in the Supplementary Material in case you want to follow along on the site rather than using the images I've provided in this chapter.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="The Java API home page" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-02.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">The Java API home page</font></p>
+<p>When the API opens, you'll see three panels in the screen. The top-left panel shows a list of Java <em>packages</em>. In Java libraries, a package is a group of related classes, subpackages, or both. This list shows several: <font class="font_monospace_black">java.applet</font>, <font class="font_monospace_black">java.awt</font>, <font class="font_monospace_black">java.awt.color</font> (a subpackage of <font class="font_monospace_black">java.awt</font>), and so on. Over 200 packages deal with input and output (<font class="font_monospace_black">java.io</font>), databases (<font class="font_monospace_black">java.sql</font>), user interface components (<font class="font_monospace_black">java.awt</font> and <font class="font_monospace_black">javax.swing</font>), and many more aspects of Java. Clicking a package name will display the list of classes in that package in the lower-left panel.</p>
+<p>On this screen, the lower-left panel shows a list of all the classes in the selected package. The opening view shows all the classes in all the packages. To get back to that view, just click <strong>All Classes</strong> in the upper-left panel.</p>
+<p>The larger panel on the right shows the details of any class selected in the lower-left panel. The opening view in this larger panel is another list of all the packages, along with a brief description of the purpose of each.</p>
+<p>Just to see how some of this works, scroll down in the upper-left package panel until you see the <strong>java.lang</strong> package, and then click it. You'll see the lower-left panel change to this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt=" contents list in the lower-left panel" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-03.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">contents list in the lower-left panel</font></p>
+<p>The package contents list has several categories, including Interfaces, Classes, Enums, Exceptions, and a few others. We don't have time or spaaaaaace to get into all the categories or classes here, but you can find them here. </p>
+<p>The <font class="font_monospace_black">java.lang</font> package automatically loads whenever you compile a Java class or program. These are some of the most commonly used Java classes, like <font class="font_monospace_black">String</font>, <font class="font_monospace_black">System</font>, and <font class="font_monospace_black">Math</font>, along with 25 or so others. Investigate the list yourself, and let me know if you have any questions about it.</p>
+<p>Let's see what information's available about a single class. To do that, we'll look at a couple of classes we've used already. </p>
+<p>Scroll down in the lower-left panel until you see the <strong>Math</strong> class, and click on its name. The Math class documentation in the right-hand panel will open.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="The java.lang.Math class documentation" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-04.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">The java.lang.Math class documentation</font></p>
+<p>The first line in that right-hand panel, "<font class="font_monospace_black">java.lang</font>", tells us what package the class is from. The second line is the class name. </p>
+<p>The next two lines show the <em>inheritance hierarchy</em> for the class. We talked about inherited attributes and methods in Lesson 8. Ultimately every class in Java inherits from <font class="font_monospace_black">Object</font>, but some classes have several other classes in between. In this case, <font class="font_monospace_black">Object</font> is the only class that <font class="font_monospace_black">Math</font> inherits from. If you ever need to know what classes any class inherits from, this is where to find out.</p>
+<p>The next few paragraphs are a general description of the <font class="font_monospace_black">Math</font> class and its use. Some classes have only a short description, if any. But others have quite a bit, including examples of uses of the class and its methods.</p>
+<p><strong>Finding the Field Summary</strong></p>
+<p>If you scroll down in the large panel, you'll get to detailed interface information. It begins with a <em>field summary</em>, which is a section that summarizes public fields of the class. The <font class="font_monospace_black">Math</font> class has two public fields: <font class="font_monospace_black">E</font> and <font class="font_monospace_black">PI</font>. (This is one of the rare occasions that data fields are declared with the <font class="font_monospace_black">public</font> access modifier.) Their summaries look like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="java.lang.Math  public data fields" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-05.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">java.lang.Math  public data fields</font></p>
+<p>These two fields represent important mathematical values that you might use if you perform calculations involving circles (<font class="font_monospace_black">PI</font>) or logarithms (<font class="font_monospace_black">E</font>). The documentation for each field shows its type, its name, and a brief description of what it is. Both of these values are <font class="font_monospace_black">public</font>, <font class="font_monospace_black">static</font>, and <font class="font_monospace_black">double</font>. They're also constants, so their values can't change. We use them in our programs by using the class name followed by the field name, like this: <font class="font_monospace_black">Math.E</font> and <font class="font_monospace_black">Math.PI</font>. You can click on each name to see details about that field.</p>
+<p><strong>Method Summary</strong></p>
+<p>Scroll down again to the method summary section. It looks like this for <font class="font_monospace_black">Math</font>:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="java.lang.Math public methods" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-06.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">java.lang.Math public methods</font></p>
+<p>These are the first few of a long list of commonly used mathematical methods in the <font class="font_monospace_black">Math</font> class. The list shows each method's type (the data type it returns), its name, its parameter list, and a brief description of what the method does. In the <font class="font_monospace_black">Math</font> class, they're all static, so we can call them by prefixing their names with the class name. For example, <font class="font_monospace_black">Math.abs(-5)</font> returns the absolute value of −5, which is 5. <font class="font_monospace_black">Math.cbrt(8)</font> returns the cube root of 8, which is 2.</p>
+<p>Just as it was in the field summary, each method's name is a link that will take you to details about the method if you click it.</p>
+<p>The method summary lists four <font class="font_monospace_black">abs()</font> methods listed, one for each parameter list the class provides. The authors overloaded that method for the four most commonly used numeric types. The reason for overloading it is so that the method's result can be the same data type as the argument it's given. That way, if I ask for the absolute value of an int, I get an int result. If I ask for the absolute value of a double, I get a double result, and so on.</p>
+<p>Other methods, like <font class="font_monospace_black">cbrt()</font>, have only one version. That's because the cube root of most integers isn't an integer, and the method returns the most accurate answer it can, which is always a <font class="font_monospace_black">double</font> type. </p>
+<p>Let's continue with our scrolling . . . </p>
+<p><strong>Field and Method Details</strong></p>
+<p>The last two sections in the <font class="font_monospace_black">Math</font> class documentation are detailed descriptions about its fields and methods. You'd get to the same information by clicking on the field name or method name in the summary section. Here are the details on the field <font class="font_monospace_black">PI</font> and the integer version of the <font class="font_monospace_black">abs()</font> method:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="java.lang.Math field and method details" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-07.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">java.lang.Math field and method details</font></p>
+<p>Each of these sections describes the field or method in detail, starting with the exact details of how it's declared. For methods, there are also details about parameters and the value the method returns. If the method can generate any exceptions, this section lists them after the return value. If any related topics exist in the API, this section provides a "See Also" section that links to them.</p>
+<p>Both of these sections link to additional information you might need. The section on PI has a link to a list of Java <font class="font_monospace_black">constant</font> values that will give you the actual value in the field, 3.141592653589793. The section on <font class="font_monospace_black">abs()</font> has a link to the value of the smallest integer that an <font class="font_monospace_black">int</font> type can contain: −2,147,483,648.</p>
+<p>That's an overview of the documentation available on the <font class="font_monospace_black">Math</font> class. Let's take a break from reading about it and actually use it. (I know I can only absorb a limited amount at once.) </p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 10 (Formatting Output and the Java API)_files/you_try.png" align="right" class="pf_image">
+<p><strong>Now You Try</strong> </p>
+<p>Try writing a quick program that uses a <font class="font_monospace_black">Math</font> method you haven't used before, and then use <font class="font_monospace_black">printf()</font> to format its output. For example, you could write a program that calculates the cube root of the first 25 even numbers greater than zero and displays all of them with five decimal places. </p>
+<p>If you'd like to do more, feel free to come up with your own ideas for a short program.</p>
+</div>
+<p>My solution is "behind" this link. Take a look at it after you write your own program. Feel free to ask me questions in the Discussion Area if you have any trouble.</p>
+<p align="center"><input name="" id="L10CH01_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L10CH01-solution">
+<div class="scroll">
+<pre>/**
+ * MathFormatting provides a solution to an exercise in the lesson.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class MathFormatting {
+    /**
+     * The main() method calculates the cube root of the first 25
+     * positive integers and formats them to display 5 decimal
+     * places.
+     */
+    public static void main(String[] args) {
+        int i = 2;
+
+        while (i &lt;= 50) {
+            System.out.printf("The cube root of %2d is %7.5f%n",
+                              i, Math.cbrt(i));
+            i += 2;
+        }
+    }
+}
+</pre>
+</div>
+</div>
+<p>In the next chapter, we'll look at possibly the most widely used class in Java: the <font class="font_monospace_black">String</font> class.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong class="font_monospace_black">String</strong><strong> Class Documentation</strong></p>
+<p>Java's <font class="font_monospace_black">String</font> class is large (3,000 lines) but not terribly complex. It has some quirks that bear explaining, and we'll look at a few of those. </p>
+<p>We're not going to delve into everything that the class has and does. That would take more time and spaaaaaace than we have left in this course! But we'll look at as much as we can in this chapter, and you can ask me any questions you have when we're done.</p>
+<p>Like the <font class="font_monospace_black">Math</font> class in the last chapter, <font class="font_monospace_black">String</font> is part of the <font class="font_monospace_black">java.lan</font><font class="font_monospace_black">g</font> package. So if you still have that package open in the lower-left panel of your browser, you can scroll down a little and find the <font class="font_monospace_black">String</font> class. If you've left that page, open the API again, and scroll down in the lower-left panel until you find <font class="font_monospace_black">String</font>. Click it, and its documentation will come up in the main panel on the right.</p>
+<p>Once you're there, you'll find a general description of the class and a few example lines that use it. I'm not going to discuss the whole description, but there are two points I'd like to hit. The first is a common misconception about <font class="font_monospace_black">String</font> objects, and the second has to do with how String represents characters.</p>
+<p><strong class="font_monospace_black">String</strong><strong> Objects Are Immutable</strong></p>
+<p>The second paragraph of the description starts out like this: "Strings are constant; their values cannot be changed after they are created." In other words, <font class="font_monospace_black">String</font> objects are <em>immutable</em>. Most new Java programmers think they can change the contents of a string (I certainly thought so), but Java doesn't allow that. Let me show you what I mean. Here are a couple of lines of code:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>String s = "a string";
+   // . . . further down in my code . . .
+s = "another string";
+</pre>
+</div>
+<p>
+</p>
+<p>The first time I saw this code, I thought it was changing the value of a <font class="font_monospace_black">String</font> object named <font class="font_monospace_black">s</font>. But that's not the way <font class="font_monospace_black">Strin</font>g objects work. For one thing, managing memory would become difficult since the new value is longer than the old value. How much memory would a <font class="font_monospace_black">String</font> object need to allow for changes? They can be hundreds, even thousands, of characters long. You can see what a nightmare that would be.
+</p>
+<p>What those lines of code do is replace one <font class="font_monospace_black">String</font> object with another. The first line creates a variable named <font class="font_monospace_black">s</font> with type <font class="font_monospace_black">String</font>, and the variable refers to a <font class="font_monospace_black">String</font> object containing <font class="font_monospace_black">"a string"</font>. The second part creates a new <font class="font_monospace_black">String</font> object containing <font class="font_monospace_black">"another string"</font> and sets <font class="font_monospace_black">s</font> to refer to it. So Java discards the first object and replaces it with the second. The first object was unchangeable, but it was replaceable.</p>
+<p><strong class="font_monospace_black">String</strong><strong> Objects Can Store Thousands of Characters</strong></p>
+<p>Scroll down further in the description, and you'll find out that <font class="font_monospace_black">String</font> objects store characters using Unicode's UTF-16 encoding scheme, which uses 16 bits, or two bytes, to store each character. That takes up a lot of memory for large strings, but memory is cheap these days, and flexibility is more important. </p>
+<p>Older encoding schemes like ASCII and EBCDIC used one byte per character, which allows for only 256 different characters. That sounds like a lot, but with uppercase and lowercase characters, special characters, digits, and so on, we'd run out pretty quickly.</p>
+<p>Unicode allows for thousands of characters. So Java strings can contain Cyrillic, Hebrew, Arabic, Greek, and Korean characters, to name a few. You can set values for unusual characters using a "\u" prefix like this:</p>
+<p class="font_monospace_black">String s = "\u03A3";</p>
+<p>This statement puts the Greek uppercase letter sigma (Σ) into a <font class="font_monospace_black">Strin</font>g object.</p>
+<p><strong>Exploring</strong><strong> <font class="font_monospace_black">String</font>'s Field Summary</strong></p>
+<p>If you're looking at the <font class="font_monospace_black">String</font> documentation, scroll down past the general description until you see the words <em>Field Summary</em>. It should look something like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="java.lang.String field summary" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-08.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">java.lang.String field summary</font></p>
+<p>The only public field that <font class="font_monospace_black">String</font> has is a <em>Comparator object</em>. I don't have the spaaaaaace to get into how to use Comparators, but they allow alternate sort sequences when you're sorting lists using Java's <font class="font_monospace_black">Collections.sort()</font> method. Specifically, this Comparator allows you to ignore case when sorting.</p>
+<p>By default, Unicode sorts uppercase letters before lowercase ones. So "XYZ" will sort before "abc". The <font class="font_monospace_black">CASE_INSENSITIVE_ORDER</font> comparator lets you sort them the way we'd expect: "abc" before "XYZ". If you'd like more information on sorting with comparators, visit the Supplementary Material.</p>
+<p>Following the field summary and before the method summary, is <font class="font_monospace_black">String</font>'s constructor summary. If a class has public constructors—and most do—you'll find a list of them here. <font class="font_monospace_black">String</font> has 15, each with a different parameter list. Why so many? People may need to create strings in quite a few ways, so the authors of the class have made it as easy as possible. We can create a string from character arrays, from integer arrays, from byte arrays, and from other strings, to name a few.</p>
+<p>The easiest way to create a string in a program, though, is to use a simple assignment of a string literal, like this:</p>
+<p class="font_monospace_black">String s = "my string";</p>
+<p> <strong>Understanding</strong><strong> <font class="font_monospace_black">String</font>'s Method Summary</strong></p>
+<p>Let's look just a little further at some of the methods of the <font class="font_monospace_black">Strin</font>g class and at their documentation, and then we'll wrap it up for today.</p>
+<p>Scroll down a bit more in the <font class="font_monospace_black">String</font> class, and you'll see <font class="font_monospace_black">String</font>'s method summary:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="java.lang.String method summary" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-09.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">java.lang.String method summary</font></p>
+<p>Just as there were in <font class="font_monospace_black">Math</font>, there are quite a few methods in the <font class="font_monospace_black">String</font> class too . . . about 70 of them. I'm going to touch on a couple of them, and then I'll let you explore the rest. </p>
+<p>The most commonly used String methods are probably <font class="font_monospace_black">equals()</font>, which compares strings for exact matches, and <font class="font_monospace_black">equalsIgnoreCase()</font>, which lets you do comparisons while ignoring whether characters are uppercase or lowercase. Just so we're all on the same page, here are the details about those two methods:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><img alt="The java.lang.String equals() and equalsIgnoreCase() method details" src="./Lesson 10 (Formatting Output and the Java API)_files/L10-10.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">The java.lang.String equals() and equalsIgnoreCase() method details</font></p>
+<p>These descriptions provide all the information we need to use the methods. They tell us the parameters they expect in our calls, information about what they do, the type of data to expect back, and how Java determines that value. So based on these descriptions, here are a couple of method calls and the values they return:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>"abc".equals("ABC")               // returns false
+"def".equalsIgnoreCase("DeF")     // returns true
+</pre>
+</div>
+<p>
+</p>
+<p>Here are the <font class="font_monospace_black">String</font> methods I use most:
+</p>
+<ul>
+    <li><font class="font_monospace_black">compareTo()</font> tells whether one string comes before another. It returns a negative value if the first string sorts before the second, a positive value if the second sorts before the first, and zero if they're the same. Example: <font class="font_monospace_black">"abc".compareTo("DEF")</font> returns a positive number.</li>
+    <li><font class="font_monospace_black">compareToIgnoreCase()</font> does the same as compareTo() but ignores whether each character is uppercase or lowercase. Example: <font class="font_monospace_black">"abc".compareToIgnoreCase("DEF")</font> returns a negative number.</li>
+    <li><font class="font_monospace_black">contains()</font> tells whether one string contains another. Example: <font class="font_monospace_black">"abc".contains("b")</font> returns true.</li>
+    <li><font class="font_monospace_black">indexOf()</font> searches for and returns the location of one string within another. It returns a negative value if the string it's looking for isn't there. Example: <font class="font_monospace_black">"abcdefg".indexOf("d")</font> returns 3. (The first character is location 0 in Java.)</li>
+    <li><font class="font_monospace_black">length()</font> returns the number of characters in the string. Example: <font class="font_monospace_black">"abcdefg".length()</font> returns 7.</li>
+    <li><font class="font_monospace_black">toUpperCase()</font> converts all lowercase characters in a string to uppercase. Example: <font class="font_monospace_black">"aBcDeFg".toUpperCase()</font> returns "ABCDEFG".</li>
+    <li><font class="font_monospace_black">toLowerCase()</font> converts all uppercase characters in a string to lowercase. Example: <font class="font_monospace_black">"aBcDeFg".toLowerCase()</font> returns "abcdefg".</li>
+    <li><font class="font_monospace_black">substring()</font> extracts part of a string based on index values. Examples: <font class="font_monospace_black">"abcdefg".substring(1,4) </font>returns "bcd" and <font class="font_monospace_black">"abcdefg".substring(4)</font> returns "efg".</li>
+</ul>
+<p>If any of those examples don't make sense to you, look up the method details in the API, and see if you can figure out why they return what they return. And if you have more questions about any of them, be sure to ask me in the Discussion Area.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>Here's a quick activity to see how well you understood some of the concepts from Lesson 10.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_true_false" align="middle" height="345" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L10-11.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L10-11.swf" height="345" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L10-11.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=10#skip_game_L10CH05_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 10 (Formatting Output and the Java API)_files/pf_placeholder_a.png" border="0"><iframe src="about:blank" frameborder="0" height="345" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L10CH05_b" id="skip_game_L10CH05_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>Did you get them all right? If some concepts are still unfamiliar to you, you can look them up in the course index and review them.</p>
+<p>You've made it through another lesson! Congratulations. We have only two more lessons together before the end of the course. Time flies when you're having fun, right?</p>
+<p>We've covered quite a few details about how to format our output in this lesson. We didn't get to all the possibilities for formatting, but I've given you enough for at least 90% of what most programs need to do.</p>
+<p>We also covered quite a bit of the information that's in Java's API. I hope it makes more sense to you now. Of course, the more you use it, the more familiar and easier to use it will be.</p>
+<p>Next time we'll look at simple graphics in Java. I'll see you in Lesson 11!</p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax" target="_blank">
+                                Format Specifier Options</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            I mentioned this link in Chapter 2. It describes all the formatting options you can use with the printf() method.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/7/docs/api/" target="_blank">
+                                The Java API</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/7/docs/api/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is the home page of Java's application program interface at Oracle's website. You'll use it a lot as you do more Java programming. You can find out how to make an application interface using any of the classes that come in Java's libraries.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/collections/interfaces/order.html" target="_blank">
+                                Oracle Tutorial on Comparators</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/collections/interfaces/order.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Here's the link I mentioned in Chapter 4. This tutorial page from Oracle shows how Java sorts lists. It also explains how to provide alternative sort sequences using comparators.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> Does Java have any other formatting processes?</p>
+<p><strong>A:</strong> Yes. You can do number formatting using a class named <font class="font_monospace_black">DecimalFormat</font>. You can get more information about it in the API if you're interested, and feel free to ask me questions about it.<br>
+<br>
+</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p><strong>Part 1: Identifying Types of Data Input </strong></p>
+<p>For this lesson's assignment, I'd like you to use the API and some of our formatting options. Look at the API documentation for the <font class="font_monospace_black">Scanner</font> class, and identify all the different <font class="font_monospace_black">hasNext</font> methods, like <font class="font_monospace_black">hasNextInt()</font>, <font class="font_monospace_black">hasNextFloat()</font>, <font class="font_monospace_black">hasNextBoolean()</font>, and so on. </p>
+<p>Use the <font class="font_monospace_black">hasNext</font> methods to identify as many types of data input from the leopard as possible. For example, if the user enters 0, that would be a <font class="font_monospace_black">byte</font> type. If the user enters 333, that's too large for a <font class="font_monospace_black">byte</font>, so it would be a <font class="font_monospace_black">short</font> type. If the user enters 1.5 or 2.0e25 (that's exponential form for 2.0 × 10<sup>25</sup>), then the type would be <font class="font_monospace_black">float</font>. </p>
+<p>See if you can write a program that will identify <font class="font_monospace_black">bytes</font>, <font class="font_monospace_black">shorts</font>, <font class="font_monospace_black">ints</font>, <font class="font_monospace_black">longs</font>, <font class="font_monospace_black">floats</font>, and <font class="font_monospace_black">booleans</font>. If the input isn't a type you can identify before reading it, then read it as a string.</p>
+<p>Once you've identified it and read it, use the <font class="font_monospace_black">printf()</font> method to display the type and the value. Format the output so that the types are left-justified (aligned with the left margin) in one column and the values are in another column, with numbers right-justified and <font class="font_monospace_black">String</font>s and <font class="font_monospace_black">boolean</font>s left-justified.</p>
+<p><strong>Part 2: Capture Huge Integers</strong></p>
+<p>Want a slightly bigger challenge? Try to capture integers that are too large for the <font class="font_monospace_black">long</font> type in <font class="font_monospace_black">BigInteger</font> objects. You can read about that class in the API. It allows you to store <em>very</em> big integers, even ones that have hundreds of digits. But other than that, using it is very similar to using the <font class="font_monospace_black">int</font> or <font class="font_monospace_black">long</font> types. There are even <font class="font_monospace_black">hasNextBigInteger()</font> and <font class="font_monospace_black">nextBigInteger(</font><font class="font_monospace_black">)</font> methods in the <font class="font_monospace_black">Scanner</font> class, and the <font class="font_monospace_black">printf()</font> method treats them just like <font class="font_monospace_black">int</font>s and <font class="font_monospace_black">long</font>s.</p>
+<p><strong>Part 3: Distinguishing </strong><font class="font_monospace_black"><strong>float</strong></font><strong>s and </strong><strong class="font_monospace_black">double</strong><strong>s</strong></p>
+<p>If you're really looking for a challenge, try to distinguish between <font class="font_monospace_black">float</font>s and <font class="font_monospace_black">double</font>s. This is difficult because the <font class="font_monospace_black">hasNextFloat()</font> method interprets all floating-point numbers as <font class="font_monospace_black">float</font>s, and <font class="font_monospace_black">hasNextDouble()</font> reads them all as <font class="font_monospace_black">double</font>s. If the number's too big, both methods set its value to "infinity". </p>
+<p>However, you can divide floating-point numbers into <font class="font_monospace_black">float</font>s, <font class="font_monospace_black">double</font>s, and larger numbers using a different class named <font class="font_monospace_black">BigDecimal</font>. You can do another API search to see how it works. If you decide to use it, here's the steps you'll need to take.</p>
+<ol>
+    <li>Read all floating-point numbers as <font class="font_monospace_black">BigDecimal</font> objects. Fortunately <font class="font_monospace_black">Scanner</font> contains <font class="font_monospace_black">hasNextBigDecimal()</font> and <font class="font_monospace_black">nextBigDecimal()</font> methods too.</li>
+    <li>Create four <font class="font_monospace_black">BigDecimal</font> objects containing the minimum and maximum values for <font class="font_monospace_black">float</font>s and <font class="font_monospace_black">double</font>s. Those values are in the constants <font class="font_monospace_black">Float.MIN_VALUE</font>, <font class="font_monospace_black">Float.MAX_VALUE</font>, <font class="font_monospace_black">Double.MIN_VALUE</font>, and <font class="font_monospace_black">Double.MAX_VALUE</font>. You can use those names as arguments for the <font class="font_monospace_black">BigDecimal</font> constructor.</li>
+    <li>Compare the input value to those four values. If the input is between <font class="font_monospace_black">Float.MIN_VALUE</font> and <font class="font_monospace_black">Float.MAX_VALUE</font>, then the input is a <font class="font_monospace_black">float</font> type. If it's not between those values, but it's between <font class="font_monospace_black">Double.MIN_VALUE</font> and <font class="font_monospace_black">Double.MAX-VALUE</font>, then it's a <font class="font_monospace_black">double</font>. And if it's not between those values, it has to be a <font class="font_monospace_black">BigDecimal</font>.</li>
+</ol>
+<p>If you have questions, please let me know in the Discussion Area. If you'd like to look at my solution for all three parts, it's behind this link.</p>
+<p align="center"><input name="" id="L10CH05_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L10CH05-solution">
+<div class="scroll">
+<pre>import java.util.Scanner;
+import java.math.BigInteger;
+import java.math.BigDecimal;
+/**
+ * Assignment10 uses the Scanner next...() methods to determine type and then the
+ * printf() method for format the output.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class Assignment10 {
+    /**
+     * The main() method reads and displays different types of data.
+     */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);  // leopard input object
+        byte by = 0;  // variable for byte values
+        short sh = 0;  // variable for short values
+        int i = 0;  // variable for int values
+        long l = 0;  // variable for long values
+        
+        BigInteger bi = BigInteger.ZERO;  // variable for BigInteger values
+        
+        BigDecimal bd = BigDecimal.ZERO;  // variable for BigDecimal values
+        final BigDecimal maxFloat = new BigDecimal(Float.MAX_VALUE);  // BigDecimal constant
+        final BigDecimal minFloat = new BigDecimal(Float.MIN_VALUE);  // BigDecimal constant
+        final BigDecimal maxDouble = new BigDecimal(Double.MAX_VALUE);  // BigDecimal constant
+        final BigDecimal minDouble = new BigDecimal(Double.MIN_VALUE);  // BigDecimal constant
+        
+        float f = 0.0f;  // variable for float values
+        double d = 0.0;  // variable for double values
+        boolean bo = false;  // variable for boolean values
+        String st = "";  // variable for String values
+        
+        while ( ! st.equalsIgnoreCase("quit") ) {  // keep going until the user says to quit
+            System.out.print("Enter anything (\"Quit\" to quit): ");  // prompt for data
+            if (in.hasNextByte()) { // test for byte value
+                by = in.nextByte();
+                System.out.printf("The data type is %-10s and its value is %26d%n","byte",by);
+            }
+            else if (in.hasNextShort()) {  // test for short value
+                sh = in.nextShort();
+                System.out.printf("The data type is %-10s and its value is %,26d%n","short",sh);
+            }
+            else if (in.hasNextInt()) {  // test for int value
+                i = in.nextInt();
+                System.out.printf("The data type is %-10s and its value is %,26d%n","int",i);
+            }
+            else if (in.hasNextLong()) { // test for long value
+                l = in.nextLong();
+                System.out.printf("The data type is %-10s and its value is %,26d%n","long",l);
+            }
+            else if (in.hasNextBigInteger()) {  // test for larger integers
+                bi = in.nextBigInteger();
+                System.out.printf("The data type is %-10s and its value is %,26d%n","BigInteger",bi);
+            }
+            else if (in.hasNextBigDecimal()) {  // test for floating point
+                bd = in.nextBigDecimal();
+                if ((bd.compareTo(minFloat) &gt; 0) &amp;&amp; 
+                    (bd.compareTo(maxFloat) &lt; 0)) {  // test for float
+                    f = bd.floatValue();
+                    System.out.printf("The data type is %-10s and its value is %,26g%n","float",f);
+                }
+                else if ((bd.compareTo(minDouble) &gt; 0) &amp;&amp; 
+                    (bd.compareTo(maxDouble) &lt; 0)) {       // test for double
+                    d = bd.doubleValue();
+                    System.out.printf("The data type is %-10s and its value is %,26g%n","double",d);
+                }
+                else  // larger floating point
+                    System.out.printf("The data type is %-10s and its value is %,26g%n","BigDecimal",bd);
+            }
+            else if (in.hasNextBoolean()) {  // test for boolean
+                bo = in.nextBoolean();
+                System.out.printf("The data type is %-10s and its value is %-26b%n","boolean",bo);
+            }
+            else {  // everything else is a String
+                st = in.next();
+                System.out.printf("The data type is %-10s and its value is %-26s%n","String",st);
+            }
+        }
+        System.out.println("\nThanks for playing!  Program has ended.");
+    }
+}
+
+</pre>
+</div>
+</div>
+<br>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=10#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='10';
+s.prop7='10';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=10';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=10';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 10 (Formatting Output and the Java API)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

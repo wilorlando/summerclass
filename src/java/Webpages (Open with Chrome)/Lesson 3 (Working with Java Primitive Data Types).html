@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 3 (Working with Java Primitive Data Types)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 3 (Working with Java Primitive Data Types)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/ld.js"></script><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 3 (Working with Java Primitive Data Types)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/global.js"></script><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/course.js"></script><script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 3 (Working with Java Primitive Data Types)_files/patch.css" media="all"><link href="./Lesson 3 (Working with Java Primitive Data Types)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 3 (Working with Java Primitive Data Types)_files/Lesson 3 (Working with Java Primitive Data Types).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 3 (Working with Java Primitive Data Types)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 3 (Working with Java Primitive Data Types)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 3 (Working with Java Primitive Data Types)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            3: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Working With Java's Primitive Data Types</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3">Lesson 3</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 3 (Working with Java Primitive Data Types)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 3 (Working with Java Primitive Data Types)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 3 (Working with Java Primitive Data Types)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 3 (Working with Java Primitive Data Types)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 3 (Working with Java Primitive Data Types)_files/header03.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<div class="jab-redbox">
+<p><strong>"If debugging is the process of removing software bugs, then programming must be the process of putting them in."</strong></p>
+<p align="right">—Edsger Dijkstra, prominent Dutch<br>
+computer scientist</p>
+</div>
+<p><strong>Introduction</strong></p>
+<p>In this lesson, we'll dig a little further into how Java works. We'll start by looking at how it uses its <em>data types</em> (in other words, its different information formats). I included the quotation above because data types are confusing for new programmers, and many of the bugs in their programs are related to data types.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt="Cartoon of a bug" src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-01.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Avoiding bugs in Java</font></p>
+<p>Programming languages like Java deal with many kinds of information: text, numbers, pictures, audio, video, and so on. Some of these are complex and change from time to time. </p>
+<p>For example, if you want to store a picture on your computer, your format choices include bitmaps, JPEG, GIF, and others. One graphics program I use handles more than 20 formats. Audio and video storage also involve a number of formats.</p>
+<p>No programming language can accommodate every type. Java's designers kept its basic data types simple so the language can stay as simple as possible. For the complex types like images, Java provides libraries of classes rather than trying to make those data types part of the language itself. That way, when a complex type changes, the library class is easier to change than the language itself would be. </p>
+<p>But every type in Java, no matter how complex, comes from a few basic types that are in the language itself. And that's where we'll start in the next chapter.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>Java's Primitive Data Types</strong></p>
+<p>What's a primitive data type? It's a simple information format included in the Java language. You might hear programmers call these "built-in data types" or "basic data types," but the formal term is primitive data types. Every other data type in Java has one or more primitive types as its basis. </p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt="Illustration of the word java" src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-02.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Working with the building blocks of Java</font></p>
+<p>Java has eight primitive types. They haven't changed much over time—there are six numeric primitives, one character primitive, and one logical primitive. They're the only types actually built into the language. (All other data types in Java are <em>reference</em> <em>data</em> <em>types</em>. ) </p>
+<p>Here's a list of the eight Java primitives, along with some information about each one. </p>
+<div align="center">
+<table style="font-family:verdana; border-color:#FFFFFF;" border="0" cellpadding="10" cellspacing="2">
+    <tbody>
+        <tr align="center" bgcolor="#e00000">
+            <td style="color:#FFFFFF; font-size:125%;"><strong>Data Type</strong></td>
+            <td style="color:#FFFFFF; font-size:125%;"><strong>Size</strong></td>
+            <td style="color:#FFFFFF; font-size:125%;"><strong>Minimum Value</strong></td>
+            <td style="color:#FFFFFF; font-size:125%;"><strong>Maximum Value</strong></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>byte</strong></td>
+            <td>1 byte (8 bits)</td>
+            <td>-128</td>
+            <td>127 </td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>short</strong></td>
+            <td>2 bytes (16 bits)</td>
+            <td>-32,768 </td>
+            <td>32,767</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>int</strong></td>
+            <td>4 bytes (32 bits)</td>
+            <td>-2,147,483,648</td>
+            <td>2,147,483,647</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>long</strong></td>
+            <td>8 bytes (64 bits)</td>
+            <td>-9,223,372,036,854,775,808</td>
+            <td>9,223,372,036,854,775,807</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>float</strong></td>
+            <td>4 bytes (32 bits)</td>
+            <td>±1.4 × 10<sup>-45</sup></td>
+            <td>±3.4028235 × 10<sup>38</sup></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>double </strong></td>
+            <td>8 bytes (64 bits)</td>
+            <td>±4.9 × 10<sup>-324</sup></td>
+            <td>±1.7976931348623157 × 10<sup>308</sup></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>char</strong></td>
+            <td>2 bytes (16 bits)</td>
+            <td>Not applicable</td>
+            <td>Not applicable</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td><strong>boolean</strong></td>
+            <td>1 byte (8 bits)</td>
+            <td>Not applicable</td>
+            <td>Not applicable</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<font class="caption">This table shows Java's eight primitive data types. For each type, it gives the size, and the minimum and the maximum values, if applicable.</font>
+<p>Let's go through these in detail. </p>
+<p><strong>The Numeric Types</strong></p>
+<p>The first four types in the list (<font class="font_monospace_black">byte</font>, <font class="font_monospace_black">short</font>, <font class="font_monospace_black">int</font>, and <font class="font_monospace_black">long</font>) are for whole numbers. If you remember your high-school algebra, the "proper" term for whole numbers is <em>integers</em>. They can be positive, negative, or zero. The largest and smallest values for each within Java are in the table above. </p>
+<p>The most commonly used of the four integer types is <font class="font_monospace_black">int</font>. It's pretty much the standard whole number type unless there are reasons for using the others, like values that are too large for an <font class="font_monospace_black">int</font>, in which case you can use <font class="font_monospace_black">long</font>. Or if you're using only small values because you're worried about storage, perhaps <font class="font_monospace_black">byte</font> or <font class="font_monospace_black">short</font> makes more sense. </p>
+<p>The next two types (<font class="font_monospace_black">float</font> and <font class="font_monospace_black">double</font>) store <em>floating-point numbers</em>, which are numbers that include decimal places. The minimum and maximum values for each of those are also in the table. </p>
+<p>The primary concern with using these types is their accuracy. A <font class="font_monospace_black">float</font> value is accurate to eight digits at most. So if I stored a number with more significant digits in it, like 12,345.09876, it would get stored as 12,345.099. A large number like 1,234,567,890 would get stored as 1.2345679 x 10<sup>9</sup>.</p>
+<p>Because of the limit on the number of digits, programmers don't use <font class="font_monospace_black">float</font> often, unless accuracy isn't important or they're dealing with only a few significant digits. You'll see the <font class="font_monospace_black">double</font> type much more frequently; it stores up to 16 significant digits.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt="note" src="./Lesson 3 (Working with Java Primitive Data Types)_files/note.png" align="right" class="pf_image">
+<p><strong>What If These Numeric Types Aren't Big Enough?</strong></p>
+<p>If these types aren't large or accurate enough, Java has two classes named BigInteger and BigDecimal that can store very large numbers, like a googol. (By the way, that's the original spelling. Use Google to look up "googol" if you don't know how big it is. It's a word invented by a nine-year-old boy and used by his uncle, a mathematician. There's information about it in the Supplementary Material too.)</p>
+<p>The trade-off in using BigInteger or BigDecimal is speed. Programs that do lots of calculations will be slower if they use those two types. </p>
+</div>
+<p><strong>The Non-Numeric Types</strong></p>
+<p>Java's <font class="font_monospace_black">char</font> type holds any single character, like <em>A</em> or <em>z</em> or <em>#</em> or <em>$</em>. This type stores characters using an encoding system called Unicode. Each character needs 2 bytes of storage spaaaaaace (that's 16 bits), so another name for this system is <em>Unicode-16</em> or <em>UTF-16</em> for short. </p>
+<p>There are roughly 131,000 possible codes in Unicode, and programmers use about 110,000. Many alphabets are already encoded in the system, including Roman (which we use for English), Greek, Hebrew, Cyrillic, Arabic, Korean, and more. A number of special characters and symbols are also included, so we can display just about any character we'd want to see. </p>
+<p>The last Java primitive is the <font class="font_monospace_black">boolean</font> type. It's for the logical values<font class="font_monospace_black"> true</font> and <font class="font_monospace_black">false</font>. Those are the only two values a boolean can hold. </p>
+<p>Boolean values are named after George Boole, a 19th-century mathematician who developed an algebra system of two values. Programmers most often use this type in formal logic systems, where statements are either true or false. In Java, we'll use boolean values in comparisons and in making decisions.</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt=" Portrait of George Boole" src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-03.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">George Boole, mathematician</font></p>
+<p>I didn't include minimums and maximums for char and boolean types, since they use words rather than numbers. </p>
+<p>If you have any questions about Java's primitive types, please let me know in the Discussion Area. It's important to understand them because they're the building blocks of much of the rest of the course, so I want to make sure I've answered all your questions. </p>
+<p>Now that you know what primitive data types are, let's start working with them. On to Chapter 3! </p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Using Primitive Data Types</strong></p>
+<p>You can use primitive types in Java programs in two ways: as a <em>literal</em> or with a <em>named value</em>.&nbsp; </p>
+<p>A <em>literal</em> is the way we express a fixed value in Java. Programmers call it a literal because it looks exactly like what it is, whether that's a number, a letter, or a word. Examples are <font class="font_monospace_black">3.14</font>, <font class="font_monospace_black">'a'</font>, and <font class="font_monospace_black">"pancakes"</font>.</p>
+<p>A named value, by contrast, is a data field that's been given a name. Java has two types of named values: variables and constants. </p>
+<p>A <em>variable</em> has a value that can change. Instead of having a fixed value, it's basically a placeholder. You may be familiar with variables from algebra; examples include <font class="font_monospace_black">x</font>, <font class="font_monospace_black">y</font>, and <font class="font_monospace_black">z</font>.</p>
+<p>A <em>named constant</em> is a name whose data value can't change. For example, <font class="font_monospace_black">Math.PI</font> represents the mathematical value of pi, the ratio of a circle's diameter to its circumference, which is approximately <font class="font_monospace_black">3.141592653589793</font>. </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt=" " src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-04.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p><strong>Literals</strong></p>
+<p>Java has several types of literals. Let's go through them quickly. If you have questions about any of them, please let me know in the Discussion Area.</p>
+<ul>
+    <li><strong>Integers:</strong> Most whole number, or integer, literals are type <font class="font_monospace_black">int</font> by default. That includes any whole number between the minimum and maximum values for an <font class="font_monospace_black">int</font>. If you need to represent a larger<font class="font_monospace_black"> long</font> literal, you can do that by adding the letter "L" to the number, like this: <font class="font_monospace_black">100000000000L</font>.
+    </li>
+    <li><strong>Floating-Point Numbers:</strong> Any number with a decimal point is a floating-point literal. They are treated as <font class="font_monospace_black">double</font> values unless you add an "F" to them to make them <font class="font_monospace_black">float </font>values. So <font class="font_monospace_black">1.2345</font> is a <font class="font_monospace_black">double</font> literal, and <font class="font_monospace_black">1.2345F</font> is a <font class="font_monospace_black">float</font> literal.
+    </li>
+    <li><strong>Characters:</strong> A single character inside single quotation marks is a <em>character literal</em>. Examples include <font class="font_monospace_black">'a'</font>, <font class="font_monospace_black">'B'</font>, and <font class="font_monospace_black">'@'</font>. If you put more than one character in single quotation marks, Java will give you a compile error.
+    </li>
+    <li><strong>Booleans:</strong> Only two <font class="font_monospace_black">boolean</font> literals exist—<font class="font_monospace_black">true</font> and <font class="font_monospace_black">false</font>. You can't use those two words for any other purpose, like names, in a Java program.
+    </li>
+    <li><strong>Binary Numbers:</strong> You probably already know that <em>binary</em> is a numeral system with only two symbols: 0 and 1. Java allows a programmer to specify integers in binary if needed. Java treats any number beginning with 0b or 0B as a binary number and will allow only ones and zeros after 0b or 0B. Here's an example of a valid binary number: 0b0101010. That's the binary representation of 42. Binary literals aren't used often. You might use binary numbers if you needed to manipulate individual bits in a variable.
+    </li>
+</ul>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt=" " src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-05.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Binary code</font></p>
+<ul>
+    <li><strong>Hexadecimal Numbers: </strong>Most programmers don't learn about these right away because people don't use them very often. Hexadecimal (or just hex) numbers are base-16 numbers, using digits 0 through 9 and A through F. We won't use any in this course, but since they're valid, I just want you to be aware of them. Any number beginning with 0x or 0X is a hexadecimal numbers. Here's an example of a valid hexadecimal literal: 0x13BD.
+    </li>
+    <li><strong>Strings:</strong> Character strings aren't a primitive type, but we use them so often that Java includes <em>string literals</em> to make our lives easier. Java considers any characters between double quotation marks to be a single character string. So <font class="font_monospace_black">"This is a character string."</font> is a single string literal in Java. We already saw one string literal in our HelloWorld program, and we'll use them in just about every program we write. </li>
+</ul>
+<p>The last thing I need to tell you about literals is that we can put special characters in string and character literals by putting a backslash (\) in front of them. For example, a <em>newline character</em> is \n, and a <em>tab character</em> is \t. To put a double quotation mark inside a string, we can use \" since without the backslash the quotation mark would end the string. Likewise, we can use \' to put a single quotation mark in a character literal. So the literal "This is a string\non two lines" would display in text output as</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; This is a string<br>
+&nbsp;&nbsp;&nbsp;&nbsp; on two lines</p>
+<p>because of the "\n" newline character in the middle of the string.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_format_Quiz" align="middle" height="500" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-06.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-06.swf" height="500" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-06.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3#skip_game_L03CH03_a" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-06.html" frameborder="0" height="500" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L03CH03_a" id="skip_game_L03CH03_a"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p><strong>Now You Try</strong></p>
+<p>I've been telling you a lot so far this lesson. How about if I let you do something? Try to write a program that displays each type of literal on the screen.&nbsp; </p>
+<p>Java's System.out.print() and System.out.println() methods can display any of the literal types above. If you'd like to look at a program that does that, I've included one at the link below, but please try it on your own before looking.</p>
+<p align="center"><input name="" id="L03CH03_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L03CH03-solution">
+<div class="scroll">
+<pre>public class LiteralDisplay {
+    public static void main(String[] args) {
+        // display an int literal
+        System.out.print("This is the integer literal 123: ");
+        System.out.println(123);
+        
+        // display a long literal
+        System.out.print("This is the long literal 9876543210L: ");
+        System.out.println(9876543210L);
+
+        // display a float literal
+        System.out.print("This is the float literal 123.456789F: ");
+        System.out.println(123.456789F);
+
+        // display a double literal
+        System.out.print("This is the double literal 123.456789: ");
+        System.out.println(123.456789);
+
+        // display a character literal
+        System.out.print("This is the character literal 'a': ");
+        System.out.println('a');
+
+        // display a boolean literal
+        System.out.print("This is the boolean literal true: ");
+        System.out.println(true);
+
+        // display a binary literal
+        System.out.print("This is the binary literal 0b00110011: ");
+        System.out.println(0b00110011);
+
+        // display a hexadecimal literal
+        System.out.print("This is the hex literal 0x10FACE: ");
+        System.out.println(0x10FACE);
+    }
+}
+</pre>
+</div>
+</div>
+<p>How'd you do? If you have questions, or if you solved the problem in a different way, please go to the Discussion Area and post the code you wrote.</p>
+<p>Let's move on from literals to variables.</p>
+<p><strong>Variables</strong></p>
+<p>Now that you know what Java's built-in types are, you need to learn how to use those types as variables. Again, a variable is just a name that we use to hold a value and whose value can change. </p>
+<p>In Java, before we can use a variable, we have to <em>declare</em> it. That means we need to tell Java what name we want to use and what type that name should have. We do that with a statement that includes a type followed by one or more names we want to associate with that type. If you put more than one name in a declaration, separate them with commas.</p>
+<p>Here are some examples of variable declarations:</p>
+<div class="scroll">
+<pre>int i;           // declaring an int variable
+double x, y, z;  // declaring three doubles
+boolean b;       // declaring a boolean
+char c;          // declaring a char
+String s;        // declaring a String
+</pre>
+</div>
+<p>Once we've declared our variables, we can use them to store information—as long as the information is the right type. We store information in a variable using Java's <em>assignment statement</em> (a variable name) followed by the <em>assignment operator</em> (the value we want to assign to the variable). Java's assignment operator is the equal sign (=). To assign values to the variables I just declared, I could use these statements:</p>
+<div class="scroll">
+<pre>i = 99;          // an integer assignment
+x = 0.0;         // one double assignment
+y = z = 1.0;     // two double assignments
+b = false;       // a boolean assignment
+c = 'A';         // a character assignment
+s = "a string";  // a string assignment
+</pre>
+</div>
+<p>In each case, the value on the right gets stored in the variable on the left. The first statement sets the value of i to 99. The second sets x to 0.0. The only odd-looking statement is the third one, which assigns the same value to two variables at once. The value 1.0 gets stored in both y and z. That statement is a shorthand version of these two statements:</p>
+<div class="scroll">
+<pre>z = 1.0;
+y = z;
+</pre>
+</div>
+<p>In this example, the second statement assigns the value in z to y. So I can copy the value from one variable into another very easily that way.</p>
+<p>Before Java can use a variable, we have to <em>initialize</em> it—in other words, give it a value to start off with, even though that value may change later. Java allows me to declare a variable and initialize it in one statement if I want to, like this:</p>
+<div class="scroll">
+<pre>int j = 0;              // int declaration and assignment
+boolean p = true;       // boolean declaration and assignment
+char d = 'x', e = '*';  // char declaration and assignment
+</pre>
+</div>
+<p>I have just a couple more observations about declarations, and then I'll move on. </p>
+<p>Remember that I can name a variable anything I want as long as it follows a few rules. Variable names . . . </p>
+<ul>
+    <li>should use letters and numbers.
+    </li>
+    <li>should start with a letter.
+    </li>
+    <li>can't be the same as any of Java's keywords. To help you avoid this problem, I've included a link to Oracle's list of Java keywords in the Supplementary Material at the end of the lesson.
+    </li>
+    <li>should describe the information they will hold. My examples above wouldn't be good names in a Java program since they don't describe their contents. For example, in a program that uses x-coordinates and y-coordinates for a graph, I might name variables <font class="font_monospace_black">xCoordinate</font> and<font class="font_monospace_black"> yCoordinate</font>.
+    </li>
+    <li>should start with a lowercase letter, and the first letter of each word in the name after that should be uppercase. </li>
+</ul>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_format_Quiz" align="middle" height="400" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-07.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-07.swf" height="400" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-07.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3#skip_game_L03CH03_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-07.html" frameborder="0" height="400" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L03CH03_b" id="skip_game_L03CH03_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>After you declare a variable name, you can use it anywhere within the same set of curly brackets you declared it in. In programming, we call this the <em>scope</em> of a name. Java won't compile a program that uses a variable name outside those brackets because that would be outside the name's scope.</p>
+<p>My last topic in this chapter is constants. </p>
+<p><strong>Constants</strong></p>
+<p>A constant in Java is a name whose value can't change. We don't use as many constants in programs as we do in variables. The main difference in declaring constants in a program is that we use the final keyword to tell Java that once the constant's value is set, it can't change.</p>
+<p>We also name constants a little differently. We use all uppercase letters and put underscores between words in the name.</p>
+<p>Some examples of constant declarations are:</p>
+<div class="scroll">
+<pre>final int INT_CONSTANT = 0; // int constant
+final double DOUBLE_CONSTANT = 0.0; // double constant
+final String STRING_CONST = "Constant string";  // string constant
+</pre>
+</div>
+<p>Now that you've got a firm foundation in primitive types, let's see how you can use those types in more sophisticated ways. Please join me in Chapter 4.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Java's Reference Data Types</strong></p>
+<p>As I said earlier, Java programmers use primitive types as the building blocks to the more complex <em>reference</em> <em>types</em>, which are also known as <em>objects</em>. Let me explain the difference between reference types and primitives.</p>
+<p>Primitive types all share one property. A primitive variable's memory location contains the variable's value. That means for an <font class="font_monospace_black">int</font> variable with a value of zero, its memory location will contain the number zero. A <font class="font_monospace_black">double</font> variable with the value of pi will have 3.14159265358979 in its memory location. </p>
+<p>A <em>reference variable</em>, however, doesn't contain its object's actual data in its memory location, since object sizes can vary. Instead, the variable contains the reference (also called a <em>memory address</em>) of the object it refers to. Let's look at an example to help explain that. </p>
+<p>Java uses String objects to hold strings of characters. If I create a String object to hold the character string <font class="font_monospace_black">"a string"</font>, and I declare a variable named <font class="font_monospace_black">s</font> to refer to it, the variable's memory location won't contain the character string. Instead, it will contain the memory address of the String object that contains the character string. </p>
+<p>Here's a diagram that illustrates what I mean. In this diagram, each blue box represents an area in memory, with its name above it if it has one. The actual String object has no name of its own. Instead, there's a variable named <font class="font_monospace_black">s</font>, and in its memory location is a reference to the String object. So even though we often talk about "the string named s," we really mean "the String object that s refers to." </p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt=" " src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-08.jpg" style="margin-bottom: 0px;" class="pf_image"></p>
+<p>When we're programming with primitive and reference variables, we don't treat them differently very often. For now, other than being aware of the distinction, please don't worry about it. I know that if you haven't worked with references or pointers before, the distinction probably isn't very clear. It confused me the first time I ran into it, so don't be concerned if it's fuzzy to you right now. I'll remind you about it when it makes a difference in a program. </p>
+<p>One more thing: Both variables and constants can be any data type, either primitive or reference. The only difference between a variable and a constant is that the value of a constant can't change once you've set it, while a variable's value can change at any time. </p>
+<p>Now that we know a bit more about Java's types, let's wrap up this lesson by playing around with them a bit. Try writing a small program that declares several variables of different types and then displays their values on the screen. My program is at the link below, but please try to write your own before looking at it.</p>
+<p align="center"><input name="" id="L03CH04_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L03CH04-solution">
+<div class="scroll">
+<pre>public class VariableDisplay {
+    public static void main(String[] args) {
+        int myInteger = 0;  // an int variable
+        double myDouble1, myDouble2;  // two doubles
+        String myString;  // a string
+        
+        myDouble1 = 1.2345;
+        myDouble2 = 9.8765432;
+        myString = "This is the string stored in myString.";
+        
+        System.out.print("The value in my int variable is ");
+        System.out.println(myInteger);
+        System.out.print("The value in my double variables are ");
+        System.out.print(myDouble1);
+        System.out.print(" and ");
+        System.out.println(myDouble2);
+        System.out.print("The value in my String variable is \"");
+        System.out.print(myString);
+        System.out.println("\".");
+    }
+}
+</pre>
+</div>
+</div>
+<p><strong></strong></p>
+<p><strong>Wrapping Up With Wrapper Classes</strong></p>
+<p>Java's <em>wrapper classes</em> help us manage primitive types. They provide a class that in many ways can act like a primitive type, yet it's still a class. Some methods require classes as arguments, and wrappers let us use primitive values where objects are normally required because Java lets you substitute primitive types for wrapper objects. Java automatically "wraps" the primitive in a wrapper object when needed.</p>
+<p>Each of the primitive types has a wrapper class. For most of them, it's the same name with the first letter capitalized. <font class="font_monospace_black">Float</font> is the wrapper for <font class="font_monospace_black">float</font>, <font class="font_monospace_black">Long</font> is the wrapper for <font class="font_monospace_black">long</font>, and so on. The two exceptions are <font class="font_monospace_black">int</font> and <font class="font_monospace_black">char</font>, whose wrapper classes are <font class="font_monospace_black">Integer</font> and <font class="font_monospace_black">Character</font>.</p>
+<p>Each of the wrapper classes except Character has a method that converts, or <em>parses</em>, strings into that wrapper's primitive type. For example, if I have a String variable <font class="font_monospace_black">s</font> containing the value<font class="font_monospace_black"> "50"</font>, then <font class="font_monospace_black">Byte.parseByte(s) </font>will give me back a byte value of 50;<font class="font_monospace_black"> Integer.parseInt(s)</font> will give me an <font class="font_monospace_black">int </font>value of 50; <font class="font_monospace_black">Double.parseDouble(s)</font> will give me a <font class="font_monospace_black">double</font> value of 50.0; and so on. If<font class="font_monospace_black"> s</font> contains <font class="font_monospace_black">"true"</font> or <font class="font_monospace_black">"false",</font> then <font class="font_monospace_black">Boolean.parseBoolean(s)</font> will give me back a <font class="font_monospace_black">boolean</font> value of <font class="font_monospace_black">true</font> or <font class="font_monospace_black">false</font>.</p>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt="note" src="./Lesson 3 (Working with Java Primitive Data Types)_files/note.png" align="right" class="pf_image">
+<p><strong>What the Period Means</strong></p>
+<p>The names of these methods and some class constants (like <font class="font_monospace_black">Math.PI</font>, which I mentioned earlier) each have a period in them. The period tells Java that the part of the name after the period "belongs" to the part of the name before the period.&nbsp; </p>
+<p>So <font class="font_monospace_black">PI </font>is a constant within the Math class, <font class="font_monospace_black">parseInt()</font> is a method inside the Integer class, and so on. Programmers sometimes call this period the <em>dot operator</em>. </p>
+</div>
+<p>Each of the wrapper classes also has a <font class="font_monospace_black">toString()</font> method that converts a value from a primitive type into a String object. Calling <font class="font_monospace_black">Integer.toString(999)</font> will, for example, return the string <font class="font_monospace_black">"999"</font>.</p>
+<p>Each of the numeric wrapper classes also has two useful constants that let us know the minimum and maximum values for that type. The constants have the names MAX_VALUE and MIN_VALUE. So Byte.MIN_VALUE would tell you the smallest byte value, and Float.MAX_VALUE would tell you the largest float value. </p>
+<p>Here are some examples to give you an idea of what we can do with these wrappers:</p>
+<div class="scroll">
+<pre>String intString = "99";
+String floatString = "99.999";
+int intVariable;
+double doubleVariable;
+
+// stores 99 into intVariable then displays it
+intVariable = Integer.parseInt(intString);
+System.out.println(intVariable);
+
+// stores 99.999 into doubleVariable
+doubleVariable = Double.parseDouble(floatString);
+System.out.println(doubleVariable);
+
+// displays largest int Value
+System.out.println(Integer.MAX_VALUE);
+
+// stores then displays largest double value
+doubleVariable = Double.MAX_VALUE;
+System.out.println(doubleVariable);
+</pre>
+</div>
+<p>Try a few of your own combinations, and see what you can find out. Let me know if you have trouble with any of it.</p>
+<p><strong>Casting</strong></p>
+<p>One last topic before we wrap things up. Java is a <em>strongly typed</em> language, which means the type of a name is very important in how we use it. We can't mix most types, and for some that seem like we should be able to, we can't without telling Java that we really mean to. For example, I can't assign a double value to an integer variable without telling Java that's exactly what I want to do. Let me tell you the rules and a little bit about why they are that way, and then we'll get into specifics about how to do what we want to do.</p>
+<p>It makes sense that Java won't let us assign boolean or string values to a numeric variable. Java doesn't have a numeric equivalent of true or false, and it has no numeric equivalent for a character string like "abcdefg." But why won't Java let me assign a double value to an int variable? (If you're curious, try it in a program, and see what happens when you try to compile it.) To answer that, we need to discuss the concepts of <em>wider</em> and <em>narrower</em> numeric types.</p>
+<p>A numeric type is wider than another if it can hold a broader range of values. An int is wider than a short, for example. The types in order from narrowest to widest are byte, short, int, long, float, and double. Java will let you assign a narrower type to a wider variable, but it won't allow the reverse. Look at this code to see what I mean:</p>
+<div class="scroll">
+<pre>int i = 0;
+double d = 0.0;
+d = i;  // this will work
+i = d;  // this won't work
+</pre>
+</div>
+<p>The first three lines will compile just fine, but the fourth won't, even though the value in d is small enough to assign to i. The compiler looks at the types and gives this error: "possible loss of precision." That's because it's possible for a double to hold values that an int can't.</p>
+<p>Java allows you to convert a value of one data type to another data type in a process called <em>casting</em>. There are two kinds.</p>
+<ul>
+    <li><strong>Implicit casting:</strong> Java will convert values that are safe for us. Programmers call this <em>implicit casting </em>because we don't specify the change to Java.
+    </li>
+    <li><strong>Explicit casting:</strong> Java won't convert unsafe values unless we explicitly tell it to make the change. That's <em>explicit casting</em> because we tell Java to make the change even if it isn't safe. If the value in the wider type doesn't fit into the narrower type, Java just cuts off the part that doesn't fit. So be very careful with explicit casting. </li>
+</ul>
+<p>If you need to, here's how to do explicit casting. Put the type you want to change to in parentheses in front of the type you're converting from. So while the code above won't compile, this code will: </p>
+<div class="scroll">
+<pre>int i = 0;
+double d = 0.0;
+d = i;  // this will work
+i = (int)d;  // this will work too
+</pre>
+</div>
+<p>Java will just throw away whatever part of the number in d that won't fit into i. That can lead to some unexpected results if it's done incorrectly. Explicit casting can be beneficial at times, such as when you're doing mathematical calculations. But for now, you should know about it so you'll understand any "loss of precision" error messages you get, and you'll know how to deal with them.</p>
+<p>One conversion that Java can do, though, is surprising. It's there so we can have an easier time with output operations. Java knows how to convert any of its primitive types to a character string through an operation called <em>string concatenation</em>, which is the process of linking multiple strings into one. The concatenation operator is the plus sign whenever one side or the other of the operation is a string. Here are a few examples: </p>
+<div class="scroll">
+<pre>String s = "abc";
+String t = "DEF";
+int i = 99;
+double d = 9.999;
+
+String u = s + t;  // puts "abcDEF" into u
+u = s + i;         // puts "abc99" into u
+u = t + d;         // puts "DEF9.999" into u
+</pre>
+</div>
+<p>What that means for output is that I can use one line where I used two in my previous examples. Instead of this: </p>
+<div class="scroll">
+<pre>System.out.print("The value in my int variable is ");
+System.out.println(myInteger);
+</pre>
+</div>
+<p>I can do this: </p>
+<div class="scroll">
+<pre>System.out.println("The value in my int variable is " + myInteger);</pre>
+</div>
+<p>And I get exactly the same results. In general, shorter code is more elegant and allows fewer errors to creep in. So as you get more comfortable programming in Java, string concatenation can really work for you.</p>
+<p>Let's move on to Chapter 5 for a summary of today's lesson and a preview of Lesson 4.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Summary</strong></p>
+<p>Try this game to see how much you remember about the differences between data types.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_format_Quiz" align="middle" height="380" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-09.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-09.swf" height="380" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L03-09.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3#skip_game_L03CH05_a" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-09.html" frameborder="0" height="380" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L03CH05_a" id="skip_game_L03CH05_a"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>If you had trouble with the game, don't worry. These data types will become more familiar as you progress in the course.</p>
+<p>Today we covered some basic, foundational topics that we'll build on in future lessons. It's important material to understand, so be sure to let me know in the Discussion Area if you have any questions about it.</p>
+<p>Next time we'll look at how to design and build new data types (classes) from Java's primitive types, and we'll rework our simple HelloWorld starter program into a more general class that will display different text strings.</p>
+<p>I'll see you in Lesson 4. Until then, though, have a look at the Supplementary Material, take the quiz, and work through the assignment. Again, be sure to let me know if any questions come up.</p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html" target="_blank">
+                                Java's Primitive Data Types</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            If you'd like more information on Java's primitive types, this link will take you to Oracle's description of them.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/7/docs/api/" target="_blank">
+                                Java Class Library API</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/7/docs/api/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This link will take you to Java's API (Application Programmer Interface). It contains a detailed description of all the classes and libraries that Java includes.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.tutorialspoint.com/java/java_basic_datatypes.htm" target="_blank">
+                                Java's Basic Data Types Tutorial</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.tutorialspoint.com/java/java_basic_datatypes.htm</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This Web page gives a concise summary of Java's data types.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html" target="_blank">
+                                Java Language Keywords</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Here is Oracle's list of reserved Java keywords that can't be used for any other purposes.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://en.wikipedia.org/wiki/Googol" target="_blank">
+                                Googol</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://en.wikipedia.org/wiki/Googol</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            I mentioned googols in Chapter 2. This article defines and describes what a googol is.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> Where do the terms <em>floating point</em> and <em>float</em> come from?<br>
+<br>
+<strong>A:</strong> Remember that a float value is simply a number that contains a decimal point. These types of numbers are referred to as <em>float</em> or <em>floating point</em> numbers because the decimal point can move, or float, to anyplace in the number. <br>
+<br>
+There are no restrictions on where the decimal point can appear. It can be the second character from the right (as in 45.4), it can be the fourth character from the right (as in 1.232), or it can be the sixth character from the right (as in 999.99000). <br>
+<br>
+<br>
+<strong>Q:</strong> Where does the type <em>boolean</em> come from?<br>
+<br>
+<strong>A:</strong> The word honors a famous mathematician named George Boole (1815-1864). While teaching at Queens College in Ireland, Boole created a system of logic we call <em>Boolean algebra</em>, in which variables can have only two possible values: true or false. </p>
+<p>Boole used mathematical symbols to express human logic. This new form of mathematics heavily influenced the development of the modern telecommunication and computer industries. So in his honor, the logical types in many programming languages are named <em>boolean</em> or <em>bool</em>.<br>
+<br>
+</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>We talked about casting in Chapter 4. For this lesson's assignment, try writing programs involving different primitive types, and see which give you errors and which work without explicit casting. Some won't work even with explicit casting—see if you can find which those are.</p>
+<p>If you want to try compiling and executing single statements without writing complete programs, BlueJ lets you do that in the Code Pad, which is in the lower-right corner of its main project window. You may need to turn on the <strong>Show Code Pad</strong> option in the View menu. You can also display the value in a variable by just typing the name of the variable. </p>
+<p>Here's an image of some statements I ran in my BlueJ window:</p>
+<p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 3 (Working with Java Primitive Data Types)_files/pf_placeholder_a.png" border="0"><img alt=" BlueJ&#39;s Code Pad at work" src="./Lesson 3 (Working with Java Primitive Data Types)_files/L03-15.jpg" style="margin-bottom: 0px;" class="pf_image"><br>
+<font class="caption"> BlueJ's Code Pad at work</font></p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=3#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='3';
+s.prop7='3';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=3';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=3';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 3 (Working with Java Primitive Data Types)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 3 (Working with Java Primitive Data Types)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933382352&amp;cv=7&amp;fst=1437933382352&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D3&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D3" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Lesson 3 (Working with Java Primitive Data Types)_files/dis.html" style="display: none;"></iframe></div></body></html>

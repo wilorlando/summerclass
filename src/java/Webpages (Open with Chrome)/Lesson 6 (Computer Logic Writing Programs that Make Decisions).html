@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Java Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script async="true" type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/event" data-owner="criteo-tag"></script><script src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/2861.js" async="" type="text/javascript"></script><script async="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/fbevents.js"></script><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/ld.js"></script><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/conversion.js">
+</script><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/tag"></script><script type="text/javascript" async="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/ga.js"></script><script language="javascript" type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/jquery-migrate-1.2.1.min.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/classroom.css" media="all"><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/global.js"></script><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/course.js"></script><script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/patch.js"></script><link type="text/css" rel="stylesheet" href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/patch.css" media="all"><link href="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <form name="aspnetForm" method="post" action="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/Lesson 6 (Computer Logic Writing Programs that Make Decisions).html" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/ScriptResource(1).axd" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7">
+</div>
+        <noscript>
+            &lt;div id="sansjs"&gt;
+                Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+            &lt;/div&gt;
+        </noscript>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm(&#39;Are you sure you wish to log out?&#39;);" id="ctl00_lbLogout" href="javascript:__doPostBack('ctl00$lbLogout','')"><div class="title-bar-login-button"><p>LOGOUT</p></div></a>
+                    <a id="ctl00_hlkHelp" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><div id="ctl00_pnlHelpInActive" class="title-bar-help-button">
+	
+                            <p>
+                                HELP
+                            </p>
+                        
+</div></a>
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Introduction to Java Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Brian Hall
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            6: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Computer Logic: Writing Programs That Make Decisions</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6">Lesson 6</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" type="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()"><label for="pfImagesOnBtn">Text, images, and interactive elements (<strong>Note:</strong> Only IE will print Flash elements.)</label></p><p><input type="radio" name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()"><label for="pfInteractivityOffBtn">Text and images only</label></p><p><input type="radio" name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/browser_b_chrome.png" alt="chrome icon" border="0" class="pf_visible pf_image"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/browser_b_firefox.png" alt="Firefox icon" border="0" class="pf_visible pf_image"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" border="0" class="pf_visible pf_image"><br><span class="caption">IE</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/browser_b_safari.png" alt="Safari icon" border="0" class="pf_visible pf_image"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input type="button" class="pf_hide_directions_btn" style="display:none;" value="Hide Directions"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/header06.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p><strong>Introduction</strong></p>
+<div class="jab-redbox">
+<p><strong>"What distinguishes a computer from a simple calculator is its ability to make decisions."</strong></p>
+<p align="right">— from <em>Computer Architecture</em> by</p>
+<p align="right">David A. Patterson and</p>
+<p align="right">John L. Hennessy</p>
+</div>
+<br>
+<div class="jab-redbox">
+<p><strong>"When you come to a fork in the road, take it."</strong></p>
+<p align="right">— Yogi Berra</p>
+</div>
+<p>I'm going to try to move a little more slowly in this lesson. We'll still learn some new concepts, but we'll also reuse a lot of what we learned last time. That way, by the time we're done with this lesson, last lesson's material will be that much more familiar.</p>
+<p>We're going to continue building our temperature conversion program. Last time we got it to the point where it accepted a Fahrenheit temperature and displayed its equivalent in Celsius and Kelvin.</p>
+<p>In this lesson we'll add the ability to enter a temperature in any of the three scales and display it in the other two. In order to do this, we'll use one of the most useful features in any programming language: <em>decision-making</em>.</p>
+<p>Let's go back to part of the program design from Lesson 5. I described more of what our program needs to do in steps 1, 2, and 9:</p>
+<div class="jab-redbox">
+<p>1. Ask the user for a temperature type (K for Kelvin, C for Celsius, F for Fahrenheit, and Q to quit).</p>
+<p>2. Read the user's entry from the leopard.</p>
+<p>. . .</p>
+<p>9. Convert the value from the indicated temperature scale to the other two scales using the formulas from the assumptions.</p>
+</div>
+<p>We'll deal with the Q entry in the next lesson, when we set the program up to repeat its actions. For now we'll focus on the three temperature types.</p>
+<p>To do conversions correctly, we'll have to decide which scale the user entered so we know which two others to convert to. In other words, if the user enters K for the temperature type, we need to convert to Celsius and Fahrenheit; if the user enters C, we need to convert to Kelvin and Fahrenheit; and if the user enters F, we need to convert to Celsius and Kelvin.</p>
+<p>As you can see, these steps have a common form. Each checks to see if a particular condition is true, and if so it performs a specific set of actions. Every decision in a computer program takes this form. When the condition is true, the program takes one action. When the condition is false, the program takes a different action or no action at all.</p>
+<p>This lesson is all about how decisions happen in Java. So let's get to it!</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><strong>How Branches Work in Java</strong></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-01.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption"> A fork in the road</font></p>
+<p>I have to apologize for the picture on the left above, but when I saw it I had to include it as a humorous example of a fork in the road. The one on the right more closely illustrates how branches in programs work.</p>
+<p>In Java, statements that make decisions are <em>branches</em>, and they have several forms. The most common form is Java's if statement, which can itself take two formats. Here's a definition of the simpler format:</p>
+<p><font class="font_monospace_black">if (&lt;<em>boolean expression</em>&gt;) &lt;<em>body</em>&gt; </font></p>
+<p> This definition also introduces a form that you'll see often. A term in <em>angle brackets</em> (&lt; and &gt;) is a formal notation that represents some programming language feature that we'll define and that can be replaced by any valid example of that feature. For example, <font class="font_monospace_black">&lt;<em>boolean expression</em>&gt;</font> represents any expression that results in a <font class="font_monospace_black">boolean</font> value of <font class="font_monospace_black">true</font> or <font class="font_monospace_black">false</font>. </p>
+<p>We'll look at how to write Boolean expressions in a minute. Right now I want to finish my description of Java's <font class="font_monospace_black">if </font>statement format.</p>
+<p>In that statement, <font class="font_monospace_black">&lt;<em>body</em>&gt;</font> represents any single Java statement or any number of Java statements enclosed in <em>curly brackets</em> (<strong>{</strong> and <strong>}</strong>). A statement or group of statements in the body of the code execute if and only if the Boolean expression's value is <font class="font_monospace_black">true</font>. Java programmers generally indent the body so that it's clear that it only runs if the <font class="font_monospace_black">if</font> is<font class="font_monospace_black"> true</font><strong>.</strong> </p>
+<p>Here's an example of an <font class="font_monospace_black">if</font> statement. </p>
+<p><font class="font_monospace_black">
+</font></p>
+<div class="scroll"><font class="font_monospace_black">
+<pre>if (x &lt; 0)
+    x = -x;
+</pre>
+</font></div>
+<font class="font_monospace_black">
+</font>
+<p> In this example, the body is a single statement: <font class="font_monospace_black">"x = -x;"</font>. Java will execute the one statement in the body if and only if the value in <font class="font_monospace_black">x</font> is less than zero when the <font class="font_monospace_black">if</font> statement runs. Because this example has only one statement, there's no need to include curly brackets.</p>
+<p>Here's a second example:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if (x &lt; y) {
+    z = x;
+    x = y;
+    y = z;
+}
+</pre>
+</div>
+<p>
+</p>
+<p>And here's an animation to help you understand how <font class="font_monospace_black">if</font> statements work. Click the red button, and then click <strong>Next Step</strong> to see each step of the process.
+</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_anim" align="middle" height="250" width="250" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-02.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-02.swf" height="250" width="250" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-02.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6#skip_game_L06CH02_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-02.html" frameborder="0" height="250" scrolling="no" width="250" class="pf_interactivity"></iframe>
+<a name="skip_game_L06CH02_b" id="skip_game_L06CH02_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p> This example checks if <font class="font_monospace_black">x</font> is less than <font class="font_monospace_black">y</font> and if so, swaps their values using <font class="font_monospace_black">z</font> as a temporary holding spot for one of the values. In this case, all three statements in the body will execute if the value of <font class="font_monospace_black">x</font> is less than the value in <font class="font_monospace_black">y</font> when the <font class="font_monospace_black">if</font> statement runs.</p>
+<p>This form of the <font class="font_monospace_black">if</font> statement checks a condition and takes action if the condition is true. If the condition is false, the <font class="font_monospace_black">if</font> statement takes no action. But what if we want to do something else when the condition is false? Do we need another <font class="font_monospace_black">if</font> statement? No!</p>
+<p>Remember I said the <font class="font_monospace_black">if</font> statement has two formats? The second format tells Java to do one thing if the condition is true and something else if it's false:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if (&lt;boolean expression&gt;)
+    &lt;body T&gt;
+else
+    &lt;body F&gt;
+</pre>
+</div>
+<p> This form of the if statement executes <em class="font_monospace_black">&lt;body T&gt;</em> when <em><font class="font_monospace_black">&lt;boolean expression</font><font class="font_monospace_black">&gt;</font></em> is <font class="font_monospace_black">true</font> and executes <em class="font_monospace_black">&lt;body F&gt;</em> when the condition is <font class="font_monospace_black">false</font>. </p>
+<p>An example of the second form is the following <font class="font_monospace_black">if</font> statement:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>if (x &gt; y)
+    max = x;
+else
+    max = y;
+</pre>
+</div>
+This example takes the larger of the values in variables <font class="font_monospace_black">x</font> and <font class="font_monospace_black">y</font> and stores it in the variable <font class="font_monospace_black">max</font>.
+<p>We'll see many <font class="font_monospace_black">if</font> statements in this course because it's one of the most commonly used <em>control structures</em> in Java. A Java control structure is any statement that changes the normal sequential order of execution in a program. The three control structures we'll use in this course are <em>branches</em> (like <font class="font_monospace_black">if</font> statements), <em>loops</em>&nbsp;(which repeat actions, and which we'll discuss in the next lesson), and method calls, which we've already seen. </p>
+<p>Now that you know what <font class="font_monospace_black">if</font> statements look like, let's take a closer look at the logical expressions that control which way they branch.</p>
+<p><strong>How to Write Boolean Expressions</strong> </p>
+<p>We saw in the last lesson that Java can use complex arithmetic expressions to calculate numeric results. Java also has Boolean expressions that give us <font class="font_monospace_black">boolean</font> results, and these expressions can be complex too. But let's start with simple comparisons.</p>
+<p>Java has several comparison operators we can use to compare values and which give us <font class="font_monospace_black">boolean</font> results, either <font class="font_monospace_black">true</font> or <font class="font_monospace_black">false</font>. </p>
+<div alt="This table shows Java&#39;s six comparison operators with their meanings." align="center">
+<table style="font-family:verdana; border-color:#FFFFFF;" alt="This chart defines the terms expression, operator, and operand and gives examples of each." border="0" cellpadding="10" cellspacing="2">
+    <tbody>
+        <tr align="center" bgcolor="#e00000">
+            <td colspan="2" style="color:#FFFFFF; font-size:125%;"><strong>Java's Comparison Operators</strong></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#CCCCCC">
+            <td width="114"><strong>Operator</strong></td>
+            <td width="114"><strong>Meaning</strong></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td width="114"><strong>&lt;</strong></td>
+            <td width="114">Less than</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114"><strong>&lt;= </strong></td>
+            <td valign="top" width="321">Less than or equal to</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114"><strong>==</strong></td>
+            <td valign="top" width="321">Equal to</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114"><strong>!= </strong></td>
+            <td valign="top" width="321">Not equal to</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114"><strong>&gt;=</strong></td>
+            <td valign="top" width="321">Greater than or equal to</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114"><strong>&gt;</strong></td>
+            <td valign="top" width="321">Greater than</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>Here are some examples of comparisons and their meanings. In this table, assume that all variables are numeric.</p>
+<div align="center">
+<table style="font-family:verdana; border-color:#FFFFFF;" alt="This table shows several comparison examples with their meanings." border="0" cellpadding="10" cellspacing="2">
+    <tbody>
+        <tr align="center" bgcolor="#e00000">
+            <td colspan="2" style="color:#FFFFFF; font-size:125%;"><strong>Comparison Expression Examples</strong></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#CCCCCC">
+            <td width="114"><strong>Expression</strong></td>
+            <td width="114"><strong>Meaning</strong></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td width="114">a &lt; b</td>
+            <td width="114">Is a less than b?</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114">year == 2014</td>
+            <td valign="top" width="321">Is the year 2014?</td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td valign="top" width="114">rate &gt;= 4.5</td>
+            <td valign="top" width="321">Is the rate greater than or equal to 4.5?</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>The result of each of these comparisons is either <font class="font_monospace_black">true</font> or <font class="font_monospace_black">false</font>. We can use these comparison operators with any of the primitive types in Java, whether those are integer types like the ones in the second row or floating-point like the ones in the third line. </p>
+<p>Any of Java's primitive types will work in comparisons as long as both sides of the comparison are compatible. For example, it wouldn't make sense to compare a <font class="font_monospace_black">char</font> type to a <font class="font_monospace_black">double</font> type. You might not get the results you expect!</p>
+<p>Okay, now we know how to compare values and get <font class="font_monospace_black">boolean</font> results. Java also gives us operators that allow us to combine <font class="font_monospace_black">boolean</font> values in more complex expressions: <em>and</em> (<font class="font_monospace_black">&amp;&amp;</font>), <em>or</em> (<font class="font_monospace_black">||</font>), and <em>not</em> (<font class="font_monospace_black">!</font>) operators. Here's how they work:</p>
+<ul type="disc">
+    <li><font class="font_monospace_black">a &amp;&amp; b</font> is true if both a and b are true and false if either&nbsp;is false. </li>
+    <li><font class="font_monospace_black">a || b</font> is true if either a or b is true and false if both are false. </li>
+    <li><font class="font_monospace_black">!a</font> is true if a is false and false if a is true. </li>
+</ul>
+<p>Whew, that's confusing! It's easier to see how these work by looking at a <em>truth table</em> like the one below. The first two columns give all the possible combinations of values for a and b, and the last three columns give the values of the expressions based on those values.</p>
+<div align="center">
+<table style="font-family:verdana; border-color:#FFFFFF;" alt="This table shows how Java&#39;s three Boolean operators (&amp;&amp;, ||, and !) work." border="0" cellpadding="10" cellspacing="2">
+    <tbody>
+        <tr align="center" bgcolor="#e00000">
+            <td colspan="5" style="color:#FFFFFF; font-size:125%;"><strong>Truth Table for Boolean Operators</strong></td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#CCCCCC">
+            <td width="82">
+            <strong>a</strong>
+            </td>
+            <td width="82">
+            <strong>b</strong>
+            </td>
+            <td width="104">
+            <strong>a &amp;&amp; b </strong>
+            </td>
+            <td width="104">
+            <strong>a || b </strong>
+            </td>
+            <td width="82">
+            <strong>!a</strong>
+            </td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td width="82">
+            true
+            </td>
+            <td width="82">
+            true
+            </td>
+            <td width="104">
+            true
+            </td>
+            <td width="104">
+            true
+            </td>
+            <td width="82">
+            false
+            </td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td width="82">
+            true
+            </td>
+            <td width="82">
+            false
+            </td>
+            <td width="104">
+            false
+            </td>
+            <td width="104">
+            true
+            </td>
+            <td width="82">
+            false
+            </td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td width="82">
+            false
+            </td>
+            <td width="82">
+            true
+            </td>
+            <td width="104">
+            false
+            </td>
+            <td width="104">
+            true
+            </td>
+            <td width="82">
+            true
+            </td>
+        </tr>
+        <tr style="color:#000000;font-size:12px;" align="center" bgcolor="#F9F9F9">
+            <td width="82">
+            false
+            </td>
+            <td width="82">
+            false
+            </td>
+            <td width="104">
+            false
+            </td>
+            <td width="104">
+            false
+            </td>
+            <td width="82">
+            true
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>Here are some examples of Boolean expressions using the operators. The first example tests an integer variable named month to see if it is a valid value and returns <font class="font_monospace_black">true</font> if it's between 1 and 12:</p>
+<p class="font_monospace_black">(month &gt;= 1) &amp;&amp; (month &lt;= 12) </p>
+<p> The second example checks integer variables <font class="font_monospace_black">hour</font> and <font class="font_monospace_black">minute</font> to make sure the time is valid for a 12-hour clock (between 1:00 and 12:59):</p>
+<p class="font_monospace_black">(hour &gt;= 1) &amp;&amp; (hour &lt;= 12) &amp;&amp; (minute &gt;= 0) &amp;&amp; (minute &lt;= 59)</p>
+<p> The last example is a bit more complex:</p>
+<p class="font_monospace_black">((year % 4 == 0) &amp;&amp; (year % 100 != 0)) || (year % 400 == 0)</p>
+<p>This one tests an integer variable named <font class="font_monospace_black">yea</font><font class="font_monospace_black">r</font> to see if its value is a leap year. Leap years occur every fourth year (divisible by four), except for century years (divisible by 100) unless they're also divisible by 400. So 2000 and 2004 were leap years, but 1900 and 1951 weren't. </p>
+<p>To do this more easily, we'll use another of Java's arithmetic operators, called <em>modulus</em> or just <em>mod</em>. The operator is the percent sign (<font class="font_monospace_black">%</font>). It divides numbers and then returns the remainder of the division (what's left over) instead of the quotient. So the operation (<font class="font_monospace_black">5 % 3</font>) gives the result <font class="font_monospace_black">2</font> because 5 divided by 3 gives an integer quotient of 1 with a remainder of 2, and (<font class="font_monospace_black">12 % 4</font>) gives <font class="font_monospace_black">0</font> because 12 divided by 4 is 3, with nothing left over as a remainder. </p>
+<p>This example also uses <em>nested</em> parentheses, or sets of parentheses inside other parentheses, to control the order of the tests. The test within the first set of nested parentheses, (<font class="font_monospace_black">year % 4 == 0</font>), evaluates first. Then the test inside the second set, (<font class="font_monospace_black">year % 100 != 0</font>), evaluates. Then the outer set of parentheses ensures that the <font class="font_monospace_black">&amp;&amp;</font> operator evaluates next. After that, the test in the last parentheses, (<font class="font_monospace_black">year % 400 == 0</font>), evaluates. The <font class="font_monospace_black">||</font> operator, since it's outside all the parentheses, evaluates last.</p>
+<p>So if the year is divisible by 4 but not by 100, we have a leap year, <em>or</em> if the year is divisible by 400, we have a leap year. If <font class="font_monospace_black">year</font> contains 1900 or 1951, we'll get <font class="font_monospace_black">false</font> from this expression, but if <font class="font_monospace_black">year</font> is 2000 or 2004, we'll get <font class="font_monospace_black">true</font>.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_anim2" align="middle" height="170" width="425" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-02a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-02a.swf" height="170" width="425" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-02a.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6#skip_game_L06CH02_c" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-02a.html" frameborder="0" height="170" scrolling="no" width="425" class="pf_interactivity"></iframe>
+<a name="skip_game_L06CH02_c" id="skip_game_L06CH02_c"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>If you have trouble making sense of any of this, please let me know in the Discussion Area.</p>
+<p>Now that you know how to build logical expressions, let's use them in our temperature conversion project.<br>
+<br>
+</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><strong>Putting Branches Into Your Program</strong> </p>
+<p>Looking back at the part of the program design that's in Chapter 1, we know the program should do different conversions depending on which temperature type the user enters. But where did that temperature type come from?</p>
+<p>In the original program description, before we could do conversions, we were supposed to ask our user for a temperature type as well as a temperature value. Once we have the type and the value, <em>then</em> we can do conversions correctly. So we need to add two parts to our program: one to get the temperature type, and another to do the correct conversions.</p>
+<p>This time, we'll assume our users are <em>almost</em> perfect and don't make numeric mistakes. They'll never enter invalid temperatures like <em>hot</em> or <em>xyz</em>. But we will check to make sure they enter a valid temperature type, since we already need to check that value to decide which conversion to do. So we'll add one simple error message for invalid temperature types.</p>
+<p>Getting the temperature type is the easier of the two additions to our program, so let's tackle that first. The original spec said to ask for the temperature type first, before the temperature value, so that's how we'll do it. Also, since we do our input and output in our <font class="font_monospace_black">main()</font> method, that's where we'll need to make our first change. </p>
+<p>Just to remind you of how our <font class="font_monospace_black">main()</font> method looked, here's how we left it:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public static void main(String[] args) {
+    double inputTemperature = 0.0;
+    Scanner leopard = new Scanner(System.in); 
+    Temperature t1 = new Temperature();
+    Temperature t2;
+
+    System.out.print("Enter a Fahrenheit temperature: "); 
+    inputTemperature = leopard.nextDouble(); 
+    System.out.println("You entered " + inputTemperature + 
+            " degrees Fahrenheit"); 
+    t1.setDegreesFahrenheit(inputTemperature);
+    System.out.println("which is " + t1.getDegreesCelsius() + 
+            " degrees Celsius"); 
+    System.out.println("and " + t1.getDegreesKelvin() + 
+            " degrees Kelvin.");
+    System.out.print("Enter another Fahrenheit temperature: ");
+    inputTemperature = leopard.nextDouble();
+    System.out.println("You entered " + inputTemperature + 
+            " degrees Fahrenheit");
+    t2 = new Temperature(inputTemperature);
+    System.out.println("which is " + t2.getDegreesCelsius() + 
+            " degrees Celsius");
+    System.out.println("and " + t2.getDegreesKelvin() + 
+            " degrees Kelvin.");
+}
+</pre>
+</div>
+<br>
+<div class="jab-redbox">
+<img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="tip" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/tip.png" align="right" class="pf_image">
+<p><strong></strong></p>
+<p><strong></strong></p>
+<p><strong>The "Save As" Option</strong></p>
+<p>If you'd like to save this version of the program from Lesson 5 and make your Lesson 6 changes to a copy, open the project in BlueJ, go to the <strong>Project</strong> menu, and use the <strong>Save As</strong> option to save a copy of the project with a new name before continuing.</p>
+</div>
+<p>Since we're going to add code to our <font class="font_monospace_black">main()</font> method, I'll remove the object <font class="font_monospace_black">t2</font> from the program so it won't be so long. That means deleting the last six statements in <font class="font_monospace_black">main(</font><font class="font_monospace_black">)</font>, which use <font class="font_monospace_black">t2</font>, as well as the declaration for <font class="font_monospace_black">t2</font> at the top of the method.</p>
+<p>Now my <font class="font_monospace_black">main()</font> method looks like this:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads two Fahrenheit temperatures and 
+     * displays their Celsius and Kelvin equivalents.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner leopard = new Scanner(System.in); 
+        Temperature t1 = new Temperature();
+        
+        System.out.print("Enter a Fahrenheit temperature: "); 
+        inputTemperature = leopard.nextDouble(); 
+        System.out.println("You entered " + inputTemperature + 
+            " degrees Fahrenheit"); 
+        t1.setDegreesFahrenheit(inputTemperature);
+        System.out.println("which is " + t1.getDegreesCelsius() + 
+            " degrees Celsius"); 
+        System.out.println("and " + t1.getDegreesKelvin() + 
+            " degrees Kelvin.");
+    }
+}
+</pre>
+</div>
+<p>
+To capture the type that the user enters, we'll need a variable to store it in. That value will be a character, so we'll use a <font class="font_monospace_black">String</font> object to hold it. I'll name my variable <font class="font_monospace_black">temperatureTyp</font><font class="font_monospace_black">e</font> since that's what it will store. The first thing we'll add to the program is this new variable declaration and initialization at the start of our <font class="font_monospace_black">main()</font> method:</p>
+<p class="font_monospace_black">String temperatureType = "";</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-04a.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>Now we have a place to store the type, so let's get it from our user. We should give our user a prompt to let him or her know what we expect. So after our declarations, but before we prompt the user for the temperature, let's add a statement to ask for the type:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>System.out.print("Enter a temperature type (C for Celsius, " +
+        "F for Fahrenheit, K for Kelvin): ");
+</pre>
+</div>
+<p>
+Next we need to read the input value from the <font class="font_monospace_black">Scanner</font> object <font class="font_monospace_black">leopard</font>, as we did with the numeric temperature in the last lesson. But this time the input value will be a text string instead of a number.</p>
+<p>The <font class="font_monospace_black">Scanner</font> methods that programmers most often use to return <font class="font_monospace_black">Strin</font><font class="font_monospace_black">g</font> objects are <font class="font_monospace_black">next()</font> and <font class="font_monospace_black">nextLine()</font>. The <font class="font_monospace_black">next()</font> method returns the next word from the input (after skipping white spaaaaaace), while the <font class="font_monospace_black">nextLine()</font> method returns an entire input line, including any white spaaaaaace. Since the only thing that's supposed to be on the line is our temperature type, let's use <font class="font_monospace_black">next()</font>.</p>
+<p>Before I go on for so long that you forget what we're trying to do, let me show you the statement we're going to add to read our input. Add this right after the statement that asked for the temperature type:</p>
+<p class="font_monospace_black">temperatureType = leopard.next();</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-04b.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p>The next line of our program prompts our user for a Fahrenheit temperature. Since the user can put in any temperature type now, we should remove the word <em>Fahrenheit</em> from the prompt. (I'll leave that to you; I won't bore you with a new version of the output statement.) </p>
+<p>The next line is the input line that reads the temperature. That still works just the way we want it to, so we'll leave it alone and keep going.</p>
+<p>The line after that is where we start doing things that we want to happen only if the temperature type is Fahrenheit. Last time we displayed the Fahrenheit temperature back to the user, stored and converted it, and then displayed the two converted values. That took four lines in our program. Now we want to change the program to only execute those lines if <font class="font_monospace_black">temperatureType</font> contains F. So we need to check for that value before we execute those four lines.</p>
+<p>To do that, let's add an <font class="font_monospace_black">if</font> statement to check for the Fahrenheit type. We'll put it between the input line and the first line specific to Fahrenheit temperatures. It will look like this:</p>
+<p class="font_monospace_black">if (temperatureType.equals("F")) </p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-04c.jpg" style="margin-bottom: 5px;" class="pf_image"></p>
+<p><strong>What About </strong><strong><font class="font_monospace_black">=</font></strong><font class="font_monospace_black"><strong><font class="font_monospace_black">=</font></strong></font><strong> </strong><strong>and</strong><strong> <font class="font_monospace_black">!=</font></strong><strong>?</strong><strong> </strong></p>
+<p>You probably noticed that I explained Java's comparison operators in Chapter 2, but I didn't use any of them here. We'll get to use them plenty over the next few weeks, but let me explain why I didn't use them here.</p>
+<p>In Java, character strings are objects, not primitive types. When Java compares objects using the <font class="font_monospace_black">==</font> operator, it doesn't compare their contents to see if they contain the same data. Java's designers didn't want it to get bogged down trying to decipher and compare the complex internal structures of Java objects.</p>
+<p>So the designers settled on a simple alternative. When Java compares two objects with the <font class="font_monospace_black">== </font>operator, it compares their memory addresses. (We talked about memory addresses back in Lesson 3—they're how the computer tracks where it stored data and instructions.) If they have the same memory address, Java considers them equal and returns <font class="font_monospace_black">true</font>. If not, Java returns <font class="font_monospace_black">false</font>. </p>
+<p>In our case <font class="font_monospace_black">temperatureType</font> and the String literal <font class="font_monospace_black">"F"</font> wouldn't both occupy the same memory address, and Java would always return <font class="font_monospace_black">false</font> even if they both contained <font class="font_monospace_black">"F</font><font class="font_monospace_black">"</font>.</p>
+<p>Here's how most Java programmers express this: For Java classes whose objects will be compared to a method (a set of commands that you can use over and over), they name the method <font class="font_monospace_black">equals()</font>, and they have the method return a <font class="font_monospace_black">boolean</font> value of <font class="font_monospace_black">true</font> if the contents of the two objects are equal and <font class="font_monospace_black">false</font> if not.</p>
+<p>The <font class="font_monospace_black">String</font> class has that method, and that's what I've called it in this <font class="font_monospace_black">if </font>condition. Since the method returns a <font class="font_monospace_black">boolean</font> value, and that's what an <font class="font_monospace_black">i</font><font class="font_monospace_black">f</font> statement needs for its condition, I don't need to compare the value to anything else. I can use it as the complete condition.</p>
+<p>We'll also need to put curly brackets around the four statements that make up our Fahrenheit logic. The curly brackets will tell Java to execute all four of those lines if the temperature is in Fahrenheit.</p>
+<p>As another housekeeping step, we should indent the lines we put inside the curly brackets. Most Java programmers indent each block of code so the program logic will be easier to read. I indented each of them four spaces, which is a standard amount.</p>
+<p>Our program now <em>reads</em> any type of temperature, but it will only <em>display</em> conversion information for Fahrenheit temperatures. In Chapter 4, we'll look at the changes we need to make to display conversion information for the other two types. In the meantime, here's what our <font class="font_monospace_black">main()</font> method looks like at this point:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public static void main(String[] args) {
+    double inputTemperature = 0.0;
+    Scanner leopard = new Scanner(System.in); 
+    Temperature t1 = new Temperature();
+    String temperatureType = "";
+
+    System.out.print("Enter a temperature type (C for Celsius, " +
+            "F for Fahrenheit, K for Kelvin): ");
+    temperatureType = leopard.next();
+    System.out.print("Enter a temperature: "); 
+    inputTemperature = leopard.nextDouble();
+
+    if (temperatureType.equals("F")) {
+        System.out.println("You entered " + inputTemperature + 
+                " degrees Fahrenheit"); 
+        t1.setDegreesFahrenheit(inputTemperature);
+        System.out.println("which is " + t1.getDegreesCelsius() + 
+                " degrees Celsius"); 
+        System.out.println("and " + t1.getDegreesKelvin() + 
+                " degrees Kelvin.");
+    }
+}
+</pre>
+</div>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><strong>Converting Other Temperature Types</strong> </p>
+<p>To convert all three temperature types, we still have several changes to make (not necessarily in this order):</p>
+<ol start="1" type="1">
+    <li>Our <font class="font_monospace_black">TemperatureDriver</font> class has conditional logic in the <font class="font_monospace_black">main(</font><font class="font_monospace_black">)</font> method to process Fahrenheit values. We need to add similar logic for Celsius and Kelvin numbers. </li>
+    <li><font class="font_monospace_black">Temperature</font> already has methods to retrieve Celsius and Kelvin temperatures, and we need to repeat that logic for Fahrenheit values.</li>
+    <li>We already have a method in <font class="font_monospace_black">Temperature</font> to store and convert Fahrenheit temperatures. We'll need to repeat similar logic for Celsius and Kelvin.</li>
+    <li>Once we have "set" methods in <font class="font_monospace_black">Temperature</font> for all three types, we'll revisit our constructors, and then we'll be done with the program for this lesson!</li>
+</ol>
+<p>Let's do the easiest of those changes first: adding a method to <font class="font_monospace_black">Temperature</font> to retrieve the Fahrenheit value. It will look very much like the <font class="font_monospace_black">getDegreesCelsius()</font> and <font class="font_monospace_black">getDegreesKelvin()</font> methods, but it'll use the Fahrenheit variable instead. I placed this method right after the other two get methods in my class.</p>
+<p>
+</p>
+<div class="scroll">
+<pre>public double getDegreesFahrenheit() {
+    return degreesFahrenheit;
+}
+</pre>
+</div>
+<p>
+</p>
+<p>That wasn't too bad, was it? Now let's add methods for storing and converting Celsius and Kelvin temperatures into our class. They'll both look similar to <font class="font_monospace_black">setDegreesFahrenheit()</font>, but we'll need to change their conversion formulas. If you look back at the original program description, you'll find the formulas we need:
+</p>
+<ol start="1" type="1">
+    <li>The formula for converting Celsius to Fahrenheit is F = C × 9 / 5 + 32. </li>
+    <li>The formula for converting Celsius to Kelvin is K = C + 273.15. </li>
+    <li>The formula for converting Kelvin to Celsius is C = K − 273.15. </li>
+    <li>The formula for converting Kelvin to Fahrenheit is F = (K − 273.15) × 9 / 5 + 32.</li>
+</ol>
+<p>If you copy the method <font class="font_monospace_black">setDegreesFahrenheit()</font> and use the above formulas, you can create two new methods that look like this: </p>
+<p>
+</p>
+<div class="scroll">
+<pre>public void setDegreesCelsius(double degrees) {
+    degreesCelsius = degrees;
+    degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+    degreesKelvin = degreesCelsius + 273.15;
+}
+
+public void setDegreesKelvin(double degrees) {
+    degreesKelvin = degrees;
+    degreesCelsius = degreesKelvin - 273.15;
+    degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+}
+</pre>
+</div>
+<p>
+</p>
+<p>Now that we have our "set" methods, let's reconsider how we want our constructors to work.
+</p>
+<p>In the last lesson we had two constructors: a default that set up an object with a default Fahrenheit value of zero, and one that set our Fahrenheit value to whatever value was passed as an argument in the call. But now we want to be able to set more than Fahrenheit temperatures, so what should our default type and value be? Does it even make sense to have a default constructor? I'm not so sure it does.</p>
+<p>So I'm going to illustrate a class with only one constructor and no default constructor. That means that users of this class won't be able to create a <font class="font_monospace_black">Temperature</font> object until they know what type of temperature they are using and what its value is. That makes sense, doesn't it? Is there any point in creating a <font class="font_monospace_black">Temperature</font> object without a value to convert?</p>
+<p>To set up our new constructor, I'm going to delete both constructors from <font class="font_monospace_black">Temperature</font> and replace them with this single constructor:</p>
+<p>
+</p>
+<div class="scroll">
+<pre>/**
+* This constructor for Temperature sets the temperature
+* values to the value in degrees, based on type
+* 
+* @param type temperature scale to use
+* @param degrees degrees Fahrenheit
+*/
+public Temperature(String type, double degrees) {
+    if (type.equalsIgnoreCase("C"))
+        setDegreesCelsius(degrees);
+    else if (type.equalsIgnoreCase("F"))
+        setDegreesFahrenheit(degrees);
+    else if (type.equalsIgnoreCase("K"))
+        setDegreesKelvin(degrees);
+}
+</pre>
+</div>
+<p>
+</p>
+<p>This constructor decides which set method to call based on the value passed in the parameter <font class="font_monospace_black">type</font><strong>.</strong> It adds two new coding wrinkles to our constructor.
+</p>
+<ul>
+    <li>It's the first constructor or method we've seen that has two parameters. The first one is a <font class="font_monospace_black">String</font> object that gives us the type of temperature, and the second is a <font class="font_monospace_black">double</font> value with the temperature itself. Java methods can have as many parameters as are needed.</li>
+    <li>Instead of the <font class="font_monospace_black">equals()</font> method, I used <font class="font_monospace_black">equalsIgnoreCase()</font>. I'm guessing that the name will tell you what the difference is, but I wanted to point it out so you know how to compare strings when case doesn't matter. So this statement would return <font class="font_monospace_black">true</font>:</li>
+</ul>
+<p class="font_monospace_black">if ("A".equalsIgnoreCase("a"))</p>
+<p>That takes care of our <font class="font_monospace_black">Temperature</font> class. But without a default constructor, we need to change our main() method to call the new one. So instead of having this line in our <font class="font_monospace_black">Temperature</font> object: </p>
+<p class="font_monospace_black">&nbsp;&nbsp;&nbsp; Temperature t1 = new Temperature();</p>
+<p>we'll change it to this: </p>
+<p class="font_monospace_black">&nbsp;&nbsp;&nbsp; Temperature t1;</p>
+<p>Then we'll add this line after we have both our temperature type and value: </p>
+<p class="font_monospace_black">&nbsp;&nbsp;&nbsp; t1 = new Temperature(temperatureType, inputTemperature);</p>
+<p>Now we just have to add conditional logic to our <font class="font_monospace_black">main()</font> method to handle Celsius and Kelvin temperatures. The easiest way to do that is to copy our Fahrenheit logic and modify it for Celsius and Kelvin values. And we might as well change the comparisons to ignore case at the same time too. Try doing that yourself before you continue, and then compare what you added to what I added to my <font class="font_monospace_black">main() </font>method.</p>
+<p align="center"><input name="" id="L06CH04_show_solution" value="Click here to see what I added." type="button" style="cursor: pointer;"></p>
+<div id="L06CH04-solution">
+<div class="scroll">
+<pre>if (temperatureType.equalsIgnoreCase("C")) {
+    System.out.println("You entered " + inputTemperature + 
+            " degrees Celsius");
+    t1.setDegreesCelsius(inputTemperature);
+    System.out.println("which is " + t1.getDegreesFahrenheit() + 
+            " degrees Fahrenheit"); 
+    System.out.println("and " + t1.getDegreesKelvin() + 
+            " degrees Kelvin.");
+}
+
+if (temperatureType.equalsIgnoreCase("K")) {
+    System.out.println("You entered " + inputTemperature + 
+            " degrees Kelvin");
+    t1.setDegreesKelvin(inputTemperature);
+    System.out.println("which is " + t1.getDegreesCelsius() + 
+            " degrees Celsius"); 
+    System.out.println("and " + t1.getDegreesFahrenheit() + 
+            " degrees Fahrenheit.");
+}
+</pre>
+</div>
+</div>
+Hmmm. Do you see anything redundant here? Since our constructor call now sets the temperature type and value, we don't need to call the separate set methods any more. So we can delete the calls to <font class="font_monospace_black">setDegreesFahrenheit()</font>, <font class="font_monospace_black">setDegreesCelsius()</font>, and <font class="font_monospace_black">setDegreesKelvin()</font>.
+<p>With that, we're finally done! (Except for compiling and testing, of course.) If you have trouble either compiling or testing, you can compare your code to my version in Chapter 5. </p>
+<p>If you have problems or errors you can't figure out, let me know in the Discussion Area, and I'll be glad to help you.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><strong>Using </strong><font class="font_monospace_black"><strong>else</strong></font><strong> to Speed Processing Time</strong> </p>
+<p>In this lesson we've talked about logical expressions and how to use them in a Java program to make decisions. Let me make just one more comment and suggested change.</p>
+<p>The program we have works exactly as designed (so far . . . remember, we're not done yet!). But there's one more change that you can make that will improve its efficiency at run time. </p>
+<p>Notice that every temperature type has to go through all three <font class="font_monospace_black">if</font> statements in the <font class="font_monospace_black">main()</font> method. Wouldn't it make more sense once we've processed a Fahrenheit temperature, for example, not to make it go through the checks for Celsius and Kelvin?</p>
+<p>We can do that with the <font class="font_monospace_black">else</font> part of the <font class="font_monospace_black">if</font> structure. If we put the keyword <font class="font_monospace_black">else</font> in front of each <font class="font_monospace_black">if</font> after the first one, and then those <font class="font_monospace_black">if</font> statements will execute only if all previous checks were false.</p>
+<p>So if you look at my final version of the program later on in this chapter, you'll see the added <font class="font_monospace_black">else</font> keywords.&nbsp;(I've highlighted them for you.) That way, if I enter a type of F, the first branch will process it and won't even check the others. But a K will fail the first two checks and be processed by the third. </p>
+<p>The gain in efficiency is small in this case, but programmers usually use this technique when checking a list of values and doing different actions for each one.</p>
+<p>You'll also see in the <font class="font_monospace_black">main()</font> method that I've added a final <font class="font_monospace_black">else</font> to display an error message if the temperature type is not one that I want to see. This is a common coding technique after a group of related <font class="font_monospace_black">if</font> statements. It makes sense to have a final block that will execute if none of the expected conditions are met. We'll see more error handling like this in the next lesson.</p>
+<p>Now try this game to see what you remember from this lesson. I won't keep track of your score—this is for fun.</p>
+<div align="center">
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="HTML5_matchbox6" align="middle" height="440" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-04.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--[if !IE]>-->
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><object type="application/x-shockwave-flash" data="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-04.swf" height="440" width="500" class="pf_interactivity">
+<param name="movie" value="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/jab-3/interactive/L06-04.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#ffffff">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="wmode" value="opaque">
+<param name="scale" value="showall">
+<param name="menu" value="false">
+<param name="devicefont" value="false">
+<param name="salign" value="">
+<param name="allowScriptAccess" value="sameDomain">
+<!--<![endif]-->
+<a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6#skip_game_L06CH05_b" title="Skip interactivity"></a>
+<img style="display:none" class="pf_placeholder_interactivity" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><iframe src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-04.html" frameborder="0" height="440" scrolling="no" width="500" class="pf_interactivity"></iframe>
+<a name="skip_game_L06CH05_b" id="skip_game_L06CH05_b"></a>
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<p>How did you do? You'll see some of these symbols (though not the pictures) in this lesson's quiz.</p>
+<p><strong>Summary</strong> </p>
+<p>Today you made our program far more sophisticated than it was by adding decision-making elements. You used the <font class="font_monospace_black">if</font> and <font class="font_monospace_black">else</font> formats to give your statements branches—in other words, to allow for different conditions and exceptions. You wrote Boolean expressions, which return either <font class="font_monospace_black">true</font> or <font class="font_monospace_black">false</font>. And you used all this new information to make your program able to handle Celsius and Kelvin temperatures as well as Fahrenheit. Way to go!</p>
+<p>Here are my final classes for this lesson:</p>
+<p><strong>Temperature Class</strong> </p>
+<p align="center"><input name="" id="L06CH05_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L06CH05-solution">
+<div class="scroll">
+<pre>/**
+ * Temperature converts temperature from Fahrenheit, Celsius,
+ * or Kelvin scale to the other two scales.
+ * 
+ * @author Merrill Hall 
+ * @version 2.0
+ */
+public class Temperature {
+    private double degreesFahrenheit;  // Fahrenheit temperature
+    private double degreesCelsius;  // Celsius temperature
+    private double degreesKelvin;  // Kelvin temperature
+
+    /**
+     * This constructor for Temperature sets the temperature
+     * values to the value from degrees, based on the type
+     *  
+     * @param  type      temperature scale to use
+     * @param  degrees   degrees Fahrenheit
+     */
+    public Temperature(String type, double degrees) {
+        if (type.equalsIgnoreCase("C"))
+            setDegreesCelsius(degrees);
+        <span style="background-color: rgb(255, 255, 0);">else</span> if (type.equalsIgnoreCase("F"))
+            setDegreesFahrenheit(degrees);
+        <span style="background-color: rgb(255, 255, 0);">else</span> if (type.equalsIgnoreCase("K"))
+            setDegreesKelvin(degrees);
+    }
+
+    /**
+     * The setDegreesFahrenheit method sets the Fahrenheit temperature
+     * 
+     * @param  degrees The Fahrenheit value to store 
+     */
+    public void setDegreesFahrenheit(double degrees) {
+        degreesFahrenheit = degrees; // set Fahrenheit value
+        degreesCelsius    = (degreesFahrenheit - 32.0) * 5.0 / 9.0; // set Celsius value
+        degreesKelvin     = degreesCelsius + 273.15; // set Kelvin value
+    } 
+
+    /**
+     * The setDegreesCelsius method sets the Celsius temperature
+     * 
+     * @param  degrees The Celsius value to store 
+     */
+    public void setDegreesCelsius(double degrees) {
+        degreesCelsius    = degrees;
+        degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+        degreesKelvin     = degreesCelsius + 273.15;
+    }
+
+    /**
+     * The setDegreesKelvin method sets the Kelvin temperature
+     * 
+     * @param  degrees The Kelvin value to store 
+     */
+    public void setDegreesKelvin(double degrees) {
+        degreesKelvin     = degrees;
+        degreesCelsius    = degreesKelvin - 273.15;
+        degreesFahrenheit = degreesCelsius * 9.0 / 5.0 + 32.0;
+    }
+
+    /**
+     * getDegreesCelsius retrieves the Celsius temperature value
+     * 
+     * @return a double value containing the Celsius temperature
+     */
+    public double getDegreesCelsius() {
+        return degreesCelsius;
+    }
+
+    /**
+     * getDegreesKelvin retrieves the Kelvin temperature value
+     * 
+     * @return a double value containing the Kelvin temperature
+     */
+    public double getDegreesKelvin() {
+        return degreesKelvin;
+    }
+
+    /**
+     * getDegreesFahrenheit retrieves the Fahrenheit temperature value
+     * 
+     * @return a double value containing the Fahrenheit temperature
+     */
+    public double getDegreesFahrenheit() {
+        return degreesFahrenheit;
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<p><strong>TemperatureDriver Class </strong></p>
+<p align="center"><input name="" id="L06CH05a_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L06CH05a-solution">
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 2.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+
+        System.out.print("Enter a temperature type (C for Celsius, " +
+            "F for Fahrenheit, K for Kelvin): ");
+        temperatureType = keyInput.next();
+        System.out.print("Enter a temperature: ");
+        inputTemperature = keyInput.nextDouble();
+        t1 = new Temperature(temperatureType, inputTemperature);
+
+        if (temperatureType.equalsIgnoreCase("F")) {
+            System.out.println("You entered " + inputTemperature + 
+                " degrees Fahrenheit");
+            System.out.println("which is " + t1.getDegreesCelsius() + 
+                " degrees Celsius"); 
+            System.out.println("and " + t1.getDegreesKelvin() + 
+                " degrees Kelvin.");
+        }
+        else if (temperatureType.equalsIgnoreCase("C")) {
+            System.out.println("You entered " + inputTemperature + 
+                " degrees Celsius");
+            System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                " degrees Fahrenheit"); 
+            System.out.println("and " + t1.getDegreesKelvin() + 
+                " degrees Kelvin.");
+        }
+        else if (temperatureType.equalsIgnoreCase("K")) {
+            System.out.println("You entered " + inputTemperature + 
+                " degrees Kelvin");
+            System.out.println("which is " + t1.getDegreesCelsius() + 
+                " degrees Celsius");
+            System.out.println("and " + t1.getDegreesFahrenheit() + 
+                " degrees Fahrenheit.");
+        }
+        else {
+            System.out.println("You entered an invalid temperature type: " + temperatureType);
+            System.out.println("It must be \"C\", \"F\", or \"K\".  Please try the program again.");
+        }
+    }
+}
+</pre>
+</div>
+</div>
+<p>The image below shows what some successful runs look like. You can compare your results to mine and make sure things are working correctly.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/pf_placeholder_a.png" border="0"><img alt="Some successful program runs" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/L06-03.jpg" style="margin-bottom: 5px;" class="pf_image"><br>
+<font class="caption">Some successful program runs</font></p>
+<p>If you get any results that don't make sense to you, let me know in the Discussion Area.</p>
+<p>In Lesson 7 we'll use our temperature conversion example one more time. I'll show you how to . . . </p>
+<ul>
+    <li>Check for valid numeric values.</li>
+    <li>Loop back to correct values that are in error.</li>
+    <li>Make the program repeat actions using a loop.</li>
+    <li>End the loops and program when the conditions are right.</li>
+</ul>
+<p>I'll talk to you next time!</p>
+<p><strong>&nbsp;</strong></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html" target="_blank">
+                                Equality, Relational, and Conditional Operators</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This link is for Oracle's tutorial on Java's comparison and logical operations.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.cafeaulait.org/course/week2/34.html" target="_blank">
+                                Booleans</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.cafeaulait.org/course/week2/34.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            If you had trouble understanding what Booleans are and how they work, check out this page.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.cs.utah.edu/~germain/PPS/Topics/truth_tables_and_logic.html" target="_blank">
+                                Truth Tables, Logic, and DeMorgan's Laws</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.cs.utah.edu/~germain/PPS/Topics/truth_tables_and_logic.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            I showed you a truth table in Chapter 2. This link is a (very) short introduction to truth tables, logic, and Boolean algebra.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://en.wikipedia.org/wiki/Modulo_operation" target="_blank">
+                                Modulus Operation Description</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://en.wikipedia.org/wiki/Modulo_operation</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            In Chapter 2, I explained what "modulus" means. This article discusses the modulus operation in different programming languages.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><strong>Q:</strong> Are there ways to make multiple decisions other than using lots of <font class="font_monospace_black">if</font> and <font class="font_monospace_black">else</font> statements?<br>
+<br>
+<strong>A:</strong> Yes, Java has a <font class="font_monospace_black">switch</font> statement that's similar to using a group of <font class="font_monospace_black">if</font> and <font class="font_monospace_black">else if</font> statements. Unfortunately, we don't have time to cover it here, but we'll get to it in a future lesson.<br>
+<br>
+</p>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            <p>For today's assignment, complete as many of these as your time permits.</p>
+<ol>
+    <li>Try using <font class="font_monospace_black">if</font> statements for other purposes. For example, ask for two numbers from the leopard, and then display the larger. If you have difficulties, you can check my solution here: </li>
+</ol>
+<p>
+</p>
+<p align="center"><input name="" id="L06CH05b_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L06CH05b-solution">
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * This number asks its user for two numbers, then compares them and
+ * displays which is greater
+ * 
+ * @author Merrill Hall
+ * @version 1
+ */
+public class NumberComparison {
+    public static void main(String[] args) {
+        double n1; // first number
+        double n2; // second number
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter a number: ");
+        n1 = input.nextDouble();
+        System.out.print("Enter another number: ");
+        n2 = input.nextDouble();
+        if (n1 &lt; n2)
+            System.out.println("Your second number, " + n2 + 
+                    ", is greater than your first number, " + n1 + ".");
+        else if (n1 &gt; n2)
+            System.out.println("Your first number, " + n1 + 
+                    ", is greater than your second number, " + n2 + ".");
+        else 
+            System.out.println("Your first number, " + n1 + 
+                    ", is equal to your second number, " + n2 + ".");
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<ol start="2">
+    <li>Perhaps you noticed one peculiarity about our driver program: If the user enters a bad type, it still asks for a temperature, even though it's not going to use it. See if you can rearrange the logic to check the type first and not ask for a temperature if the type is invalid. Let me know if you have any questions about how to do that. Here's my solution if you'd like to compare it to yours: </li>
+</ol>
+<p>
+</p>
+<p align="center"><input name="" id="L06CH05c_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L06CH05c-solution">
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * TemperatureDriver runs and tests the Temperature class.
+ * 
+ * @author Merrill Hall
+ * @version 2.0
+ */
+public class TemperatureDriver {
+    /**
+     * main() reads a temperature type and value, then 
+     * converts it to the other two temperature scales.
+     */
+    public static void main(String[] args) {
+        double inputTemperature = 0.0;
+        Scanner keyInput = new Scanner(System.in); 
+        Temperature t1;
+        String temperatureType = "";
+
+        System.out.print("Enter a temperature type (C for Celsius, " +
+            "F for Fahrenheit, K for Kelvin): ");
+        temperatureType = keyInput.next();
+        if (temperatureType.equalsIgnoreCase("C") ||
+                temperatureType.equalsIgnoreCase("F") ||
+                temperatureType.equalsIgnoreCase("K")) {
+            System.out.print("Enter a temperature: ");
+            inputTemperature = keyInput.nextDouble();
+            t1 = new Temperature(temperatureType, inputTemperature);
+
+            if (temperatureType.equalsIgnoreCase("F")) {
+                System.out.println("You entered " + inputTemperature + 
+                    " degrees Fahrenheit");
+                System.out.println("which is " + t1.getDegreesCelsius() + 
+                    " degrees Celsius"); 
+                System.out.println("and " + t1.getDegreesKelvin() + 
+                    " degrees Kelvin.");
+            }
+            else if (temperatureType.equalsIgnoreCase("C")) {
+                System.out.println("You entered " + inputTemperature + 
+                    " degrees Celsius");
+                System.out.println("which is " + t1.getDegreesFahrenheit() + 
+                    " degrees Fahrenheit"); 
+                System.out.println("and " + t1.getDegreesKelvin() + 
+                    " degrees Kelvin.");
+            }
+            else if (temperatureType.equalsIgnoreCase("K")) {
+                System.out.println("You entered " + inputTemperature + 
+                    " degrees Kelvin");
+                System.out.println("which is " + t1.getDegreesCelsius() + 
+                    " degrees Celsius");
+                System.out.println("and " + t1.getDegreesFahrenheit() + 
+                    " degrees Fahrenheit.");
+            }
+        }
+        else
+            System.out.println("That was not a valid type.  Please try the program again.");
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<ol start="3">
+    <li>If you're looking for something a little more challenging, ask for two character strings, and then display them in alphabetical order.&nbsp;You'll need to check out the methods named <font class="font_monospace_black">compareTo()</font> and <font class="font_monospace_black">compareToIgnoreCase()</font> in the <font class="font_monospace_black">Strin</font><font class="font_monospace_black">g</font> class in order to make this work. Again, here's my solution if you'd like to compare it to yours: </li>
+</ol>
+<p>
+</p>
+<p align="center"><input name="" id="L06CH05d_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L06CH05d-solution">
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * This number asks its user for two strings, then compares them and
+ * displays them in alphabetical order
+ * 
+ * @author Merrill Hall
+ * @version 1
+ */
+public class StringComparison {
+    public static void main(String[] args) {
+        String s1; // first number
+        String s2; // second number
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a text string: ");
+        s1 = input.nextLine();
+        System.out.print("Enter another text string: ");
+        s2 = input.nextLine();
+        if (s1.compareToIgnoreCase(s2) &lt; 0) {
+            System.out.println("Your strings in alphabetical order are:");
+            System.out.println("   " + s1);
+            System.out.println("   " + s2);
+        }
+        else if (s1.compareToIgnoreCase(s2) &gt; 0) {
+            System.out.println("Your strings in alphabetical order are:");
+            System.out.println("   " + s2);
+            System.out.println("   " + s1);
+        }
+        else
+            System.out.println("Your strings are identical; there's no point in sorting them.  :-)");
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+<ol start="4">
+    <li>If you were a real glutton for punishment in the last lesson and wrote the quadratic formula, use an <font class="font_monospace_black">if</font> statement to make sure the <em>discriminant</em> (the value under the square root symbol) is not negative before attempting to calculate the results. Again, here's a solution: </li>
+</ol>
+<p>
+</p>
+<p align="center"><input name="" id="L06CH05e_show_solution" value="Click here to see my answer" type="button" style="cursor: pointer;"></p>
+<div id="L06CH05e-solution">
+<div class="scroll">
+<pre>import java.util.Scanner;
+/**
+ * QuadraticSolver calculates the roots of a quadratic equation.
+ * 
+ * @author Merrill Hall
+ * @version 1.0
+ */
+public class QuadraticSolver {
+    // equation coefficients
+    private double a;
+    private double b;
+    private double c;
+    
+    /**
+     * main method asks for the real coefficients a, b, and c in a 
+     * quadratic equation of the following form:
+     * 
+     *      2
+     *    ax  + bx + c = 0
+     *    
+     * main then calculates the two real roots of the equation.
+     */
+    public static void main(String[] args) {
+        double inputA;
+        double inputB;
+        double inputC;
+        Scanner keyInput = new Scanner(System.in);
+        
+        System.out.print("Enter the three quadratic equation coefficients, separated by spaces: ");
+        inputA = keyInput.nextDouble();
+        inputB = keyInput.nextDouble();
+        inputC = keyInput.nextDouble();
+        QuadraticSolver q = new QuadraticSolver(inputA, inputB, inputC);
+        System.out.println(q.toString());
+    }
+
+    /**
+     * Constructor for objects of class QuadraticSolver
+     */
+    public QuadraticSolver(double inputA, double inputB, double inputC) {
+        // initialize radius
+        a = inputA;
+        b = inputB;
+        c = inputC;
+    }
+
+    /**
+     * toString calculates and returns the roots for the quadratic equation
+     * in a string format
+     */
+    public String toString() {
+        if (a == 0)
+            return "\nThe equation is " + a + "x^2 + " + b + "x + " + c + "\n" +
+                   "The first coefficient cannot be zero.\n";
+                   
+        double discriminant = b*b-4*a*c;
+        if (discriminant &lt; 0)
+            return "\nThe equation " + a + "x^2 + " + b + "x + " + c + " does not give real results.\n" +
+                   "The first  \"imaginary\" root is " + (-b/(2*a)) + " + " +
+                           Math.sqrt(-discriminant)/(2*a) + "i\n" +
+                   "The second \"imaginary\" root is " + (-b/(2*a)) + " - " +
+                           Math.sqrt(-discriminant)/(2*a) + "i\n";
+        else
+            return "\nThe equation is " + a + "x^2 + " + b + "x + " + c + "\n" +
+                   "The equation's first  real root is " + ((-b + Math.sqrt(discriminant))/(2*a)) + "\n" +
+                   "The equation's second real root is " + ((-b - Math.sqrt(discriminant))/(2*a)) + "\n";
+    }
+}
+</pre>
+</div>
+</div>
+<br>
+Stop by the Discussion Area to share your experiences if you have a chance! <br>
+<p>
+</p>
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4&lesson=6#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2015
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                jab-3
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=7D7A2dETfPoO%2fJzx9mIU8%2blcjXIv9bx77dJj%2fSRP2jUA%2fUWG0YccdNohbvNeimQ4',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB01P (1.2.82.7) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/IncludeResource.axd"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.prop4='';
+s.eVar4='';
+s.eVar5='introduction to java programming';
+s.prop5='introduction to java programming';
+s.eVar6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.prop6='7d7a2detfpoo/jzx9miu8+lcjxiv9bx77djj/srp2jua/uwg0yccdnohbvneimq4';
+s.eVar7='6';
+s.prop7='6';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=6';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=7d7a2detfpoo%2fjzx9miu8%2blcjxiv9bx77djj%2fsrp2jua%2fuwg0yccdnohbvneimq4&lesson=6';
+s.prop15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.eVar15='11287e59-35c7-4661-9b98-2ef58687a3a9';
+s.hier1=',,introduction to java programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript>&lt;a href='http://www.Adobe.com' title='Web Analytics'&gt;&lt;img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/&gt;&lt;/a&gt;</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript>&lt;iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"&gt;&lt;/iframe&gt;</noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?frame=0&amp;random=1437933468302&amp;cv=7&amp;fst=1437933468302&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=-240&amp;u_java=true&amp;u_nplug=6&amp;u_nmime=8&amp;frm=0&amp;url=https%3A//www.ed2go.com/Classroom/PrintLesson.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26lesson%3D6&amp;ref=https%3A//www.ed2go.com/Classroom/Lessons.aspx%3Fclassroom%3D7D7A2dETfPoO%252fJzx9mIU8%252blcjXIv9bx77dJj%252fSRP2jUA%252fUWG0YccdNohbvNeimQ4%26bc%3DLessons%26lesson%3D6" /&gt;</iframe><div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Lesson 6 (Computer Logic Writing Programs that Make Decisions)_files/dis.html" style="display: none;"></iframe></div></body></html>
